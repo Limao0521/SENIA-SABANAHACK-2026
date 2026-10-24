@@ -1,0 +1,3 @@
+[submodule "robot/third_party/agibot_x2_urdf"]
+	path = robot/third_party/agibot_x2_urdf
+	url = https://github.com/AgibotTech/agibot_x2_urdf.git

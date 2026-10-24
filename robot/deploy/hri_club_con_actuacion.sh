@@ -116,8 +116,12 @@ confirm_arm() {
 EOF
     if [[ ${HRI_CONFIRMAR:-} == ARMAR ]]; then echo "(confirmado por HRI_CONFIRMAR=ARMAR)"; return; fi
     local r
+    # Vacía lo tecleado mientras esperaba (flechas, Enter…): si no, se pega delante de ARMAR.
+    while read -r -t 0.05 -n 4096 _ 2>/dev/null; do :; done
     read -r -p "Escribe ARMAR para continuar: " r
-    [[ $r == ARMAR ]] || { echo "Cancelado."; exit 1; }
+    E=$'\e'; r="$(printf '%s' "$r" | sed "s/${E}\[[0-9;]*[A-Za-z~]//g; s/${E}O[A-Za-z]//g")"   # secuencias de teclas (flechas…)
+    r="${r//[^A-Za-z]/}"                      # espacios y restos
+    [[ ${r^^} == ARMAR ]] || { echo "Cancelado (se leyó: «$r»)."; exit 1; }
 }
 
 parse_session_opts() {

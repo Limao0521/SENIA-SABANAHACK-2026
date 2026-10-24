@@ -67,7 +67,8 @@ flowchart LR
 │   ├── 06-metricas.md
 │   ├── 07-seguridad-y-privacidad.md
 │   ├── 08-limitaciones-y-trabajo-futuro.md
-│   └── 09-creditos-y-licencias.md
+│   ├── 09-creditos-y-licencias.md
+│   └── 10-simulacion.md
 ├── robot/                   ← sistema del robot (Python, ROS 2, Docker) — rama sabanahack4.0-deploy
 │   ├── src/x2_ultra/hri_runtime/   runtime HRI: FSM, LLM, TTS, ASR, identidad, cara, backend del robot
 │   ├── deploy/              scripts de despliegue a bordo (PC → robot) y composes de Docker
@@ -89,6 +90,7 @@ flowchart LR
 | Desplegar y arrancar en el X2 real | [docs/03-despliegue-en-el-robot.md](docs/03-despliegue-en-el-robot.md) |
 | Correr la app | `cd app && flutter pub get && flutter run` — [docs/04-app-club-n.md](docs/04-app-club-n.md) |
 | Ver los números | [docs/06-metricas.md](docs/06-metricas.md) |
+| Abrir la simulación (robot, club 3D, gemelo digital) | `git clone --recursive …` y [docs/10-simulacion.md](docs/10-simulacion.md) |
 
 ## Resultados en el robot real
 
@@ -102,7 +104,7 @@ flowchart LR
 ## Estado y límites (resumen)
 
 Funciona en el robot real: identidad cara + QR, conversación, gesto co-verbal, señalamiento y
-expresiones de la cara. Los 12 emotes propios y las últimas optimizaciones de latencia (commit `e787a94`)
+expresiones de la cara. Los 12 emotes propios y las últimas optimizaciones de latencia (commit `d59a340`)
 están verificados en pruebas y simulación, pendientes de medir en el robot. **No incluido en esta entrega**: que el robot camine acompañando al VIP hasta el ascensor
 (la oferta existe en la conversación; la navegación quedó deshabilitada por seguridad y pendiente de
 integrar con la tarea de navegación del robot) y el control del perro guía D1 (solo se menciona).
@@ -120,5 +122,5 @@ Autores de los commits de los repositorios de origen (tal como figuran en git):
 | Lafrul | ClubNApp — app Club N |
 
 Repositorios de origen (historial completo):
-[juanulloa2050/x2_ultra](https://github.com/juanulloa2050/x2_ultra) (rama `sabanahack4.0-deploy`, commit `e787a94`) ·
+[juanulloa2050/x2_ultra](https://github.com/juanulloa2050/x2_ultra) (rama `sabanahack4.0-deploy`, commit `d59a340`) ·
 [Lafrul/ClubNApp](https://github.com/Lafrul/ClubNApp) (commit `2752d10`).

@@ -5,7 +5,7 @@
 Ver la sección «Equipo» del [README](../README.md). Repositorios de origen con el historial completo:
 
 - Sistema del robot: [juanulloa2050/x2_ultra](https://github.com/juanulloa2050/x2_ultra), rama
-  `sabanahack4.0-deploy`, commit `e787a94`.
+  `sabanahack4.0-deploy`, commit `d59a340`.
 - App Club N: [Lafrul/ClubNApp](https://github.com/Lafrul/ClubNApp), commit `2752d10`.
 
 ## Componentes de terceros
@@ -13,6 +13,7 @@ Ver la sección «Equipo» del [README](../README.md). Repositorios de origen co
 | Componente | Uso | Incluido en el repo | Licencia / fuente |
 |---|---|---|---|
 | AgiBot X2 Ultra, AimDK SDK (aimdk_msgs, ROS 2) | Interfaz con el robot | No (en el robot) | AgiBot |
+| URDF y mallas oficiales del X2 (`agibot_x2_urdf`) | Simulación | Submódulo `robot/third_party/agibot_x2_urdf` (commit `575cc6b`) | Mulan PSL v2 |
 | Política de marcha `agibot_mcrl_policy.onnx` | Simulación | Sí (`robot/assets/policies/`) | Apache 2.0 (`LICENSE-agibot-mc-rl.txt`) |
 | Animaciones de fábrica de AgiBot (CSV del MC) | Emotes originales | **No** (licencia del fabricante) | Se obtienen con `scripts/fetch_hri_assets.sh` |
 | UniFace | Reconocimiento facial | Sí (`robot/Face/thirdparty/uniface/`) | MIT |

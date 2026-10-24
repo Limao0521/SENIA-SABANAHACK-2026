@@ -30,7 +30,12 @@ fi
 # URDF oficial (público, licencia Mulan PSL v2), commit fijado.
 mkdir -p third_party
 URDF_DST=third_party/agibot_x2_urdf
-if [[ ! -e $URDF_DST ]]; then
+# Repo de entrega: el URDF es un submódulo fijado a 575cc6b (carpeta vacía hasta inicializarlo).
+if [[ -d $URDF_DST && -z "$(ls -A "$URDF_DST" 2>/dev/null)" ]]; then
+    git -C .. submodule update --init robot/third_party/agibot_x2_urdf 2>/dev/null || rmdir "$URDF_DST"
+fi
+if [[ ! -e $URDF_DST || -z "$(ls -A "$URDF_DST" 2>/dev/null)" ]]; then
+    rmdir "$URDF_DST" 2>/dev/null || true
     if [[ -d ${X2_URDF_ROOT:-$HOME/robots/agibot_x2_urdf}/X2_URDF-v1.4.0 ]]; then
         ln -s "${X2_URDF_ROOT:-$HOME/robots/agibot_x2_urdf}" "$URDF_DST"
     else
