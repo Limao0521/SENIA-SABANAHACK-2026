@@ -1,0 +1,5 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+visit_staff_1792649549,visit_staff_1792649549,visit_staff_1792649549_t00,GREETING_STAFF,1008,2,dame esos cinco,1.6721,44100,0.54,1.26,23814,aligned_ctc_not_human_validated,0.6999773242630386,0.0,-30869,16758,planned,planned,,0.02
+visit_staff_1792649549,visit_staff_1792649549,visit_staff_1792649549_t01,POINT_RIGHT,,,a mi derecha,1.5504,44100,0.52,1.06,22932,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+visit_staff_1792649549,visit_staff_1792649549,visit_staff_1792649549_t02,NONE,,,,3.3547,44100,,,,,,,,,none_sonic,none_sonic,,
+visit_staff_1792649549,visit_staff_1792649549,visit_staff_1792649549_t03,NEGATION_STRONG,3009,11,sin credencial,4.2101,44100,2.88,3.64,127008,aligned_ctc_not_human_validated,0.0,0.0,74972,120834,planned,planned,,0.02

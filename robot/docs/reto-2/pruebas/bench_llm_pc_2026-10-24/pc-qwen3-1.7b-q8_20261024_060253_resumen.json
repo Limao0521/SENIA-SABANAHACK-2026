@@ -1,0 +1,65 @@
+{
+  "etiqueta": "pc-qwen3-1.7b-q8",
+  "url": "http://127.0.0.1:8092",
+  "ts": "20261024_060253",
+  "n": 42,
+  "prefijo_estatico": false,
+  "fallos": 0,
+  "validez_pct": 76.2,
+  "validez_tras_reparar_pct": 83.3,
+  "intent_ok_pct": 66.7,
+  "latencias": {
+    "t_first_token": {
+      "p50": 0.287,
+      "p90": 0.431,
+      "max": 0.484
+    },
+    "t_speech_done": {
+      "p50": 0.626,
+      "p90": 0.851,
+      "max": 1.019
+    },
+    "t_total": {
+      "p50": 0.765,
+      "p90": 1.128,
+      "max": 1.366
+    }
+  },
+  "tokens_s_medio": 118.271,
+  "prompt_tokens_medio": 2040.786,
+  "cached_tokens_medio": 1245.071,
+  "muestras": [
+    {
+      "id": "saludo_vip",
+      "speech": "Bienvenida, señora Laura. Es un honor recibirla de nuevo en nuestro club; será un placer atenderle."
+    },
+    {
+      "id": "conv_horario_biblioteca",
+      "speech": "La biblioteca del club abre de 08:00 a 20:00. ¿Querés saber más sobre otros espacios?"
+    },
+    {
+      "id": "guia_biblioteca_vip",
+      "speech": "La biblioteca queda al frente, piso 2."
+    },
+    {
+      "id": "saludo_staff",
+      "speech": "¡Qué tal, Luis! ¡Dame esos cinco! Qué bueno verte por el club otra vez."
+    },
+    {
+      "id": "conv_pide_gimnasio",
+      "speech": "¡Claro! El gimnasio está al frente, piso 5, horario 05:00 a 22:00. ¿Querés que te guíe al lugar?"
+    },
+    {
+      "id": "denial_bar_invitado",
+      "speech": "Entiendo su interés, Mario; hoy le espera nuestra biblioteca, permítame orientarle hasta allí."
+    },
+    {
+      "id": "destino_rol_worker",
+      "speech": "Almacenes de logística, a mi izquierda. Siga la señalización."
+    },
+    {
+      "id": "conv_despedida_vip",
+      "speech": "Hasta luego, nuestro club. Si necesita ayuda, siempre está abierto."
+    }
+  ]
+}

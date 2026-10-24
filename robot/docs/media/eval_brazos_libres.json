@@ -1,0 +1,223 @@
+[
+  {
+    "scenario": "de_pie",
+    "fell": false,
+    "time_s": 10.02,
+    "cmd": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      0.0,
+      0.0
+    ],
+    "yaw_rate": 0.0,
+    "height_mean": 0.652,
+    "height_std": 0.0
+  },
+  {
+    "scenario": "avanzar_0.5",
+    "fell": false,
+    "time_s": 10.02,
+    "cmd": [
+      0.5,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      0.46,
+      -0.015
+    ],
+    "yaw_rate": -0.022,
+    "height_mean": 0.625,
+    "height_std": 0.0024
+  },
+  {
+    "scenario": "avanzar_0.9",
+    "fell": false,
+    "time_s": 8.02,
+    "cmd": [
+      0.9,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      0.877,
+      -0.02
+    ],
+    "yaw_rate": -0.028,
+    "height_mean": 0.618,
+    "height_std": 0.0033
+  },
+  {
+    "scenario": "retroceder_0.3",
+    "fell": false,
+    "time_s": 8.02,
+    "cmd": [
+      -0.3,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      -0.285,
+      0.017
+    ],
+    "yaw_rate": 0.002,
+    "height_mean": 0.646,
+    "height_std": 0.0023
+  },
+  {
+    "scenario": "lateral_0.3",
+    "fell": false,
+    "time_s": 8.02,
+    "cmd": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "v_meas": [
+      -0.063,
+      0.272
+    ],
+    "yaw_rate": -0.084,
+    "height_mean": 0.634,
+    "height_std": 0.0032
+  },
+  {
+    "scenario": "girar_izq_0.8",
+    "fell": false,
+    "time_s": 8.02,
+    "cmd": [
+      0.0,
+      0.0,
+      0.8
+    ],
+    "v_meas": [
+      -0.053,
+      -0.017
+    ],
+    "yaw_rate": 0.719,
+    "height_mean": 0.626,
+    "height_std": 0.0028
+  },
+  {
+    "scenario": "girar_der_0.8",
+    "fell": false,
+    "time_s": 8.02,
+    "cmd": [
+      0.0,
+      0.0,
+      -0.8
+    ],
+    "v_meas": [
+      -0.053,
+      0.018
+    ],
+    "yaw_rate": -0.717,
+    "height_mean": 0.625,
+    "height_std": 0.0024
+  },
+  {
+    "scenario": "avanzar_y_girar",
+    "fell": false,
+    "time_s": 10.02,
+    "cmd": [
+      0.4,
+      0.0,
+      0.5
+    ],
+    "v_meas": [
+      0.367,
+      0.017
+    ],
+    "yaw_rate": 0.474,
+    "height_mean": 0.626,
+    "height_std": 0.0022
+  },
+  {
+    "scenario": "poses_de_pie",
+    "fell": false,
+    "time_s": 22.02,
+    "cmd": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      -0.0,
+      -0.0
+    ],
+    "yaw_rate": 0.0,
+    "height_mean": 0.651,
+    "height_std": 0.0025
+  },
+  {
+    "scenario": "poses_caminando",
+    "fell": false,
+    "time_s": 22.02,
+    "cmd": [
+      0.4,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      0.347,
+      -0.011
+    ],
+    "yaw_rate": -0.035,
+    "height_mean": 0.629,
+    "height_std": 0.0043
+  },
+  {
+    "scenario": "brazos_aleatorios_de_pie",
+    "fell": false,
+    "time_s": 20.02,
+    "cmd": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      -0.001,
+      -0.002
+    ],
+    "yaw_rate": 0.002,
+    "height_mean": 0.652,
+    "height_std": 0.0019
+  },
+  {
+    "scenario": "brazos_aleatorios_caminando",
+    "fell": false,
+    "time_s": 20.02,
+    "cmd": [
+      0.35,
+      0.0,
+      0.2
+    ],
+    "v_meas": [
+      0.271,
+      0.006
+    ],
+    "yaw_rate": 0.179,
+    "height_mean": 0.629,
+    "height_std": 0.0037
+  },
+  {
+    "scenario": "empujones_caminando",
+    "fell": false,
+    "time_s": 15.02,
+    "cmd": [
+      0.4,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      0.348,
+      0.021
+    ],
+    "yaw_rate": -0.03,
+    "height_mean": 0.629,
+    "height_std": 0.0052
+  }
+]

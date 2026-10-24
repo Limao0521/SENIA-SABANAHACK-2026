@@ -1,0 +1,318 @@
+{
+ "visit_id": "visit_staff_1792649549",
+ "profile_injected": {
+  "person_id": "sim-staff",
+  "display_name": "Carlos Mendoza",
+  "rank_code": "STAFF",
+  "rank_name": "Personal del laboratorio"
+ },
+ "face_recognition": "bypassed",
+ "scenario": "reception_lab_right",
+ "turns": [
+  {
+   "turn_id": "visit_staff_1792649549_t00",
+   "state": "GREETING",
+   "visitor_utterance": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_staff_1792649549_t00\",\"speech\":\"¡dame esos cinco!\",\"communicative_acts\":[ \"GREETING\" ],\"motor_intents\":[{\"event_id\":\"visit_staff_1792649549_t00\",\"type\":\"GREETING_STAFF\",\"trigger_text\":\"dame esos cinco\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_staff_1792649549_t00",
+     "speech": "¡dame esos cinco!",
+     "communicative_acts": [
+      "GREETING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_staff_1792649549_t00",
+       "type": "GREETING_STAFF",
+       "trigger_text": "dame esos cinco"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.392,
+     "prompt_tokens": 974,
+     "completion_tokens": 104,
+     "cached_tokens": 554,
+     "prompt_ms": 84.479,
+     "predicted_ms": 1301.933,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.5486,
+    "prompt_chars": 3515
+   },
+   "decision": {
+    "requested": "GREETING_STAFF",
+    "effective": "GREETING_STAFF",
+    "suppressed": null,
+    "trigger_text": "dame esos cinco",
+    "trigger_char_start": 1,
+    "trigger_char_end": 16
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/staff/wav/visit_staff_1792649549/visit_staff_1792649549_t00.wav",
+    "wav_sha256": "d5e432d1462ea83b7e1e0816a3fa8820013611e260bdbde74f4187dc1851a2ff",
+    "sample_rate": 44100,
+    "duration_s": 1.6721,
+    "synth_s": 0.4852
+   }
+  },
+  {
+   "turn_id": "visit_staff_1792649549_t01",
+   "state": "GUIDANCE",
+   "visitor_utterance": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_staff_1792649549_t01\",\"speech\":\"a mi derecha\",\"communicative_acts\":[\"GUIDE\"],\"motor_intents\":[{\"event_id\":\"visit_staff_1792649549_t01\",\"type\":\"POINT_RIGHT\",\"trigger_text\":\"a mi derecha\",\"reference_frame\":\"X2_base_local\",\"target_vector\":[0.0,-1.0,0.0]}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_staff_1792649549_t01",
+     "speech": "a mi derecha",
+     "communicative_acts": [
+      "GUIDE"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_staff_1792649549_t01",
+       "type": "POINT_RIGHT",
+       "trigger_text": "a mi derecha",
+       "reference_frame": "X2_base_local",
+       "target_vector": [
+        0.0,
+        -1.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.6597,
+     "prompt_tokens": 1002,
+     "completion_tokens": 118,
+     "cached_tokens": 554,
+     "prompt_ms": 87.643,
+     "predicted_ms": 1565.967,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.8098,
+    "prompt_chars": 3673
+   },
+   "decision": {
+    "requested": "POINT_RIGHT",
+    "effective": "POINT_RIGHT",
+    "suppressed": null,
+    "trigger_text": "a mi derecha",
+    "trigger_char_start": 0,
+    "trigger_char_end": 12
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/staff/wav/visit_staff_1792649549/visit_staff_1792649549_t01.wav",
+    "wav_sha256": "10debaa2c77a5e0186e5e5aa55d2f7cff2cf61d291fb2ab00a7a6fab065caa1a",
+    "sample_rate": 44100,
+    "duration_s": 1.5504,
+    "synth_s": 0.5007
+   }
+  },
+  {
+   "turn_id": "visit_staff_1792649549_t02",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Terminamos hoy la calibración del brazo.",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_staff_1792649549_t02\",\"speech\":\"Terminamos hoy la calibración del brazo.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"visit_staff_1792649549_t02\",\"type\":\"NONE\",\"trigger_text\":\"\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_staff_1792649549_t02",
+     "speech": "Terminamos hoy la calibración del brazo.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": []
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.4755,
+     "prompt_tokens": 1770,
+     "completion_tokens": 100,
+     "cached_tokens": 1531,
+     "prompt_ms": 46.923,
+     "predicted_ms": 1346.965,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6323,
+    "prompt_chars": 6272
+   },
+   "decision": {
+    "requested": "NONE",
+    "effective": "NONE",
+    "suppressed": null,
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/staff/wav/visit_staff_1792649549/visit_staff_1792649549_t02.wav",
+    "wav_sha256": "222d04abfe4e4b11028368e92013c1cf500c31c681e2abf2e0ee747440dea1da",
+    "sample_rate": 44100,
+    "duration_s": 3.3547,
+    "synth_s": 0.814
+   }
+  },
+  {
+   "turn_id": "visit_staff_1792649549_t03",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Abre la sala de servidores sin credencial, por favor.",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_staff_1792649549_t03\",\"speech\":\"No puedo abrir la sala de servidores sin credencial\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"visit_staff_1792649549_t03\",\"type\":\"NEGATION_STRONG\",\"trigger_text\":\"sin credencial\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_staff_1792649549_t03",
+     "speech": "No puedo abrir la sala de servidores sin credencial",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_staff_1792649549_t03",
+       "type": "NEGATION_STRONG",
+       "trigger_text": "sin credencial"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.4689,
+     "prompt_tokens": 1772,
+     "completion_tokens": 106,
+     "cached_tokens": 1659,
+     "prompt_ms": 28.43,
+     "predicted_ms": 1432.728,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6204,
+    "prompt_chars": 6285
+   },
+   "decision": {
+    "requested": "NEGATION_STRONG",
+    "effective": "NEGATION_STRONG",
+    "suppressed": null,
+    "trigger_text": "sin credencial",
+    "trigger_char_start": 37,
+    "trigger_char_end": 51
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/staff/wav/visit_staff_1792649549/visit_staff_1792649549_t03.wav",
+    "wav_sha256": "3f9f847261ca034beab5e5e7914bfd5bc90b41120c6812e4aaa230f12f731415",
+    "sample_rate": 44100,
+    "duration_s": 4.2101,
+    "synth_s": 0.9444
+   }
+  },
+  {
+   "turn_id": "visit_staff_1792649549_t04",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿El laboratorio queda por ahí, verdad?",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_staff_1792649549_t04\",\"speech\":\"El laboratorio está situado a la derecha del agente.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"visit_staff_1792649549_t04\",\"type\":\"CONFIRMATION\",\"trigger_text\":\"verdad\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_staff_1792649549_t04",
+     "speech": "El laboratorio está situado a la derecha del agente.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_staff_1792649549_t04",
+       "type": "CONFIRMATION",
+       "trigger_text": "verdad"
+      }
+     ]
+    },
+    "errors": [
+     "trigger_text must be a literal substring of speech"
+    ],
+    "metrics": {
+     "total_s": 1.4658,
+     "prompt_tokens": 1769,
+     "completion_tokens": 106,
+     "cached_tokens": 1659,
+     "prompt_ms": 26.876,
+     "predicted_ms": 1430.784,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6421,
+    "prompt_chars": 6270
+   },
+   "decision": {
+    "requested": "CONFIRMATION",
+    "effective": "NONE",
+    "suppressed": "validation_failed",
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   }
+  },
+  {
+   "turn_id": "visit_staff_1792649549_t05",
+   "state": "FAREWELL",
+   "visitor_utterance": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_staff_1792649549_t05\",\"speech\":\"¡Hasta luego! El laboratorio está a su derecha.\",\"communicative_acts\":[ \"CLOSING\" ],\"motor_intents\":[{\"event_id\":\"visit_staff_1792649549_t05\",\"type\":\"FAREWELL_WAVE\",\"trigger_text\":\"¡Hasta luego! El laboratorio está a su右侧\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_staff_1792649549_t05",
+     "speech": "¡Hasta luego! El laboratorio está a su derecha.",
+     "communicative_acts": [
+      "CLOSING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_staff_1792649549_t05",
+       "type": "FAREWELL_WAVE",
+       "trigger_text": "¡Hasta luego! El laboratorio está a su右侧"
+      }
+     ]
+    },
+    "errors": [
+     "trigger_text must be a literal substring of speech"
+    ],
+    "metrics": {
+     "total_s": 1.7349,
+     "prompt_tokens": 926,
+     "completion_tokens": 119,
+     "cached_tokens": 554,
+     "prompt_ms": 71.958,
+     "predicted_ms": 1580.832,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.9009,
+    "prompt_chars": 3369
+   },
+   "decision": {
+    "requested": "FAREWELL_WAVE",
+    "effective": "NONE",
+    "suppressed": "validation_failed",
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   }
+  }
+ ],
+ "manifest": "HRIEGO_gesture/eval/results/visits/staff/tts_manifest.jsonl",
+ "anchor_plan": {
+  "returncode": 0,
+  "stdout": "{\n \"schema\": \"hriego_gesture_anchor_plan.v1\",\n \"rows\": 4,\n \"policy\": {\n  \"align\": \"onset\",\n  \"stat\": \"median\",\n  \"max_initial_delay_s\": 1.5,\n  \"latency_file\": \"config/preset_latency_c08.json\",\n  \"latency_sha256\": \"d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3\",\n  \"latency_error\": null\n },\n \"model\": {\n  \"revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d\",\n  \"onnx_sha256\": \"e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\",\n  \"provider\": \"CPUExecutionProvider\",\n  \"cpu_threads\": 2,\n  \"onnx_sha256_matches_pinned\": true,\n  \"model_revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\"\n },\n \"status_counts\": {\n  \"planned\": 2,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"status_preroll0_counts\": {\n  \"planned\": 2,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"align_status_counts\": {\n  \"aligned_ctc_not_human_validated\": 3,\n  \"null\": 1\n },\n \"max_delay_s_planned\": 0.6999773242630386,\n \"max_delay_s_preroll0_planned\": 0.0\n}\n",
+  "stderr": "",
+  "files": [
+   "HRIEGO_gesture/eval/results/visits/staff/anchor_plan/summary.json"
+  ]
+ }
+}

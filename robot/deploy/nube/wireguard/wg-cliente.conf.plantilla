@@ -1,0 +1,16 @@
+# Plantilla del CLIENTE WireGuard (x2-nube): PC de desarrollo (modo A) o robot (modo C).
+# La renderiza deploy/nube/wireguard/generar_wg.sh → .secretos/wg/wg-cliente.conf.
+# - Windows: WireGuard for Windows → Add Tunnel → Import from file.
+# - Linux/robot: /etc/wireguard/wg-nube.conf (chmod 600) y `wg-quick up wg-nube`.
+
+[Interface]
+PrivateKey = __CLAVE_PRIVADA_CLIENTE__
+Address = 10.66.0.2/32
+
+[Peer]
+PublicKey = __CLAVE_PUBLICA_SERVIDOR__
+Endpoint = __HOST_VPS__:51820
+# Solo el propio VPS por el túnel (allí escucha el gateway en :8443).
+AllowedIPs = 10.66.0.1/32
+# Mantener el NAT del proveedor abierto tras periodos sin tráfico.
+PersistentKeepalive = 25

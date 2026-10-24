@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Excelente",
+  "char_start": 1,
+  "char_end": 10,
+  "occurrence": 1,
+  "start_s": 0.62,
+  "end_s": 1.04,
+  "start_sample": 27342,
+  "end_sample": 45864,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "215b76d03d67f1d871a7a94c0115adb1132aef9867d41e2bf0b556844edeb8ed",
+  "sample_count": 76800,
+  "case_id": "T09",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

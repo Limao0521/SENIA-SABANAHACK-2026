@@ -1,0 +1,40 @@
+{
+  "schema_version": "x2_gesture_event.v1",
+  "utterance_id": "v2visit_regular_t00_greeting",
+  "audio": {
+    "sha256": "ee08046da7e3e82574eee06ac13bbc90ea9806c542fa4599f8335fb368980861",
+    "sample_rate_hz": 44100,
+    "sample_count": 193536,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "decision": {
+    "communicative_act": "GREETING_REGULAR",
+    "motor_intent": "GREETING_REGULAR",
+    "decision_source": "hriego_manifest"
+  },
+  "binding": {
+    "motion_id": 1003,
+    "area": 2,
+    "asset_sha256": "655a40f86724859b8cb9ac031ab9d2317a2bea4828f8a6500050cbed10e0df50",
+    "animation_player_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da"
+  },
+  "anchor": {
+    "text": "Buenos días",
+    "source_char_start": 0,
+    "source_char_end": 11,
+    "occurrence": 1,
+    "start_sample": 35280,
+    "end_sample": 59976
+  },
+  "alignment": {
+    "method": "quartznet15x5_ctc_viterbi",
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "status": "aligned_ctc_not_human_validated"
+  },
+  "schedule": {
+    "desired_visible_onset_sample": 35280,
+    "dispatch_sample": null,
+    "repeat_count": 1,
+    "status": "unscheduled"
+  }
+}

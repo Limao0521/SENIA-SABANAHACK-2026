@@ -1,0 +1,40 @@
+{
+  "schema_version": "x2_gesture_event.v1",
+  "utterance_id": "T09",
+  "audio": {
+    "sha256": "215b76d03d67f1d871a7a94c0115adb1132aef9867d41e2bf0b556844edeb8ed",
+    "sample_rate_hz": 44100,
+    "sample_count": 76800,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "decision": {
+    "communicative_act": "LIKE",
+    "motor_intent": "LIKE",
+    "decision_source": "hriego_manifest"
+  },
+  "binding": {
+    "motion_id": 1005,
+    "area": 2,
+    "asset_sha256": "08a33b37627e7773160bad67e07617880c427faddd515f5a8c05376960919eca",
+    "animation_player_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da"
+  },
+  "anchor": {
+    "text": "Excelente",
+    "source_char_start": 1,
+    "source_char_end": 10,
+    "occurrence": 1,
+    "start_sample": 27342,
+    "end_sample": 45864
+  },
+  "alignment": {
+    "method": "quartznet15x5_ctc_viterbi",
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "status": "aligned_ctc_not_human_validated"
+  },
+  "schedule": {
+    "desired_visible_onset_sample": 27342,
+    "dispatch_sample": null,
+    "repeat_count": 1,
+    "status": "unscheduled"
+  }
+}

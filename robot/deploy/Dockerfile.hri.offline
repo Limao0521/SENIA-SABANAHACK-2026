@@ -1,0 +1,37 @@
+# =============================================================================
+# Dockerfile.hri.offline — x2-hri sin internet (variante de Dockerfile.hri).
+#
+# El contexto es deploy/.wheels (no el repo): site/ trae los paquetes cp310
+# aarch64 ya instalados (onnxruntime, numpy, opencv-python, supertonic, tqdm y
+# dependencias) y libs/ las bibliotecas de sistema que opencv necesita y la base
+# ROS no trae. SciPy, scikit-image y soundfile no hacen falta: Face/uniface y
+# supertonic_worker.py tienen respaldos equivalentes en NumPy/wave.
+#
+#   docker build -f deploy/Dockerfile.hri.offline -t x2-hri:latest deploy/.wheels
+# =============================================================================
+ARG BASE_IMAGE=x2-onboard:latest
+FROM ${BASE_IMAGE}
+
+COPY site/ /usr/local/lib/python3.10/dist-packages/
+COPY libs/ /usr/local/lib/x2-hri/
+RUN echo /usr/local/lib/x2-hri > /etc/ld.so.conf.d/x2-hri.conf && ldconfig
+
+# extra/: wheels cp310 aarch64 bajados en el PC (scipy, scikit-image, soundfile y
+# deps) + el wheel de pip para instalarlos sin red. Si extra/ está vacío, quedan
+# los respaldos NumPy/wave de Face/uniface y supertonic_worker.py.
+COPY extra/ /tmp/extra/
+RUN set -e; if ls /tmp/extra/*.whl >/dev/null 2>&1; then \
+        python3 "$(ls /tmp/extra/pip-*.whl)/pip" install --no-index --no-deps --no-cache-dir \
+            $(ls /tmp/extra/*.whl | grep -v '/pip-'); \
+    fi; rm -rf /tmp/extra
+
+ENV PYTHONPATH=/workspace/x2_ultra/Face/thirdparty/uniface:/workspace/x2_ultra/Face:/workspace/x2_ultra \
+    UNIFACE_CACHE_DIR=/workspace/x2_ultra/Face/thirdparty/uniface-models \
+    HRIEGO_FACE_PYTHON=/usr/bin/python3 \
+    HRIEGO_SUPERTONIC_PYTHON=/usr/bin/python3 \
+    HF_HUB_OFFLINE=1 \
+    TRANSFORMERS_OFFLINE=1 \
+    TOKENIZERS_PARALLELISM=false
+
+WORKDIR /workspace/x2_ultra
+CMD ["python3", "-c", "import cv2, onnxruntime, supertonic, rclpy; from aimdk_msgs.msg import AudioPlayback; print('x2-hri: imports OK')"]

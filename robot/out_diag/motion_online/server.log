@@ -1,0 +1,103 @@
+Loading weights:   0%|          | 0/488 [00:00<?, ?it/s]Loading weights: 100%|██████████| 488/488 [00:00<00:00, 73030.30it/s]
+[transformers] [1mWavLMModel LOAD REPORT[0m from: /home/luis/GitHub/Laplace/Gesture/third_party/StreamTalk/assets/wavlm-libri-clean-100h-large
+Key            | Status     |  | 
+---------------+------------+--+-
+lm_head.weight | UNEXPECTED |  | 
+lm_head.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+xrobotoolkit_sdk not found, skip for now. If you do not use XRobotStreamer, it's
+fine.
+[motion-server 22:13:48] LOAD {'streamtalk': 8.6, 'gmr': 1.0, 'sonic': 0.4, 'total': 11.7} pss_mb 2480 vram_mb 1254
+[motion-server 22:13:50] WARMUP first_cmd_s 0.404
+[motion-server 22:13:50] READY 13.7 s
+[motion-server 22:13:50] listening /tmp/hri_motion_online.sock
+[motion-server 22:13:50] client connected
+[motion-server 22:13:50] turn: 6.6s audio, split=14, rtf=0.0
+[motion-server 22:13:54] turn done: first_cmd 0.429 first_motion_cmd 0.6825065759985591 rtf 0.52 ticks 358
+[motion-server 22:13:54] turn: 6.6s audio, split=14, rtf=0.0
+[motion-server 22:13:58] turn done: first_cmd 0.399 first_motion_cmd 0.6556547469990619 rtf 0.53 ticks 358
+[motion-server 22:13:58] turn: 5.6s audio, split=14, rtf=0.0
+[motion-server 22:14:02] turn done: first_cmd 0.392 first_motion_cmd 0.6318150970000715 rtf 0.58 ticks 308
+[motion-server 22:14:02] turn: 5.6s audio, split=14, rtf=0.0
+[motion-server 22:14:05] turn done: first_cmd 0.392 first_motion_cmd 0.6313833320018603 rtf 0.57 ticks 308
+[motion-server 22:14:05] turn: 5.1s audio, split=14, rtf=0.0
+[motion-server 22:14:08] turn done: first_cmd 0.398 first_motion_cmd 0.6798133970005438 rtf 0.53 ticks 281
+[motion-server 22:14:09] turn: 5.1s audio, split=14, rtf=0.0
+[motion-server 22:14:12] turn done: first_cmd 0.403 first_motion_cmd 0.6629406369975186 rtf 0.54 ticks 281
+Traceback (most recent call last):
+  File "/home/luis/GitHub/x2_ultra-reto2/src/x2_ultra/hri_runtime/motion_online/server_proc.py", line 81, in main
+    handle(conn, brain, a, smaps, vram_mb, trim)
+  File "/home/luis/GitHub/x2_ultra-reto2/src/x2_ultra/hri_runtime/motion_online/server_proc.py", line 97, in handle
+    for msg in P.recv_lines(buf, conn):
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luis/GitHub/x2_ultra-reto2/src/x2_ultra/hri_runtime/motion_online/protocol.py", line 66, in recv_lines
+    raise ConnectionError("el servidor cerró la conexión")
+ConnectionError: el servidor cerró la conexión
+[motion-server 22:14:12] client disconnected
+[motion-server 22:16:39] client connected
+[motion-server 22:16:39] turn: 6.6s audio, split=14, rtf=0.0
+[motion-server 22:16:43] turn done: first_cmd 0.414 first_motion_cmd 0.6542330430020229 rtf 0.52 ticks 358
+[motion-server 22:16:43] turn: 6.6s audio, split=14, rtf=0.0
+[motion-server 22:16:47] turn done: first_cmd 0.394 first_motion_cmd 0.6397893160028616 rtf 0.53 ticks 358
+[motion-server 22:16:47] turn: 5.6s audio, split=14, rtf=0.0
+[motion-server 22:16:51] turn done: first_cmd 0.404 first_motion_cmd 0.6545180350003648 rtf 0.62 ticks 308
+[motion-server 22:16:51] turn: 5.6s audio, split=14, rtf=0.0
+[motion-server 22:16:54] turn done: first_cmd 0.396 first_motion_cmd 0.6428843950016017 rtf 0.59 ticks 308
+[motion-server 22:16:54] turn: 5.1s audio, split=14, rtf=0.0
+[motion-server 22:16:58] turn done: first_cmd 0.397 first_motion_cmd 0.6789141330009443 rtf 0.55 ticks 281
+[motion-server 22:16:58] turn: 5.1s audio, split=14, rtf=0.0
+[motion-server 22:17:01] turn done: first_cmd 0.407 first_motion_cmd 0.6824144469974271 rtf 0.56 ticks 281
+[motion-server 22:17:01] turn: 6.6s audio, split=14, rtf=1.0
+[motion-server 22:17:09] turn done: first_cmd 2.392 first_motion_cmd 2.6285013550004805 rtf 1.13 ticks 358
+[motion-server 22:17:09] turn: 6.6s audio, split=14, rtf=0.0
+[motion-server 22:17:13] turn done: first_cmd 0.39 first_motion_cmd 0.6295280670019565 rtf 0.52 ticks 358
+Traceback (most recent call last):
+  File "/home/luis/GitHub/x2_ultra-reto2/src/x2_ultra/hri_runtime/motion_online/server_proc.py", line 81, in main
+    handle(conn, brain, a, smaps, vram_mb, trim)
+  File "/home/luis/GitHub/x2_ultra-reto2/src/x2_ultra/hri_runtime/motion_online/server_proc.py", line 97, in handle
+    for msg in P.recv_lines(buf, conn):
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luis/GitHub/x2_ultra-reto2/src/x2_ultra/hri_runtime/motion_online/protocol.py", line 66, in recv_lines
+    raise ConnectionError("el servidor cerró la conexión")
+ConnectionError: el servidor cerró la conexión
+[motion-server 22:17:13] client disconnected
+[motion-server 22:24:03] client connected
+[motion-server 22:24:03] turn: 6.6s audio, split=14, rtf=0.0
+[motion-server 22:24:06] turn done: first_cmd 0.42 first_motion_cmd 0.6584521100012353 rtf 0.52 ticks 358
+[motion-server 22:24:06] turn: 6.6s audio, split=14, rtf=0.0
+[motion-server 22:24:10] turn done: first_cmd 0.387 first_motion_cmd 0.6293301929981681 rtf 0.52 ticks 358
+[motion-server 22:24:10] turn: 5.6s audio, split=14, rtf=0.0
+[motion-server 22:24:14] turn done: first_cmd 0.403 first_motion_cmd 0.6466848609998124 rtf 0.57 ticks 308
+[motion-server 22:24:14] turn: 5.6s audio, split=14, rtf=0.0
+[motion-server 22:24:17] turn done: first_cmd 0.394 first_motion_cmd 0.6373841630011157 rtf 0.58 ticks 308
+[motion-server 22:24:18] turn: 5.1s audio, split=14, rtf=0.0
+[motion-server 22:24:21] turn done: first_cmd 0.383 first_motion_cmd 0.6385717060002207 rtf 0.55 ticks 281
+[motion-server 22:24:21] turn: 5.1s audio, split=14, rtf=0.0
+[motion-server 22:24:24] turn done: first_cmd 0.397 first_motion_cmd 0.6610632570009329 rtf 0.55 ticks 281
+[motion-server 22:24:24] turn: 6.6s audio, split=14, rtf=1.0
+[motion-server 22:24:32] turn done: first_cmd 2.408 first_motion_cmd 2.6518535160030297 rtf 1.12 ticks 358
+[motion-server 22:24:32] turn: 6.6s audio, split=14, rtf=0.0
+[motion-server 22:24:36] turn done: first_cmd 0.404 first_motion_cmd 0.6769654310010083 rtf 0.56 ticks 358
+Traceback (most recent call last):
+  File "/home/luis/GitHub/x2_ultra-reto2/src/x2_ultra/hri_runtime/motion_online/server_proc.py", line 81, in main
+    handle(conn, brain, a, smaps, vram_mb, trim)
+  File "/home/luis/GitHub/x2_ultra-reto2/src/x2_ultra/hri_runtime/motion_online/server_proc.py", line 97, in handle
+    for msg in P.recv_lines(buf, conn):
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luis/GitHub/x2_ultra-reto2/src/x2_ultra/hri_runtime/motion_online/protocol.py", line 66, in recv_lines
+    raise ConnectionError("el servidor cerró la conexión")
+ConnectionError: el servidor cerró la conexión
+[motion-server 22:24:36] client disconnected
+Loading weights:   0%|          | 0/488 [00:00<?, ?it/s]Loading weights: 100%|██████████| 488/488 [00:00<00:00, 71692.48it/s]
+[transformers] [1mWavLMModel LOAD REPORT[0m from: /home/luis/GitHub/Laplace/Gesture/third_party/StreamTalk/assets/wavlm-libri-clean-100h-large
+Key            | Status     |  | 
+---------------+------------+--+-
+lm_head.bias   | UNEXPECTED |  | 
+lm_head.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+xrobotoolkit_sdk not found, skip for now. If you do not use XRobotStreamer, it's
+fine.

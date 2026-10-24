@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Atención a su llegada.",
+  "char_start": 0,
+  "char_end": 22,
+  "occurrence": 1,
+  "start_s": 0.64,
+  "end_s": 1.6400000000000001,
+  "start_sample": 28224,
+  "end_sample": 72324,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "777707993aace0c5e2e1650d1d93b83fa19425e6ddcdcadbc730aafb6af5367c",
+  "sample_count": 98304,
+  "case_id": "visit_vip_1792649460",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

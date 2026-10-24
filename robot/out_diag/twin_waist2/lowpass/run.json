@@ -1,0 +1,606 @@
+{
+ "phases": [
+  [
+   "S2_sebastian_t02",
+   7468.333973654,
+   7474.304327185
+  ],
+  [
+   "S2_laura_t02",
+   7475.011344705,
+   7482.52187212
+  ],
+  [
+   "S2_josaed_t03",
+   7483.224320115,
+   7489.73474546
+  ],
+  [
+   "S3_point_RIGHT",
+   7491.436389116,
+   7496.099828014
+  ],
+  [
+   "S3_point_LEFT",
+   7496.60022887,
+   7501.263029796
+  ],
+  [
+   "S3_point_FRONT",
+   7501.763624301,
+   7506.424380615
+  ],
+  [
+   "S4_emote_3001_VIP_BOW",
+   7507.454575143,
+   7512.484212121
+  ],
+  [
+   "S4_sonic_after_3001",
+   7512.485510195,
+   7514.989582388
+  ],
+  [
+   "S4_emote_3004_SOCIAL_HEART",
+   7515.317693149,
+   7521.095352729
+  ],
+  [
+   "S4_sonic_after_3004",
+   7521.095411379,
+   7523.597943925
+  ],
+  [
+   "S4_emote_3017_APPLAUSE",
+   7523.927069455,
+   7530.916089904
+  ],
+  [
+   "S4_sonic_after_3017",
+   7530.916136051,
+   7533.41802247
+  ],
+  [
+   "S5_walk",
+   7533.718490072,
+   7535.736091567
+  ],
+  [
+   "S5_settle",
+   7535.736132974,
+   7537.115087393
+  ],
+  [
+   "S5_point_after_walk",
+   7537.115249006,
+   7541.574733696
+  ]
+ ],
+ "meta": {
+  "S3": {
+   "RIGHT": {
+    "t_stroke": 7492.436417028,
+    "hold_s": 1.5,
+    "targets": [
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     0.10753295391235382,
+     -1.334490068511852,
+     -0.10951971667348655,
+     -0.05000000000000028,
+     -0.06045884129385001,
+     -0.13409282267093658,
+     -0.5885312557220459
+    ]
+   },
+   "LEFT": {
+    "t_stroke": 7497.600275628,
+    "hold_s": 1.5,
+    "targets": [
+     0.10956155505141509,
+     1.3339499896681664,
+     0.07895396539998754,
+     -0.050000000000248394,
+     0.04265846307166695,
+     -0.13685955107212067,
+     0.6045217514038086,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN
+    ]
+   },
+   "FRONT": {
+    "t_stroke": 7502.764030803,
+    "hold_s": 1.5,
+    "targets": [
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     -1.4647042726752721,
+     0.011086999999999998,
+     0.799566968386603,
+     -0.30726613401915714,
+     0.4573111389299785,
+     0.11678928136825562,
+     -0.5075172185897827
+    ]
+   }
+  },
+  "S5": {
+   "walk_end": 7535.736089302,
+   "stable_after": 7536.100207458,
+   "settle_s": 0.3641181559996767
+  }
+ },
+ "armed": true,
+ "events": [
+  {
+   "event": "armed",
+   "t": 7468.321282765,
+   "mode": "UPPERBODY_REMOTE_SPLIT",
+   "priority": 65,
+   "dry_run": false
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7468.329632096,
+   "n": 1
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7487.069505631,
+   "n": 2
+  },
+  {
+   "event": "point_dispatch",
+   "t": 7491.436668079,
+   "direction": "RIGHT",
+   "t_stroke": 7492.436417028
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.44877675,
+   "n": 3
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.468924161,
+   "n": 4
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.488898127,
+   "n": 5
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.508936253,
+   "n": 6
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.528896283,
+   "n": 7
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.548763599,
+   "n": 8
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.568834457,
+   "n": 9
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.588869998,
+   "n": 10
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.608794441,
+   "n": 11
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7491.629115037,
+   "n": 12
+  },
+  {
+   "event": "point_dispatch",
+   "t": 7496.600609734,
+   "direction": "LEFT",
+   "t_stroke": 7497.600275628
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.609032766,
+   "n": 13
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.628813611,
+   "n": 14
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.6490824,
+   "n": 15
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.668955819,
+   "n": 16
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.688884952,
+   "n": 17
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.709048985,
+   "n": 18
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.729178925,
+   "n": 19
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.748818064,
+   "n": 20
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.768981556,
+   "n": 21
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.789410166,
+   "n": 22
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.808932656,
+   "n": 23
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.829526014,
+   "n": 24
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.849463894,
+   "n": 25
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.869040426,
+   "n": 26
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7496.889123778,
+   "n": 27
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.588831572,
+   "n": 28
+  },
+  {
+   "event": "point_dispatch",
+   "t": 7501.764273117,
+   "direction": "FRONT",
+   "t_stroke": 7502.764030803
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.768965715,
+   "n": 29
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.789302253,
+   "n": 30
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.80972902,
+   "n": 31
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.829007514,
+   "n": 32
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.849202216,
+   "n": 33
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.869069384,
+   "n": 34
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.888871009,
+   "n": 35
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.909147725,
+   "n": 36
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.928988553,
+   "n": 37
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.948765272,
+   "n": 38
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.969036948,
+   "n": 39
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7501.989063605,
+   "n": 40
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7502.008799667,
+   "n": 41
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7502.028990262,
+   "n": 42
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7502.048976683,
+   "n": 43
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7502.068845063,
+   "n": 44
+  },
+  {
+   "event": "emote_dispatch",
+   "t": 7507.454773014,
+   "motion_id": 3001,
+   "area": 11,
+   "t_dispatch": 7508.254585642,
+   "path": "kinematic_csv",
+   "layout": "mc_v1.0.0"
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7507.470363414,
+   "n": 45
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7513.88911792,
+   "n": 46
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7514.729149263,
+   "n": 47
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7514.748986797,
+   "n": 48
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7515.008984727,
+   "n": 49
+  },
+  {
+   "event": "emote_dispatch",
+   "t": 7515.317865582,
+   "motion_id": 3004,
+   "area": 11,
+   "t_dispatch": 7516.117702486,
+   "path": "kinematic_csv",
+   "layout": "mc_v1.0.0"
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7521.668844317,
+   "n": 50
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.3290058,
+   "n": 51
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.349035747,
+   "n": 52
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.369273934,
+   "n": 53
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.388858987,
+   "n": 54
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.408835314,
+   "n": 55
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.428800409,
+   "n": 56
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.448789219,
+   "n": 57
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.468866876,
+   "n": 58
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.489435843,
+   "n": 59
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.509131143,
+   "n": 60
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.528977366,
+   "n": 61
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.548873782,
+   "n": 62
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.569069831,
+   "n": 63
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.588862012,
+   "n": 64
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.608825795,
+   "n": 65
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.628996556,
+   "n": 66
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.648796863,
+   "n": 67
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7522.668761808,
+   "n": 68
+  },
+  {
+   "event": "emote_dispatch",
+   "t": 7523.929158983,
+   "motion_id": 3017,
+   "area": 11,
+   "t_dispatch": 7524.727219075,
+   "path": "kinematic_csv",
+   "layout": "mc_v1.0.0"
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7531.609106212,
+   "n": 69
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7532.448745903,
+   "n": 70
+  },
+  {
+   "event": "limiter_hit",
+   "t": 7532.78908637,
+   "n": 71
+  },
+  {
+   "event": "walk_start",
+   "t": 7533.718580572,
+   "area": "short_fwd",
+   "segments": 1
+  },
+  {
+   "event": "safety_gesture_suppressed",
+   "t": 7533.729322394
+  },
+  {
+   "event": "refused",
+   "t": 7533.818715109,
+   "what": "point",
+   "reason": "walking"
+  },
+  {
+   "event": "refused",
+   "t": 7533.818723244,
+   "what": "stream_upper_body",
+   "reason": "walking"
+  },
+  {
+   "event": "walk_done",
+   "t": 7535.728932422
+  },
+  {
+   "event": "point_dispatch",
+   "t": 7537.116405715,
+   "direction": "FRONT",
+   "t_stroke": 7538.115256109
+  },
+  {
+   "event": "stop",
+   "t": 7541.775359264
+  }
+ ],
+ "state_final": {
+  "t": "7544.01571501",
+  "pelvis_z": "0.6838562950589138",
+  "tilt_deg": "0.4237677677365053",
+  "mode": "STAND_DEFAULT",
+  "stable": "True",
+  "walking": "False",
+  "fall": "False"
+ },
+ "unsafe": false,
+ "estopped": false,
+ "limiter_nlim": 71
+}

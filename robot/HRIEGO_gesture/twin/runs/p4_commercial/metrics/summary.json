@@ -1,0 +1,406 @@
+{
+ "rep": "1",
+ "robots": {
+  "ultra": {
+   "completed": true,
+   "stable_after": true,
+   "mode_after": "UPPERBODY_REMOTE_SPLIT",
+   "presets": {
+    "ultra_001_3001": {
+     "robot": "ultra",
+     "id": "ultra_001_3001",
+     "line": 1,
+     "label": "BOW (VIP bow 3001/11)",
+     "motion": 3001,
+     "area": 11,
+     "policy": "stroke",
+     "anchor_clock_s": 3.7,
+     "dispatch_plan_s": 1.9800086039969758,
+     "dispatch_exec_s": 1.9812603505506559,
+     "dispatch_err_ms": 1.2517465536800998,
+     "set_code": 0,
+     "mc_motion_seen": "3001",
+     "idle_clock_s": 6.461022365550889,
+     "executed_eq_plan": true,
+     "onset_clock_s": 3.16102,
+     "stroke_clock_s": 3.70102,
+     "stroke_minus_anchor_ms": 1.020000000000021,
+     "onset_minus_anchor_ms": -538.98,
+     "fadeout_max_speed": 1.8755314006844506,
+     "fadeout_max_cmd_jerk": 117.91677389728915,
+     "sd_snap_max_speed": 0.3873525760197977,
+     "fadein_max_speed": 2.4200809149831426,
+     "fadein_max_cmd_jerk": 2723.8645114405626,
+     "delete_to_set_ms": 60.14113299897872,
+     "idle_to_urs_ms": 80.22336700014421,
+     "idle_to_add_ms": 90.77974200044991,
+     "fadein_start_dev_from_D": 0.0359624965067995
+    },
+    "ultra_005_3004": {
+     "robot": "ultra",
+     "id": "ultra_005_3004",
+     "line": 5,
+     "label": "HEART (3004/11)",
+     "motion": 3004,
+     "area": 11,
+     "policy": "stroke",
+     "anchor_clock_s": 39.314125,
+     "dispatch_plan_s": 37.23411420699916,
+     "dispatch_exec_s": 37.24117599655074,
+     "dispatch_err_ms": 7.0617895515781015,
+     "set_code": 0,
+     "mc_motion_seen": "3004",
+     "idle_clock_s": 42.461022753550424,
+     "executed_eq_plan": true,
+     "onset_clock_s": 38.50102,
+     "stroke_clock_s": 39.32102,
+     "stroke_minus_anchor_ms": 6.8950000000000955,
+     "onset_minus_anchor_ms": -813.1050000000002,
+     "fadeout_max_speed": 1.8892623924565153,
+     "fadeout_max_cmd_jerk": 109.22055025783249,
+     "sd_snap_max_speed": 0.404467839969442,
+     "fadein_max_speed": 2.0121326567413274,
+     "fadein_max_cmd_jerk": 1623.9151997837762,
+     "delete_to_set_ms": 60.04119899989746,
+     "idle_to_urs_ms": 80.1032520012086,
+     "idle_to_add_ms": 90.56172100099502,
+     "fadein_start_dev_from_D": 0.026027559592662675
+    },
+    "ultra_019_3031": {
+     "robot": "ultra",
+     "id": "ultra_019_3031",
+     "line": 19,
+     "label": "FAREWELL (3031/11)",
+     "motion": 3031,
+     "area": 11,
+     "policy": "stroke",
+     "anchor_clock_s": 142.8975625,
+     "dispatch_plan_s": 141.0376385739998,
+     "dispatch_exec_s": 141.04116041055022,
+     "dispatch_err_ms": 3.521836550419266,
+     "set_code": 0,
+     "mc_motion_seen": "3031",
+     "idle_clock_s": 146.0610228445512,
+     "executed_eq_plan": true,
+     "onset_clock_s": 142.24102,
+     "stroke_clock_s": 142.90102,
+     "stroke_minus_anchor_ms": 3.4574999999961165,
+     "onset_minus_anchor_ms": -656.5425000000005,
+     "fadeout_max_speed": 4.6424075521291535,
+     "fadeout_max_cmd_jerk": 1121.3343159953008,
+     "sd_snap_max_speed": 4.6424075521291535,
+     "fadein_max_speed": 1.579130753271029,
+     "fadein_max_cmd_jerk": 68.52366247359075,
+     "delete_to_set_ms": 59.94310699861671,
+     "idle_to_urs_ms": 80.1948899988929,
+     "idle_to_add_ms": 90.77695899941318,
+     "fadein_start_dev_from_D": 0.03362154620060309
+    }
+   },
+   "pelvis_z_min": 0.6926407024455449,
+   "tilt_max_deg": 6.030365925448017,
+   "falls": 0,
+   "sonic_tracking_lag4": {
+    "per_line": [
+     {
+      "line": 1,
+      "n": 298,
+      "lag4_mean": 0.00987206860328359,
+      "lag4_max": 0.29209504676484555,
+      "lag4_p95": 0.02256370620805561
+     },
+     {
+      "line": 3,
+      "n": 337,
+      "lag4_mean": 0.007880584789575202,
+      "lag4_max": 0.054321688383544765,
+      "lag4_p95": 0.021332851864063918
+     },
+     {
+      "line": 5,
+      "n": 208,
+      "lag4_mean": 0.01034238034141214,
+      "lag4_max": 0.09636036042117582,
+      "lag4_p95": 0.030765726967372915
+     },
+     {
+      "line": 7,
+      "n": 359,
+      "lag4_mean": 0.008021917875341535,
+      "lag4_max": 0.0586842868875445,
+      "lag4_p95": 0.021818513404832922
+     },
+     {
+      "line": 9,
+      "n": 372,
+      "lag4_mean": 0.009508692940274071,
+      "lag4_max": 0.08655649184819654,
+      "lag4_p95": 0.02799204217179371
+     },
+     {
+      "line": 11,
+      "n": 293,
+      "lag4_mean": 0.00822332287855154,
+      "lag4_max": 0.08091076588745505,
+      "lag4_p95": 0.022757081058196703
+     },
+     {
+      "line": 13,
+      "n": 405,
+      "lag4_mean": 0.008783862719724578,
+      "lag4_max": 0.12015847159417348,
+      "lag4_p95": 0.024680800407343266
+     },
+     {
+      "line": 15,
+      "n": 377,
+      "lag4_mean": 0.010408248600236038,
+      "lag4_max": 0.2902344406709831,
+      "lag4_p95": 0.026458248722870052
+     },
+     {
+      "line": 16,
+      "n": 305,
+      "lag4_mean": 0.01325346557052848,
+      "lag4_max": 0.3460718230798676,
+      "lag4_p95": 0.040155391343051405
+     },
+     {
+      "line": 18,
+      "n": 139,
+      "lag4_mean": 0.008200666663009512,
+      "lag4_max": 0.05971301061212633,
+      "lag4_p95": 0.02637365900950573
+     }
+    ],
+    "mean_of_line_means": 0.009449521098193669,
+    "gate": 0.015,
+    "pass_all": true
+   },
+   "still_arms_s_in_speaking_lines": 2.1805700000004435,
+   "still_body_s_in_speaking_lines": 0.0,
+   "speaking_s": 75.8366875,
+   "still_arms_frac": 0.02875349744146517,
+   "still_body_frac": 0.0,
+   "head_yaw_meas_min_max_rad": [
+    -0.42669192409164414,
+    0.38413182994438627
+   ],
+   "head_tracking": {
+    "mean_abs_err_rad": 0.03537756939962533,
+    "max_abs_err_rad": 0.15436797487105383,
+    "best_lag_ticks": 8,
+    "note": "measured vs reference shifted by the best lag, outside preset windows (head is frozen by the MC during presets)"
+   },
+   "head_at_preset_start_rad": {
+    "ultra_001_3001": -0.019580696270502945,
+    "ultra_005_3004": 0.07682894097619426,
+    "ultra_019_3031": -0.3357246578814863
+   },
+   "waist_yaw_range_rad": [
+    -0.14799855714196533,
+    0.2383578245833239
+   ]
+  },
+  "original": {
+   "completed": true,
+   "stable_after": true,
+   "mode_after": "UPPERBODY_REMOTE_SPLIT",
+   "presets": {
+    "original_001_3001": {
+     "robot": "original",
+     "id": "original_001_3001",
+     "line": 1,
+     "label": "BOW (VIP bow 3001/11)",
+     "motion": 3001,
+     "area": 11,
+     "policy": "stroke",
+     "anchor_clock_s": 3.7,
+     "dispatch_plan_s": 1.9800086039969758,
+     "dispatch_exec_s": 1.9955050407806993,
+     "dispatch_err_ms": 15.496436783723588,
+     "set_code": 0,
+     "mc_motion_seen": "3001",
+     "idle_clock_s": 6.515160951779762,
+     "executed_eq_plan": true,
+     "onset_clock_s": 3.17516,
+     "stroke_clock_s": 3.71516,
+     "stroke_minus_anchor_ms": 15.15999999999984,
+     "onset_minus_anchor_ms": -524.8400000000001,
+     "fadeout_max_speed": 1.8665811818777263,
+     "fadeout_max_cmd_jerk": 112.21586768803137,
+     "sd_snap_max_speed": 0.4261259463835064,
+     "fadein_max_speed": 1.7644085751019456,
+     "fadein_max_cmd_jerk": 68.36715584498941,
+     "delete_to_set_ms": 60.224171000299975,
+     "idle_to_urs_ms": 80.16849500017997,
+     "idle_to_add_ms": 90.62462600013532,
+     "fadein_start_dev_from_D": 0.03346848422779769
+    },
+    "original_005_3017": {
+     "robot": "original",
+     "id": "original_005_3017",
+     "line": 5,
+     "label": "APPLAUSE (3017/11)",
+     "motion": 3017,
+     "area": 11,
+     "policy": "stroke",
+     "anchor_clock_s": 39.314125,
+     "dispatch_plan_s": 37.43412460899993,
+     "dispatch_exec_s": 37.43539207678077,
+     "dispatch_err_ms": 1.2674677808419688,
+     "set_code": 0,
+     "mc_motion_seen": "3017",
+     "idle_clock_s": 43.91516100378067,
+     "executed_eq_plan": true,
+     "onset_clock_s": 37.43516,
+     "stroke_clock_s": 39.31516,
+     "stroke_minus_anchor_ms": 1.0350000000016735,
+     "onset_minus_anchor_ms": -1878.9649999999938,
+     "fadeout_max_speed": 3.603666874015089,
+     "fadeout_max_cmd_jerk": 938.0640549834783,
+     "sd_snap_max_speed": 3.603666874015089,
+     "fadein_max_speed": 1.5758361276247832,
+     "fadein_max_cmd_jerk": 68.75694455038548,
+     "delete_to_set_ms": 60.06591799996386,
+     "idle_to_urs_ms": 80.10879500034207,
+     "idle_to_add_ms": 90.48473499933607,
+     "fadein_start_dev_from_D": 0.02874360013896382
+    },
+    "original_019_3031": {
+     "robot": "original",
+     "id": "original_019_3031",
+     "line": 19,
+     "label": "FAREWELL (3031/11)",
+     "motion": 3031,
+     "area": 11,
+     "policy": "stroke",
+     "anchor_clock_s": 142.8975625,
+     "dispatch_plan_s": 141.0376385739998,
+     "dispatch_exec_s": 141.05619813878002,
+     "dispatch_err_ms": 18.559564780218807,
+     "set_code": 0,
+     "mc_motion_seen": "3031",
+     "idle_clock_s": 146.1151609667795,
+     "executed_eq_plan": true,
+     "onset_clock_s": 142.29516,
+     "stroke_clock_s": 142.91516,
+     "stroke_minus_anchor_ms": 17.597499999993715,
+     "onset_minus_anchor_ms": -602.4024999999824,
+     "fadeout_max_speed": 1.8960603731418062,
+     "fadeout_max_cmd_jerk": 114.53077099965456,
+     "sd_snap_max_speed": 0.41952281369234345,
+     "fadein_max_speed": 1.6854011315484663,
+     "fadein_max_cmd_jerk": 70.72824399076416,
+     "delete_to_set_ms": 60.873983000419685,
+     "idle_to_urs_ms": 80.1564680004958,
+     "idle_to_add_ms": 90.54504000050656,
+     "fadein_start_dev_from_D": 0.02724279231311244
+    }
+   },
+   "pelvis_z_min": 0.6906310953627138,
+   "tilt_max_deg": 6.039232788302582,
+   "falls": 0,
+   "sonic_tracking_lag4": {
+    "per_line": [
+     {
+      "line": 2,
+      "n": 376,
+      "lag4_mean": 0.00811405819955992,
+      "lag4_max": 0.1371597176437217,
+      "lag4_p95": 0.021760908292020348
+     },
+     {
+      "line": 4,
+      "n": 318,
+      "lag4_mean": 0.008660348904220265,
+      "lag4_max": 0.08711339437441423,
+      "lag4_p95": 0.023483594048330586
+     },
+     {
+      "line": 6,
+      "n": 232,
+      "lag4_mean": 0.008050543177488764,
+      "lag4_max": 0.045002278027090836,
+      "lag4_p95": 0.02063626451223588
+     },
+     {
+      "line": 8,
+      "n": 366,
+      "lag4_mean": 0.010508985115281765,
+      "lag4_max": 0.3370814220603533,
+      "lag4_p95": 0.02649096007311968
+     },
+     {
+      "line": 10,
+      "n": 245,
+      "lag4_mean": 0.008785184486431332,
+      "lag4_max": 0.07525169045000035,
+      "lag4_p95": 0.024233240484596335
+     },
+     {
+      "line": 12,
+      "n": 341,
+      "lag4_mean": 0.007881661204275834,
+      "lag4_max": 0.10970981603567276,
+      "lag4_p95": 0.02054508426572797
+     },
+     {
+      "line": 14,
+      "n": 399,
+      "lag4_mean": 0.007818456397532076,
+      "lag4_max": 0.06425638341479331,
+      "lag4_p95": 0.021086436665370745
+     },
+     {
+      "line": 17,
+      "n": 221,
+      "lag4_mean": 0.011529776659737595,
+      "lag4_max": 0.18520320767340834,
+      "lag4_p95": 0.04299911068066119
+     },
+     {
+      "line": 19,
+      "n": 0,
+      "lag4_mean": null,
+      "note": "line mostly covered by preset window"
+     }
+    ],
+    "mean_of_line_means": 0.008918626768065943,
+    "gate": 0.015,
+    "pass_all": true
+   },
+   "still_arms_s_in_speaking_lines": 0.5783099999989645,
+   "still_body_s_in_speaking_lines": 0.0,
+   "speaking_s": 60.883062499999994,
+   "still_arms_frac": 0.009498700890727442,
+   "still_body_frac": 0.0,
+   "head_yaw_meas_min_max_rad": [
+    -0.0033395765898469863,
+    -0.0032478855388414097
+   ],
+   "head_abs_max_rad_original(no neck, must be 0)": 0.0033395765898469863,
+   "waist_yaw_range_rad": [
+    -0.05689954507040943,
+    0.16296634978408786
+   ]
+  }
+ },
+ "inter_robot_sync": {
+  "bow": {
+   "stroke_ultra": 3.70102,
+   "stroke_original": 3.71516,
+   "sync_error_ms": -14.13999999999982
+  },
+  "farewell": {
+   "stroke_ultra": 142.90102,
+   "stroke_original": 142.91516,
+   "sync_error_ms": -14.139999999997599
+  },
+  "heart_vs_applause": {
+   "stroke_ultra": 39.32102,
+   "stroke_original": 39.31516,
+   "sync_error_ms": 5.859999999998422
+  }
+ }
+}

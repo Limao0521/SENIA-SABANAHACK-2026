@@ -1,0 +1,83 @@
+# =============================================================================
+# compose.hri_club_actuado.yml — runner conversacional EN VIVO y CON ACTUACIÓN
+# (Club N) a bordo del X2 Ultra (PC2). Lo usa deploy/hri_club_con_actuacion.sh.
+#
+#   micrófono → VAD → ASR (x2-asr) → FSM + x2-llm → Supertonic → altavoces
+#   + EMOTE/POINT en el robot (AimdkBackend: URS 50 Hz, emotes CSV cinemáticos,
+#     cintura bloqueada, sin marcha, sin SONIC).
+#
+# La etapa la fija el script (HRI_ETAPA=seco|lenta|completa). Para armar hacen falta a la
+# vez: X2_REAL=robot, HRI_ACTUATION=1 y --arm (el script solo los pone tras confirmación).
+# Requiere x2-hri:latest (ROS 2 Humble + aimdk_msgs), x2-llm y x2-asr.
+# =============================================================================
+services:
+  hri_club_actuado:
+    image: x2-hri:latest
+    container_name: x2-hri-actuado
+    network_mode: host          # DDS del robot + llama-server en 127.0.0.1:8080
+    ipc: host                   # transporte SHM de FastDDS con los procesos del robot
+    restart: "no"               # nunca re-armar solo tras un fallo
+    init: true                  # SIGTERM llega a python → stop(): vel 0, DELETE fuente, STAND
+    stop_signal: SIGTERM
+    stop_grace_period: 20s
+    working_dir: /workspace/x2_ultra
+    environment:
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+      FASTRTPS_DEFAULT_PROFILES_FILE: /agibot/software/entry/cfg/ros_dds_configuration.xml
+      ROS_LOCALHOST_ONLY: "0"
+      ROS_DOMAIN_ID: ${ROS_DOMAIN_ID:-0}
+      ROS_LOG_DIR: /tmp/ros_logs
+      # third_party/pylibs_aarch64: zxing-cpp (QR robusto) descomprimido de third_party/wheels por el script
+      PYTHONPATH: /workspace/x2_ultra/src:/workspace/x2_ultra:/workspace/x2_ultra/third_party/pylibs_aarch64
+      PYTHONUNBUFFERED: "1"
+      # --- actuación (las fija hri_club_con_actuacion.sh; vacías ⇒ el runner no arma) ---
+      X2_REAL: ${X2_REAL:-}
+      HRI_ACTUATION: ${HRI_ACTUATION:-0}
+      HRI_ETAPA: ${HRI_ETAPA:-seco}
+      HRI_ARM_FLAG: ${HRI_ARM_FLAG:-}
+      HRIEGO_NO_ACTUATION: "1"                     # nodos hriego_* (audio): solo audio
+      HRI_WAIST_MODE: ${HRI_WAIST_MODE:-off}       # lenta/seco: off forzado en el runner
+      HRI_HEAD_CHANNEL: ${HRI_HEAD_CHANNEL:-body_pose}
+      HRI_IGNORE_BATTERY: "0"
+      HRI_READY_TEST_S: ${HRI_READY_TEST_S:-5}
+      HRI_PAUSAR_ASISTENTE: ${HRI_PAUSAR_ASISTENTE:-1}         # asistente de voz de fábrica en only_voice durante la sesión
+      HRI_EXPRESIONES: ${HRI_EXPRESIONES:-1}                   # cara (emoji AimDK PlayEmoji); 0 = apagada
+      HRI_EXPRESIONES_EN_SECO: ${HRI_EXPRESIONES_EN_SECO:-0}   # 1 = en seco también la pantalla (no es actuación)
+      HRI_EXPRESIONES_PRIORIDAD: ${HRI_EXPRESIONES_PRIORIDAD:-60}  # la cara del X2 ya va a 60: 11 se rechaza
+      X2_MC_CLASSIC: /mc_classic                   # CSV de emotes de AgiBot (montado abajo)
+      # --- servicios ---
+      HRI_LLM_URL: http://127.0.0.1:8080
+      HRI_NO_NSENTER: "1"
+      HRI_ASR_SOCK: /tmp/x2_hri_sock/hri_asr.sock
+      SUPERTONIC_MODEL_DIR: /workspace/x2_ultra/experiments/hriego_v2_tts_eval_20261021/model
+      SUPERTONIC_STEPS: ${SUPERTONIC_STEPS:-4}       # Orin: 8 pasos RTF 1,3-2,2; 4 pasos RTF 0,74
+      SUPERTONIC_THREADS: ${SUPERTONIC_THREADS:-4}
+      HRI_TTS_PRIMERA_CLAUSULA: "1"                # primer audio antes: 1ª cláusula aparte
+      # --- latencia (opt-in; vacío/0 = comportamiento de siempre). docs/reto-2/INFERENCIA_NUBE.md
+      HRI_ACUSE: ${HRI_ACUSE:-1}                             # «Permítame un momento.» mientras el LLM piensa
+      HRI_FOCO_POR_TURNO: ${HRI_FOCO_POR_TURNO:-1}           # foco de audio una vez por turno
+      HRI_TTS_PREFETCH: ${HRI_TTS_PREFETCH:-1}               # pre-síntesis de la 1ª cláusula (0 = apagada)
+      HRI_PROMPT_PREFIJO_ESTATICO: ${HRI_PROMPT_PREFIJO_ESTATICO:-0}
+      HRI_NUBE_URL: ${HRI_NUBE_URL:-}                        # p. ej. http://10.0.1.50:8443
+      HRI_NUBE_TOKEN: ${HRI_NUBE_TOKEN:-}                    # solo por entorno, nunca en el repo
+      HRI_NUBE_ETAPAS: ${HRI_NUBE_ETAPAS:-llm,asr,tts}
+      # --- sesión ---
+      HRI_IDENTITY_REAL: ${HRI_IDENTITY_REAL:-0}   # 1 = cara (UniFace) + QR por visita (--identidad)
+      HRI_CAMARA_FLAG: ${HRI_CAMARA_FLAG:-}        # "--camara" con identidad real
+      X2_FACE_PYTHON: /usr/bin/python3             # la sonda de cara corre con el Python de la imagen
+      HRI_CLUB_VISIT: ${HRI_CLUB_VISIT:-REGULAR}
+      HRI_CLUB_AUDIO: ${HRI_CLUB_AUDIO:-aimdk}
+      HRI_CLUB_REPETIR: ${HRI_CLUB_REPETIR:-0}
+      HRI_PLAYBACK_SR: ${HRI_PLAYBACK_SR:-16000}
+      HRI_MIC_CANAL: ${HRI_MIC_CANAL:-0}
+      HRI_MIC_QOS: ${HRI_MIC_QOS:-best_effort}
+      HRI_VAD_MARGIN_DB: ${HRI_VAD_MARGIN_DB:-12}
+      HRI_VAD_MIN_DBFS: ${HRI_VAD_MIN_DBFS:--45}
+      HRI_VAD_SILENCIO_MS: ${HRI_VAD_SILENCIO_MS:-700}
+      HRI_CLUB_LOG_DIR: /workspace/x2_ultra/out_reto2/live
+    volumes:
+      - ..:/workspace/x2_ultra
+      - /tmp/x2_hri_sock:/tmp/x2_hri_sock
+      - ${MC_CLASSIC_DIR:-../assets/hri/mc_classic}:/mc_classic:ro
+      - /agibot/software/entry/cfg/ros_dds_configuration.xml:/agibot/software/entry/cfg/ros_dds_configuration.xml:ro
+    command: ["sh", "-c", "exec python3 -u -m x2_ultra.hri_runtime.live_robot_actuado --etapa \"$$HRI_ETAPA\" $$HRI_ARM_FLAG $$HRI_CAMARA_FLAG"]

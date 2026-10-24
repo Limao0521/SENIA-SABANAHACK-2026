@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "me encanta",
+  "char_start": 16,
+  "char_end": 26,
+  "occurrence": 1,
+  "start_s": 1.6400000000000001,
+  "end_s": 2.02,
+  "start_sample": 72324,
+  "end_sample": 89082,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "e2b670216a37bc225b389f091001a986c7d473307606a577413f8075e1d81d7e",
+  "sample_count": 141312,
+  "case_id": "T07",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

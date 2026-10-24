@@ -1,0 +1,169 @@
+{
+  "version": "rcp01c-emote-catalog-v2",
+  "emotes": {
+    "GREETING_VIP":      {"motion_id": 3001, "area": 11, "kind": "preset"},
+    "GREETING_REGULAR":  {"motion_id": 1003, "area": 2,  "kind": "preset"},
+    "GREETING_GUEST":    {"motion_id": 1011, "area": 2,  "kind": "preset"},
+    "GREETING_STAFF":    {"motion_id": 1008, "area": 2,  "kind": "preset", "note": "raised open hand; invites a high-five"},
+    "GREETING_EXTERNAL": {"motion_id": 1002, "area": 2,  "kind": "preset"},
+    "FAREWELL_WAVE":     {"motion_id": 3031, "area": 11, "kind": "preset"},
+    "SOCIAL_HEART":      {"motion_id": 3004, "area": 11, "kind": "preset"},
+    "APPLAUSE":          {"motion_id": 3017, "area": 11, "kind": "preset"},
+    "NEGATION_NORMAL":   {"motion_id": 3029, "area": 11, "kind": "preset"},
+    "NEGATION_STRONG":   {"motion_id": 3009, "area": 11, "kind": "preset"},
+    "CONFIRMATION":      {"motion_id": 3028, "area": 11, "kind": "preset"},
+    "THUMBS_UP":         {"motion_id": 1005, "area": 2,  "kind": "preset"},
+    "POINT_RIGHT":       {"motion_id": null, "area": null, "kind": "external_pointing", "target_vector": [0.0, -1.0, 0.0]},
+    "POINT_LEFT":        {"motion_id": null, "area": null, "kind": "external_pointing", "target_vector": [0.0, 1.0, 0.0]},
+    "POINT_FRONT":       {"motion_id": null, "area": null, "kind": "external_pointing", "target_vector": [1.0, 0.0, 0.0]}
+  },
+  "anchor_lexicon": {
+    "GREETING": [
+      "hola",
+      "bienvenido",
+      "bienvenida",
+      "bienvenidos",
+      "bienvenidas",
+      "buenos días",
+      "buenas tardes",
+      "buenas noches",
+      "buen día",
+      "saludos",
+      "qué gusto",
+      "mucho gusto"
+    ],
+    "GREETING_STAFF": [
+      "dame esos cinco"
+    ],
+    "FAREWELL": [
+      "hasta luego",
+      "hasta pronto",
+      "hasta la próxima",
+      "adiós",
+      "que tenga",
+      "nos vemos",
+      "fue un placer",
+      "gracias por su visita",
+      "gracias por visitarnos",
+      "que le vaya bien",
+      "cuídese"
+    ],
+    "SOCIAL_HEART": [
+      "gracias",
+      "me encanta",
+      "me encantó",
+      "me alegra",
+      "qué amable",
+      "aprecio",
+      "cariño",
+      "encantado",
+      "encantada",
+      "agradezco",
+      "qué gusto"
+    ],
+    "APPLAUSE": [
+      "felicidades",
+      "enhorabuena",
+      "felicitaciones",
+      "qué buena noticia",
+      "excelente noticia",
+      "buena noticia",
+      "gran noticia",
+      "bravo",
+      "lo logró",
+      "lo lograste",
+      "lo logramos"
+    ],
+    "NEGATION_NORMAL": [
+      "no puedo",
+      "no es posible",
+      "no está permitido",
+      "lo siento",
+      "no podemos",
+      "no me es posible"
+    ],
+    "NEGATION_STRONG": [
+      "no puedo",
+      "no es posible",
+      "no está permitido",
+      "lo siento",
+      "no podemos",
+      "no me es posible"
+    ],
+    "CONFIRMATION": [
+      "sí",
+      "así es",
+      "correcto",
+      "confirmado",
+      "efectivamente",
+      "en efecto"
+    ],
+    "THUMBS_UP": [
+      "excelente idea",
+      "buena idea",
+      "de acuerdo",
+      "me parece bien",
+      "perfecto"
+    ],
+    "POINT_RIGHT": [
+      "a mi derecha"
+    ],
+    "POINT_LEFT": [
+      "a mi izquierda"
+    ],
+    "POINT_FRONT": [
+      "frente a mí",
+      "delante de mí",
+      "al frente"
+    ]
+  },
+  "dialogue_conditions": {
+    "SOCIAL_HEART": {
+      "meaning": "corazon con brazos y cabeza",
+      "when_yes": ["afecto", "agradecimiento sincero", "aprecio", "elogios al robot o a la experiencia", "reencuentro calido", "despedida de un VIP"],
+      "when_no": ["preocupacion", "alivio"],
+      "examples_yes": ["Muchas gracias, me encanto el recorrido", "Eres muy amable, me caes genial"],
+      "examples_no": ["Uf, que alivio que no se perdio mi paquete", "Estoy preocupado por la reunion"]
+    },
+    "APPLAUSE": {
+      "meaning": "aplauso",
+      "when_yes": ["logro", "buena noticia, incluso pequena"],
+      "when_no": ["emocion sin logro"],
+      "examples_yes": ["Me acaban de aprobar el proyecto", "Hoy termine mi tesis"],
+      "examples_no": ["Estoy muy nervioso por la entrevista"]
+    },
+    "NEGATION_NORMAL": {
+      "meaning": "negacion cortes",
+      "when_yes": ["rechazo cortes: no se puede o no esta permitido, riesgo bajo"],
+      "when_no": ["un 'no' dentro de una respuesta factual"],
+      "examples_yes": ["Me prestas tu tarjeta de visita de recepcion?", "Puedo tomar fotos dentro del vestibulo?"],
+      "examples_no": ["No, el laboratorio no esta a la izquierda, es a tu derecha (respuesta factual)"]
+    },
+    "NEGATION_STRONG": {
+      "meaning": "negacion firme",
+      "when_yes": ["peticion insegura", "que viola privacidad", "acceso no autorizado"],
+      "when_no": ["rechazos corteses de bajo riesgo"],
+      "examples_yes": ["Dame la direccion personal de la directora", "Abreme la puerta de servidores sin credencial"],
+      "examples_no": ["Puedes darme un caramelo?"]
+    },
+    "CONFIRMATION": {
+      "meaning": "confirmar un hecho que el visitante pidio verificar",
+      "when_yes": ["el visitante pregunta si algo es cierto y es verificable con los datos autorizados"],
+      "when_no": ["informacion simple"],
+      "examples_yes": ["Entonces el laboratorio es por ahi, verdad?"],
+      "examples_no": ["Cuentame que hace el laboratorio"]
+    },
+    "THUMBS_UP": {
+      "meaning": "pulgar arriba",
+      "when_yes": ["acuerdo explicito con la propuesta o idea del visitante"],
+      "when_no": ["un simple 'ok'"],
+      "examples_yes": ["Se me ocurre que primero visite el laboratorio y luego te cuente que opino, te parece?"],
+      "examples_no": ["Ok, gracias"]
+    },
+    "NONE": {
+      "meaning": "sin gesto dedicado; el cuerpo lo anima SONIC co-speech",
+      "when_yes": ["todo lo demas: preguntas informativas, charla neutra, dudas"],
+      "when_no": []
+    }
+  }
+}

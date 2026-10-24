@@ -1,0 +1,718 @@
+{
+ "baseline_v4": {
+  "phases": {
+   "S2_sebastian_t02": {
+    "ticks": 299,
+    "fall_ticks": 0,
+    "tilt_max": 1.74,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 10,
+    "clipped_pct": 3.34,
+    "pct_err_gt_012": 4.01
+   },
+   "S2_laura_t02": {
+    "ticks": 375,
+    "fall_ticks": 0,
+    "tilt_max": 1.57,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.0
+   },
+   "S2_josaed_t03": {
+    "ticks": 325,
+    "fall_ticks": 0,
+    "tilt_max": 1.78,
+    "pelvis_min": 0.6836,
+    "clipped_ticks": 1,
+    "clipped_pct": 0.31,
+    "pct_err_gt_012": 4.92
+   },
+   "S3_point_RIGHT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 1.79,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 9,
+    "clipped_pct": 3.88,
+    "pct_err_gt_012": 18.97
+   },
+   "S3_point_LEFT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 1.66,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 14,
+    "clipped_pct": 6.03,
+    "pct_err_gt_012": 28.45
+   },
+   "S3_point_FRONT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 1.58,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 15,
+    "clipped_pct": 6.47,
+    "pct_err_gt_012": 43.1
+   },
+   "S4_emote_3001_VIP_BOW": {
+    "ticks": 251,
+    "fall_ticks": 0,
+    "tilt_max": 1.66,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 1,
+    "clipped_pct": 0.4,
+    "pct_err_gt_012": 21.51
+   },
+   "S4_sonic_after_3001": {
+    "ticks": 126,
+    "fall_ticks": 0,
+    "tilt_max": 1.63,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 2,
+    "clipped_pct": 1.59,
+    "pct_err_gt_012": 4.76
+   },
+   "S4_emote_3004_SOCIAL_HEART": {
+    "ticks": 289,
+    "fall_ticks": 0,
+    "tilt_max": 1.84,
+    "pelvis_min": 0.6833,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 37.37
+   },
+   "S4_sonic_after_3004": {
+    "ticks": 125,
+    "fall_ticks": 0,
+    "tilt_max": 1.7,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 20,
+    "clipped_pct": 16.0,
+    "pct_err_gt_012": 11.2
+   },
+   "S4_emote_3017_APPLAUSE": {
+    "ticks": 350,
+    "fall_ticks": 0,
+    "tilt_max": 1.59,
+    "pelvis_min": 0.6839,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.0
+   },
+   "S4_sonic_after_3017": {
+    "ticks": 126,
+    "fall_ticks": 0,
+    "tilt_max": 1.56,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 2,
+    "clipped_pct": 1.59,
+    "pct_err_gt_012": 0.0
+   },
+   "S5_walk": {
+    "ticks": 1,
+    "fall_ticks": 0,
+    "tilt_max": 1.07,
+    "pelvis_min": 0.6842,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.0
+   },
+   "S5_settle": {
+    "ticks": 51,
+    "fall_ticks": 0,
+    "tilt_max": 1.45,
+    "pelvis_min": 0.684,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 7.84
+   },
+   "S5_point_after_walk": {
+    "ticks": 222,
+    "fall_ticks": 0,
+    "tilt_max": 1.61,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 26.58
+   }
+  },
+  "falls": 0,
+  "unsafe": false,
+  "cmd_rms_jerk": [
+   355.2100073138756,
+   485.61867069430605,
+   390.8315374060103,
+   197.77258322590515
+  ],
+  "cmd_vel_max": [
+   15.001331367736409,
+   15.001331367736409,
+   15.001331367736409,
+   15.001331367736409
+  ],
+  "cmd_range": [
+   0.6,
+   0.6,
+   0.6,
+   0.6
+  ],
+  "tilt_max": 1.8446948971743211,
+  "pelvis_min": 0.6832760325966007,
+  "tilt_rms": 1.0929494726527178,
+  "clip_pct": {
+   "S2_sebastian_t02": 3.34,
+   "S2_laura_t02": 0.0,
+   "S2_josaed_t03": 0.31,
+   "S3_point_RIGHT": 3.88,
+   "S3_point_LEFT": 6.03,
+   "S3_point_FRONT": 6.47,
+   "S4_emote_3001_VIP_BOW": 0.4,
+   "S4_sonic_after_3001": 1.59,
+   "S4_emote_3004_SOCIAL_HEART": 0.0,
+   "S4_sonic_after_3004": 16.0,
+   "S4_emote_3017_APPLAUSE": 0.0,
+   "S4_sonic_after_3017": 1.59,
+   "S5_walk": 0.0,
+   "S5_settle": 0.0,
+   "S5_point_after_walk": 0.0
+  }
+ },
+ "slew": {
+  "phases": {
+   "S2_sebastian_t02": {
+    "ticks": 299,
+    "fall_ticks": 0,
+    "tilt_max": 1.81,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 14,
+    "clipped_pct": 4.68,
+    "pct_err_gt_012": 6.35
+   },
+   "S2_laura_t02": {
+    "ticks": 375,
+    "fall_ticks": 0,
+    "tilt_max": 1.63,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.8
+   },
+   "S2_josaed_t03": {
+    "ticks": 325,
+    "fall_ticks": 0,
+    "tilt_max": 1.77,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 1,
+    "clipped_pct": 0.31,
+    "pct_err_gt_012": 4.92
+   },
+   "S3_point_RIGHT": {
+    "ticks": 233,
+    "fall_ticks": 0,
+    "tilt_max": 1.77,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 9,
+    "clipped_pct": 3.86,
+    "pct_err_gt_012": 18.03
+   },
+   "S3_point_LEFT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 1.68,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 15,
+    "clipped_pct": 6.47,
+    "pct_err_gt_012": 29.74
+   },
+   "S3_point_FRONT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 1.55,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 16,
+    "clipped_pct": 6.9,
+    "pct_err_gt_012": 40.09
+   },
+   "S4_emote_3001_VIP_BOW": {
+    "ticks": 251,
+    "fall_ticks": 0,
+    "tilt_max": 1.66,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 1,
+    "clipped_pct": 0.4,
+    "pct_err_gt_012": 19.52
+   },
+   "S4_sonic_after_3001": {
+    "ticks": 125,
+    "fall_ticks": 0,
+    "tilt_max": 1.61,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 1,
+    "clipped_pct": 0.8,
+    "pct_err_gt_012": 4.8
+   },
+   "S4_emote_3004_SOCIAL_HEART": {
+    "ticks": 289,
+    "fall_ticks": 0,
+    "tilt_max": 1.88,
+    "pelvis_min": 0.6832,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 36.33
+   },
+   "S4_sonic_after_3004": {
+    "ticks": 125,
+    "fall_ticks": 0,
+    "tilt_max": 1.77,
+    "pelvis_min": 0.6836,
+    "clipped_ticks": 19,
+    "clipped_pct": 15.2,
+    "pct_err_gt_012": 9.6
+   },
+   "S4_emote_3017_APPLAUSE": {
+    "ticks": 350,
+    "fall_ticks": 0,
+    "tilt_max": 1.49,
+    "pelvis_min": 0.6839,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 1.14
+   },
+   "S4_sonic_after_3017": {
+    "ticks": 125,
+    "fall_ticks": 0,
+    "tilt_max": 1.55,
+    "pelvis_min": 0.6839,
+    "clipped_ticks": 2,
+    "clipped_pct": 1.6,
+    "pct_err_gt_012": 0.0
+   },
+   "S5_walk": {
+    "ticks": 1,
+    "fall_ticks": 0,
+    "tilt_max": 5.97,
+    "pelvis_min": 0.6759,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.0
+   },
+   "S5_settle": {
+    "ticks": 66,
+    "fall_ticks": 0,
+    "tilt_max": 4.97,
+    "pelvis_min": 0.6831,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.0
+   },
+   "S5_point_after_walk": {
+    "ticks": 222,
+    "fall_ticks": 0,
+    "tilt_max": 1.08,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 30.63
+   }
+  },
+  "falls": 0,
+  "unsafe": false,
+  "cmd_rms_jerk": [
+   344.3177296740352,
+   429.5589973981813,
+   328.5494564959018,
+   195.1720673313129
+  ],
+  "cmd_vel_max": [
+   15.00269373384047,
+   30.00538746768094,
+   30.00538746768094,
+   15.00269373384047
+  ],
+  "cmd_range": [
+   0.6,
+   0.6,
+   0.6,
+   0.6
+  ],
+  "tilt_max": 5.973989799805246,
+  "pelvis_min": 0.6758553484292481,
+  "tilt_rms": 1.2071648141172524,
+  "clip_pct": {
+   "S2_sebastian_t02": 4.68,
+   "S2_laura_t02": 0.0,
+   "S2_josaed_t03": 0.31,
+   "S3_point_RIGHT": 3.86,
+   "S3_point_LEFT": 6.47,
+   "S3_point_FRONT": 6.9,
+   "S4_emote_3001_VIP_BOW": 0.4,
+   "S4_sonic_after_3001": 0.8,
+   "S4_emote_3004_SOCIAL_HEART": 0.0,
+   "S4_sonic_after_3004": 15.2,
+   "S4_emote_3017_APPLAUSE": 0.0,
+   "S4_sonic_after_3017": 1.6,
+   "S5_walk": 0.0,
+   "S5_settle": 0.0,
+   "S5_point_after_walk": 0.0
+  }
+ },
+ "lowpass": {
+  "phases": {
+   "S2_sebastian_t02": {
+    "ticks": 299,
+    "fall_ticks": 0,
+    "tilt_max": 0.8,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 12,
+    "clipped_pct": 4.01,
+    "pct_err_gt_012": 6.69
+   },
+   "S2_laura_t02": {
+    "ticks": 376,
+    "fall_ticks": 0,
+    "tilt_max": 0.84,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 2.13
+   },
+   "S2_josaed_t03": {
+    "ticks": 325,
+    "fall_ticks": 0,
+    "tilt_max": 0.95,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 1,
+    "clipped_pct": 0.31,
+    "pct_err_gt_012": 4.62
+   },
+   "S3_point_RIGHT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 0.94,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 9,
+    "clipped_pct": 3.88,
+    "pct_err_gt_012": 12.5
+   },
+   "S3_point_LEFT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 0.85,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 14,
+    "clipped_pct": 6.03,
+    "pct_err_gt_012": 18.97
+   },
+   "S3_point_FRONT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 0.99,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 15,
+    "clipped_pct": 6.47,
+    "pct_err_gt_012": 41.81
+   },
+   "S4_emote_3001_VIP_BOW": {
+    "ticks": 251,
+    "fall_ticks": 0,
+    "tilt_max": 0.76,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 1,
+    "clipped_pct": 0.4,
+    "pct_err_gt_012": 19.12
+   },
+   "S4_sonic_after_3001": {
+    "ticks": 125,
+    "fall_ticks": 0,
+    "tilt_max": 0.56,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 1,
+    "clipped_pct": 0.8,
+    "pct_err_gt_012": 5.6
+   },
+   "S4_emote_3004_SOCIAL_HEART": {
+    "ticks": 289,
+    "fall_ticks": 0,
+    "tilt_max": 0.96,
+    "pelvis_min": 0.6833,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 34.26
+   },
+   "S4_sonic_after_3004": {
+    "ticks": 125,
+    "fall_ticks": 0,
+    "tilt_max": 0.95,
+    "pelvis_min": 0.6836,
+    "clipped_ticks": 20,
+    "clipped_pct": 16.0,
+    "pct_err_gt_012": 10.4
+   },
+   "S4_emote_3017_APPLAUSE": {
+    "ticks": 350,
+    "fall_ticks": 0,
+    "tilt_max": 0.71,
+    "pelvis_min": 0.6839,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.0
+   },
+   "S4_sonic_after_3017": {
+    "ticks": 126,
+    "fall_ticks": 0,
+    "tilt_max": 0.55,
+    "pelvis_min": 0.684,
+    "clipped_ticks": 4,
+    "clipped_pct": 3.17,
+    "pct_err_gt_012": 0.0
+   },
+   "S5_walk": {
+    "ticks": 1,
+    "fall_ticks": 0,
+    "tilt_max": 0.44,
+    "pelvis_min": 0.6841,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.0
+   },
+   "S5_settle": {
+    "ticks": 51,
+    "fall_ticks": 0,
+    "tilt_max": 0.6,
+    "pelvis_min": 0.6839,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 11.76
+   },
+   "S5_point_after_walk": {
+    "ticks": 222,
+    "fall_ticks": 0,
+    "tilt_max": 0.8,
+    "pelvis_min": 0.6839,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 31.53
+   }
+  },
+  "falls": 0,
+  "unsafe": false,
+  "cmd_rms_jerk": [
+   321.95214232623925,
+   467.96419065680857,
+   159.53231041924082,
+   188.61632650943235
+  ],
+  "cmd_vel_max": [
+   15.001257855143857,
+   15.001257855143857,
+   15.001257855143857,
+   15.001257855143857
+  ],
+  "cmd_range": [
+   0.6,
+   0.6,
+   0.6,
+   0.6
+  ],
+  "tilt_max": 0.9940364516894602,
+  "pelvis_min": 0.6833046027918557,
+  "tilt_rms": 0.47042855868263794,
+  "clip_pct": {
+   "S2_sebastian_t02": 4.01,
+   "S2_laura_t02": 0.0,
+   "S2_josaed_t03": 0.31,
+   "S3_point_RIGHT": 3.88,
+   "S3_point_LEFT": 6.03,
+   "S3_point_FRONT": 6.47,
+   "S4_emote_3001_VIP_BOW": 0.4,
+   "S4_sonic_after_3001": 0.8,
+   "S4_emote_3004_SOCIAL_HEART": 0.0,
+   "S4_sonic_after_3004": 16.0,
+   "S4_emote_3017_APPLAUSE": 0.0,
+   "S4_sonic_after_3017": 3.17,
+   "S5_walk": 0.0,
+   "S5_settle": 0.0,
+   "S5_point_after_walk": 0.0
+  }
+ },
+ "off": {
+  "phases": {
+   "S2_sebastian_t02": {
+    "ticks": 298,
+    "fall_ticks": 0,
+    "tilt_max": 0.84,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.67
+   },
+   "S2_laura_t02": {
+    "ticks": 375,
+    "fall_ticks": 0,
+    "tilt_max": 0.82,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 1.87
+   },
+   "S2_josaed_t03": {
+    "ticks": 326,
+    "fall_ticks": 0,
+    "tilt_max": 0.84,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 1,
+    "clipped_pct": 0.31,
+    "pct_err_gt_012": 4.29
+   },
+   "S3_point_RIGHT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 0.92,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 9,
+    "clipped_pct": 3.88,
+    "pct_err_gt_012": 12.07
+   },
+   "S3_point_LEFT": {
+    "ticks": 232,
+    "fall_ticks": 0,
+    "tilt_max": 0.88,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 15,
+    "clipped_pct": 6.47,
+    "pct_err_gt_012": 20.69
+   },
+   "S3_point_FRONT": {
+    "ticks": 233,
+    "fall_ticks": 0,
+    "tilt_max": 1.05,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 15,
+    "clipped_pct": 6.44,
+    "pct_err_gt_012": 39.91
+   },
+   "S4_emote_3001_VIP_BOW": {
+    "ticks": 251,
+    "fall_ticks": 0,
+    "tilt_max": 0.76,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 19.12
+   },
+   "S4_sonic_after_3001": {
+    "ticks": 125,
+    "fall_ticks": 0,
+    "tilt_max": 0.77,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 2,
+    "clipped_pct": 1.6,
+    "pct_err_gt_012": 3.2
+   },
+   "S4_emote_3004_SOCIAL_HEART": {
+    "ticks": 289,
+    "fall_ticks": 0,
+    "tilt_max": 0.9,
+    "pelvis_min": 0.6833,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 33.22
+   },
+   "S4_sonic_after_3004": {
+    "ticks": 125,
+    "fall_ticks": 0,
+    "tilt_max": 0.89,
+    "pelvis_min": 0.6837,
+    "clipped_ticks": 21,
+    "clipped_pct": 16.8,
+    "pct_err_gt_012": 10.4
+   },
+   "S4_emote_3017_APPLAUSE": {
+    "ticks": 350,
+    "fall_ticks": 0,
+    "tilt_max": 0.75,
+    "pelvis_min": 0.6838,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.0
+   },
+   "S4_sonic_after_3017": {
+    "ticks": 125,
+    "fall_ticks": 0,
+    "tilt_max": 0.52,
+    "pelvis_min": 0.684,
+    "clipped_ticks": 8,
+    "clipped_pct": 6.4,
+    "pct_err_gt_012": 0.0
+   },
+   "S5_walk": {
+    "ticks": 1,
+    "fall_ticks": 0,
+    "tilt_max": 3.04,
+    "pelvis_min": 0.6832,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 0.0
+   },
+   "S5_settle": {
+    "ticks": 70,
+    "fall_ticks": 0,
+    "tilt_max": 6.14,
+    "pelvis_min": 0.6768,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 12.86
+   },
+   "S5_point_after_walk": {
+    "ticks": 222,
+    "fall_ticks": 0,
+    "tilt_max": 2.9,
+    "pelvis_min": 0.6827,
+    "clipped_ticks": 0,
+    "clipped_pct": 0.0,
+    "pct_err_gt_012": 27.48
+   }
+  },
+  "falls": 0,
+  "unsafe": false,
+  "cmd_rms_jerk": [
+   171.78296648823107,
+   455.0019749510371,
+   151.83612562021204,
+   199.928665913213
+  ],
+  "cmd_vel_max": [
+   15.003224192567744,
+   30.00644838513549,
+   15.003224192567744,
+   15.003224192567744
+  ],
+  "cmd_range": [
+   0.6,
+   0.6,
+   0.6,
+   0.6
+  ],
+  "tilt_max": 6.137850512591792,
+  "pelvis_min": 0.6767856005293333,
+  "tilt_rms": 0.8255251986915157,
+  "clip_pct": {
+   "S2_sebastian_t02": 0.0,
+   "S2_laura_t02": 0.0,
+   "S2_josaed_t03": 0.31,
+   "S3_point_RIGHT": 3.88,
+   "S3_point_LEFT": 6.47,
+   "S3_point_FRONT": 6.44,
+   "S4_emote_3001_VIP_BOW": 0.0,
+   "S4_sonic_after_3001": 1.6,
+   "S4_emote_3004_SOCIAL_HEART": 0.0,
+   "S4_sonic_after_3004": 16.8,
+   "S4_emote_3017_APPLAUSE": 0.0,
+   "S4_sonic_after_3017": 6.4,
+   "S5_walk": 0.0,
+   "S5_settle": 0.0,
+   "S5_point_after_walk": 0.0
+  }
+ }
+}

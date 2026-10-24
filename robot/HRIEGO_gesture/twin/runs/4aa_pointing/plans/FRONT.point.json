@@ -1,0 +1,12 @@
+{
+ "schema": "x2_point_4aa.v1",
+ "direction": "FRONT",
+ "case_id": "P_FRONT",
+ "sample_rate_hz": 44100,
+ "anchor_text": "frente",
+ "anchor_start_sample": 70560,
+ "anchor_end_sample": 81144,
+ "sample_count": 116736,
+ "wav_sha256": "6cd4426a2638826ef36f30521c2469bd213afd105598c3984b1e8eca96d05b65",
+ "align": "onset (CTC start of the word)"
+}

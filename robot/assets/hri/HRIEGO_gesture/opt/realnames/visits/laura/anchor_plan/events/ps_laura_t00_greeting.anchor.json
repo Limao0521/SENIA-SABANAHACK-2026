@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Buenas tardes",
+  "char_start": 0,
+  "char_end": 13,
+  "occurrence": 1,
+  "start_s": 0.66,
+  "end_s": 1.3800000000000001,
+  "start_sample": 29106,
+  "end_sample": 60858,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "252d021c7d5fc961ae0ca4d7b51423dea648fee3e95946d5e9e2c00916766133",
+  "sample_count": 325632,
+  "case_id": "ps_laura_t00_greeting",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

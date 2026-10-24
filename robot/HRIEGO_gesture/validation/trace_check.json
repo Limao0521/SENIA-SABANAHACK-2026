@@ -1,0 +1,284 @@
+{
+ "checks": {
+  "raw_is_final_attempt": {
+   "ok": 30,
+   "total": 30
+  },
+  "raw_json_parses": {
+   "ok": 30,
+   "total": 30
+  },
+  "normalize(raw)==stored_parsed": {
+   "ok": 30,
+   "total": 30
+  },
+  "validator_replay_no_errors": {
+   "ok": 30,
+   "total": 30
+  },
+  "decision_replay.requested": {
+   "ok": 30,
+   "total": 30
+  },
+  "decision_replay.effective": {
+   "ok": 30,
+   "total": 30
+  },
+  "decision_replay.suppressed": {
+   "ok": 30,
+   "total": 30
+  },
+  "decision_replay.trigger_text": {
+   "ok": 30,
+   "total": 30
+  },
+  "decision_replay.trigger_char_start": {
+   "ok": 30,
+   "total": 30
+  },
+  "decision_replay.trigger_char_end": {
+   "ok": 30,
+   "total": 30
+  },
+  "effective_in_allowed_enum": {
+   "ok": 30,
+   "total": 30
+  },
+  "greeting_is_rank_emote": {
+   "ok": 5,
+   "total": 5
+  },
+  "manifest_row_exists": {
+   "ok": 30,
+   "total": 30
+  },
+  "manifest.emote==effective": {
+   "ok": 30,
+   "total": 30
+  },
+  "manifest.motion_area==catalog": {
+   "ok": 30,
+   "total": 30
+  },
+  "manifest.speech==parsed.speech": {
+   "ok": 30,
+   "total": 30
+  },
+  "manifest.trigger==speech[span]": {
+   "ok": 25,
+   "total": 25
+  },
+  "trigger_on_word_boundaries": {
+   "ok": 25,
+   "total": 25
+  },
+  "wav_file_exists": {
+   "ok": 30,
+   "total": 30
+  },
+  "wav_sha256 manifest==disk": {
+   "ok": 30,
+   "total": 30
+  },
+  "wav_sha256 visit_log.tts==manifest": {
+   "ok": 30,
+   "total": 30
+  },
+  "wav_sample_rate==manifest": {
+   "ok": 30,
+   "total": 30
+  },
+  "wav_file_duration within 0.1 s of manifest.duration_s (informational metadata)": {
+   "ok": 30,
+   "total": 30
+  },
+  "anchor.status aligned": {
+   "ok": 25,
+   "total": 25
+  },
+  "anchor.text/span==trigger": {
+   "ok": 25,
+   "total": 25
+  },
+  "anchor.sha==wav sha": {
+   "ok": 25,
+   "total": 25
+  },
+  "anchor.samples==wav": {
+   "ok": 25,
+   "total": 25
+  },
+  "anchor start<end<=duration": {
+   "ok": 25,
+   "total": 25
+  },
+  "anchor.start_sample==round(start_s*fs)": {
+   "ok": 25,
+   "total": 25
+  },
+  "summary.csv/json anchor==anchor.json": {
+   "ok": 25,
+   "total": 25
+  },
+  "visit_log.plan.start/end==anchor.json": {
+   "ok": 25,
+   "total": 25
+  },
+  "plan.status pending & reason ok": {
+   "ok": 20,
+   "total": 20
+  },
+  "plan.audio.sha==wav sha": {
+   "ok": 20,
+   "total": 20
+  },
+  "plan.binding==manifest motion/area": {
+   "ok": 20,
+   "total": 20
+  },
+  "plan.latency_sha==c08 table": {
+   "ok": 20,
+   "total": 20
+  },
+  "plan.dispatch==anchor_start - c08 onset lead": {
+   "ok": 20,
+   "total": 20
+  },
+  "plan.start_delay==max(0,-dispatch)": {
+   "ok": 20,
+   "total": 20
+  },
+  "plan.start_delay<=1.5s cap": {
+   "ok": 20,
+   "total": 20
+  },
+  "plan.unmodified_audio": {
+   "ok": 20,
+   "total": 20
+  },
+  "trace csv exists": {
+   "ok": 60,
+   "total": 60
+  },
+  "turns.csv completed/contract_ok": {
+   "ok": 60,
+   "total": 60
+  },
+  "PRESET exec: wav sha in trace==manifest": {
+   "ok": 40,
+   "total": 40
+  },
+  "PRESET exec: motion/area dispatched==manifest": {
+   "ok": 40,
+   "total": 40
+  },
+  "PRESET exec: binding_key==plan": {
+   "ok": 40,
+   "total": 40
+  },
+  "PRESET exec: start_delay/dispatch_sample==plan": {
+   "ok": 40,
+   "total": 40
+  },
+  "PRESET exec: plan_status pending & dispatched & completed": {
+   "ok": 40,
+   "total": 40
+  },
+  "PRESET exec: MC motion seen == manifest motion": {
+   "ok": 40,
+   "total": 40
+  },
+  "PRESET exec: STAND_DEFAULT/fsm4 throughout, playing state reached": {
+   "ok": 40,
+   "total": 40
+  },
+  "PRESET exec: returned STAND_DEFAULT stable": {
+   "ok": 40,
+   "total": 40
+  },
+  "PRESET exec: dispatch jitter <=5 ms": {
+   "ok": 40,
+   "total": 40
+  },
+  "point_matches_scenario": {
+   "ok": 5,
+   "total": 5
+  },
+  "POINT: status anchor_only_no_preset, no plan file": {
+   "ok": 5,
+   "total": 5
+  },
+  "POINT exec: direction==effective": {
+   "ok": 10,
+   "total": 10
+  },
+  "POINT exec: anchor_start==CTC anchor": {
+   "ok": 10,
+   "total": 10
+  },
+  "POINT exec: base==turn SONIC npz": {
+   "ok": 10,
+   "total": 10
+  },
+  "POINT exec: FK err to commanded dir (mean hold <=15 deg, source measured joints)": {
+   "ok": 10,
+   "total": 10
+  },
+  "POINT exec: streamed (no MC preset columns), mode URS": {
+   "ok": 10,
+   "total": 10
+  },
+  "POINT exec: URS mode all ticks": {
+   "ok": 10,
+   "total": 10
+  },
+  "NONE_has_no_trigger": {
+   "ok": 5,
+   "total": 5
+  },
+  "NONE: summary status none_sonic": {
+   "ok": 5,
+   "total": 5
+  },
+  "NONE: no anchor/event/plan files (zero dispatch)": {
+   "ok": 5,
+   "total": 5
+  },
+  "NONE exec: SONIC streamed (kind NONE, no preset JSON)": {
+   "ok": 10,
+   "total": 10
+  },
+  "NONE exec: streamed (no MC preset columns), mode URS": {
+   "ok": 10,
+   "total": 10
+  },
+  "NONE exec: arms npz base exists": {
+   "ok": 10,
+   "total": 10
+  },
+  "NONE exec: arm tracking err <=0.015 rad": {
+   "ok": 10,
+   "total": 10
+  },
+  "NONE exec: no fall (pelvis>=0.5)": {
+   "ok": 10,
+   "total": 10
+  },
+  "farewell_is_mandated_emote": {
+   "ok": 5,
+   "total": 5
+  }
+ },
+ "n_checks": 1635,
+ "n_ok": 1635,
+ "n_mismatches": 0,
+ "mismatches": [],
+ "executed_turn_rows": 60,
+ "manifest_duration_vs_file_s": {
+  "n": 30,
+  "min": 0.003173469387755201,
+  "max": 0.059212925170068154,
+  "mean": 0.03608984126984137,
+  "n_exact_6e-4": 0
+ }
+}

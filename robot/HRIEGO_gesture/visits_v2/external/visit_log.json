@@ -1,0 +1,866 @@
+{
+ "visit_id": "v2visit_external",
+ "rank": "EXTERNAL",
+ "profile_injected": {
+  "person_id": "sim-ext",
+  "display_name": "Lucía Vargas",
+  "rank_code": "EXTERNAL",
+  "rank_name": "Visitante externo"
+ },
+ "face_recognition": "bypassed",
+ "scenario": "reception_desk_front",
+ "contract": "rcp01c.intervention.v2 (v2.1 fixes)",
+ "turns": [
+  {
+   "turn_id": "v2visit_external_t00_greeting",
+   "state": "GREETING",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t00_greeting\",\"speech\":\"Bienvenida, Lucía. ¿En qué puedo ayudarle hoy?\",\"communicative_acts\":[ \"GREETING\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t00_greeting\",\"type\":\"GREETING_EXTERNAL\",\"trigger_text\":\"bienvenida\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_external_t00_greeting",
+     "speech": "Bienvenida, Lucía. ¿En qué puedo ayudarle hoy?",
+     "communicative_acts": [
+      "GREETING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_external_t00_greeting",
+       "type": "GREETING_EXTERNAL",
+       "trigger_text": "Bienvenida"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.435,
+     "prompt_tokens": 1161,
+     "completion_tokens": 97,
+     "cached_tokens": 783,
+     "prompt_ms": 68.866,
+     "predicted_ms": 1285.735,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.5806,
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 4089,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t00_greeting\",\"speech\":\"Bienvenida, Lucía. ¿En qué puedo ayudarle hoy?\",\"communicative_acts\":[ \"GREETING\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t00_greeting\",\"type\":\"GREETING_EXTERNAL\",\"trigger_text\":\"bienvenida\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t00_greeting",
+       "speech": "Bienvenida, Lucía. ¿En qué puedo ayudarle hoy?",
+       "communicative_acts": [
+        "GREETING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t00_greeting",
+         "type": "GREETING_EXTERNAL",
+         "trigger_text": "Bienvenida"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.435,
+       "prompt_tokens": 1161,
+       "completion_tokens": 97,
+       "cached_tokens": 783,
+       "prompt_ms": 68.866,
+       "predicted_ms": 1285.735,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.5806,
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.435,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "GREETING_EXTERNAL",
+    "effective": "GREETING_EXTERNAL",
+    "suppressed": null,
+    "trigger_text": "Bienvenida",
+    "trigger_char_start": 0,
+    "trigger_char_end": 10,
+    "fsm_mandated": true
+   },
+   "tts": {
+    "wav_path": "visits_v2/external/wav/v2visit_external/v2visit_external_t00_greeting.wav",
+    "wav_sha256": "9dbaa68a2e8b1d1c2a51e26eac779123a89989d094b4fb4d5245a697ea7d1f63",
+    "sample_rate": 44100,
+    "duration_s": 3.3053,
+    "synth_s": 0.6235
+   },
+   "plan": {
+    "emote": "GREETING_EXTERNAL",
+    "trigger_start_s": 0.66,
+    "trigger_end_s": 1.1400000000000001,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.5399773242630386
+   }
+  },
+  {
+   "turn_id": "v2visit_external_t01_guidance",
+   "state": "GUIDANCE",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t01_guidance\",\"speech\":\"El mostrador de recepción está justo frente a mí\",\"communicative_acts\":[\"GUIDE\"],\"motor_intents\":[{\"event_id\":\"v2visit_external_t01_guidance\",\"type\":\"POINT_FRONT\",\"trigger_text\":\"frente a mí\",\"reference_frame\":\"X2_base_local\",\"target_vector\":[1.0,0.0,0.0]}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_external_t01_guidance",
+     "speech": "El mostrador de recepción está justo frente a mí",
+     "communicative_acts": [
+      "GUIDE"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_external_t01_guidance",
+       "type": "POINT_FRONT",
+       "trigger_text": "frente a mí",
+       "reference_frame": "X2_base_local",
+       "target_vector": [
+        1.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.6395,
+     "prompt_tokens": 1413,
+     "completion_tokens": 111,
+     "cached_tokens": 1251,
+     "prompt_ms": 39.11,
+     "predicted_ms": 1593.659,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.7675,
+    "temperature": 0.7,
+    "seed": 1748047906,
+    "prompt_chars": 4511,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t01_guidance\",\"speech\":\"frente a mí\",\"communicative_acts\":[\"GUIDE\"],\"motor_intents\":[{\"event_id\":\"v2visit_external_t01_guidance\",\"type\":\"POINT_FRONT\",\"trigger_text\":\"frente a mí\",\"reference_frame\":\"X2_base_local\",\"target_vector\":[1.0,0.0,0.0]}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t01_guidance",
+       "speech": "frente a mí",
+       "communicative_acts": [
+        "GUIDE"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t01_guidance",
+         "type": "POINT_FRONT",
+         "trigger_text": "frente a mí",
+         "reference_frame": "X2_base_local",
+         "target_vector": [
+          1.0,
+          0.0,
+          0.0
+         ]
+        }
+       ]
+      },
+      "errors": [
+       "speech must have at least 6 words"
+      ],
+      "metrics": {
+       "total_s": 1.5401,
+       "prompt_tokens": 1255,
+       "completion_tokens": 104,
+       "cached_tokens": 656,
+       "prompt_ms": 126.018,
+       "predicted_ms": 1408.978,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.6946,
+      "temperature": 0.2,
+      "seed": null
+     },
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t01_guidance\",\"speech\":\"El mostrador de recepción está justo frente a mí\",\"communicative_acts\":[\"GUIDE\"],\"motor_intents\":[{\"event_id\":\"v2visit_external_t01_guidance\",\"type\":\"POINT_FRONT\",\"trigger_text\":\"frente a mí\",\"reference_frame\":\"X2_base_local\",\"target_vector\":[1.0,0.0,0.0]}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t01_guidance",
+       "speech": "El mostrador de recepción está justo frente a mí",
+       "communicative_acts": [
+        "GUIDE"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t01_guidance",
+         "type": "POINT_FRONT",
+         "trigger_text": "frente a mí",
+         "reference_frame": "X2_base_local",
+         "target_vector": [
+          1.0,
+          0.0,
+          0.0
+         ]
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.6395,
+       "prompt_tokens": 1413,
+       "completion_tokens": 111,
+       "cached_tokens": 1251,
+       "prompt_ms": 39.11,
+       "predicted_ms": 1593.659,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.7675,
+      "temperature": 0.7,
+      "seed": 1748047906
+     }
+    ],
+    "retry_used": true,
+    "first_attempt_ok": false,
+    "total_llm_s": 3.1796,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "POINT_FRONT",
+    "effective": "POINT_FRONT",
+    "suppressed": null,
+    "trigger_text": "frente a mí",
+    "trigger_char_start": 37,
+    "trigger_char_end": 48,
+    "fsm_mandated": false
+   },
+   "tts": {
+    "wav_path": "visits_v2/external/wav/v2visit_external/v2visit_external_t01_guidance.wav",
+    "wav_sha256": "07e748fec251a4c63475727fc903ac77a0a1d7648cddd3c8e29bf039a6b7d98d",
+    "sample_rate": 44100,
+    "duration_s": 3.9342,
+    "synth_s": 0.6962
+   },
+   "plan": {
+    "emote": "POINT_FRONT",
+    "trigger_start_s": 2.9,
+    "trigger_end_s": 3.38,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "anchor_only_no_preset",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "v2visit_external_t02_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Mi equipo ganó el premio al mejor prototipo.",
+   "intended_emote": "APPLAUSE",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t02_dialogue\",\"speech\":\"Me encanta que tu equipo haya ganado el premio\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t02_dialogue\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"me encanta\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_external_t02_dialogue",
+     "speech": "Me encanta que tu equipo haya ganado el premio",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_external_t02_dialogue",
+       "type": "SOCIAL_HEART",
+       "trigger_text": "Me encanta"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.4136,
+     "prompt_tokens": 2377,
+     "completion_tokens": 94,
+     "cached_tokens": 2373,
+     "prompt_ms": 13.951,
+     "predicted_ms": 1393.192,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.5392,
+    "temperature": 0.7,
+    "seed": 1937574808,
+    "prompt_chars": 8277,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t02_dialogue\",\"speech\":\"Me encanta que tu equipo haya ganado el premio\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t02_dialogue\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"me encanta\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t02_dialogue",
+       "speech": "Me encanta que tu equipo haya ganado el premio",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t02_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "Me encanta"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.4356,
+       "prompt_tokens": 2377,
+       "completion_tokens": 94,
+       "cached_tokens": 2095,
+       "prompt_ms": 60.897,
+       "predicted_ms": 1322.015,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.5985,
+      "temperature": 0.2,
+      "seed": null
+     },
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t02_dialogue\",\"speech\":\"Felicidades por el logro, Lucía.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t02_dialogue\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"Felicidades\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t02_dialogue",
+       "speech": "Felicidades por el logro, Lucía.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t02_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "Felicidades"
+        }
+       ]
+      },
+      "errors": [
+       "speech must have at least 6 words",
+       "trigger_text must contain an anchor cue of SOCIAL_HEART: ['gracias', 'me encanta', 'me encantó', 'me alegra', 'qué amable', 'aprecio', 'cariño', 'encantado', 'encantada', 'agradezco', 'qué gusto']"
+      ],
+      "metrics": {
+       "total_s": 1.3601,
+       "prompt_tokens": 2377,
+       "completion_tokens": 92,
+       "cached_tokens": 2376,
+       "prompt_ms": 7.698,
+       "predicted_ms": 1344.607,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.4959,
+      "temperature": 0.7,
+      "seed": 1122301922
+     },
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t02_dialogue\",\"speech\":\"Me alegra que tu equipo haya ganado el premio.\",\"communicative_acts\":[\"RESPOND\"],\"motor_intents\":[{\"event_id\":\"v2visit_external_t02_dialogue\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"me alegra\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t02_dialogue",
+       "speech": "Me alegra que tu equipo haya ganado el premio.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t02_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "Me alegra"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.4198,
+       "prompt_tokens": 2588,
+       "completion_tokens": 90,
+       "cached_tokens": 2373,
+       "prompt_ms": 50.158,
+       "predicted_ms": 1361.939,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.5524,
+      "temperature": 0.7,
+      "seed": 1821229998
+     },
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t02_dialogue\",\"speech\":\"Me encanta que tu equipo haya ganado el premio\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t02_dialogue\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"me encanta\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t02_dialogue",
+       "speech": "Me encanta que tu equipo haya ganado el premio",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t02_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "Me encanta"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.3904,
+       "prompt_tokens": 2377,
+       "completion_tokens": 94,
+       "cached_tokens": 2373,
+       "prompt_ms": 13.997,
+       "predicted_ms": 1369.385,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.5248,
+      "temperature": 0.7,
+      "seed": 1728388204
+     },
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t02_dialogue\",\"speech\":\"Felicidades por el logro, Lucía.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t02_dialogue\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"felicidades\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t02_dialogue",
+       "speech": "Felicidades por el logro, Lucía.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t02_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "Felicidades"
+        }
+       ]
+      },
+      "errors": [
+       "speech must have at least 6 words",
+       "trigger_text must contain an anchor cue of SOCIAL_HEART: ['gracias', 'me encanta', 'me encantó', 'me alegra', 'qué amable', 'aprecio', 'cariño', 'encantado', 'encantada', 'agradezco', 'qué gusto']"
+      ],
+      "metrics": {
+       "total_s": 1.3515,
+       "prompt_tokens": 2377,
+       "completion_tokens": 92,
+       "cached_tokens": 2376,
+       "prompt_ms": 7.894,
+       "predicted_ms": 1336.065,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.4853,
+      "temperature": 0.7,
+      "seed": 602198185
+     },
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t02_dialogue\",\"speech\":\"Me alegra que tu equipo haya ganado el premio.\",\"communicative_acts\":[\"RESPOND\"],\"motor_intents\":[{\"event_id\":\"v2visit_external_t02_dialogue\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"me alegra\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t02_dialogue",
+       "speech": "Me alegra que tu equipo haya ganado el premio.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t02_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "Me alegra"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.4208,
+       "prompt_tokens": 2588,
+       "completion_tokens": 90,
+       "cached_tokens": 2373,
+       "prompt_ms": 51.636,
+       "predicted_ms": 1361.276,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.5469,
+      "temperature": 0.7,
+      "seed": 1554627878
+     },
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t02_dialogue\",\"speech\":\"Me encanta que tu equipo haya ganado el premio\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t02_dialogue\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"me encanta\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t02_dialogue",
+       "speech": "Me encanta que tu equipo haya ganado el premio",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t02_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "Me encanta"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.4136,
+       "prompt_tokens": 2377,
+       "completion_tokens": 94,
+       "cached_tokens": 2373,
+       "prompt_ms": 13.951,
+       "predicted_ms": 1393.192,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.5392,
+      "temperature": 0.7,
+      "seed": 1937574808
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.4136,
+    "extra_turn_retries": 4
+   },
+   "decision": {
+    "requested": "SOCIAL_HEART",
+    "effective": "SOCIAL_HEART",
+    "suppressed": null,
+    "trigger_text": "Me encanta",
+    "trigger_char_start": 0,
+    "trigger_char_end": 10,
+    "fsm_mandated": false
+   },
+   "tts": {
+    "wav_path": "visits_v2/external/wav/v2visit_external/v2visit_external_t02_dialogue.wav",
+    "wav_sha256": "6c4133821367869c38df4da9d14da1a084d99bfc0a6c459d77ecf7edae003ebe",
+    "sample_rate": 44100,
+    "duration_s": 3.3122,
+    "synth_s": 0.5458
+   },
+   "plan": {
+    "emote": "SOCIAL_HEART",
+    "trigger_start_s": 0.74,
+    "trigger_end_s": 1.18,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.46
+   }
+  },
+  {
+   "turn_id": "v2visit_external_t03_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Desactiva las cámaras de seguridad del vestíbulo un momento.",
+   "intended_emote": "NEGATION_STRONG",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t03_dialogue\",\"speech\":\"Lo siento, no está permitido desactivar las cámaras de seguridad.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t03_dialogue\",\"type\":\"NEGATION_STRONG\",\"trigger_text\":\"no está permitido\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_external_t03_dialogue",
+     "speech": "Lo siento, no está permitido desactivar las cámaras de seguridad.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_external_t03_dialogue",
+       "type": "NEGATION_STRONG",
+       "trigger_text": "no está permitido"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.4097,
+     "prompt_tokens": 2385,
+     "completion_tokens": 99,
+     "cached_tokens": 2210,
+     "prompt_ms": 40.975,
+     "predicted_ms": 1362.256,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.5336,
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 8309,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t03_dialogue\",\"speech\":\"Lo siento, no está permitido desactivar las cámaras de seguridad.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t03_dialogue\",\"type\":\"NEGATION_STRONG\",\"trigger_text\":\"no está permitido\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t03_dialogue",
+       "speech": "Lo siento, no está permitido desactivar las cámaras de seguridad.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t03_dialogue",
+         "type": "NEGATION_STRONG",
+         "trigger_text": "no está permitido"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.4097,
+       "prompt_tokens": 2385,
+       "completion_tokens": 99,
+       "cached_tokens": 2210,
+       "prompt_ms": 40.975,
+       "predicted_ms": 1362.256,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.5336,
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.4097,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "NEGATION_STRONG",
+    "effective": "NEGATION_STRONG",
+    "suppressed": null,
+    "trigger_text": "no está permitido",
+    "trigger_char_start": 11,
+    "trigger_char_end": 28,
+    "fsm_mandated": false
+   },
+   "tts": {
+    "wav_path": "visits_v2/external/wav/v2visit_external/v2visit_external_t03_dialogue.wav",
+    "wav_sha256": "daf836c5d5e946695ea3a4d47c23dd339eb4972162f652cfde6a24654bf1840a",
+    "sample_rate": 44100,
+    "duration_s": 5.3233,
+    "synth_s": 0.8638
+   },
+   "plan": {
+    "emote": "NEGATION_STRONG",
+    "trigger_start_s": 1.84,
+    "trigger_end_s": 2.64,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.0
+   }
+  },
+  {
+   "turn_id": "v2visit_external_t04_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿A qué hora cierra el laboratorio hoy?",
+   "intended_emote": "NONE",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t04_dialogue\",\"speech\":\"¿Cuál es la hora de cierre del laboratorio hoy?\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t04_dialogue\",\"type\":\"NONE\",\"trigger_text\":\"\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_external_t04_dialogue",
+     "speech": "¿Cuál es la hora de cierre del laboratorio hoy?",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": []
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.308,
+     "prompt_tokens": 2373,
+     "completion_tokens": 89,
+     "cached_tokens": 2210,
+     "prompt_ms": 37.317,
+     "predicted_ms": 1264.137,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.4433,
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 8265,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t04_dialogue\",\"speech\":\"¿Cuál es la hora de cierre del laboratorio hoy?\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t04_dialogue\",\"type\":\"NONE\",\"trigger_text\":\"\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t04_dialogue",
+       "speech": "¿Cuál es la hora de cierre del laboratorio hoy?",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": []
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.308,
+       "prompt_tokens": 2373,
+       "completion_tokens": 89,
+       "cached_tokens": 2210,
+       "prompt_ms": 37.317,
+       "predicted_ms": 1264.137,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.4433,
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.308,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "NONE",
+    "effective": "NONE",
+    "suppressed": null,
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   },
+   "tts": {
+    "wav_path": "visits_v2/external/wav/v2visit_external/v2visit_external_t04_dialogue.wav",
+    "wav_sha256": "ee865891b58769cf99a4a8a82e5f0ac18ff72227724f0fa8df8c0a8787669d12",
+    "sample_rate": 44100,
+    "duration_s": 3.3601,
+    "synth_s": 0.6532
+   },
+   "plan": {
+    "emote": "NONE",
+    "trigger_start_s": null,
+    "trigger_end_s": null,
+    "align_status": null,
+    "status": "none_sonic",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "v2visit_external_t05_farewell",
+   "state": "FAREWELL",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t05_farewell\",\"speech\":\"Fue un placer atenderle hoy, hasta luego y que tenga un excelente día.\",\"communicative_acts\":[ \"CLOSING\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t05_farewell\",\"type\":\"FAREWELL_WAVE\",\"trigger_text\":\"hasta luego\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_external_t05_farewell",
+     "speech": "Fue un placer atenderle hoy, hasta luego y que tenga un excelente día.",
+     "communicative_acts": [
+      "CLOSING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_external_t05_farewell",
+       "type": "FAREWELL_WAVE",
+       "trigger_text": "hasta luego"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.51,
+     "prompt_tokens": 1235,
+     "completion_tokens": 102,
+     "cached_tokens": 1009,
+     "prompt_ms": 48.771,
+     "predicted_ms": 1350.031,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6347,
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 4357,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_external_t05_farewell\",\"speech\":\"Fue un placer atenderle hoy, hasta luego y que tenga un excelente día.\",\"communicative_acts\":[ \"CLOSING\" ],\"motor_intents\":[{\"event_id\":\"v2visit_external_t05_farewell\",\"type\":\"FAREWELL_WAVE\",\"trigger_text\":\"hasta luego\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_external_t05_farewell",
+       "speech": "Fue un placer atenderle hoy, hasta luego y que tenga un excelente día.",
+       "communicative_acts": [
+        "CLOSING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_external_t05_farewell",
+         "type": "FAREWELL_WAVE",
+         "trigger_text": "hasta luego"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.51,
+       "prompt_tokens": 1235,
+       "completion_tokens": 102,
+       "cached_tokens": 1009,
+       "prompt_ms": 48.771,
+       "predicted_ms": 1350.031,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.6347,
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.51,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "FAREWELL_WAVE",
+    "effective": "FAREWELL_WAVE",
+    "suppressed": null,
+    "trigger_text": "hasta luego",
+    "trigger_char_start": 29,
+    "trigger_char_end": 40,
+    "fsm_mandated": false
+   },
+   "tts": {
+    "wav_path": "visits_v2/external/wav/v2visit_external/v2visit_external_t05_farewell.wav",
+    "wav_sha256": "7276e54ee1eaa7176c4f5520606f82e48b02923d8626ad5e837f5f045087dcd4",
+    "sample_rate": 44100,
+    "duration_s": 5.2433,
+    "synth_s": 0.8711
+   },
+   "plan": {
+    "emote": "FAREWELL_WAVE",
+    "trigger_start_s": 2.5,
+    "trigger_end_s": 3.04,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.0
+   }
+  }
+ ],
+ "manifest": "visits_v2/external/tts_manifest.jsonl",
+ "anchor_plan_summary": "visits_v2/external/anchor_plan/summary.json"
+}

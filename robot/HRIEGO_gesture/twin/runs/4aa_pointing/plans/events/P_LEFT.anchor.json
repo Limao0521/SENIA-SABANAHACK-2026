@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "izquierda",
+  "char_start": 31,
+  "char_end": 40,
+  "occurrence": 1,
+  "start_s": 2.4,
+  "end_s": 2.8000000000000003,
+  "start_sample": 105840,
+  "end_sample": 123480,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "7ad5b569aed930246547e88c8cf28483ceed69640ff44958b2a7ebccff2d789c",
+  "sample_count": 147456,
+  "case_id": "P_LEFT",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

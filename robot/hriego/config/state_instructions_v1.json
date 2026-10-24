@@ -1,0 +1,20 @@
+{
+  "version": "hriego-fsm-v1.0.0",
+  "states": {
+    "GREETING": {
+      "acts": ["GREETING"],
+      "instruction": "Da una bienvenida breve al visitante usando solo los datos autorizados del perfil. No preguntes nada ni repitas tu presentación en estados posteriores. No incluyas indicaciones espaciales ni intenciones motoras; motor_intents debe ser [].",
+      "motor_policy": "NONE"
+    },
+    "GUIDANCE": {
+      "acts": ["GUIDE", "INFORM"],
+      "instruction": "Orienta al visitante exclusivamente hacia el destino y la dirección incluidos en scenario. Usa la perspectiva local del agente: si el escenario dice right, formula la referencia como 'a mi derecha'. No inventes otras ubicaciones. Produce exactamente una intención POINT_RIGHT cuyo trigger_text sea una subcadena literal y breve de speech. Usa el vector [0.0, -1.0, 0.0] en X2_base_local. No ordenes ni prometas movimiento físico.",
+      "motor_policy": "POINT_RIGHT"
+    },
+    "FAREWELL": {
+      "acts": ["CLOSING"],
+      "instruction": "Despídete en una frase breve y coherente con la orientación ya dada. No vuelvas a saludar, presentarte ni repetir literalmente la orientación. No incluyas indicaciones espaciales ni intenciones motoras; motor_intents debe ser [].",
+      "motor_policy": "NONE"
+    }
+  }
+}

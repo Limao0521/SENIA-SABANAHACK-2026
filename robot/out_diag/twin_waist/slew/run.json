@@ -1,0 +1,656 @@
+{
+ "phases": [
+  [
+   "S2_sebastian_t02",
+   6888.733980948,
+   6894.708673068
+  ],
+  [
+   "S2_laura_t02",
+   6895.411685611,
+   6902.922137692
+  ],
+  [
+   "S2_josaed_t03",
+   6903.628431477,
+   6910.138865941
+  ],
+  [
+   "S3_point_RIGHT",
+   6911.840075049,
+   6916.508799876
+  ],
+  [
+   "S3_point_LEFT",
+   6917.009407334,
+   6921.669070505
+  ],
+  [
+   "S3_point_FRONT",
+   6922.170173559,
+   6926.828822083
+  ],
+  [
+   "S4_emote_3001_VIP_BOW",
+   6927.847769878,
+   6932.868873135
+  ],
+  [
+   "S4_sonic_after_3001",
+   6932.86895052,
+   6935.371017521
+  ],
+  [
+   "S4_emote_3004_SOCIAL_HEART",
+   6935.691276142,
+   6941.469316381
+  ],
+  [
+   "S4_sonic_after_3004",
+   6941.469862079,
+   6943.972376367
+  ],
+  [
+   "S4_emote_3017_APPLAUSE",
+   6944.301436708,
+   6951.288478507
+  ],
+  [
+   "S4_sonic_after_3017",
+   6951.288612827,
+   6953.791026203
+  ],
+  [
+   "S5_walk",
+   6954.091402593,
+   6956.107408823
+  ],
+  [
+   "S5_settle",
+   6956.108191082,
+   6957.43110874
+  ],
+  [
+   "S5_point_after_walk",
+   6957.431148244,
+   6961.89462685
+  ]
+ ],
+ "meta": {
+  "S3": {
+   "RIGHT": {
+    "t_stroke": 6912.840485705,
+    "hold_s": 1.5,
+    "targets": [
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     0.10753295391235382,
+     -1.334490068511852,
+     -0.10951971667348655,
+     -0.05000000000000028,
+     -0.06045884129385001,
+     -0.13409282267093658,
+     -0.5885312557220459
+    ]
+   },
+   "LEFT": {
+    "t_stroke": 6918.009538949,
+    "hold_s": 1.5,
+    "targets": [
+     0.10956155505141509,
+     1.3339499896681664,
+     0.07895396539998754,
+     -0.050000000000248394,
+     0.04265846307166695,
+     -0.13685955107212067,
+     0.6045217514038086,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN
+    ]
+   },
+   "FRONT": {
+    "t_stroke": 6923.170956569,
+    "hold_s": 1.5,
+    "targets": [
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     NaN,
+     -1.4647042726752721,
+     0.011086999999999998,
+     0.799566968386603,
+     -0.30726613401915714,
+     0.4573111389299785,
+     0.11678928136825562,
+     -0.5075172185897827
+    ]
+   }
+  },
+  "S5": {
+   "walk_end": 6956.10740725,
+   "stable_after": 6956.411872034,
+   "settle_s": 0.30446478400062915
+  }
+ },
+ "armed": true,
+ "events": [
+  {
+   "event": "armed",
+   "t": 6888.730442356,
+   "mode": "UPPERBODY_REMOTE_SPLIT",
+   "priority": 65,
+   "dry_run": false
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.751552854,
+   "n": 1
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.767083427,
+   "n": 2
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.786924351,
+   "n": 3
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.806590909,
+   "n": 4
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.826794227,
+   "n": 5
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.846891368,
+   "n": 6
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.867791595,
+   "n": 7
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.886798836,
+   "n": 8
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.906782956,
+   "n": 9
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.92705346,
+   "n": 10
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6888.946608051,
+   "n": 11
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6890.906892293,
+   "n": 12
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6891.066811886,
+   "n": 13
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6893.466560239,
+   "n": 14
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6893.486710332,
+   "n": 15
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6907.466691086,
+   "n": 16
+  },
+  {
+   "event": "point_dispatch",
+   "t": 6911.840767069,
+   "direction": "RIGHT",
+   "t_stroke": 6912.840485705
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6911.846502148,
+   "n": 17
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6911.866850502,
+   "n": 18
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6911.886684167,
+   "n": 19
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6911.906572444,
+   "n": 20
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6911.926668598,
+   "n": 21
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6911.946614963,
+   "n": 22
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6911.966531272,
+   "n": 23
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6911.986660158,
+   "n": 24
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6912.007054267,
+   "n": 25
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6912.02665043,
+   "n": 26
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6916.646868099,
+   "n": 27
+  },
+  {
+   "event": "point_dispatch",
+   "t": 6917.009910031,
+   "direction": "LEFT",
+   "t_stroke": 6918.009538949
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.026470778,
+   "n": 28
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.046621287,
+   "n": 29
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.066598864,
+   "n": 30
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.08650151,
+   "n": 31
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.106581147,
+   "n": 32
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.126602415,
+   "n": 33
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.146511624,
+   "n": 34
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.166530037,
+   "n": 35
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.186499368,
+   "n": 36
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.206430387,
+   "n": 37
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.226541242,
+   "n": 38
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.246582808,
+   "n": 39
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.266455108,
+   "n": 40
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.28658075,
+   "n": 41
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6917.326417573,
+   "n": 42
+  },
+  {
+   "event": "point_dispatch",
+   "t": 6922.171385628,
+   "direction": "FRONT",
+   "t_stroke": 6923.170956569
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.186469376,
+   "n": 43
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.206790025,
+   "n": 44
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.22655623,
+   "n": 45
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.246414638,
+   "n": 46
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.266615323,
+   "n": 47
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.286518574,
+   "n": 48
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.306356333,
+   "n": 49
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.326592184,
+   "n": 50
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.346638652,
+   "n": 51
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.36650812,
+   "n": 52
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.386650176,
+   "n": 53
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.406694891,
+   "n": 54
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.426525877,
+   "n": 55
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.446600387,
+   "n": 56
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.466570623,
+   "n": 57
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6922.486455911,
+   "n": 58
+  },
+  {
+   "event": "emote_dispatch",
+   "t": 6927.847946307,
+   "motion_id": 3001,
+   "area": 11,
+   "t_dispatch": 6928.647785157,
+   "path": "kinematic_csv",
+   "layout": "mc_v1.0.0"
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6927.868243296,
+   "n": 59
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6935.3068758,
+   "n": 60
+  },
+  {
+   "event": "emote_dispatch",
+   "t": 6935.69161851,
+   "motion_id": 3004,
+   "area": 11,
+   "t_dispatch": 6936.491461668,
+   "path": "kinematic_csv",
+   "layout": "mc_v1.0.0"
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6941.946613305,
+   "n": 61
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.666587154,
+   "n": 62
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.686473185,
+   "n": 63
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.70704783,
+   "n": 64
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.726605569,
+   "n": 65
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.746446746,
+   "n": 66
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.767178875,
+   "n": 67
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.786627089,
+   "n": 68
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.806987094,
+   "n": 69
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.826631144,
+   "n": 70
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.846611742,
+   "n": 71
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.866827398,
+   "n": 72
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.886680819,
+   "n": 73
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.906631611,
+   "n": 74
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.927229059,
+   "n": 75
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.946547022,
+   "n": 76
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.96653303,
+   "n": 77
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6942.986445641,
+   "n": 78
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6943.006584474,
+   "n": 79
+  },
+  {
+   "event": "emote_dispatch",
+   "t": 6944.301651217,
+   "motion_id": 3017,
+   "area": 11,
+   "t_dispatch": 6945.101450143,
+   "path": "kinematic_csv",
+   "layout": "mc_v1.0.0"
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6951.946475267,
+   "n": 80
+  },
+  {
+   "event": "limiter_hit",
+   "t": 6952.987036821,
+   "n": 81
+  },
+  {
+   "event": "walk_start",
+   "t": 6954.091491709,
+   "area": "short_fwd",
+   "segments": 1
+  },
+  {
+   "event": "safety_gesture_suppressed",
+   "t": 6954.106702357
+  },
+  {
+   "event": "refused",
+   "t": 6954.19161929,
+   "what": "point",
+   "reason": "walking"
+  },
+  {
+   "event": "refused",
+   "t": 6954.19162452,
+   "what": "stream_upper_body",
+   "reason": "walking"
+  },
+  {
+   "event": "walk_done",
+   "t": 6956.106472196
+  },
+  {
+   "event": "point_dispatch",
+   "t": 6957.431767298,
+   "direction": "FRONT",
+   "t_stroke": 6958.431505881
+  },
+  {
+   "event": "stop",
+   "t": 6962.096114979
+  }
+ ],
+ "state_final": {
+  "t": "6964.315349061",
+  "pelvis_z": "0.6839704053538065",
+  "tilt_deg": "0.5988847116192518",
+  "mode": "STAND_DEFAULT",
+  "stable": "True",
+  "walking": "False",
+  "fall": "False"
+ },
+ "unsafe": false,
+ "estopped": false,
+ "limiter_nlim": 81
+}

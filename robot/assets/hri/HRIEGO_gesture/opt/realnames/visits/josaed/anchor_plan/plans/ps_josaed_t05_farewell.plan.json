@@ -1,0 +1,45 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "ps_josaed_t05_farewell",
+  "binding_key": "3031/11",
+  "policy": {
+    "align": "auto",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false,
+    "align_policy_used": "stroke",
+    "align_policy_tried": [
+      "stroke"
+    ]
+  },
+  "audio": {
+    "sha256": "f8cebc491fbcd2ce8b3441fae199390131db3e1b58011e5accd313ea8acc1e5c",
+    "sample_rate_hz": 44100,
+    "sample_count": 193536,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 0,
+  "dispatch_sample": 59979,
+  "phases": {
+    "dispatch_sample": 59979,
+    "expected_onset_sample": 113782,
+    "expected_stroke_sample": 142002,
+    "expected_end_sample": 283126,
+    "end_after_audio_end": true
+  },
+  "dispatches": [
+    {
+      "motion_id": 3031,
+      "area": 11,
+      "dispatch_sample": 59979,
+      "dispatch_sample_with_start_delay": 59979,
+      "repeat_count": 1
+    }
+  ]
+}

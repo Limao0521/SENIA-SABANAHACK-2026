@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_guest_t00_greeting",
+ "rank": "guest",
+ "emote": "GREETING_GUEST",
+ "motion_id": 1011,
+ "area": 2,
+ "binding": "1011/2",
+ "anchor_s": 0.68,
+ "dur_s": 3.3436734693877552,
+ "lead_onset_s": 1.2398256680025952,
+ "lead_stroke_s": 1.9799898800010851,
+ "policy_dispatch_s": {
+  "stroke": -1.299989880001085,
+  "mid": -0.9299077740018401,
+  "onset": -0.5598256680025951
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 5.380000508001103
+}

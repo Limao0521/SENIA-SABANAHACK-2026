@@ -1,0 +1,2 @@
+-r live-base.txt
+onnxruntime==1.31.0

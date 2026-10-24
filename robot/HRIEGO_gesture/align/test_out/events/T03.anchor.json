@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "derecha",
+  "char_start": 25,
+  "char_end": 32,
+  "occurrence": 1,
+  "start_s": 1.94,
+  "end_s": 2.2800000000000002,
+  "start_sample": 85554,
+  "end_sample": 100548,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "289d1941461a9ba7d99d3b7481d85ff65b5583be81bc67130bffa890bfd40f36",
+  "sample_count": 129024,
+  "case_id": "T03",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

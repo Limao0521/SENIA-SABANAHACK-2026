@@ -1,0 +1,192 @@
+{
+  "club": "Club N",
+  "ciudad": "Bogotá",
+  "sintetico": true,
+  "nota": "Base de conocimiento sintética y fija del Club N. Todos los datos son inventados y constantes; nunca usar nombres reales de clubes.",
+  "identidad": {
+    "esencia": "Club N es el club social y empresarial de Bogotá: el lugar de encuentro de familias, empresas e ideas.",
+    "lema": "Club N, nuestro lugar de encuentro.",
+    "proposito": "Generar experiencias únicas y memorables, y fomentar lo mejor del pensamiento, la cultura, el arte y el deporte.",
+    "vision": "Inspirar a nuestra comunidad y ser referente de buenas prácticas, como un equipo unido por la lealtad, el compromiso y el bienestar.",
+    "valores": [
+      {
+        "nombre": "Servicio y excelencia",
+        "en_la_recepcion": "atención cuidada a cualquier persona; siempre se empieza por lo que sí puede vivir en el club"
+      },
+      {
+        "nombre": "Comunidad",
+        "en_la_recepcion": "una comunidad sólida, unida, respetuosa y solidaria: «nuestro club», «nuestra comunidad»; invitados y colaboradores también son parte de ella"
+      },
+      {
+        "nombre": "Resiliencia y unidad",
+        "en_la_recepcion": "tono sereno y constante; ante un problema, «lo resolvemos juntos»"
+      },
+      {
+        "nombre": "Pensamiento y cultura",
+        "en_la_recepcion": "la biblioteca y galería, los eventos y las conversaciones del club"
+      },
+      {
+        "nombre": "Bienestar",
+        "en_la_recepcion": "el de socios, invitados y colaboradores por igual: «tómese su tiempo», «está en su casa»"
+      }
+    ],
+    "anfitriones": {
+   "robot": "Alfred, el anfitrión del Club N (el robot humanoide de la recepción)",
+   "perro": "Draco, nuestro perro guía robot, que acompaña a socios e invitados"
+  },
+  "fundacion": "La Fundación N es el brazo social del club: apoya primero a su propia comunidad, incluidos sus colaboradores, y después a la ciudad.",
+    "voz": "Cortesía bogotana, cálida y serena. Siempre «nuestro»; nunca palabras que excluyan. La formalidad cambia con cada persona, la calidez no.",
+    "pertenencia": {
+      "VIP": "Esta es su casa: Club N, nuestro lugar de encuentro.",
+      "REGULAR": "Esta es su casa.",
+      "GUEST": "Hoy también es parte de nuestra comunidad.",
+      "STAFF": "Gracias por hacer de este nuestro lugar de encuentro.",
+      "WORKER": "Gracias por cuidar nuestra casa; hoy también es parte del equipo."
+    }
+  },
+  "espacios": {
+    "recepcion_vestibulos": {
+      "nombre": "Recepción y vestíbulos",
+      "direccion": "front",
+      "piso": "1",
+      "horario": "Lun a Dom, 05:00 a 23:00",
+      "descripcion": "Mostrador principal de recepción y vestíbulos de ingreso al club."
+    },
+    "restaurantes_cafeterias": {
+      "nombre": "Restaurantes y cafeterías",
+      "direccion": "right",
+      "piso": "2",
+      "horario": "Lun a Dom, 06:00 a 22:00",
+      "descripcion": "Restaurante La Terraza N y Cafetería Café N, con menú del día y carta ligera."
+    },
+    "bares_la_cava": {
+      "nombre": "Bares y La Cava",
+      "direccion": "left",
+      "piso": "1",
+      "horario": "Jue a Sáb, 18:00 a 01:00",
+      "descripcion": "Bar La Cava N, con cava de vinos y coctelería de autor."
+    },
+    "centro_convenciones": {
+      "nombre": "Centro de convenciones",
+      "direccion": "front",
+      "piso": "3",
+      "horario": "Lun a Dom, 07:00 a 22:00",
+      "descripcion": "Salón principal N y auditorio para eventos, congresos y ceremonias."
+    },
+    "salas_juntas": {
+      "nombre": "Salas de juntas",
+      "direccion": "right",
+      "piso": "4",
+      "horario": "Lun a Vie, 07:00 a 20:00",
+      "descripcion": "Ocho salas de reuniones equipadas, con reserva en recepción."
+    },
+    "gastroworking": {
+      "nombre": "Gastroworking",
+      "direccion": "right",
+      "piso": "2",
+      "horario": "Lun a Dom, 06:00 a 22:00",
+      "descripcion": "Zona de trabajo compartido con café continuo y cabinas de llamadas."
+    },
+    "gimnasio_deportes": {
+      "nombre": "Gimnasio y zonas deportivas",
+      "direccion": "left",
+      "piso": "5",
+      "horario": "Lun a Dom, 05:00 a 22:00",
+      "descripcion": "Gimnasio N Fit, canchas de squash y salón de clases grupales."
+    },
+    "piscina_spa_humedas": {
+      "nombre": "Piscina, spa y zonas húmedas",
+      "direccion": "left",
+      "piso": "5",
+      "horario": "Lun a Dom, 06:00 a 21:00",
+      "descripcion": "Piscina climatizada Aguas N, sauna, turco y sala de masajes."
+    },
+    "biblioteca_galeria": {
+      "nombre": "Biblioteca y galería",
+      "direccion": "front",
+      "piso": "2",
+      "horario": "Lun a Dom, 08:00 a 20:00",
+      "descripcion": "Biblioteca N con sala de lectura silenciosa y galería de arte rotativa."
+    },
+    "zona_infantil_juvenil": {
+      "nombre": "Zona infantil y juvenil",
+      "direccion": "right",
+      "piso": "3",
+      "horario": "Lun a Dom, 08:00 a 19:00",
+      "descripcion": "Ludoteca Pequeño N y sala juvenil con videojuegos y talleres."
+    },
+    "habitaciones_alojamiento": {
+      "nombre": "Habitaciones de alojamiento",
+      "direccion": "left",
+      "piso": "6",
+      "horario": "24 horas, con recepción nocturna",
+      "descripcion": "Suites de alojamiento N en los pisos 6 al 8, exclusivas para socios residentes e invitados autorizados."
+    },
+    "oficinas_administrativas": {
+      "nombre": "Oficinas administrativas",
+      "direccion": "right",
+      "piso": "4",
+      "horario": "Lun a Vie, 08:00 a 17:00",
+      "descripcion": "Administración del club: gerencia, tesorería y atención al socio."
+    },
+    "almacenes_logistica": {
+      "nombre": "Almacenes de logística",
+      "direccion": "left",
+      "piso": "S1",
+      "horario": "Lun a Sáb, 06:00 a 20:00",
+      "descripcion": "Bodegas de insumos, recepción de proveedores y cuarto de dotaciones."
+    },
+    "cuartos_tecnicos": {
+      "nombre": "Cuartos técnicos",
+      "direccion": "front",
+      "piso": "S1",
+      "horario": "Lun a Dom, 06:00 a 18:00, solo personal autorizado",
+      "descripcion": "Sala de máquinas, tableros eléctricos, plantas y equipos de climatización."
+    },
+    "estacionamientos": {
+      "nombre": "Estacionamientos",
+      "direccion": "front",
+      "piso": "S2",
+      "horario": "24 horas",
+      "descripcion": "Parqueaderos del club en sótanos, con valet y zona de carga."
+    }
+  },
+  "servicios": [
+    {
+      "id": "valet",
+      "nombre": "Valet parking",
+      "descripcion": "Servicio de valet en la entrada principal, disponible 24 horas.",
+      "ubicacion": "estacionamientos"
+    },
+    {
+      "id": "wifi",
+      "nombre": "Wifi ClubN-Invitados",
+      "descripcion": "Red wifi abierta ClubN-Invitados; la clave cambia cada mes y está publicada en recepción.",
+      "ubicacion": "recepcion_vestibulos"
+    },
+    {
+      "id": "reserva_salas",
+      "nombre": "Reserva de salas de juntas",
+      "descripcion": "Las salas de juntas se reservan en el mostrador de recepción con hasta 72 horas de anticipación.",
+      "ubicacion": "recepcion_vestibulos"
+    },
+    {
+      "id": "lockers_toallas",
+      "nombre": "Lockers y toallas",
+      "descripcion": "Lockers y toallas limpias sin costo en el gimnasio y la zona de piscina.",
+      "ubicacion": "gimnasio_deportes"
+    },
+    {
+      "id": "room_service",
+      "nombre": "Servicio a la habitación",
+      "descripcion": "Servicio a la habitación para alojamiento, disponible de 06:00 a 22:00.",
+      "ubicacion": "habitaciones_alojamiento"
+    },
+    {
+      "id": "objetos_perdidos",
+      "nombre": "Objetos perdidos",
+      "descripcion": "Los objetos perdidos se registran y guardan en la oficina de administración por 30 días.",
+      "ubicacion": "oficinas_administrativas"
+    }
+  ]
+}

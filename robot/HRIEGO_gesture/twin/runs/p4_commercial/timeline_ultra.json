@@ -1,0 +1,320 @@
+{
+ "robot": "ultra",
+ "lines": [
+  {
+   "n": 1,
+   "clip": "001_ULTRA_bienvenida",
+   "robot": "ultra",
+   "start": 3.5,
+   "dur": 10.1355625,
+   "end": 13.6355625,
+   "text": "¡Hola! Hoy tenemos el gran gusto de poder mostrarles la capacidad de productos robóticos que ofrece Ansrobex, en compañía de Autoriente y Macondo, en el sector colombiano.",
+   "scene": "Escena 1 — Bienvenida",
+   "speaks": true
+  },
+  {
+   "n": 2,
+   "clip": "002_X2_original_bienvenida",
+   "robot": "original",
+   "start": 13.935562500000001,
+   "dur": 8.138625,
+   "end": 22.0741875,
+   "text": "¡Así es! Hoy queremos presentarles cuatro increíbles familias de robots, que representan diferentes aplicaciones de la robótica moderna.",
+   "scene": "Escena 1 — Bienvenida",
+   "speaks": false
+  },
+  {
+   "n": 3,
+   "clip": "003_ULTRA_bienvenida",
+   "robot": "ultra",
+   "start": 22.3741875,
+   "dur": 7.3375625,
+   "end": 29.711750000000002,
+   "text": "Desde robots humanoides hasta soluciones autónomas de seguridad, limpieza e industria.",
+   "scene": "Escena 1 — Bienvenida",
+   "speaks": true
+  },
+  {
+   "n": 4,
+   "clip": "004_X2_original_serie_x",
+   "robot": "original",
+   "start": 30.01175,
+   "dur": 8.742375,
+   "end": 38.754125,
+   "text": "¡Comencemos con nuestra Serie equis! Una familia de robots humanoides, diseñada para explorar nuevas formas de interacción entre humanos y robots.",
+   "scene": "Escena 2 — Serie X: Humanoides",
+   "speaks": false
+  },
+  {
+   "n": 5,
+   "clip": "005_ULTRA_serie_x",
+   "robot": "ultra",
+   "start": 39.054125,
+   "dur": 8.7771875,
+   "end": 47.831312499999996,
+   "text": "¡Y nosotros somos un ejemplo! El modelo equis dos representa esta familia y permite desarrollar experiencias de interacción entre humanos y robots.",
+   "scene": "Escena 2 — Serie X: Humanoides",
+   "speaks": true
+  },
+  {
+   "n": 6,
+   "clip": "006_X2_original_serie_x",
+   "robot": "original",
+   "start": 48.1313125,
+   "dur": 5.2245,
+   "end": 53.3558125,
+   "text": "¡Además, el modelo equis dos está disponible dentro de nuestra oferta en Colombia!",
+   "scene": "Escena 2 — Serie X: Humanoides",
+   "speaks": false
+  },
+  {
+   "n": 7,
+   "clip": "007_ULTRA_serie_d",
+   "robot": "ultra",
+   "start": 53.655812499999996,
+   "dur": 7.7786875,
+   "end": 61.4345,
+   "text": "Pero no todos nuestros robots caminan sobre dos piernas. También contamos con la Serie D, nuestra familia de perros robóticos.",
+   "scene": "Escena 3 — Serie D: Perros robóticos",
+   "speaks": true
+  },
+  {
+   "n": 8,
+   "clip": "008_X2_original_serie_d",
+   "robot": "original",
+   "start": 61.7345,
+   "dur": 7.9064375,
+   "end": 69.64093749999999,
+   "text": "¡Exactamente! Estos robots están orientados a aplicaciones de monitoreo y seguridad, ofreciendo nuevas posibilidades para la vigilancia robótica.",
+   "scene": "Escena 3 — Serie D: Perros robóticos",
+   "speaks": false
+  },
+  {
+   "n": 9,
+   "clip": "009_ULTRA_serie_d",
+   "robot": "ultra",
+   "start": 69.94093749999999,
+   "dur": 8.0225,
+   "end": 77.9634375,
+   "text": "En Colombia ofrecemos el modelo D1, una solución que permite acercar esta tecnología a diferentes aplicaciones del sector.",
+   "scene": "Escena 3 — Serie D: Perros robóticos",
+   "speaks": true
+  },
+  {
+   "n": 10,
+   "clip": "010_X2_original_serie_c",
+   "robot": "original",
+   "start": 78.2634375,
+   "dur": 5.5031875,
+   "end": 83.76662499999999,
+   "text": "Y ahora, hablemos de una actividad muy importante para cualquier instalación: ¡la limpieza!",
+   "scene": "Escena 4 — Serie C: Limpieza autónoma",
+   "speaks": false
+  },
+  {
+   "n": 11,
+   "clip": "011_ULTRA_serie_c",
+   "robot": "ultra",
+   "start": 84.06662499999999,
+   "dur": 6.4668125,
+   "end": 90.53343749999999,
+   "text": "Para esto, presentamos nuestra Serie C, dedicada a soluciones robóticas de limpieza autónoma.",
+   "scene": "Escena 4 — Serie C: Limpieza autónoma",
+   "speaks": true
+  },
+  {
+   "n": 12,
+   "clip": "012_X2_original_serie_c",
+   "robot": "original",
+   "start": 90.83343749999999,
+   "dur": 7.4188125,
+   "end": 98.25224999999999,
+   "text": "¡Y en Colombia contamos con el modelo C5! Una alternativa para incorporar automatización en las tareas de limpieza.",
+   "scene": "Escena 4 — Serie C: Limpieza autónoma",
+   "speaks": false
+  },
+  {
+   "n": 13,
+   "clip": "013_ULTRA_serie_g",
+   "robot": "ultra",
+   "start": 98.55224999999999,
+   "dur": 8.695875,
+   "end": 107.24812499999999,
+   "text": "Finalmente, queremos presentarles la Serie G: nuestra familia de robots humanoides orientados a aplicaciones industriales.",
+   "scene": "Escena 5 — Serie G: Robótica industrial",
+   "speaks": true
+  },
+  {
+   "n": 14,
+   "clip": "014_X2_original_serie_g",
+   "robot": "original",
+   "start": 107.54812499999998,
+   "dur": 8.5798125,
+   "end": 116.12793749999999,
+   "text": "¡Así es! Una línea que muestra cómo la robótica humanoide también puede orientarse hacia los desafíos de la automatización industrial.",
+   "scene": "Escena 5 — Serie G: Robótica industrial",
+   "speaks": false
+  },
+  {
+   "n": 15,
+   "clip": "015_ULTRA_serie_g",
+   "robot": "ultra",
+   "start": 116.42793749999998,
+   "dur": 8.138625,
+   "end": 124.56656249999999,
+   "text": "Esta familia forma parte del portafolio internacional y representa otra de las áreas de desarrollo de la robótica moderna.",
+   "scene": "Escena 5 — Serie G: Robótica industrial",
+   "speaks": true
+  },
+  {
+   "n": 16,
+   "clip": "016_ULTRA_despedida",
+   "robot": "ultra",
+   "start": 124.86656249999999,
+   "dur": 6.699,
+   "end": 131.5655625,
+   "text": "En Ansrobex, junto con Autoriente y Macondo, queremos acercar estas tecnologías al sector colombiano.",
+   "scene": "Escena 6 — Despedida",
+   "speaks": true
+  },
+  {
+   "n": 17,
+   "clip": "017_X2_original_despedida",
+   "robot": "original",
+   "start": 131.86556249999998,
+   "dur": 5.027125,
+   "end": 136.8926875,
+   "text": "¡Porque el futuro de la robótica no solamente se imagina, también se construye!",
+   "scene": "Escena 6 — Despedida",
+   "speaks": false
+  },
+  {
+   "n": 18,
+   "clip": "018_ULTRA_despedida",
+   "robot": "ultra",
+   "start": 137.19268749999998,
+   "dur": 3.784875,
+   "end": 140.97756249999998,
+   "text": "Muchas gracias por acompañarnos.",
+   "scene": "Escena 6 — Despedida",
+   "speaks": true
+  },
+  {
+   "n": 19,
+   "clip": "019_X2_original_despedida",
+   "robot": "original",
+   "start": 141.2775625,
+   "dur": 4.3421875,
+   "end": 145.61974999999998,
+   "text": "¡Y ahora, queremos despedirnos de una manera muy especial!",
+   "scene": "Escena 6 — Despedida",
+   "speaks": false
+  }
+ ],
+ "presets": [
+  {
+   "id": "ultra_001_3001",
+   "line": 1,
+   "motion": 3001,
+   "area": 11,
+   "label": "BOW (VIP bow 3001/11)",
+   "anchor_abs": 3.7,
+   "anchor_text": "Hola",
+   "lead_stroke_s": 1.7199913960030244,
+   "lead_onset_s": 1.1799959819982178,
+   "policy": "stroke",
+   "dispatch": 1.9800086039969758,
+   "t_handoff": 1.9200086039969757,
+   "t_fade0": 1.3200086039969756,
+   "preset_dur_s": 4.480131692002033,
+   "motion_dur_s": 3.1200000000026193
+  },
+  {
+   "id": "ultra_005_3004",
+   "line": 5,
+   "motion": 3004,
+   "area": 11,
+   "label": "HEART (3004/11)",
+   "anchor_abs": 39.314125,
+   "anchor_text": "nosotros somos un ejemplo",
+   "lead_stroke_s": 2.080010793000838,
+   "lead_onset_s": 1.2000107929998194,
+   "policy": "stroke",
+   "dispatch": 37.23411420699916,
+   "t_handoff": 37.17411420699916,
+   "t_fade0": 36.574114206999155,
+   "preset_dur_s": 5.240132310002082,
+   "motion_dur_s": 3.8400000000001455
+  },
+  {
+   "id": "ultra_019_3031",
+   "line": 19,
+   "motion": 3031,
+   "area": 11,
+   "label": "FAREWELL (3031/11)",
+   "anchor_abs": 142.8975625,
+   "anchor_text": "despedirnos",
+   "lead_stroke_s": 1.8599239260001923,
+   "lead_onset_s": 1.2200286600018444,
+   "policy": "stroke",
+   "dispatch": 141.0376385739998,
+   "t_handoff": 140.9776385739998,
+   "t_fade0": 140.3776385739998,
+   "preset_dur_s": 5.060018083000614,
+   "motion_dur_s": 3.639999999999418
+  }
+ ],
+ "look_intervals": [
+  [
+   13.935562500000001,
+   22.0741875,
+   2
+  ],
+  [
+   30.01175,
+   36.63411420699916,
+   4
+  ],
+  [
+   48.1313125,
+   53.3558125,
+   6
+  ],
+  [
+   61.7345,
+   69.64093749999999,
+   8
+  ],
+  [
+   78.2634375,
+   83.76662499999999,
+   10
+  ],
+  [
+   90.83343749999999,
+   98.25224999999999,
+   12
+  ],
+  [
+   107.54812499999998,
+   116.12793749999999,
+   14
+  ],
+  [
+   131.86556249999998,
+   136.8926875,
+   17
+  ]
+ ],
+ "C_END": 147.61974999999998,
+ "tick": 0.02,
+ "params": {
+  "S1": 3.5,
+  "GAP": 0.3,
+  "E_IN": 0.6,
+  "E_OUT": 0.9,
+  "L_OUT": 0.6,
+  "LOOK": 0.35,
+  "LOOK_T": 0.5
+ }
+}

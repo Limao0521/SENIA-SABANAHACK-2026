@@ -1,0 +1,666 @@
+{
+ "visit_id": "v2visit_staff",
+ "rank": "STAFF",
+ "profile_injected": {
+  "person_id": "sim-staff",
+  "display_name": "Carlos Mendoza",
+  "rank_code": "STAFF",
+  "rank_name": "Personal del laboratorio"
+ },
+ "face_recognition": "bypassed",
+ "scenario": "reception_meeting_left",
+ "contract": "rcp01c.intervention.v2 (v2.1 fixes)",
+ "turns": [
+  {
+   "turn_id": "v2visit_staff_t00_greeting",
+   "state": "GREETING",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t00_greeting\",\"speech\":\"¡Dame esos cinco! Bienvenido al laboratorio, Carlos Mendoza.\",\"communicative_acts\":[ \"GREETING\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t00_greeting\",\"type\":\"GREETING_STAFF\",\"trigger_text\":\"¡Dame esos cinco!\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_staff_t00_greeting",
+     "speech": "¡Dame esos cinco! Bienvenido al laboratorio, Carlos Mendoza.",
+     "communicative_acts": [
+      "GREETING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_staff_t00_greeting",
+       "type": "GREETING_STAFF",
+       "trigger_text": "Dame esos cinco"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.5182,
+     "prompt_tokens": 1375,
+     "completion_tokens": 102,
+     "cached_tokens": 1155,
+     "prompt_ms": 48.552,
+     "predicted_ms": 1464.38,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6386,
+    "temperature": 0.7,
+    "seed": 1574532562,
+    "prompt_chars": 4152,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t00_greeting\",\"speech\":\"¡Bienvenido al laboratorio, Carlos Mendoza.\",\"communicative_acts\":[ \"GREETING\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t00_greeting\",\"type\":\"GREETING_STAFF\",\"trigger_text\":\"¡Bienvenido al laboratorio, Carlos Mendoza.\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_staff_t00_greeting",
+       "speech": "¡Bienvenido al laboratorio, Carlos Mendoza.",
+       "communicative_acts": [
+        "GREETING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_staff_t00_greeting",
+         "type": "GREETING_STAFF",
+         "trigger_text": "Bienvenido al laboratorio, Carlos Mendoza"
+        }
+       ]
+      },
+      "errors": [
+       "speech must have at least 6 words",
+       "trigger_text must have 1-4 words (has 5)",
+       "trigger_text must contain an anchor cue of GREETING_STAFF: ['dame esos cinco']",
+       "STAFF trigger_text must be 'dame esos cinco'",
+       "STAFF speech must contain '¡dame esos cinco!'"
+      ],
+      "metrics": {
+       "total_s": 1.5015,
+       "prompt_tokens": 1159,
+       "completion_tokens": 103,
+       "cached_tokens": 656,
+       "prompt_ms": 97.671,
+       "predicted_ms": 1350.797,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.624,
+      "temperature": 0.2,
+      "seed": null
+     },
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t00_greeting\",\"speech\":\"¡Dame esos cinco! Bienvenido al laboratorio, Carlos Mendoza.\",\"communicative_acts\":[ \"GREETING\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t00_greeting\",\"type\":\"GREETING_STAFF\",\"trigger_text\":\"¡Dame esos cinco!\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_staff_t00_greeting",
+       "speech": "¡Dame esos cinco! Bienvenido al laboratorio, Carlos Mendoza.",
+       "communicative_acts": [
+        "GREETING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_staff_t00_greeting",
+         "type": "GREETING_STAFF",
+         "trigger_text": "Dame esos cinco"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.5182,
+       "prompt_tokens": 1375,
+       "completion_tokens": 102,
+       "cached_tokens": 1155,
+       "prompt_ms": 48.552,
+       "predicted_ms": 1464.38,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.6386,
+      "temperature": 0.7,
+      "seed": 1574532562
+     }
+    ],
+    "retry_used": true,
+    "first_attempt_ok": false,
+    "total_llm_s": 3.0197,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "GREETING_STAFF",
+    "effective": "GREETING_STAFF",
+    "suppressed": null,
+    "trigger_text": "Dame esos cinco",
+    "trigger_char_start": 1,
+    "trigger_char_end": 16,
+    "fsm_mandated": true
+   },
+   "tts": {
+    "wav_path": "visits_v2/staff/wav/v2visit_staff/v2visit_staff_t00_greeting.wav",
+    "wav_sha256": "a2b57e52b91c80a0e6027b1095f09b08b57bd66f934abda7813dbb96fc71c292",
+    "sample_rate": 44100,
+    "duration_s": 5.0467,
+    "synth_s": 0.8085
+   },
+   "plan": {
+    "emote": "GREETING_STAFF",
+    "trigger_start_s": 0.8200000000000001,
+    "trigger_end_s": 1.62,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.4199773242630386
+   }
+  },
+  {
+   "turn_id": "v2visit_staff_t01_guidance",
+   "state": "GUIDANCE",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t01_guidance\",\"speech\":\"La sala de juntas está a mi izquierda\",\"communicative_acts\":[\"GUIDE\"],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t01_guidance\",\"type\":\"POINT_LEFT\",\"trigger_text\":\"a mi izquierda\",\"reference_frame\":\"X2_base_local\",\"target_vector\":[0.0,1.0,0.0]}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_staff_t01_guidance",
+     "speech": "La sala de juntas está a mi izquierda",
+     "communicative_acts": [
+      "GUIDE"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_staff_t01_guidance",
+       "type": "POINT_LEFT",
+       "trigger_text": "a mi izquierda",
+       "reference_frame": "X2_base_local",
+       "target_vector": [
+        0.0,
+        1.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.5265,
+     "prompt_tokens": 1259,
+     "completion_tokens": 110,
+     "cached_tokens": 1258,
+     "prompt_ms": 9.491,
+     "predicted_ms": 1446.046,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6553,
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 4538,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t01_guidance\",\"speech\":\"La sala de juntas está a mi izquierda\",\"communicative_acts\":[\"GUIDE\"],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t01_guidance\",\"type\":\"POINT_LEFT\",\"trigger_text\":\"a mi izquierda\",\"reference_frame\":\"X2_base_local\",\"target_vector\":[0.0,1.0,0.0]}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_staff_t01_guidance",
+       "speech": "La sala de juntas está a mi izquierda",
+       "communicative_acts": [
+        "GUIDE"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_staff_t01_guidance",
+         "type": "POINT_LEFT",
+         "trigger_text": "a mi izquierda",
+         "reference_frame": "X2_base_local",
+         "target_vector": [
+          0.0,
+          1.0,
+          0.0
+         ]
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.5265,
+       "prompt_tokens": 1259,
+       "completion_tokens": 110,
+       "cached_tokens": 1258,
+       "prompt_ms": 9.491,
+       "predicted_ms": 1446.046,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.6553,
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.5265,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "POINT_LEFT",
+    "effective": "POINT_LEFT",
+    "suppressed": null,
+    "trigger_text": "a mi izquierda",
+    "trigger_char_start": 23,
+    "trigger_char_end": 37,
+    "fsm_mandated": false
+   },
+   "tts": {
+    "wav_path": "visits_v2/staff/wav/v2visit_staff/v2visit_staff_t01_guidance.wav",
+    "wav_sha256": "899afc7081e5ef0b54c6799f9a0920128def528b81130c04a619a7003c68ef11",
+    "sample_rate": 44100,
+    "duration_s": 3.1506,
+    "synth_s": 0.6881
+   },
+   "plan": {
+    "emote": "POINT_LEFT",
+    "trigger_start_s": 1.96,
+    "trigger_end_s": 2.56,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "anchor_only_no_preset",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "v2visit_staff_t02_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿Me regalas la tarjeta de acceso de recepción para llevármela?",
+   "intended_emote": "NEGATION_NORMAL",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t02_dialogue\",\"speech\":\"No puedo regalarte la tarjeta de acceso de recepción\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t02_dialogue\",\"type\":\"NEGATION_NORMAL\",\"trigger_text\":\"no puedo\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_staff_t02_dialogue",
+     "speech": "No puedo regalarte la tarjeta de acceso de recepción",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_staff_t02_dialogue",
+       "type": "NEGATION_NORMAL",
+       "trigger_text": "No puedo"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.4734,
+     "prompt_tokens": 2393,
+     "completion_tokens": 92,
+     "cached_tokens": 2095,
+     "prompt_ms": 70.264,
+     "predicted_ms": 1306.934,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.64,
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 8337,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t02_dialogue\",\"speech\":\"No puedo regalarte la tarjeta de acceso de recepción\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t02_dialogue\",\"type\":\"NEGATION_NORMAL\",\"trigger_text\":\"no puedo\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_staff_t02_dialogue",
+       "speech": "No puedo regalarte la tarjeta de acceso de recepción",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_staff_t02_dialogue",
+         "type": "NEGATION_NORMAL",
+         "trigger_text": "No puedo"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.4734,
+       "prompt_tokens": 2393,
+       "completion_tokens": 92,
+       "cached_tokens": 2095,
+       "prompt_ms": 70.264,
+       "predicted_ms": 1306.934,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.64,
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.4734,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "NEGATION_NORMAL",
+    "effective": "NEGATION_NORMAL",
+    "suppressed": null,
+    "trigger_text": "No puedo",
+    "trigger_char_start": 0,
+    "trigger_char_end": 8,
+    "fsm_mandated": false
+   },
+   "tts": {
+    "wav_path": "visits_v2/staff/wav/v2visit_staff/v2visit_staff_t02_dialogue.wav",
+    "wav_sha256": "2089f10bb0c787205581ce890624d993719059f8bdcc3bff756d6347efea4eaa",
+    "sample_rate": 44100,
+    "duration_s": 4.2377,
+    "synth_s": 0.6615
+   },
+   "plan": {
+    "emote": "NEGATION_NORMAL",
+    "trigger_start_s": 0.86,
+    "trigger_end_s": 1.24,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.54
+   }
+  },
+  {
+   "turn_id": "v2visit_staff_t03_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿Es cierto que el laboratorio es el único destino que puedes indicarme?",
+   "intended_emote": "CONFIRMATION",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t03_dialogue\",\"speech\":\"Sí, el laboratorio es el único destino autorizado\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t03_dialogue\",\"type\":\"CONFIRMATION\",\"trigger_text\":\"sí\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_staff_t03_dialogue",
+     "speech": "Sí, el laboratorio es el único destino autorizado",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_staff_t03_dialogue",
+       "type": "CONFIRMATION",
+       "trigger_text": "Sí"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.3313,
+     "prompt_tokens": 2389,
+     "completion_tokens": 91,
+     "cached_tokens": 2214,
+     "prompt_ms": 38.728,
+     "predicted_ms": 1285.866,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.4618,
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 8355,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t03_dialogue\",\"speech\":\"Sí, el laboratorio es el único destino autorizado\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t03_dialogue\",\"type\":\"CONFIRMATION\",\"trigger_text\":\"sí\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_staff_t03_dialogue",
+       "speech": "Sí, el laboratorio es el único destino autorizado",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_staff_t03_dialogue",
+         "type": "CONFIRMATION",
+         "trigger_text": "Sí"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.3313,
+       "prompt_tokens": 2389,
+       "completion_tokens": 91,
+       "cached_tokens": 2214,
+       "prompt_ms": 38.728,
+       "predicted_ms": 1285.866,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.4618,
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.3313,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "CONFIRMATION",
+    "effective": "CONFIRMATION",
+    "suppressed": null,
+    "trigger_text": "Sí",
+    "trigger_char_start": 0,
+    "trigger_char_end": 2,
+    "fsm_mandated": false
+   },
+   "tts": {
+    "wav_path": "visits_v2/staff/wav/v2visit_staff/v2visit_staff_t03_dialogue.wav",
+    "wav_sha256": "38f9d2f2f6071fe9f8650ea018b5492017ef2e044c9cff270451ba5df61b2048",
+    "sample_rate": 44100,
+    "duration_s": 4.3766,
+    "synth_s": 0.6813
+   },
+   "plan": {
+    "emote": "CONFIRMATION",
+    "trigger_start_s": 0.86,
+    "trigger_end_s": 0.92,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.44
+   }
+  },
+  {
+   "turn_id": "v2visit_staff_t04_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿Cómo está el clima afuera?",
+   "intended_emote": "NONE",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t04_dialogue\",\"speech\":\"El clima está despejado y soleado\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t04_dialogue\",\"type\":\"NONE\",\"trigger_text\":\"\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_staff_t04_dialogue",
+     "speech": "El clima está despejado y soleado",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": []
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.2645,
+     "prompt_tokens": 2375,
+     "completion_tokens": 86,
+     "cached_tokens": 2214,
+     "prompt_ms": 40.902,
+     "predicted_ms": 1217.471,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.3856,
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 8267,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t04_dialogue\",\"speech\":\"El clima está despejado y soleado\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t04_dialogue\",\"type\":\"NONE\",\"trigger_text\":\"\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_staff_t04_dialogue",
+       "speech": "El clima está despejado y soleado",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": []
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.2645,
+       "prompt_tokens": 2375,
+       "completion_tokens": 86,
+       "cached_tokens": 2214,
+       "prompt_ms": 40.902,
+       "predicted_ms": 1217.471,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.3856,
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.2645,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "NONE",
+    "effective": "NONE",
+    "suppressed": null,
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   },
+   "tts": {
+    "wav_path": "visits_v2/staff/wav/v2visit_staff/v2visit_staff_t04_dialogue.wav",
+    "wav_sha256": "1ffc6c9c12577f63388e0e790128050d91ac37f5376620d572c1accea27c948f",
+    "sample_rate": 44100,
+    "duration_s": 2.946,
+    "synth_s": 0.5022
+   },
+   "plan": {
+    "emote": "NONE",
+    "trigger_start_s": null,
+    "trigger_end_s": null,
+    "align_status": null,
+    "status": "none_sonic",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "v2visit_staff_t05_farewell",
+   "state": "FAREWELL",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t05_farewell\",\"speech\":\"Fue un placer atenderle hoy, hasta luego y que tenga un excelente día.\",\"communicative_acts\":[ \"CLOSING\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t05_farewell\",\"type\":\"FAREWELL_WAVE\",\"trigger_text\":\"hasta luego\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "v2visit_staff_t05_farewell",
+     "speech": "Fue un placer atenderle hoy, hasta luego y que tenga un excelente día.",
+     "communicative_acts": [
+      "CLOSING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "v2visit_staff_t05_farewell",
+       "type": "FAREWELL_WAVE",
+       "trigger_text": "hasta luego"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.5024,
+     "prompt_tokens": 1239,
+     "completion_tokens": 102,
+     "cached_tokens": 1009,
+     "prompt_ms": 48.915,
+     "predicted_ms": 1339.967,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6235,
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 4381,
+    "attempts": [
+     {
+      "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"v2visit_staff_t05_farewell\",\"speech\":\"Fue un placer atenderle hoy, hasta luego y que tenga un excelente día.\",\"communicative_acts\":[ \"CLOSING\" ],\"motor_intents\":[{\"event_id\":\"v2visit_staff_t05_farewell\",\"type\":\"FAREWELL_WAVE\",\"trigger_text\":\"hasta luego\"}]}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "v2visit_staff_t05_farewell",
+       "speech": "Fue un placer atenderle hoy, hasta luego y que tenga un excelente día.",
+       "communicative_acts": [
+        "CLOSING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "v2visit_staff_t05_farewell",
+         "type": "FAREWELL_WAVE",
+         "trigger_text": "hasta luego"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "total_s": 1.5024,
+       "prompt_tokens": 1239,
+       "completion_tokens": 102,
+       "cached_tokens": 1009,
+       "prompt_ms": 48.915,
+       "predicted_ms": 1339.967,
+       "service": "x2-llm LocalLLM -> llama-server"
+      },
+      "wall_s": 1.6235,
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "total_llm_s": 1.5024,
+    "extra_turn_retries": 0
+   },
+   "decision": {
+    "requested": "FAREWELL_WAVE",
+    "effective": "FAREWELL_WAVE",
+    "suppressed": null,
+    "trigger_text": "hasta luego",
+    "trigger_char_start": 29,
+    "trigger_char_end": 40,
+    "fsm_mandated": false
+   },
+   "tts": {
+    "wav_path": "visits_v2/staff/wav/v2visit_staff/v2visit_staff_t05_farewell.wav",
+    "wav_sha256": "2b8ffa367aa37b4634b5ddcdde0483ae921ee3248bcb09acaa898817d865ef61",
+    "sample_rate": 44100,
+    "duration_s": 5.2433,
+    "synth_s": 0.8487
+   },
+   "plan": {
+    "emote": "FAREWELL_WAVE",
+    "trigger_start_s": 2.38,
+    "trigger_end_s": 3.0,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.0
+   }
+  }
+ ],
+ "manifest": "visits_v2/staff/tts_manifest.jsonl",
+ "anchor_plan_summary": "visits_v2/staff/anchor_plan/summary.json"
+}

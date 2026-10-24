@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Felicidades",
+  "char_start": 1,
+  "char_end": 12,
+  "occurrence": 1,
+  "start_s": 0.64,
+  "end_s": 1.22,
+  "start_sample": 28224,
+  "end_sample": 53802,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "78eaa13a10dea83bef656180efb2bbb383a873f0843fac5fe57493cfb859c4bd",
+  "sample_count": 107520,
+  "case_id": "T06",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

@@ -1,0 +1,12 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+T01,V_TEST,T01,HIGH_FIVE,1008,2,Dame esos cinco,4.6676,44100,1.56,2.38,68796,aligned_ctc_not_human_validated,0.0,0.0,14113,61740,planned,planned,,0.02
+T02,V_TEST,T02,BOW,3001,11,Bienvenido,4.3818,44100,0.8,1.32,35280,aligned_ctc_not_human_validated,0.38,0.0,-16758,30870,planned,planned,,0.02
+T03,V_TEST,T03,POINT_RIGHT,,,derecha,2.9033,44100,1.94,2.2800000000000002,85554,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+T04,V_TEST,T04,POINT_FRONT,,,frente a mí,2.6296,44100,1.68,2.16,74088,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+T05,V_TEST,T05,SHAKE_HEAD,3029,11,no puedo,3.0493,44100,1.28,1.62,56448,aligned_ctc_not_human_validated,0.12,0.0,-5292,43191,planned,planned,,0.02
+T06,V_TEST,T06,CLAP,3017,11,Felicidades,2.411,44100,0.64,1.22,28224,aligned_ctc_not_human_validated,0.54,0.0,-23814,22934,planned,planned,,0.02
+T07,V_TEST,T07,HEART,3004,11,me encanta,3.1727,44100,1.6400000000000001,2.02,72324,aligned_ctc_not_human_validated,0.0,0.0,19404,67022,planned,planned,,0.02
+T08,V_TEST,T08,NOD,3028,11,Sí,2.8701,44100,0.84,0.9,37044,aligned_ctc_not_human_validated,0.46,0.0,-20286,27344,planned,planned,,0.02
+T09,V_TEST,T09,LIKE,1005,2,Excelente,1.7253,44100,0.62,1.04,27342,aligned_ctc_not_human_validated,0.5799546485260771,0.0,-25576,21168,planned,planned,,0.02
+T10,V_TEST,T10,WAVE,1002,2,hasta pronto,3.6811,44100,1.8800000000000001,2.42,82908,aligned_ctc_not_human_validated,0.0,0.0,29989,75852,planned,planned,,0.02
+T11,V_TEST,T11,NONE,,,,2.0417,44100,,,,,,,,,none_sonic,none_sonic,,

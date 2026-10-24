@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N Club VR</title>
+<style>
+  :root { color-scheme: dark; --fondo: #11151c; --texto: #ece4d2; --tenue: #9aa4b2; --oro: #d8a830; --ok: #5cc98a; --mal: #e0705a; }
+  html, body { margin: 0; height: 100%; background: var(--fondo); color: var(--texto); font: 16px/1.4 system-ui, sans-serif; overflow: hidden; }
+  canvas { display: block; }
+  #panel { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(17, 21, 28, .94); }
+  #panel.oculto { display: none; }
+  .tarjeta { max-width: 560px; padding: 28px 32px; border: 1px solid #2a3340; border-radius: 14px; background: #161c25; }
+  h1 { margin: 0 0 4px; font-size: 28px; letter-spacing: .12em; color: var(--oro); }
+  p { margin: 8px 0; color: var(--tenue); }
+  ul { list-style: none; padding: 0; margin: 16px 0; }
+  li { margin: 6px 0; }
+  li::before { content: "●"; margin-right: 8px; color: var(--tenue); }
+  li.ok::before { color: var(--ok); } li.mal::before { color: var(--mal); }
+  button { font: inherit; font-size: 18px; padding: 12px 22px; margin: 8px 8px 0 0; border-radius: 10px; border: 0; cursor: pointer; background: var(--oro); color: #14100a; }
+  button.sec { background: #2a3340; color: var(--texto); }
+  button:disabled { opacity: .4; cursor: default; }
+  #nivel { height: 6px; border-radius: 3px; background: #2a3340; overflow: hidden; margin-top: 4px; }
+  #nivel div { height: 100%; width: 0; background: var(--ok); }
+  .controles { font-size: 14px; }
+</style>
+</head>
+<body>
+<div id="panel">
+  <div class="tarjeta">
+    <h1>N CLUB · VR</h1>
+    <p>Eres el visitante que llega al club. El X2 Ultra-N te espera en la recepción.</p>
+    <ul>
+      <li id="e-escena">Cargando la escena…</li>
+      <li id="e-red">Conectando con el simulador…</li>
+      <li id="e-micro">Micrófono: se activa al entrar</li>
+    </ul>
+    <div id="nivel"><div></div></div>
+    <button id="entrar" disabled>Entrar en VR</button>
+    <button id="pantalla" class="sec" disabled>Ver en pantalla</button>
+    <p class="controles">Joystick izquierdo: andar (gatillo lateral = rápido) · Joystick derecho: girar 30° ·
+      Gatillo: hablar (el micrófono está siempre abierto; el gatillo marca el turno) ·
+      Mantener B o Y: volver a empezar la visita.</p>
+  </div>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

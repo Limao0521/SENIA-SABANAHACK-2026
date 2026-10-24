@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "hasta luego",
+  "char_start": 29,
+  "char_end": 40,
+  "occurrence": 1,
+  "start_s": 2.5,
+  "end_s": 3.04,
+  "start_sample": 110250,
+  "end_sample": 134064,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "7276e54ee1eaa7176c4f5520606f82e48b02923d8626ad5e837f5f045087dcd4",
+  "sample_count": 233472,
+  "case_id": "v2visit_external_t05_farewell",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

@@ -1,0 +1,1116 @@
+{
+ "visit_id": "ps_laura",
+ "rank": "VIP",
+ "person_dir": "laura",
+ "profile_from_db": {
+  "person_id": "P005",
+  "display_name": "Laura",
+  "rank_code": "VIP",
+  "rank_name": "Invitada VIP"
+ },
+ "face_recognition": {
+  "photo": "/home/luis/Downloads/Laura",
+  "status": "KNOWN",
+  "faces": 1,
+  "uniface_seconds": {
+   "image_seconds": 0.5059677819990611,
+   "detection_seconds": 0.45482611500119674,
+   "embedding_seconds": 0.05111238099925686
+  },
+  "bbox": [
+   1181.4930419921875,
+   1310.468017578125,
+   1839.1937255859375,
+   2188.26953125
+  ],
+  "confidence": 0.999974250793457,
+  "top1_id": "P005",
+  "top1_score": 1.0,
+  "top2_id": "P004",
+  "top2_score": 0.14253194630146027,
+  "margin": 0.8574680536985397,
+  "profile": {
+   "person_id": "P005",
+   "display_name": "Laura",
+   "person_status": "active",
+   "rank_code": "VIP",
+   "rank_name": "VIP members",
+   "rank_updated_at": "2026-10-20T22:36:47.105Z",
+   "identity_status": "CONFIRMED"
+  },
+  "latency_s": 2.56,
+  "wall_from_orchestrator_s": 3.27
+ },
+ "scenario": "reception_meeting_left",
+ "route_direction": "left",
+ "contract": "rcp01c.intervention.v2 (BF fix-B catalog, schema B flat, streaming) + persona card W3",
+ "pipeline": "phase1 personas: face_id(reto2 probe) + stream_chat 8080 + AsmPersona + persona_validate + Supertonic per-rank prosody (voice_config.json) + CTC anchor_plan --align auto",
+ "turns": [
+  {
+   "turn_id": "ps_laura_t00_greeting",
+   "state": "GREETING",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"GREETING_VIP\",\"speech\":\"Buenas tardes, señora Laura. Es un honor recibirla; será un placer atenderle personalmente.\",\"trigger_text\":\"buenas tardes\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_laura_t00_greeting",
+     "speech": "Buenas tardes, señora Laura. Es un honor recibirla; será un placer atenderle personalmente.",
+     "communicative_acts": [
+      "GREETING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_laura_t00_greeting",
+       "type": "GREETING_VIP",
+       "trigger_text": "Buenas tardes"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.2672,
+     "t_type_known": 0.3536,
+     "t_first_sentence": 0.4869,
+     "t_speech_done": 0.6646,
+     "t_total": 0.8065,
+     "prompt_tokens": 1559,
+     "completion_tokens": 47,
+     "cached_tokens": 724,
+     "prompt_ms": 175.605,
+     "predicted_ms": 539.411,
+     "key_order": null,
+     "total_s": 0.8065
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5464,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"GREETING_VIP\",\"speech\":\"Buenas tardes, señora Laura. Es un honor recibirla; será un placer atenderle personalmente.\",\"trigger_text\":\"buenas tardes\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_laura_t00_greeting",
+       "speech": "Buenas tardes, señora Laura. Es un honor recibirla; será un placer atenderle personalmente.",
+       "communicative_acts": [
+        "GREETING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_laura_t00_greeting",
+         "type": "GREETING_VIP",
+         "trigger_text": "Buenas tardes"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.2672,
+       "t_type_known": 0.3536,
+       "t_first_sentence": 0.4869,
+       "t_speech_done": 0.6646,
+       "t_total": 0.8065,
+       "prompt_tokens": 1559,
+       "completion_tokens": 47,
+       "cached_tokens": 724,
+       "prompt_ms": 175.605,
+       "predicted_ms": 539.411,
+       "key_order": null,
+       "total_s": 0.8065
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.2672,
+     "t_type_known": 0.3536,
+     "t_first_sentence": 0.4869,
+     "t_speech_done": 0.6646,
+     "t_total": 0.8065,
+     "prompt_tokens": 1559,
+     "completion_tokens": 47,
+     "cached_tokens": 724,
+     "prompt_ms": 175.605,
+     "predicted_ms": 539.411,
+     "key_order": null,
+     "total_s": 0.8065
+    },
+    "total_llm_s": 0.8065
+   },
+   "decision": {
+    "requested": "GREETING_VIP",
+    "effective": "GREETING_VIP",
+    "suppressed": null,
+    "trigger_text": "Buenas tardes",
+    "trigger_char_start": 0,
+    "trigger_char_end": 13,
+    "fsm_mandated": true
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 13,
+    "exclamations": 0,
+    "title": true,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/laura/wav/ps_laura/ps_laura_t00_greeting.wav",
+    "wav_sha256": "252d021c7d5fc961ae0ca4d7b51423dea648fee3e95946d5e9e2c00916766133",
+    "sample_rate": 44100,
+    "duration_s": 7.3388,
+    "synth_s": 1.1124,
+    "voice": "M5",
+    "prosody": "M5 speed=0.966 (rank VIP × state GREETING)"
+   },
+   "timings": {
+    "llm_total_s": 0.807,
+    "llm_first_attempt": {
+     "t_first_token": 0.2672,
+     "t_type_known": 0.3536,
+     "t_first_sentence": 0.4869,
+     "t_speech_done": 0.6646,
+     "t_total": 0.8065
+    },
+    "tts_full_s": 1.813,
+    "tts_synth_s": 1.1124,
+    "tts_first_sentence_s": 0.5265,
+    "first_sentence": "Buenas tardes, señora Laura.",
+    "e2e_llm_req_to_first_audio_s": 1.013
+   },
+   "plan": {
+    "emote": "GREETING_VIP",
+    "trigger_start_s": 0.66,
+    "trigger_end_s": 1.3800000000000001,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.06
+   }
+  },
+  {
+   "turn_id": "ps_laura_t01_guidance",
+   "state": "GUIDANCE",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"POINT_LEFT\",\"speech\":\"Señorita Laura, la sala de juntas está a mi izquierda; será un placer acompañarle.\",\"trigger_text\":\"a mi izquierda\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_laura_t01_guidance",
+     "speech": "Señorita Laura, la sala de juntas está a mi izquierda; será un placer acompañarle.",
+     "communicative_acts": [
+      "GUIDE"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_laura_t01_guidance",
+       "type": "POINT_LEFT",
+       "trigger_text": "a mi izquierda",
+       "reference_frame": "X2_base_local",
+       "target_vector": [
+        0.0,
+        1.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.2241,
+     "t_type_known": 0.2753,
+     "t_first_sentence": 0.5654,
+     "t_speech_done": 0.5654,
+     "t_total": 0.6662,
+     "prompt_tokens": 1634,
+     "completion_tokens": 41,
+     "cached_tokens": 939,
+     "prompt_ms": 144.678,
+     "predicted_ms": 442.173,
+     "key_order": null,
+     "total_s": 0.6662
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5784,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"POINT_LEFT\",\"speech\":\"Señorita Laura, la sala de juntas está a mi izquierda; será un placer acompañarle.\",\"trigger_text\":\"a mi izquierda\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_laura_t01_guidance",
+       "speech": "Señorita Laura, la sala de juntas está a mi izquierda; será un placer acompañarle.",
+       "communicative_acts": [
+        "GUIDE"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_laura_t01_guidance",
+         "type": "POINT_LEFT",
+         "trigger_text": "a mi izquierda",
+         "reference_frame": "X2_base_local",
+         "target_vector": [
+          0.0,
+          1.0,
+          0.0
+         ]
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.2241,
+       "t_type_known": 0.2753,
+       "t_first_sentence": 0.5654,
+       "t_speech_done": 0.5654,
+       "t_total": 0.6662,
+       "prompt_tokens": 1634,
+       "completion_tokens": 41,
+       "cached_tokens": 939,
+       "prompt_ms": 144.678,
+       "predicted_ms": 442.173,
+       "key_order": null,
+       "total_s": 0.6662
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.2241,
+     "t_type_known": 0.2753,
+     "t_first_sentence": 0.5654,
+     "t_speech_done": 0.5654,
+     "t_total": 0.6662,
+     "prompt_tokens": 1634,
+     "completion_tokens": 41,
+     "cached_tokens": 939,
+     "prompt_ms": 144.678,
+     "predicted_ms": 442.173,
+     "key_order": null,
+     "total_s": 0.6662
+    },
+    "total_llm_s": 0.6662
+   },
+   "decision": {
+    "requested": "POINT_LEFT",
+    "effective": "POINT_LEFT",
+    "suppressed": null,
+    "trigger_text": "a mi izquierda",
+    "trigger_char_start": 39,
+    "trigger_char_end": 53,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 14,
+    "exclamations": 0,
+    "title": true,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/laura/wav/ps_laura/ps_laura_t01_guidance.wav",
+    "wav_sha256": "8bcc26f03101a3f853886049db82ceae5b67ecc146e633632820cd0feec17304",
+    "sample_rate": 44100,
+    "duration_s": 7.2167,
+    "synth_s": 1.0898,
+    "voice": "M5",
+    "prosody": "M5 speed=0.92 (rank VIP × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.666,
+    "llm_first_attempt": {
+     "t_first_token": 0.2241,
+     "t_type_known": 0.2753,
+     "t_first_sentence": 0.5654,
+     "t_speech_done": 0.5654,
+     "t_total": 0.6662
+    },
+    "tts_full_s": 1.091,
+    "tts_synth_s": 1.0898,
+    "tts_first_sentence_s": 1.1024,
+    "first_sentence": "Señorita Laura, la sala de juntas está a mi izquierda; será un placer acompañarle.",
+    "e2e_llm_req_to_first_audio_s": 1.668
+   },
+   "plan": {
+    "emote": "POINT_LEFT",
+    "trigger_start_s": 3.56,
+    "trigger_end_s": 4.3,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "anchor_only_no_preset",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "ps_laura_t02_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Conseguí entregar el informe antes de la fecha límite.",
+   "intended_emote": "APPLAUSE",
+   "llm": {
+    "raw": "{\"type\":\"APPLAUSE\",\"speech\":\"Felicidades por lograr entregar el informe a tiempo, es una noticia muy buena.\",\"trigger_text\":\"Felicidades\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_laura_t02_dialogue",
+     "speech": "Felicidades por lograr entregar el informe a tiempo, es una noticia muy buena.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_laura_t02_dialogue",
+       "type": "APPLAUSE",
+       "trigger_text": "Felicidades"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0494,
+     "t_type_known": 0.1976,
+     "t_first_sentence": 0.6785,
+     "t_speech_done": 0.6785,
+     "t_total": 0.7789,
+     "prompt_tokens": 3708,
+     "completion_tokens": 38,
+     "cached_tokens": 3594,
+     "prompt_ms": 42.802,
+     "predicted_ms": 729.288,
+     "key_order": null,
+     "total_s": 0.7789
+    },
+    "temperature": 0.7,
+    "seed": 1775737723,
+    "prompt_chars": 12452,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"APPLAUSE\",\"speech\":\"¡Felicidades por esa aprobación, qué buena noticia me das!\",\"trigger_text\":\"Felicidades\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_laura_t02_dialogue",
+       "speech": "¡Felicidades por esa aprobación, qué buena noticia me das!",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_laura_t02_dialogue",
+         "type": "APPLAUSE",
+         "trigger_text": "Felicidades"
+        }
+       ]
+      },
+      "errors": [
+       "persona_vip: VIP speech must not contain exclamations «¡»/«!»"
+      ],
+      "metrics": {
+       "t_first_token": 0.2774,
+       "t_type_known": 0.3488,
+       "t_first_sentence": 0.5847,
+       "t_speech_done": 0.5971,
+       "t_total": 0.6963,
+       "prompt_tokens": 3598,
+       "completion_tokens": 35,
+       "cached_tokens": 2879,
+       "prompt_ms": 175.142,
+       "predicted_ms": 418.843,
+       "key_order": null,
+       "total_s": 0.6963
+      },
+      "temperature": 0.2,
+      "seed": null
+     },
+     {
+      "raw": "{\"type\":\"APPLAUSE\",\"speech\":\"Felicidades por lograr entregar el informe a tiempo, es una noticia muy buena.\",\"trigger_text\":\"Felicidades\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_laura_t02_dialogue",
+       "speech": "Felicidades por lograr entregar el informe a tiempo, es una noticia muy buena.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_laura_t02_dialogue",
+         "type": "APPLAUSE",
+         "trigger_text": "Felicidades"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0494,
+       "t_type_known": 0.1976,
+       "t_first_sentence": 0.6785,
+       "t_speech_done": 0.6785,
+       "t_total": 0.7789,
+       "prompt_tokens": 3708,
+       "completion_tokens": 38,
+       "cached_tokens": 3594,
+       "prompt_ms": 42.802,
+       "predicted_ms": 729.288,
+       "key_order": null,
+       "total_s": 0.7789
+      },
+      "temperature": 0.7,
+      "seed": 1775737723
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": true,
+    "first_attempt_ok": false,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.2774,
+     "t_type_known": 0.3488,
+     "t_first_sentence": 0.5847,
+     "t_speech_done": 0.5971,
+     "t_total": 0.6963,
+     "prompt_tokens": 3598,
+     "completion_tokens": 35,
+     "cached_tokens": 2879,
+     "prompt_ms": 175.142,
+     "predicted_ms": 418.843,
+     "key_order": null,
+     "total_s": 0.6963
+    },
+    "total_llm_s": 1.4752
+   },
+   "decision": {
+    "requested": "APPLAUSE",
+    "effective": "APPLAUSE",
+    "suppressed": null,
+    "trigger_text": "Felicidades",
+    "trigger_char_start": 0,
+    "trigger_char_end": 11,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": false
+    },
+    "words": 13,
+    "exclamations": 0,
+    "title": false,
+    "relaxed": false,
+    "persona_retries": 1
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/laura/wav/ps_laura/ps_laura_t02_dialogue.wav",
+    "wav_sha256": "8e49ed91f1acbf34f7b90ef604d4903b2dae4fff1a68313ec3f6fc8f97f10d55",
+    "sample_rate": 44100,
+    "duration_s": 6.6153,
+    "synth_s": 0.9618,
+    "voice": "M5",
+    "prosody": "M5 speed=0.92 (rank VIP × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 1.476,
+    "llm_first_attempt": {
+     "t_first_token": 0.2774,
+     "t_type_known": 0.3488,
+     "t_first_sentence": 0.5847,
+     "t_speech_done": 0.5971,
+     "t_total": 0.6963
+    },
+    "tts_full_s": 0.963,
+    "tts_synth_s": 0.9618,
+    "tts_first_sentence_s": 0.9552,
+    "first_sentence": "Felicidades por lograr entregar el informe a tiempo, es una noticia muy buena.",
+    "e2e_llm_req_to_first_audio_s": 1.54
+   },
+   "plan": {
+    "emote": "APPLAUSE",
+    "trigger_start_s": 0.76,
+    "trigger_end_s": 1.4000000000000001,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.12
+   }
+  },
+  {
+   "turn_id": "ps_laura_t03_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Te agradezco sinceramente tu ayuda, fue maravillosa.",
+   "intended_emote": "SOCIAL_HEART",
+   "llm": {
+    "raw": "{\"type\":\"SOCIAL_HEART\",\"speech\":\"Señorita Laura, es un honor poder ayudarla y me alegra de corazón que lo disfrute.\",\"trigger_text\":\"me alegra\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_laura_t03_dialogue",
+     "speech": "Señorita Laura, es un honor poder ayudarla y me alegra de corazón que lo disfrute.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_laura_t03_dialogue",
+       "type": "SOCIAL_HEART",
+       "trigger_text": "me alegra"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0387,
+     "t_type_known": 0.1214,
+     "t_first_sentence": 0.4315,
+     "t_speech_done": 0.4315,
+     "t_total": 0.5534,
+     "prompt_tokens": 3713,
+     "completion_tokens": 42,
+     "cached_tokens": 3641,
+     "prompt_ms": 32.45,
+     "predicted_ms": 514.435,
+     "key_order": null,
+     "total_s": 0.5534
+    },
+    "temperature": 0.7,
+    "seed": 1098866157,
+    "prompt_chars": 12448,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"SOCIAL_HEART\",\"speech\":\"Eres muy amable, me alegra de corazón poder ayudarte hoy.\",\"trigger_text\":\"muy amable\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_laura_t03_dialogue",
+       "speech": "Eres muy amable, me alegra de corazón poder ayudarte hoy.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_laura_t03_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "muy amable"
+        }
+       ]
+      },
+      "errors": [
+       "persona_address: VIP must use usted ONLY (found tú marker 'ayudarte')"
+      ],
+      "metrics": {
+       "t_first_token": 0.047,
+       "t_type_known": 0.1261,
+       "t_first_sentence": 0.3391,
+       "t_speech_done": 0.3391,
+       "t_total": 0.4507,
+       "prompt_tokens": 3598,
+       "completion_tokens": 35,
+       "cached_tokens": 3428,
+       "prompt_ms": 40.585,
+       "predicted_ms": 403.577,
+       "key_order": null,
+       "total_s": 0.4507
+      },
+      "temperature": 0.2,
+      "seed": null
+     },
+     {
+      "raw": "{\"type\":\"SOCIAL_HEART\",\"speech\":\"Eres muy amable, me alegra de corazón poder ayudarte hoy.\",\"trigger_text\":\"muy amable\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_laura_t03_dialogue",
+       "speech": "Eres muy amable, me alegra de corazón poder ayudarte hoy.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_laura_t03_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "muy amable"
+        }
+       ]
+      },
+      "errors": [
+       "persona_address: VIP must use usted ONLY (found tú marker 'ayudarte')"
+      ],
+      "metrics": {
+       "t_first_token": 0.0473,
+       "t_type_known": 0.1315,
+       "t_first_sentence": 0.5732,
+       "t_speech_done": 0.5732,
+       "t_total": 0.692,
+       "prompt_tokens": 3706,
+       "completion_tokens": 35,
+       "cached_tokens": 3594,
+       "prompt_ms": 41.132,
+       "predicted_ms": 644.574,
+       "key_order": null,
+       "total_s": 0.692
+      },
+      "temperature": 0.7,
+      "seed": 834055361
+     },
+     {
+      "raw": "{\"type\":\"SOCIAL_HEART\",\"speech\":\"Señorita Laura, es un honor poder ayudarla y me alegra de corazón que lo disfrute.\",\"trigger_text\":\"me alegra\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_laura_t03_dialogue",
+       "speech": "Señorita Laura, es un honor poder ayudarla y me alegra de corazón que lo disfrute.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_laura_t03_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "me alegra"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0387,
+       "t_type_known": 0.1214,
+       "t_first_sentence": 0.4315,
+       "t_speech_done": 0.4315,
+       "t_total": 0.5534,
+       "prompt_tokens": 3713,
+       "completion_tokens": 42,
+       "cached_tokens": 3641,
+       "prompt_ms": 32.45,
+       "predicted_ms": 514.435,
+       "key_order": null,
+       "total_s": 0.5534
+      },
+      "temperature": 0.7,
+      "seed": 1098866157
+     }
+    ],
+    "extra_turn_retries": 1,
+    "retry_used": true,
+    "first_attempt_ok": false,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.047,
+     "t_type_known": 0.1261,
+     "t_first_sentence": 0.3391,
+     "t_speech_done": 0.3391,
+     "t_total": 0.4507,
+     "prompt_tokens": 3598,
+     "completion_tokens": 35,
+     "cached_tokens": 3428,
+     "prompt_ms": 40.585,
+     "predicted_ms": 403.577,
+     "key_order": null,
+     "total_s": 0.4507
+    },
+    "total_llm_s": 1.6961
+   },
+   "decision": {
+    "requested": "SOCIAL_HEART",
+    "effective": "SOCIAL_HEART",
+    "suppressed": null,
+    "trigger_text": "me alegra",
+    "trigger_char_start": 45,
+    "trigger_char_end": 54,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 15,
+    "exclamations": 0,
+    "title": true,
+    "relaxed": false,
+    "persona_retries": 2
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/laura/wav/ps_laura/ps_laura_t03_dialogue.wav",
+    "wav_sha256": "328a0fddbc2433c81fd8b880a00ff22496fe8ad9065008400e3a32094711207d",
+    "sample_rate": 44100,
+    "duration_s": 6.8351,
+    "synth_s": 1.0892,
+    "voice": "M5",
+    "prosody": "M5 speed=0.92 (rank VIP × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 1.697,
+    "llm_first_attempt": {
+     "t_first_token": 0.047,
+     "t_type_known": 0.1261,
+     "t_first_sentence": 0.3391,
+     "t_speech_done": 0.3391,
+     "t_total": 0.4507
+    },
+    "tts_full_s": 1.09,
+    "tts_synth_s": 1.0892,
+    "tts_first_sentence_s": 1.0908,
+    "first_sentence": "Señorita Laura, es un honor poder ayudarla y me alegra de corazón que lo disfrute.",
+    "e2e_llm_req_to_first_audio_s": 1.43
+   },
+   "plan": {
+    "emote": "SOCIAL_HEART",
+    "trigger_start_s": 4.24,
+    "trigger_end_s": 4.7,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.0
+   }
+  },
+  {
+   "turn_id": "ps_laura_t04_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿A qué hora cierra el laboratorio hoy?",
+   "intended_emote": "NONE",
+   "llm": {
+    "raw": "{\"type\":\"NONE\",\"speech\":\"La sala de juntas está a mi izquierda, señorita Laura. ¿Puede confirmar la hora de cierre del laboratorio hoy?\",\"trigger_text\":\"a mi izquierda\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_laura_t04_dialogue",
+     "speech": "La sala de juntas está a mi izquierda, señorita Laura. ¿Puede confirmar la hora de cierre del laboratorio hoy?",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": []
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0456,
+     "t_type_known": 0.091,
+     "t_first_sentence": 0.2958,
+     "t_speech_done": 0.4942,
+     "t_total": 0.6059,
+     "prompt_tokens": 3588,
+     "completion_tokens": 47,
+     "cached_tokens": 3428,
+     "prompt_ms": 39.315,
+     "predicted_ms": 560.172,
+     "key_order": null,
+     "total_s": 0.6059
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 12420,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"NONE\",\"speech\":\"La sala de juntas está a mi izquierda, señorita Laura. ¿Puede confirmar la hora de cierre del laboratorio hoy?\",\"trigger_text\":\"a mi izquierda\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_laura_t04_dialogue",
+       "speech": "La sala de juntas está a mi izquierda, señorita Laura. ¿Puede confirmar la hora de cierre del laboratorio hoy?",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": []
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0456,
+       "t_type_known": 0.091,
+       "t_first_sentence": 0.2958,
+       "t_speech_done": 0.4942,
+       "t_total": 0.6059,
+       "prompt_tokens": 3588,
+       "completion_tokens": 47,
+       "cached_tokens": 3428,
+       "prompt_ms": 39.315,
+       "predicted_ms": 560.172,
+       "key_order": null,
+       "total_s": 0.6059
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.0456,
+     "t_type_known": 0.091,
+     "t_first_sentence": 0.2958,
+     "t_speech_done": 0.4942,
+     "t_total": 0.6059,
+     "prompt_tokens": 3588,
+     "completion_tokens": 47,
+     "cached_tokens": 3428,
+     "prompt_ms": 39.315,
+     "predicted_ms": 560.172,
+     "key_order": null,
+     "total_s": 0.6059
+    },
+    "total_llm_s": 0.6059
+   },
+   "decision": {
+    "requested": "NONE",
+    "effective": "NONE",
+    "suppressed": null,
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 19,
+    "exclamations": 0,
+    "title": true,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/laura/wav/ps_laura/ps_laura_t04_dialogue.wav",
+    "wav_sha256": "dc1f74af6bc7c0e9685cfea93742d36a84af69d8333bbbb58b348c1556cfdbe2",
+    "sample_rate": 44100,
+    "duration_s": 8.8055,
+    "synth_s": 1.2158,
+    "voice": "M5",
+    "prosody": "M5 speed=0.92 (rank VIP × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.606,
+    "llm_first_attempt": {
+     "t_first_token": 0.0456,
+     "t_type_known": 0.091,
+     "t_first_sentence": 0.2958,
+     "t_speech_done": 0.4942,
+     "t_total": 0.6059
+    },
+    "tts_full_s": 1.217,
+    "tts_synth_s": 1.2158,
+    "tts_first_sentence_s": 0.7983,
+    "first_sentence": "La sala de juntas está a mi izquierda, señorita Laura.",
+    "e2e_llm_req_to_first_audio_s": 1.094
+   },
+   "plan": {
+    "emote": "NONE",
+    "trigger_start_s": null,
+    "trigger_end_s": null,
+    "align_status": null,
+    "status": "none_sonic",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "ps_laura_t05_farewell",
+   "state": "FAREWELL",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"SOCIAL_HEART\",\"speech\":\"Ha sido un placer atenderla, señorita Laura. Con su permiso, que tenga una excelente tarde.\",\"trigger_text\":\"que tenga\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_laura_t05_farewell",
+     "speech": "Ha sido un placer atenderla, señorita Laura. Con su permiso, que tenga una excelente tarde.",
+     "communicative_acts": [
+      "CLOSING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_laura_t05_farewell",
+       "type": "SOCIAL_HEART",
+       "trigger_text": "que tenga"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.3357,
+     "t_type_known": 0.419,
+     "t_first_sentence": 0.5768,
+     "t_speech_done": 0.7003,
+     "t_total": 0.7789,
+     "prompt_tokens": 1615,
+     "completion_tokens": 40,
+     "cached_tokens": 733,
+     "prompt_ms": 185.411,
+     "predicted_ms": 443.268,
+     "key_order": null,
+     "total_s": 0.7789
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5652,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"SOCIAL_HEART\",\"speech\":\"Ha sido un placer atenderla, señorita Laura. Con su permiso, que tenga una excelente tarde.\",\"trigger_text\":\"que tenga\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_laura_t05_farewell",
+       "speech": "Ha sido un placer atenderla, señorita Laura. Con su permiso, que tenga una excelente tarde.",
+       "communicative_acts": [
+        "CLOSING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_laura_t05_farewell",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "que tenga"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.3357,
+       "t_type_known": 0.419,
+       "t_first_sentence": 0.5768,
+       "t_speech_done": 0.7003,
+       "t_total": 0.7789,
+       "prompt_tokens": 1615,
+       "completion_tokens": 40,
+       "cached_tokens": 733,
+       "prompt_ms": 185.411,
+       "predicted_ms": 443.268,
+       "key_order": null,
+       "total_s": 0.7789
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.3357,
+     "t_type_known": 0.419,
+     "t_first_sentence": 0.5768,
+     "t_speech_done": 0.7003,
+     "t_total": 0.7789,
+     "prompt_tokens": 1615,
+     "completion_tokens": 40,
+     "cached_tokens": 733,
+     "prompt_ms": 185.411,
+     "predicted_ms": 443.268,
+     "key_order": null,
+     "total_s": 0.7789
+    },
+    "total_llm_s": 0.7789
+   },
+   "decision": {
+    "requested": "SOCIAL_HEART",
+    "effective": "SOCIAL_HEART",
+    "suppressed": null,
+    "trigger_text": "que tenga",
+    "trigger_char_start": 61,
+    "trigger_char_end": 70,
+    "fsm_mandated": true
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 15,
+    "exclamations": 0,
+    "title": true,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/laura/wav/ps_laura/ps_laura_t05_farewell.wav",
+    "wav_sha256": "fc499065cd3579a03eace651f25768f8b51d6f72c02395c0fdaca783c18f619d",
+    "sample_rate": 44100,
+    "duration_s": 7.9134,
+    "synth_s": 1.2135,
+    "voice": "M5",
+    "prosody": "M5 speed=0.902 (rank VIP × state FAREWELL)"
+   },
+   "timings": {
+    "llm_total_s": 0.779,
+    "llm_first_attempt": {
+     "t_first_token": 0.3357,
+     "t_type_known": 0.419,
+     "t_first_sentence": 0.5768,
+     "t_speech_done": 0.7003,
+     "t_total": 0.7789
+    },
+    "tts_full_s": 1.214,
+    "tts_synth_s": 1.2135,
+    "tts_first_sentence_s": 0.6617,
+    "first_sentence": "Ha sido un placer atenderla, señorita Laura.",
+    "e2e_llm_req_to_first_audio_s": 1.238
+   },
+   "plan": {
+    "emote": "SOCIAL_HEART",
+    "trigger_start_s": 5.48,
+    "trigger_end_s": 5.9,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.0
+   }
+  }
+ ],
+ "validation": {
+  "greeting_rank_emote": true,
+  "greeting_emote": "GREETING_VIP",
+  "staff_high_five": true,
+  "point_direction": true,
+  "point_emote": "POINT_LEFT",
+  "vip_farewell_heart": true,
+  "farewell_emote": "SOCIAL_HEART",
+  "name_in_greeting": true,
+  "greeting_speech": "Buenas tardes, señora Laura. Es un honor recibirla; será un placer atenderle personalmente.",
+  "dialogue_emotes_ok": true,
+  "address_no_mixing": true,
+  "address_form_ok": true,
+  "vip_title_greeting": true,
+  "vip_no_exclamations": true,
+  "persona_turns": 6,
+  "persona_relaxed_turns": 0,
+  "failed_turns": 0,
+  "ALL_OK": true
+ },
+ "manifest": "opt/realnames/visits/laura/tts_manifest.jsonl",
+ "mixing_turns": [],
+ "anchor_plan": {
+  "returncode": 0,
+  "wall_s": 1.508,
+  "stdout_tail": "{\n \"schema\": \"hriego_gesture_anchor_plan.v1\",\n \"rows\": 6,\n \"policy\": {\n  \"align\": \"auto\",\n  \"stat\": \"median\",\n  \"max_initial_delay_s\": 1.5,\n  \"latency_file\": \"config/preset_latency_c08.json\",\n  \"latency_sha256\": \"d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3\",\n  \"latency_error\": null\n },\n \"model\": {\n  \"revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d\",\n  \"onnx_sha256\": \"e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\",\n  \"provider\": \"CPUExecutionProvider\",\n  \"cpu_threads\": 2,\n  \"onnx_sha256_matches_pinned\": true,\n  \"model_revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\"\n },\n \"align_policy_used_counts\": {\n  \"stroke\": 4,\n  \"null\": 2\n },\n \"align_policy_used_preroll0_counts\": {\n  \"stroke\": 4,\n  \"null\": 2\n },\n \"status_counts\": {\n  \"planned\": 4,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"status_preroll0_counts\": {\n  \"planned\": 4,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"align_status_counts\": {\n  \"aligned_ctc_not_human_validated\": 5,\n  \"null\": 1\n },\n \"max_delay_s_planned\": 1.12,\n \"max_delay_s_preroll0_planned\": 0.0599546485260771\n}\n",
+  "stderr_tail": ""
+ },
+ "timings": {
+  "face_total_s": 2.56,
+  "face_wall_s": 3.27,
+  "anchor_plan_wall_s": 1.508,
+  "visit_wall_s": 23.402
+ },
+ "anchor_plan_summary": "opt/realnames/visits/laura/anchor_plan/summary.json"
+}

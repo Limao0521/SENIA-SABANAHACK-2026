@@ -1,0 +1,65 @@
+# Gateway único de la pila en la nube (x2-nube). Un solo punto de entrada con
+# token Bearer; detrás, llama-server (/llm/*) y el servidor de voz (/voz/*).
+#
+# Dirección del sitio:
+#   NUBE_SITIO=":8443"              → HTTP plano. Usar SOLO dentro del túnel
+#                                     WireGuard (o con NUBE_BIND=127.0.0.1);
+#                                     el token viaja sin cifrar por la red.
+#   NUBE_SITIO="nube.midominio.co"  → Caddy obtiene y renueva automáticamente un
+#                                     certificado Let's Encrypt (HTTPS). Publique
+#                                     entonces los puertos 80/443 en compose.nube.yml
+#                                     y apunte el DNS del dominio a la IP del VPS.
+
+{$NUBE_SITIO::8443} {
+	# Registro de acceso JSON por stdout (lo recoge `docker compose logs gateway`).
+	log {
+		output stdout
+		format json
+	}
+
+	# Todo dentro de `route` para garantizar el orden literal de evaluación:
+	# primero la autenticación y después las rutas. (Los bloques `handle` sueltos
+	# se reordenan por especificidad del matcher y podrían dejar el /llm/* o
+	# /voz/* antes que la comprobación del token.)
+	route {
+		# ---------------------------------------------------------------- auth
+		# Rechazo 401 de toda petición cuyo Authorization no sea exactamente
+		# "Bearer <HRI_NUBE_TOKEN>" (incluida la ausencia de cabecera: `not`
+		# cubre ambos casos). El token llega por entorno (.env del VPS, nunca
+		# versionado). Si HRI_NUBE_TOKEN estuviera vacío, nada coincidiría con
+		# "Bearer " y el gateway denegaría todo (fallo seguro).
+		@sin_token not header Authorization "Bearer {$HRI_NUBE_TOKEN}"
+		respond @sin_token "{\"ok\": false, \"error\": \"token inválido\"}" 401
+
+		# ---------------------------------------------------------------- rutas
+		# LLM: OpenAI-compatible (llama-server). handle_path quita el prefijo:
+		# /llm/health → /health, /llm/v1/chat/completions → /v1/chat/completions.
+		handle_path /llm/* {
+			reverse_proxy llm:8080 {
+				# SSE en streaming: -1 desactiva por completo el búfer de
+				# respuesta; sin esto el proxy acumularía los tokens y el
+				# cliente (HRI_NUBE_LLM_TTFT_S) daría timeout.
+				flush_interval -1
+				transport http {
+					# Generación larga sin cerrar la lectura (turno completo).
+					read_timeout 120s
+					write_timeout 30s
+				}
+			}
+		}
+
+		# Voz: /voz/health → /health, /voz/v1/asr → /v1/asr, /voz/v1/tts →
+		# /v1/tts (nube_voz vuelve a validar el token: defensa en profundidad).
+		handle_path /voz/* {
+			reverse_proxy voz:9000 {
+				transport http {
+					# ASR de audio largo o síntesis lenta: margen amplio.
+					read_timeout 120s
+				}
+			}
+		}
+
+		# Cualquier otra ruta: 404 (no se revela qué hay detrás).
+		respond "{\"ok\": false, \"error\": \"ruta no encontrada\"}" 404
+	}
+}

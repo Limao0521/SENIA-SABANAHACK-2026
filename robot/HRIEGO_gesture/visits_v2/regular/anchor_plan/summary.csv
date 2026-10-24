@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+v2visit_regular_t00_greeting,v2visit_regular,v2visit_regular_t00_greeting,GREETING_REGULAR,1003,2,Buenos días,4.3747,44100,0.8,1.36,35280,aligned_ctc_not_human_validated,0.40006802721088436,0.0,-17643,27341,planned,planned,,0.02
+v2visit_regular_t01_guidance,v2visit_regular,v2visit_regular_t01_guidance,POINT_LEFT,,,a mi izquierda,3.1506,44100,2.0,2.6,88200,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+v2visit_regular_t02_dialogue,v2visit_regular,v2visit_regular_t02_dialogue,NEGATION_STRONG,3009,11,No está permitido,5.2047,44100,0.8200000000000001,1.7,36162,aligned_ctc_not_human_validated,0.3599546485260771,0.0,-15874,29988,planned,planned,,0.02
+v2visit_regular_t03_dialogue,v2visit_regular,v2visit_regular_t03_dialogue,THUMBS_UP,1005,2,buena idea,4.4461,44100,3.2800000000000002,3.8200000000000003,144648,aligned_ctc_not_human_validated,0.0,0.0,91730,138474,planned,planned,,0.02
+v2visit_regular_t04_dialogue,v2visit_regular,v2visit_regular_t04_dialogue,NONE,,,,2.839,44100,,,,,,,,,none_sonic,none_sonic,,
+v2visit_regular_t05_farewell,v2visit_regular,v2visit_regular_t05_farewell,FAREWELL_WAVE,3031,11,hasta luego,5.2433,44100,2.6,3.12,114660,aligned_ctc_not_human_validated,0.0,0.0,60857,107604,planned,planned,,0.02

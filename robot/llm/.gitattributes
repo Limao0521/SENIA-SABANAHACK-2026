@@ -1,0 +1,5 @@
+# Los scripts de shell se ejecutan dentro de contenedores Linux:
+# siempre LF, aunque el checkout sea en Windows.
+*.sh text eol=lf
+entrypoint.sh text eol=lf
+run.sh text eol=lf

@@ -1,0 +1,41 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "T05",
+  "binding_key": "3029/11",
+  "policy": {
+    "align": "onset",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false
+  },
+  "audio": {
+    "sha256": "83d7fbabcfe47cd1af38ee8907b49d42140afa8090404319ad6bcffc480172f3",
+    "sample_rate_hz": 44100,
+    "sample_count": 135168,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 5292,
+  "dispatch_sample": -5292,
+  "phases": {
+    "dispatch_sample": -5292,
+    "expected_onset_sample": 56448,
+    "expected_stroke_sample": 67914,
+    "expected_end_sample": 153456,
+    "end_after_audio_end": true
+  },
+  "dispatches": [
+    {
+      "motion_id": 3029,
+      "area": 11,
+      "dispatch_sample": -5292,
+      "dispatch_sample_with_start_delay": 0,
+      "repeat_count": 1
+    }
+  ]
+}

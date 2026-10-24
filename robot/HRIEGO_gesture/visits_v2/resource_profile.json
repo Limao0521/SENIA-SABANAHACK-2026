@@ -1,0 +1,67 @@
+{
+ "window_s": [
+  1792670474.0,
+  1792670574.0
+ ],
+ "run_wall_s": 100.0,
+ "gpu": {
+  "vram_idle_mib": 3938,
+  "vram_peak_mib": 3938,
+  "util_peak_pct": 99,
+  "util_mean_pct": 64.9,
+  "samples": 200
+ },
+ "x2_llm_container": {
+  "ram_idle_mib": 5304,
+  "ram_peak_mib": 5682,
+  "cpu_peak_pct": 102.84
+ },
+ "llm": {
+  "n_requests": 48,
+  "latency_p50_s": 1.437,
+  "latency_p95_s": 1.602,
+  "wall_p50_s": 1.568,
+  "wall_p95_s": 1.723,
+  "gen_tokens_per_s_mean": 71.3,
+  "gen_tokens_per_s_p50": 70.9,
+  "prompt_tokens_per_s_mean": 76940,
+  "completion_tokens_mean": 96.6,
+  "prompt_tokens_mean": 1980,
+  "temperature_counts": {
+   "0.2": 30,
+   "0.7": 18
+  }
+ },
+ "supertonic_process": {
+  "rss_peak_mib": 505,
+  "vmhwm_peak_mib": 505,
+  "samples": 88
+ },
+ "supertonic_synth": {
+  "n": 30,
+  "synth_p50_s": 0.659,
+  "synth_p95_s": 0.871,
+  "audio_dur_mean_s": 4.14,
+  "rtf_mean": 0.168,
+  "rtf_p95": 0.194,
+  "rtf_total": 0.167
+ },
+ "effective_emote_counts": {
+  "GREETING_VIP": 1,
+  "POINT_RIGHT": 1,
+  "APPLAUSE": 2,
+  "SOCIAL_HEART": 4,
+  "NONE": 5,
+  "GREETING_REGULAR": 1,
+  "POINT_LEFT": 2,
+  "NEGATION_STRONG": 2,
+  "THUMBS_UP": 1,
+  "FAREWELL_WAVE": 4,
+  "GREETING_GUEST": 1,
+  "POINT_FRONT": 2,
+  "GREETING_STAFF": 1,
+  "NEGATION_NORMAL": 1,
+  "CONFIRMATION": 1,
+  "GREETING_EXTERNAL": 1
+ }
+}

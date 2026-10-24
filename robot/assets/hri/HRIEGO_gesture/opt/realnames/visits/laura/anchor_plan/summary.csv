@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,align_policy_used,align_policy_used_preroll0,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+ps_laura_t00_greeting,ps_laura,ps_laura_t00_greeting,GREETING_VIP,3001,11,Buenas tardes,7.3388,44100,0.66,1.3800000000000001,29106,aligned_ctc_not_human_validated,stroke,stroke,1.06,0.0,-46746,882,planned,planned,,0.02
+ps_laura_t01_guidance,ps_laura,ps_laura_t01_guidance,POINT_LEFT,,,a mi izquierda,7.2167,44100,3.56,4.3,156996,aligned_ctc_not_human_validated,,,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+ps_laura_t02_dialogue,ps_laura,ps_laura_t02_dialogue,APPLAUSE,3017,11,Felicidades,6.6153,44100,0.76,1.4000000000000001,33516,aligned_ctc_not_human_validated,stroke,stroke,1.12,0.0599546485260771,-49392,-2644,planned,planned,,0.02
+ps_laura_t03_dialogue,ps_laura,ps_laura_t03_dialogue,SOCIAL_HEART,3004,11,me alegra,6.8351,44100,4.24,4.7,186984,aligned_ctc_not_human_validated,stroke,stroke,0.0,0.0,95256,142874,planned,planned,,0.02
+ps_laura_t04_dialogue,ps_laura,ps_laura_t04_dialogue,NONE,,,,8.8055,44100,,,,,,,,,,,none_sonic,none_sonic,,
+ps_laura_t05_farewell,ps_laura,ps_laura_t05_farewell,SOCIAL_HEART,3004,11,que tenga,7.9134,44100,5.48,5.9,241668,aligned_ctc_not_human_validated,stroke,stroke,0.0,0.0,149940,197558,planned,planned,,0.02

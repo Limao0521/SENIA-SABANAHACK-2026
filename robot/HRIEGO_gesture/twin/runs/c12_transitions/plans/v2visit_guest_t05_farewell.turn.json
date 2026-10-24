@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_guest_t05_farewell",
+ "rank": "guest",
+ "emote": "FAREWELL_WAVE",
+ "motion_id": 3031,
+ "area": 11,
+ "binding": "3031/11",
+ "anchor_s": 2.4,
+ "dur_s": 5.294149659863946,
+ "lead_onset_s": 1.2200286600018444,
+ "lead_stroke_s": 1.8599239260001923,
+ "policy_dispatch_s": {
+  "stroke": 0.5400760739998076,
+  "mid": 0.8600237069989816,
+  "onset": 1.1799713399981555
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 5.060018083000614
+}

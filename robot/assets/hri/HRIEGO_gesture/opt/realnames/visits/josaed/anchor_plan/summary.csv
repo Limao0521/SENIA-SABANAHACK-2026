@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,align_policy_used,align_policy_used_preroll0,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+ps_josaed_t00_greeting,ps_josaed,ps_josaed_t00_greeting,GREETING_EXTERNAL,1002,2,Bienvenido,5.4602,44100,0.78,1.28,34398,aligned_ctc_not_human_validated,stroke,stroke,1.4399773242630385,0.4,-63503,-17640,planned,planned,,0.02
+ps_josaed_t01_guidance,ps_josaed,ps_josaed_t01_guidance,POINT_FRONT,,,Frente a mí,5.6258,44100,0.8,1.3,35280,aligned_ctc_not_human_validated,,,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+ps_josaed_t02_dialogue,ps_josaed,ps_josaed_t02_dialogue,APPLAUSE,3017,11,lo lograron,3.8808,44100,1.24,1.84,54684,aligned_ctc_not_human_validated,stroke,stroke,0.64,0.0,-28224,18524,planned,planned,,0.02
+ps_josaed_t03_dialogue,ps_josaed,ps_josaed_t03_dialogue,NEGATION_STRONG,3009,11,No está permitido,5.602,44100,0.88,1.78,38808,aligned_ctc_not_human_validated,stroke,stroke,1.36,0.3200453514739229,-59976,-14114,planned,planned,,0.02
+ps_josaed_t04_dialogue,ps_josaed,ps_josaed_t04_dialogue,NONE,,,,5.257,44100,,,,,,,,,,,none_sonic,none_sonic,,
+ps_josaed_t05_farewell,ps_josaed,ps_josaed_t05_farewell,FAREWELL_WAVE,3031,11,hasta luego,4.3593,44100,3.22,3.7800000000000002,142002,aligned_ctc_not_human_validated,stroke,stroke,0.0,0.0,59979,106726,planned,planned,,0.02

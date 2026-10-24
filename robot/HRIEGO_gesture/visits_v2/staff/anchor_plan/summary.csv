@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+v2visit_staff_t00_greeting,v2visit_staff,v2visit_staff_t00_greeting,GREETING_STAFF,1008,2,Dame esos cinco,5.0467,44100,0.8200000000000001,1.62,36162,aligned_ctc_not_human_validated,0.4199773242630386,0.0,-18521,29106,planned,planned,,0.02
+v2visit_staff_t01_guidance,v2visit_staff,v2visit_staff_t01_guidance,POINT_LEFT,,,a mi izquierda,3.1506,44100,1.96,2.56,86436,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+v2visit_staff_t02_dialogue,v2visit_staff,v2visit_staff_t02_dialogue,NEGATION_NORMAL,3029,11,No puedo,4.2377,44100,0.86,1.24,37926,aligned_ctc_not_human_validated,0.54,0.0,-23814,24669,planned,planned,,0.02
+v2visit_staff_t03_dialogue,v2visit_staff,v2visit_staff_t03_dialogue,CONFIRMATION,3028,11,Sí,4.3766,44100,0.86,0.92,37926,aligned_ctc_not_human_validated,0.44,0.0,-19404,28226,planned,planned,,0.02
+v2visit_staff_t04_dialogue,v2visit_staff,v2visit_staff_t04_dialogue,NONE,,,,2.946,44100,,,,,,,,,none_sonic,none_sonic,,
+v2visit_staff_t05_farewell,v2visit_staff,v2visit_staff_t05_farewell,FAREWELL_WAVE,3031,11,hasta luego,5.2433,44100,2.38,3.0,104958,aligned_ctc_not_human_validated,0.0,0.0,51155,97902,planned,planned,,0.02

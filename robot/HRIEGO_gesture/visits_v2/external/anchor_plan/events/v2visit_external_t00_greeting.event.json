@@ -1,0 +1,40 @@
+{
+  "schema_version": "x2_gesture_event.v1",
+  "utterance_id": "v2visit_external_t00_greeting",
+  "audio": {
+    "sha256": "9dbaa68a2e8b1d1c2a51e26eac779123a89989d094b4fb4d5245a697ea7d1f63",
+    "sample_rate_hz": 44100,
+    "sample_count": 147456,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "decision": {
+    "communicative_act": "GREETING_EXTERNAL",
+    "motor_intent": "GREETING_EXTERNAL",
+    "decision_source": "hriego_manifest"
+  },
+  "binding": {
+    "motion_id": 1002,
+    "area": 2,
+    "asset_sha256": "23554287aba6b32dd488a1b52ce1c9bdfd6134cf1469494a1f8a4aaa94399760",
+    "animation_player_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da"
+  },
+  "anchor": {
+    "text": "Bienvenida",
+    "source_char_start": 0,
+    "source_char_end": 10,
+    "occurrence": 1,
+    "start_sample": 29106,
+    "end_sample": 50274
+  },
+  "alignment": {
+    "method": "quartznet15x5_ctc_viterbi",
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "status": "aligned_ctc_not_human_validated"
+  },
+  "schedule": {
+    "desired_visible_onset_sample": 29106,
+    "dispatch_sample": null,
+    "repeat_count": 1,
+    "status": "unscheduled"
+  }
+}

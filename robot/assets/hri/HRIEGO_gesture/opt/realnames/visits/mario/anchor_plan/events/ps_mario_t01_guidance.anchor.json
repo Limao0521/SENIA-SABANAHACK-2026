@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "a mi izquierda",
+  "char_start": 40,
+  "char_end": 54,
+  "occurrence": 1,
+  "start_s": 3.38,
+  "end_s": 4.04,
+  "start_sample": 149058,
+  "end_sample": 178164,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "bd738b072d0e69c2fb51b5ea25b3cf26f24bce7a92025743bec59efc1a049748",
+  "sample_count": 199680,
+  "case_id": "ps_mario_t01_guidance",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

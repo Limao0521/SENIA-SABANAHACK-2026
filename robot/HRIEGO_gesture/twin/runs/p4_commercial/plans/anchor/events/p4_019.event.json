@@ -1,0 +1,40 @@
+{
+  "schema_version": "x2_gesture_event.v1",
+  "utterance_id": "p4_019",
+  "audio": {
+    "sha256": "4957fe95f05d97e8a604989e26d558ce2cd2bfb5171370336c48ef4a8e82e2a7",
+    "sample_rate_hz": 16000,
+    "sample_count": 69475,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "decision": {
+    "communicative_act": "P4_despedirnos",
+    "motor_intent": "P4_despedirnos",
+    "decision_source": "hriego_manifest"
+  },
+  "binding": {
+    "motion_id": 3031,
+    "area": 11,
+    "asset_sha256": "57e37cc659d03c6ea175614756cb69674c108df21729ff00908aee291be38f0e",
+    "animation_player_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da"
+  },
+  "anchor": {
+    "text": "despedirnos",
+    "source_char_start": 19,
+    "source_char_end": 30,
+    "occurrence": 1,
+    "start_sample": 25920,
+    "end_sample": 35840
+  },
+  "alignment": {
+    "method": "quartznet15x5_ctc_viterbi",
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "status": "aligned_ctc_not_human_validated"
+  },
+  "schedule": {
+    "desired_visible_onset_sample": 25920,
+    "dispatch_sample": null,
+    "repeat_count": 1,
+    "status": "unscheduled"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "ps_mario_t05_farewell",
+  "binding_key": "3031/11",
+  "policy": {
+    "align": "auto",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false,
+    "align_policy_used": "stroke",
+    "align_policy_tried": [
+      "stroke"
+    ]
+  },
+  "audio": {
+    "sha256": "ae1f0ff9a3cf893ab9966255f9df72844ceefd074b957c0300e81d9ffe1bdb0c",
+    "sample_rate_hz": 44100,
+    "sample_count": 279552,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 0,
+  "dispatch_sample": 1768,
+  "phases": {
+    "dispatch_sample": 1768,
+    "expected_onset_sample": 8824,
+    "expected_stroke_sample": 37044,
+    "expected_end_sample": 178168,
+    "end_after_audio_end": false
+  },
+  "dispatches": [
+    {
+      "motion_id": 3031,
+      "area": 11,
+      "dispatch_sample": 1768,
+      "dispatch_sample_with_start_delay": 1768,
+      "repeat_count": 1
+    }
+  ]
+}

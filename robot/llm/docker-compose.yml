@@ -1,0 +1,87 @@
+# X2 Ultra · Inferencia LLM local con memoria y RAG — UN solo contenedor
+#
+# Dentro del contenedor conviven dos procesos (supervisados por run.sh):
+#   1. llama-server (llama.cpp)  → puerto 8080  (API cruda compatible OpenAI)
+#   2. API FastAPI (app/)        → puerto 8000  (chat con memoria + RAG)
+#
+# Perfiles de despliegue (override):
+#   Robot X2 Ultra (Jetson Orin NX 16GB):
+#     docker compose -f docker-compose.yml -f compose.jetson.yml up -d --build
+#   PC/servidor con GPU NVIDIA:
+#     docker compose -f docker-compose.yml -f compose.x86-cuda.yml up -d --build
+#   Solo CPU (este archivo, sin override; lento, para validar la API):
+#     docker compose up -d --build
+
+name: x2-ultra-llm
+
+services:
+  llm:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+      args:
+        BASE_IMAGE: ${LLM_BASE_IMAGE:-ghcr.io/ggml-org/llama.cpp:server}
+    image: x2-ultra/llm:latest
+    container_name: x2-llm
+    restart: unless-stopped
+    ports:
+      - "${API_PORT:-8000}:8000"
+      - "${LLM_PORT:-8080}:8080"
+    volumes:
+      - ./models:/models:ro          # GGUF (scripts/download-model.*)
+      - ./data:/data                 # SQLite (sesiones, hechos) + caché embeddings
+      - ./persona:/persona:ro        # personalidad editable sin recompilar
+      - ../docs:/corpus/docs:ro      # corpus RAG por defecto: docs del repo
+    environment:
+      # ---- llama-server (ver server/entrypoint.sh) ----
+      MODEL_PATH: ${MODEL_PATH:-/models/Qwen3-4B-Q4_K_M.gguf}
+      CTX_SIZE: ${CTX_SIZE:-4096}
+      CPU_THREADS: ${CPU_THREADS:-6}
+      NGL: ${NGL:-0}
+      PARALLEL: ${PARALLEL:-1}
+      BATCH_SIZE: ${BATCH_SIZE:-512}
+      UBATCH_SIZE: ${UBATCH_SIZE:-512}
+      KV_CACHE_TYPE: ${KV_CACHE_TYPE:-q8_0}
+      DRAFT_MODEL: ${DRAFT_MODEL:-}
+      EXTRA_ARGS: ${EXTRA_ARGS:-}
+      # ---- API (memoria + RAG) ----
+      LLM_BASE_URL: http://127.0.0.1:8080/v1
+      MAX_TOKENS: ${MAX_TOKENS:-512}
+      TEMPERATURE: ${TEMPERATURE:-0.7}
+      ENABLE_THINKING: ${ENABLE_THINKING:-false}
+      DB_PATH: /data/agent.db
+      PERSONA_FILE: /persona/persona.md
+      HISTORY_MAX_MESSAGES: ${HISTORY_MAX_MESSAGES:-24}
+      HISTORY_KEEP_MESSAGES: ${HISTORY_KEEP_MESSAGES:-12}
+      SUMMARY_MAX_WORDS: ${SUMMARY_MAX_WORDS:-200}
+      FACT_EXTRACT: ${FACT_EXTRACT:-false}
+      FACT_TOP_K: ${FACT_TOP_K:-2}
+      RAG_ENABLED: ${RAG_ENABLED:-true}
+      RAG_AUTOINGEST: ${RAG_AUTOINGEST:-true}
+      RAG_CORPUS_DIR: /corpus
+      RAG_TOP_K: ${RAG_TOP_K:-3}
+      RAG_MIN_SCORE: ${RAG_MIN_SCORE:-0.40}
+      RAG_CHUNK_CHARS: ${RAG_CHUNK_CHARS:-600}
+      RAG_CHUNK_OVERLAP: ${RAG_CHUNK_OVERLAP:-120}
+      EMBED_MODEL: ${EMBED_MODEL:-minishlab/potion-multilingual-128M}
+      FASTEMBED_CACHE_PATH: /data/fastembed
+      # fastembed rompe si HF_ENDPOINT existe pero está vacío: por defecto, el oficial
+      HF_ENDPOINT: ${HF_ENDPOINT:-https://huggingface.co}
+      # Timeout de descarga del modelo de embeddings: si la red se estanca, falla
+      # rápido y el RAG se degrada limpiamente en vez de colgar el hilo de arranque
+      HF_HUB_DOWNLOAD_TIMEOUT: ${HF_HUB_DOWNLOAD_TIMEOUT:-30}
+    healthcheck:
+      # /health responde 200 en cuanto la API está arriba (el estado del LLM
+      # va en el cuerpo; /ready devuelve 503 hasta que el modelo está cargado)
+      test: ["CMD-SHELL", "curl -sf http://127.0.0.1:8000/health || exit 1"]
+      interval: 15s
+      # timeout holgado: durante el embedding masivo inicial la CPU se satura
+      timeout: 10s
+      retries: 12
+      start_period: 240s
+    stop_grace_period: 30s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

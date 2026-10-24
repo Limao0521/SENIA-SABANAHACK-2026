@@ -1,0 +1,10 @@
+{
+  "test": "Supertonic CPU concurrente con webcam y UniFace; Qwen residente en GPU",
+  "camera_connected": true,
+  "received_frames": 354,
+  "inferred_frames": 349,
+  "min_ram_available_gib": 6.173,
+  "max_gpu_used_mib": 4459,
+  "physical_motion": false,
+  "fsm_executed": false
+}

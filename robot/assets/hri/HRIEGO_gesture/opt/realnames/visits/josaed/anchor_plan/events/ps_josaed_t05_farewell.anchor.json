@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "hasta luego",
+  "char_start": 39,
+  "char_end": 50,
+  "occurrence": 1,
+  "start_s": 3.22,
+  "end_s": 3.7800000000000002,
+  "start_sample": 142002,
+  "end_sample": 166698,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "f8cebc491fbcd2ce8b3441fae199390131db3e1b58011e5accd313ea8acc1e5c",
+  "sample_count": 193536,
+  "case_id": "ps_josaed_t05_farewell",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

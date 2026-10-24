@@ -1,0 +1,41 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "v2visit_external_t05_farewell",
+  "binding_key": "3031/11",
+  "policy": {
+    "align": "onset",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false
+  },
+  "audio": {
+    "sha256": "7276e54ee1eaa7176c4f5520606f82e48b02923d8626ad5e837f5f045087dcd4",
+    "sample_rate_hz": 44100,
+    "sample_count": 233472,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 0,
+  "dispatch_sample": 56447,
+  "phases": {
+    "dispatch_sample": 56447,
+    "expected_onset_sample": 110250,
+    "expected_stroke_sample": 138470,
+    "expected_end_sample": 279594,
+    "end_after_audio_end": true
+  },
+  "dispatches": [
+    {
+      "motion_id": 3031,
+      "area": 11,
+      "dispatch_sample": 56447,
+      "dispatch_sample_with_start_delay": 56447,
+      "repeat_count": 1
+    }
+  ]
+}

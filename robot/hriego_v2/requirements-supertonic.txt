@@ -1,0 +1,5 @@
+# Runtime verificado para Supertonic 3 en CPU (Python 3.12, Linux x86_64).
+supertonic==1.3.1
+onnxruntime==1.31.0
+numpy==2.5.4
+soundfile==0.14.0

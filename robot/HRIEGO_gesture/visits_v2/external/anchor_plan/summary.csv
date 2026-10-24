@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+v2visit_external_t00_greeting,v2visit_external,v2visit_external_t00_greeting,GREETING_EXTERNAL,1002,2,Bienvenida,3.3053,44100,0.66,1.1400000000000001,29106,aligned_ctc_not_human_validated,0.5399773242630386,0.0,-23813,22050,planned,planned,,0.02
+v2visit_external_t01_guidance,v2visit_external,v2visit_external_t01_guidance,POINT_FRONT,,,frente a mí,3.9342,44100,2.9,3.38,127890,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+v2visit_external_t02_dialogue,v2visit_external,v2visit_external_t02_dialogue,SOCIAL_HEART,3004,11,Me encanta,3.3122,44100,0.74,1.18,32634,aligned_ctc_not_human_validated,0.46,0.0,-20286,27332,planned,planned,,0.02
+v2visit_external_t03_dialogue,v2visit_external,v2visit_external_t03_dialogue,NEGATION_STRONG,3009,11,no está permitido,5.3233,44100,1.84,2.64,81144,aligned_ctc_not_human_validated,0.0,0.0,29108,74970,planned,planned,,0.02
+v2visit_external_t04_dialogue,v2visit_external,v2visit_external_t04_dialogue,NONE,,,,3.3601,44100,,,,,,,,,none_sonic,none_sonic,,
+v2visit_external_t05_farewell,v2visit_external,v2visit_external_t05_farewell,FAREWELL_WAVE,3031,11,hasta luego,5.2433,44100,2.5,3.04,110250,aligned_ctc_not_human_validated,0.0,0.0,56447,103194,planned,planned,,0.02

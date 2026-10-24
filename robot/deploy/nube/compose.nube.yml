@@ -1,0 +1,137 @@
+# Pila de inferencia en la nube para el robot X2 (VPS x86_64 con GPU NVIDIA).
+#
+# Uso (en el VPS, desde este directorio):
+#   docker compose -f compose.nube.yml up -d --build
+#
+# Tres servicios en una red interna; SOLO el gateway publica un puerto.
+# El gateway (Caddy) exige el token Bearer y enruta:
+#   /llm/* → llm:8080 (llama-server, compatible OpenAI, SSE sin búfer)
+#   /voz/* → voz:9000 (ASR faster-whisper + TTS Supertonic)
+#
+# Variables: se leen del archivo .env de este directorio (lo genera
+# desplegar_nube.sh; contiene HRI_NUBE_TOKEN y nunca se versiona).
+name: x2-nube
+
+networks:
+  interna:
+    driver: bridge
+    # Red interna: llm y voz no son alcanzables desde fuera del compose.
+    internal: false   # debe permitir salida a internet (voz descarga modelos de HF)
+
+services:
+  # ------------------------------------------------------------------ LLM
+  llm:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    container_name: x2-nube-llm
+    restart: unless-stopped
+    networks: [interna]
+    volumes:
+      # Modelos GGUF descargados por descargar_modelos.sh (solo lectura).
+      - ./modelos:/models:ro
+    # La imagen server-cuda trae llama-server en /app/llama-server (PATH incluido).
+    command: >-
+      -m /models/${NUBE_LLM_MODELO:-Qwen3-8B-Q4_K_M.gguf}
+      --host 0.0.0.0 --port 8080
+      -c ${NUBE_LLM_CTX:-16384}
+      -ngl 99
+      --parallel ${NUBE_LLM_PARALLEL:-2}
+      --cont-batching
+      --flash-attn on
+      --cache-type-k q8_0 --cache-type-v q8_0
+      --cache-reuse 256
+      --jinja
+      --metrics
+      ${NUBE_LLM_EXTRA:-}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    # OJO: la imagen server-cuda puede no traer curl. Se usa CMD-SHELL con wget
+    # (busybox no siempre está) y curl como alternativa: cualquiera que exista
+    # sirve; si ninguno existe el healthcheck falla y conviene instalar curl en
+    # una imagen propia o desactivar el healthcheck. /health responde 503 hasta
+    # que el modelo termina de cargar, por eso start_period largo.
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:8080/health >/dev/null 2>&1 || curl -fsS http://127.0.0.1:8080/health >/dev/null 2>&1"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 120s
+
+  # ------------------------------------------------------------------ voz
+  voz:
+    build:
+      context: ../..                 # raíz del repositorio (para COPY de src/)
+      dockerfile: deploy/nube/Dockerfile.voz
+    image: x2-nube/voz:latest
+    container_name: x2-nube-voz
+    restart: unless-stopped
+    networks: [interna]
+    depends_on:
+      llm:
+        condition: service_started
+    environment:
+      # Token Bearer; la propia nube_voz vuelve a comprobarlo (defensa en profundidad).
+      HRI_NUBE_TOKEN: ${HRI_NUBE_TOKEN:?Falta HRI_NUBE_TOKEN en .env}
+      HRI_ASR_MODEL: ${NUBE_ASR_MODELO:-/modelos/faster-whisper-large-v3-turbo}
+      HRI_ASR_DEVICE: cuda
+      HRI_ASR_COMPUTE: ${NUBE_ASR_COMPUTE:-float16}
+      SUPERTONIC_MODEL_DIR: /modelos/supertonic
+      SUPERTONIC_AUTO_DOWNLOAD: ${NUBE_TTS_AUTO_DOWNLOAD:-1}
+      SUPERTONIC_STEPS: ${NUBE_TTS_STEPS:-8}
+      SUPERTONIC_THREADS: ${NUBE_TTS_THREADS:-4}
+      HF_HOME: /modelos/hf
+    volumes:
+      # Modelos ASR/TTS descargados (descargar_modelos.sh + auto-download).
+      - ./modelos:/modelos
+    command: python3 -m x2_ultra.hri_runtime.nube_voz --host 0.0.0.0 --port 9000 --calentar
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    # Healthcheck con urllib (python3 siempre existe en la imagen) enviando el
+    # token Bearer. /health responde 200 solo si el proceso atiende.
+    healthcheck:
+      test: ["CMD-SHELL", "python3 -c \"import os,sys,urllib.request as u; r=u.Request('http://127.0.0.1:9000/health', headers={'Authorization': 'Bearer '+os.environ['HRI_NUBE_TOKEN']}); sys.exit(0 if u.urlopen(r, timeout=8).status==200 else 1)\""]
+      interval: 30s
+      timeout: 15s
+      retries: 10
+      start_period: 240s   # --calentar carga Whisper y Supertonic antes de escuchar
+
+  # ------------------------------------------------------------------ gateway
+  gateway:
+    image: caddy:2-alpine
+    container_name: x2-nube-gateway
+    restart: unless-stopped
+    networks: [interna]
+    depends_on:
+      - llm
+      - voz
+    ports:
+      # Único puerto publicado de la pila. Con NUBE_SITIO=":8443" es HTTP plano
+      # pensado SOLO para tráfico ya dentro del túnel WireGuard (o localhost).
+      # Defecto seguro 127.0.0.1: nunca expuesto a internet sin querer. Modos A/C:
+      # NUBE_BIND=10.66.0.1 (IP del túnel). Modo B (dominio + TLS): NUBE_BIND=0.0.0.0.
+      - "${NUBE_BIND:-127.0.0.1}:${NUBE_PUERTO:-8443}:8443"
+      # Con dominio público (NUBE_SITIO="nube.midominio.co") Caddy obtiene un
+      # certificado Let's Encrypt automáticamente: descomente entonces 80/443
+      # y abra esos puertos en el cortafuegos del VPS.
+      # - "80:80"
+      # - "443:443"
+    environment:
+      HRI_NUBE_TOKEN: ${HRI_NUBE_TOKEN:?Falta HRI_NUBE_TOKEN en .env}
+      NUBE_SITIO: "${NUBE_SITIO:-:8443}"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data     # certificados y estado de Caddy (persistente)
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

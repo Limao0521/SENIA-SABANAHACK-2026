@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_vip_t05_farewell",
+ "rank": "vip",
+ "emote": "SOCIAL_HEART",
+ "motion_id": 3004,
+ "area": 11,
+ "binding": "3004/11",
+ "anchor_s": 2.42,
+ "dur_s": 5.294149659863946,
+ "lead_onset_s": 1.2000107929998194,
+ "lead_stroke_s": 2.080010793000838,
+ "policy_dispatch_s": {
+  "stroke": 0.3399892069991619,
+  "mid": 0.7799892069996712,
+  "onset": 1.2199892070001805
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 5.240132310002082
+}

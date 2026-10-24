@@ -1,0 +1,81 @@
+{
+  "schema": "x2-integration-20261012-v1",
+  "full_stack_stationary": {
+    "aprobado": true,
+    "tts_result": true,
+    "fallos": [],
+    "camaras": [
+      "rgbd_color",
+      "rgbd_depth",
+      "stereo_left",
+      "stereo_right",
+      "rear"
+    ],
+    "lidar_puntos_validos_muestra": 2293,
+    "microfono_bloques": 3
+  },
+  "full_stack_with_gait": {
+    "aprobado": true,
+    "duracion_observada_s": 20.01,
+    "frecuencias_observadas_hz": {
+      "rgbd_color": 28.59,
+      "rgbd_depth": 28.59,
+      "stereo_left": 9.7,
+      "stereo_right": 9.7,
+      "rear": 9.7,
+      "lidar": 9.7,
+      "microfono": 33.18
+    },
+    "fallos": []
+  },
+  "gait_during_full_stack": {
+    "aprobado": false,
+    "avance_durante_orden_m": 2.438197,
+    "desplazamiento_post_parada_m": 0.246071,
+    "factor_tiempo_real": 0.999983,
+    "altura_min_pelvis_m": 0.66095,
+    "inclinacion_max_grados": 5.768917,
+    "caidas": 0,
+    "error_brazos_max_andando_rad": 0.10471,
+    "error_manos_max_andando_rad": 0.014064
+  },
+  "gui_smoke": {
+    "aprobado": false,
+    "urs": true,
+    "modo_final": "UPPERBODY_REMOTE_SPLIT",
+    "avance_durante_orden_m": 0.193,
+    "min_altura_pelvis_m": 0.64,
+    "max_error_brazos_rad": 0.199,
+    "max_error_manos_rad": 0.027,
+    "fallos": [
+      "los brazos no siguieron el objetivo"
+    ],
+    "captura": "logs/twin_gui_20261012.png"
+  },
+  "vr_probe": [
+    {
+      "left_y": 0.2,
+      "seconds": 2.0,
+      "mode": "VR_REMOTE_CONTROLLER (100)",
+      "publisher_exit_code": 0,
+      "probe_displacement_m": 0.0217,
+      "restore_response": "success, action: STAND_DEFAULT"
+    },
+    {
+      "left_y": -0.2,
+      "seconds": 2.0,
+      "mode": "VR_REMOTE_CONTROLLER (100)",
+      "publisher_exit_code": 0,
+      "probe_displacement_m": 0.0216,
+      "restore_response": "success, action: STAND_DEFAULT"
+    }
+  ],
+  "native_urs_probe": {
+    "perfil": "P0",
+    "emulacion_urs": false,
+    "solicitud": "UPPERBODY_REMOTE_SPLIT",
+    "respuesta_mc": "can not find action: UPPERBODY_REMOTE_SPLIT",
+    "codigo_mc": -1,
+    "modo_tras_solicitud": "STAND_DEFAULT"
+  }
+}

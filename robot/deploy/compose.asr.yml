@@ -1,0 +1,35 @@
+# =============================================================================
+# compose.asr.yml — ASR de la conversación HRI (Luis) a bordo del X2 Ultra.
+#
+# faster-whisper large-v3-turbo int8 en la GPU del Orin, con ctranslate2 ya
+# compilado con CUDA para JetPack 6 (imagen dustynv, misma familia r36.4/cu128
+# que x2-ultra/llm:jetson). Ejecuta sin cambios el servidor de Luis
+# (hri_runtime/asr/server_proc.py) y escucha SOLO en un socket UNIX:
+# sin red, sin ROS, sin acceso a nada del robot salvo la GPU.
+#
+#   docker compose -f deploy/compose.asr.yml up -d
+#   ls /tmp/x2_hri_sock/hri_asr.sock      # listo cuando aparece (tras cargar el modelo)
+# =============================================================================
+services:
+  asr:
+    image: dustynv/faster-whisper:r36.4.0-cu128-24.04
+    container_name: x2-asr
+    runtime: nvidia
+    network_mode: none            # solo socket UNIX
+    restart: "no"
+    init: true
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: all
+      PYTHONPATH: /workspace/x2_ultra/src
+      PYTHONUNBUFFERED: "1"
+      HF_HUB_OFFLINE: "1"
+      HRI_ASR_MODEL: /workspace/x2_ultra/models/faster-whisper-large-v3-turbo
+      HRI_ASR_DEVICE: ${HRI_ASR_DEVICE:-cuda}
+      HRI_ASR_COMPUTE: ${HRI_ASR_COMPUTE:-int8}
+    volumes:
+      - ../src:/workspace/x2_ultra/src:ro
+      - ../models/faster-whisper-large-v3-turbo:/workspace/x2_ultra/models/faster-whisper-large-v3-turbo:ro
+      - /tmp/x2_hri_sock:/tmp/x2_hri_sock
+    entrypoint: ["python3", "-m", "x2_ultra.hri_runtime.asr.server_proc"]
+    command: ["--sock", "/tmp/x2_hri_sock/hri_asr.sock", "--warm"]

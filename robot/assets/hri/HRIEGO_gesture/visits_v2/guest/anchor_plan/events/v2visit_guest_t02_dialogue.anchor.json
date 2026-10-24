@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "me alegra",
+  "char_start": 9,
+  "char_end": 18,
+  "occurrence": 1,
+  "start_s": 1.3800000000000001,
+  "end_s": 1.8,
+  "start_sample": 60858,
+  "end_sample": 79380,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "f1a9e41fc5232daf21ae66b04cc2df689f46259a6bbbfc0aa96cb3f6487d8bd4",
+  "sample_count": 181248,
+  "case_id": "v2visit_guest_t02_dialogue",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

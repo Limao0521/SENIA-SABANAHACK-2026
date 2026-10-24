@@ -1,0 +1,1002 @@
+{
+ "visit_id": "ps_luis",
+ "rank": "STAFF",
+ "person_dir": "luis",
+ "profile_from_db": {
+  "person_id": "P001",
+  "display_name": "Luis",
+  "rank_code": "STAFF",
+  "rank_name": "Personal del laboratorio"
+ },
+ "face_recognition": {
+  "photo": "/home/luis/Downloads/Luis",
+  "status": "KNOWN",
+  "faces": 1,
+  "uniface_seconds": {
+   "image_seconds": 0.501971946003323,
+   "detection_seconds": 0.45971676500266767,
+   "embedding_seconds": 0.04222852100065211
+  },
+  "bbox": [
+   868.4743041992188,
+   876.4430541992188,
+   1507.1270751953125,
+   1673.3902587890625
+  ],
+  "confidence": 0.9999682903289795,
+  "top1_id": "P001",
+  "top1_score": 0.9999998807907104,
+  "top2_id": "P004",
+  "top2_score": 0.12569324672222137,
+  "margin": 0.8743066340684891,
+  "profile": {
+   "person_id": "P001",
+   "display_name": "Luis",
+   "person_status": "active",
+   "rank_code": "STAFF",
+   "rank_name": "Club staff",
+   "rank_updated_at": "2026-10-20T22:35:22.063Z",
+   "identity_status": "CONFIRMED"
+  },
+  "latency_s": 2.563,
+  "wall_from_orchestrator_s": 3.223
+ },
+ "scenario": "reception_lab_right",
+ "route_direction": "right",
+ "contract": "rcp01c.intervention.v2 (BF fix-B catalog, schema B flat, streaming) + persona card W3",
+ "pipeline": "phase1 personas: face_id(reto2 probe) + stream_chat 8080 + AsmPersona + persona_validate + Supertonic per-rank prosody (voice_config.json) + CTC anchor_plan --align auto",
+ "turns": [
+  {
+   "turn_id": "ps_luis_t00_greeting",
+   "state": "GREETING",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"GREETING_STAFF\",\"speech\":\"¡Luis, compañero! ¡Dame esos cinco! Ya hacía falta tu energía por aquí.\",\"trigger_text\":\"dame esos cinco\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_luis_t00_greeting",
+     "speech": "¡Luis, compañero! ¡Dame esos cinco! Ya hacía falta tu energía por aquí.",
+     "communicative_acts": [
+      "GREETING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_luis_t00_greeting",
+       "type": "GREETING_STAFF",
+       "trigger_text": "Dame esos cinco"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0992,
+     "t_type_known": 0.1777,
+     "t_first_sentence": 0.2579,
+     "t_speech_done": 0.424,
+     "t_total": 0.524,
+     "prompt_tokens": 1565,
+     "completion_tokens": 41,
+     "cached_tokens": 1564,
+     "prompt_ms": 13.193,
+     "predicted_ms": 424.872,
+     "key_order": null,
+     "total_s": 0.524
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5506,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"GREETING_STAFF\",\"speech\":\"¡Luis, compañero! ¡Dame esos cinco! Ya hacía falta tu energía por aquí.\",\"trigger_text\":\"dame esos cinco\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_luis_t00_greeting",
+       "speech": "¡Luis, compañero! ¡Dame esos cinco! Ya hacía falta tu energía por aquí.",
+       "communicative_acts": [
+        "GREETING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_luis_t00_greeting",
+         "type": "GREETING_STAFF",
+         "trigger_text": "Dame esos cinco"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0992,
+       "t_type_known": 0.1777,
+       "t_first_sentence": 0.2579,
+       "t_speech_done": 0.424,
+       "t_total": 0.524,
+       "prompt_tokens": 1565,
+       "completion_tokens": 41,
+       "cached_tokens": 1564,
+       "prompt_ms": 13.193,
+       "predicted_ms": 424.872,
+       "key_order": null,
+       "total_s": 0.524
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.0992,
+     "t_type_known": 0.1777,
+     "t_first_sentence": 0.2579,
+     "t_speech_done": 0.424,
+     "t_total": 0.524,
+     "prompt_tokens": 1565,
+     "completion_tokens": 41,
+     "cached_tokens": 1564,
+     "prompt_ms": 13.193,
+     "predicted_ms": 424.872,
+     "key_order": null,
+     "total_s": 0.524
+    },
+    "total_llm_s": 0.524
+   },
+   "decision": {
+    "requested": "GREETING_STAFF",
+    "effective": "GREETING_STAFF",
+    "suppressed": null,
+    "trigger_text": "Dame esos cinco",
+    "trigger_char_start": 19,
+    "trigger_char_end": 34,
+    "fsm_mandated": true
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": true
+    },
+    "words": 12,
+    "exclamations": 4,
+    "title": false,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/luis/wav/ps_luis/ps_luis_t00_greeting.wav",
+    "wav_sha256": "c51a9534d458dc310d6da8307ce5c87511d2ff8f60a32fbf534f83392346d54b",
+    "sample_rate": 44100,
+    "duration_s": 5.8536,
+    "synth_s": 0.9234,
+    "voice": "M1",
+    "prosody": "M1 speed=1.103 (rank STAFF × state GREETING)"
+   },
+   "timings": {
+    "llm_total_s": 0.524,
+    "llm_first_attempt": {
+     "t_first_token": 0.0992,
+     "t_type_known": 0.1777,
+     "t_first_sentence": 0.2579,
+     "t_speech_done": 0.424,
+     "t_total": 0.524
+    },
+    "tts_full_s": 1.619,
+    "tts_synth_s": 0.9234,
+    "tts_first_sentence_s": 0.3463,
+    "first_sentence": "¡Luis, compañero!",
+    "e2e_llm_req_to_first_audio_s": 0.604
+   },
+   "plan": {
+    "emote": "GREETING_STAFF",
+    "trigger_start_s": 2.2600000000000002,
+    "trigger_end_s": 3.12,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.0
+   }
+  },
+  {
+   "turn_id": "ps_luis_t01_guidance",
+   "state": "GUIDANCE",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"POINT_RIGHT\",\"speech\":\"El laboratorio está a mi derecha\",\"trigger_text\":\"a mi derecha\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_luis_t01_guidance",
+     "speech": "El laboratorio está a mi derecha",
+     "communicative_acts": [
+      "GUIDE"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_luis_t01_guidance",
+       "type": "POINT_RIGHT",
+       "trigger_text": "a mi derecha",
+       "reference_frame": "X2_base_local",
+       "target_vector": [
+        0.0,
+        -1.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0899,
+     "t_type_known": 0.1369,
+     "t_first_sentence": 0.2473,
+     "t_speech_done": 0.2473,
+     "t_total": 0.3378,
+     "prompt_tokens": 1647,
+     "completion_tokens": 26,
+     "cached_tokens": 1646,
+     "prompt_ms": 10.92,
+     "predicted_ms": 247.87,
+     "key_order": null,
+     "total_s": 0.3378
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5820,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"POINT_RIGHT\",\"speech\":\"El laboratorio está a mi derecha\",\"trigger_text\":\"a mi derecha\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_luis_t01_guidance",
+       "speech": "El laboratorio está a mi derecha",
+       "communicative_acts": [
+        "GUIDE"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_luis_t01_guidance",
+         "type": "POINT_RIGHT",
+         "trigger_text": "a mi derecha",
+         "reference_frame": "X2_base_local",
+         "target_vector": [
+          0.0,
+          -1.0,
+          0.0
+         ]
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0899,
+       "t_type_known": 0.1369,
+       "t_first_sentence": 0.2473,
+       "t_speech_done": 0.2473,
+       "t_total": 0.3378,
+       "prompt_tokens": 1647,
+       "completion_tokens": 26,
+       "cached_tokens": 1646,
+       "prompt_ms": 10.92,
+       "predicted_ms": 247.87,
+       "key_order": null,
+       "total_s": 0.3378
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.0899,
+     "t_type_known": 0.1369,
+     "t_first_sentence": 0.2473,
+     "t_speech_done": 0.2473,
+     "t_total": 0.3378,
+     "prompt_tokens": 1647,
+     "completion_tokens": 26,
+     "cached_tokens": 1646,
+     "prompt_ms": 10.92,
+     "predicted_ms": 247.87,
+     "key_order": null,
+     "total_s": 0.3378
+    },
+    "total_llm_s": 0.3378
+   },
+   "decision": {
+    "requested": "POINT_RIGHT",
+    "effective": "POINT_RIGHT",
+    "suppressed": null,
+    "trigger_text": "a mi derecha",
+    "trigger_char_start": 20,
+    "trigger_char_end": 32,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": false
+    },
+    "words": 6,
+    "exclamations": 0,
+    "title": false,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/luis/wav/ps_luis/ps_luis_t01_guidance.wav",
+    "wav_sha256": "b0da6e6a625c03cacb8765c9bfede6027d9fb7f5d13987dff5b18ba8a3969de2",
+    "sample_rate": 44100,
+    "duration_s": 2.7651,
+    "synth_s": 0.5062,
+    "voice": "M1",
+    "prosody": "M1 speed=1.05 (rank STAFF × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.338,
+    "llm_first_attempt": {
+     "t_first_token": 0.0899,
+     "t_type_known": 0.1369,
+     "t_first_sentence": 0.2473,
+     "t_speech_done": 0.2473,
+     "t_total": 0.3378
+    },
+    "tts_full_s": 0.507,
+    "tts_synth_s": 0.5062,
+    "tts_first_sentence_s": 0.5087,
+    "first_sentence": "El laboratorio está a mi derecha",
+    "e2e_llm_req_to_first_audio_s": 0.756
+   },
+   "plan": {
+    "emote": "POINT_RIGHT",
+    "trigger_start_s": 1.6600000000000001,
+    "trigger_end_s": 2.2,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "anchor_only_no_preset",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "ps_luis_t02_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿Me regalas la tarjeta de acceso de recepción para llevármela?",
+   "intended_emote": "NEGATION_NORMAL",
+   "llm": {
+    "raw": "{\"type\":\"NEGATION_NORMAL\",\"speech\":\"No puedo prestarte la tarjeta, compañero; cada quien usa la suya, tú me entiendes.\",\"trigger_text\":\"no puedo\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_luis_t02_dialogue",
+     "speech": "No puedo prestarte la tarjeta, compañero; cada quien usa la suya, tú me entiendes.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_luis_t02_dialogue",
+       "type": "NEGATION_NORMAL",
+       "trigger_text": "No puedo"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.1775,
+     "t_type_known": 0.2491,
+     "t_first_sentence": 0.5728,
+     "t_speech_done": 0.5728,
+     "t_total": 0.6608,
+     "prompt_tokens": 3661,
+     "completion_tokens": 41,
+     "cached_tokens": 3350,
+     "prompt_ms": 73.565,
+     "predicted_ms": 483.173,
+     "key_order": null,
+     "total_s": 0.6608
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 12631,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"NEGATION_NORMAL\",\"speech\":\"No puedo prestarte la tarjeta, compañero; cada quien usa la suya, tú me entiendes.\",\"trigger_text\":\"no puedo\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_luis_t02_dialogue",
+       "speech": "No puedo prestarte la tarjeta, compañero; cada quien usa la suya, tú me entiendes.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_luis_t02_dialogue",
+         "type": "NEGATION_NORMAL",
+         "trigger_text": "No puedo"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.1775,
+       "t_type_known": 0.2491,
+       "t_first_sentence": 0.5728,
+       "t_speech_done": 0.5728,
+       "t_total": 0.6608,
+       "prompt_tokens": 3661,
+       "completion_tokens": 41,
+       "cached_tokens": 3350,
+       "prompt_ms": 73.565,
+       "predicted_ms": 483.173,
+       "key_order": null,
+       "total_s": 0.6608
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.1775,
+     "t_type_known": 0.2491,
+     "t_first_sentence": 0.5728,
+     "t_speech_done": 0.5728,
+     "t_total": 0.6608,
+     "prompt_tokens": 3661,
+     "completion_tokens": 41,
+     "cached_tokens": 3350,
+     "prompt_ms": 73.565,
+     "predicted_ms": 483.173,
+     "key_order": null,
+     "total_s": 0.6608
+    },
+    "total_llm_s": 0.6608
+   },
+   "decision": {
+    "requested": "NEGATION_NORMAL",
+    "effective": "NEGATION_NORMAL",
+    "suppressed": null,
+    "trigger_text": "No puedo",
+    "trigger_char_start": 0,
+    "trigger_char_end": 8,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": true
+    },
+    "words": 14,
+    "exclamations": 0,
+    "title": false,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/luis/wav/ps_luis/ps_luis_t02_dialogue.wav",
+    "wav_sha256": "8b5b59f10f41cb5868a7f06aced095e6fd539237e5eb03f1916e70f026545b78",
+    "sample_rate": 44100,
+    "duration_s": 5.9197,
+    "synth_s": 0.9336,
+    "voice": "M1",
+    "prosody": "M1 speed=1.05 (rank STAFF × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.662,
+    "llm_first_attempt": {
+     "t_first_token": 0.1775,
+     "t_type_known": 0.2491,
+     "t_first_sentence": 0.5728,
+     "t_speech_done": 0.5728,
+     "t_total": 0.6608
+    },
+    "tts_full_s": 0.935,
+    "tts_synth_s": 0.9336,
+    "tts_first_sentence_s": 0.9408,
+    "first_sentence": "No puedo prestarte la tarjeta, compañero; cada quien usa la suya, tú me entiendes.",
+    "e2e_llm_req_to_first_audio_s": 1.514
+   },
+   "plan": {
+    "emote": "NEGATION_NORMAL",
+    "trigger_start_s": 0.66,
+    "trigger_end_s": 1.02,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.0
+   }
+  },
+  {
+   "turn_id": "ps_luis_t03_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿Es cierto que el laboratorio es el único destino que puedes indicarme?",
+   "intended_emote": "CONFIRMATION",
+   "llm": {
+    "raw": "{\"type\":\"CONFIRMATION\",\"speech\":\"Sí, así es, compañero: el laboratorio es el único destino que puedo indicarte hoy.\",\"trigger_text\":\"así es\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_luis_t03_dialogue",
+     "speech": "Sí, así es, compañero: el laboratorio es el único destino que puedo indicarte hoy.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_luis_t03_dialogue",
+       "type": "CONFIRMATION",
+       "trigger_text": "así es"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0525,
+     "t_type_known": 0.1204,
+     "t_first_sentence": 0.3882,
+     "t_speech_done": 0.3882,
+     "t_total": 0.4887,
+     "prompt_tokens": 3657,
+     "completion_tokens": 38,
+     "cached_tokens": 3488,
+     "prompt_ms": 44.762,
+     "predicted_ms": 436.183,
+     "key_order": null,
+     "total_s": 0.4887
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 12649,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"CONFIRMATION\",\"speech\":\"Sí, así es, compañero: el laboratorio es el único destino que puedo indicarte hoy.\",\"trigger_text\":\"así es\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_luis_t03_dialogue",
+       "speech": "Sí, así es, compañero: el laboratorio es el único destino que puedo indicarte hoy.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_luis_t03_dialogue",
+         "type": "CONFIRMATION",
+         "trigger_text": "así es"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0525,
+       "t_type_known": 0.1204,
+       "t_first_sentence": 0.3882,
+       "t_speech_done": 0.3882,
+       "t_total": 0.4887,
+       "prompt_tokens": 3657,
+       "completion_tokens": 38,
+       "cached_tokens": 3488,
+       "prompt_ms": 44.762,
+       "predicted_ms": 436.183,
+       "key_order": null,
+       "total_s": 0.4887
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.0525,
+     "t_type_known": 0.1204,
+     "t_first_sentence": 0.3882,
+     "t_speech_done": 0.3882,
+     "t_total": 0.4887,
+     "prompt_tokens": 3657,
+     "completion_tokens": 38,
+     "cached_tokens": 3488,
+     "prompt_ms": 44.762,
+     "predicted_ms": 436.183,
+     "key_order": null,
+     "total_s": 0.4887
+    },
+    "total_llm_s": 0.4887
+   },
+   "decision": {
+    "requested": "CONFIRMATION",
+    "effective": "CONFIRMATION",
+    "suppressed": null,
+    "trigger_text": "así es",
+    "trigger_char_start": 4,
+    "trigger_char_end": 10,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": true
+    },
+    "words": 14,
+    "exclamations": 0,
+    "title": false,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/luis/wav/ps_luis/ps_luis_t03_dialogue.wav",
+    "wav_sha256": "c02d409dc9fc12069a96944499ebc73dc73f07a5f7413142caade62500d68cdb",
+    "sample_rate": 44100,
+    "duration_s": 6.437,
+    "synth_s": 0.9337,
+    "voice": "M1",
+    "prosody": "M1 speed=1.05 (rank STAFF × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.489,
+    "llm_first_attempt": {
+     "t_first_token": 0.0525,
+     "t_type_known": 0.1204,
+     "t_first_sentence": 0.3882,
+     "t_speech_done": 0.3882,
+     "t_total": 0.4887
+    },
+    "tts_full_s": 0.935,
+    "tts_synth_s": 0.9337,
+    "tts_first_sentence_s": 0.9411,
+    "first_sentence": "Sí, así es, compañero: el laboratorio es el único destino que puedo indicarte hoy.",
+    "e2e_llm_req_to_first_audio_s": 1.329
+   },
+   "plan": {
+    "emote": "CONFIRMATION",
+    "trigger_start_s": 1.32,
+    "trigger_end_s": 1.7,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.32
+   }
+  },
+  {
+   "turn_id": "ps_luis_t04_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿Cómo está el clima afuera?",
+   "intended_emote": "NONE",
+   "llm": {
+    "raw": "{\"type\":\"NONE\",\"speech\":\"El clima está nublado y fresco hoy, compañero\",\"trigger_text\":\"nublado\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_luis_t04_dialogue",
+     "speech": "El clima está nublado y fresco hoy, compañero",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": []
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0451,
+     "t_type_known": 0.0896,
+     "t_first_sentence": 0.2778,
+     "t_speech_done": 0.2778,
+     "t_total": 0.3866,
+     "prompt_tokens": 3643,
+     "completion_tokens": 31,
+     "cached_tokens": 3488,
+     "prompt_ms": 38.906,
+     "predicted_ms": 341.315,
+     "key_order": null,
+     "total_s": 0.3866
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 12561,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"NONE\",\"speech\":\"El clima está nublado y fresco hoy, compañero\",\"trigger_text\":\"nublado\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_luis_t04_dialogue",
+       "speech": "El clima está nublado y fresco hoy, compañero",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": []
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0451,
+       "t_type_known": 0.0896,
+       "t_first_sentence": 0.2778,
+       "t_speech_done": 0.2778,
+       "t_total": 0.3866,
+       "prompt_tokens": 3643,
+       "completion_tokens": 31,
+       "cached_tokens": 3488,
+       "prompt_ms": 38.906,
+       "predicted_ms": 341.315,
+       "key_order": null,
+       "total_s": 0.3866
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.0451,
+     "t_type_known": 0.0896,
+     "t_first_sentence": 0.2778,
+     "t_speech_done": 0.2778,
+     "t_total": 0.3866,
+     "prompt_tokens": 3643,
+     "completion_tokens": 31,
+     "cached_tokens": 3488,
+     "prompt_ms": 38.906,
+     "predicted_ms": 341.315,
+     "key_order": null,
+     "total_s": 0.3866
+    },
+    "total_llm_s": 0.3866
+   },
+   "decision": {
+    "requested": "NONE",
+    "effective": "NONE",
+    "suppressed": null,
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": false
+    },
+    "words": 8,
+    "exclamations": 0,
+    "title": false,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/luis/wav/ps_luis/ps_luis_t04_dialogue.wav",
+    "wav_sha256": "aceef9f436245d9a137364e4399aa057dfdc133baa6331c951f6194bd35f7f3b",
+    "sample_rate": 44100,
+    "duration_s": 3.7017,
+    "synth_s": 0.6559,
+    "voice": "M1",
+    "prosody": "M1 speed=1.05 (rank STAFF × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.387,
+    "llm_first_attempt": {
+     "t_first_token": 0.0451,
+     "t_type_known": 0.0896,
+     "t_first_sentence": 0.2778,
+     "t_speech_done": 0.2778,
+     "t_total": 0.3866
+    },
+    "tts_full_s": 0.657,
+    "tts_synth_s": 0.6559,
+    "tts_first_sentence_s": 0.6267,
+    "first_sentence": "El clima está nublado y fresco hoy, compañero",
+    "e2e_llm_req_to_first_audio_s": 0.905
+   },
+   "plan": {
+    "emote": "NONE",
+    "trigger_start_s": null,
+    "trigger_end_s": null,
+    "align_status": null,
+    "status": "none_sonic",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "ps_luis_t05_farewell",
+   "state": "FAREWELL",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"FAREWELL_WAVE\",\"speech\":\"Nos vemos luego, Luis; que te rinda mucho el turno.\",\"trigger_text\":\"nos vemos\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_luis_t05_farewell",
+     "speech": "Nos vemos luego, Luis; que te rinda mucho el turno.",
+     "communicative_acts": [
+      "CLOSING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_luis_t05_farewell",
+       "type": "FAREWELL_WAVE",
+       "trigger_text": "Nos vemos"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.1594,
+     "t_type_known": 0.2381,
+     "t_first_sentence": 0.4083,
+     "t_speech_done": 0.4083,
+     "t_total": 0.4966,
+     "prompt_tokens": 1611,
+     "completion_tokens": 34,
+     "cached_tokens": 1610,
+     "prompt_ms": 10.776,
+     "predicted_ms": 337.062,
+     "key_order": null,
+     "total_s": 0.4966
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5630,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"FAREWELL_WAVE\",\"speech\":\"Nos vemos luego, Luis; que te rinda mucho el turno.\",\"trigger_text\":\"nos vemos\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_luis_t05_farewell",
+       "speech": "Nos vemos luego, Luis; que te rinda mucho el turno.",
+       "communicative_acts": [
+        "CLOSING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_luis_t05_farewell",
+         "type": "FAREWELL_WAVE",
+         "trigger_text": "Nos vemos"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.1594,
+       "t_type_known": 0.2381,
+       "t_first_sentence": 0.4083,
+       "t_speech_done": 0.4083,
+       "t_total": 0.4966,
+       "prompt_tokens": 1611,
+       "completion_tokens": 34,
+       "cached_tokens": 1610,
+       "prompt_ms": 10.776,
+       "predicted_ms": 337.062,
+       "key_order": null,
+       "total_s": 0.4966
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "persona_relaxed": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.1594,
+     "t_type_known": 0.2381,
+     "t_first_sentence": 0.4083,
+     "t_speech_done": 0.4083,
+     "t_total": 0.4966,
+     "prompt_tokens": 1611,
+     "completion_tokens": 34,
+     "cached_tokens": 1610,
+     "prompt_ms": 10.776,
+     "predicted_ms": 337.062,
+     "key_order": null,
+     "total_s": 0.4966
+    },
+    "total_llm_s": 0.4966
+   },
+   "decision": {
+    "requested": "FAREWELL_WAVE",
+    "effective": "FAREWELL_WAVE",
+    "suppressed": null,
+    "trigger_text": "Nos vemos",
+    "trigger_char_start": 0,
+    "trigger_char_end": 9,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": true
+    },
+    "words": 10,
+    "exclamations": 0,
+    "title": false,
+    "relaxed": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/luis/wav/ps_luis/ps_luis_t05_farewell.wav",
+    "wav_sha256": "b1e00279728044b009974c3515a4262674405b50cae9450ceebfe9b561506c09",
+    "sample_rate": 44100,
+    "duration_s": 3.6502,
+    "synth_s": 0.6195,
+    "voice": "M1",
+    "prosody": "M1 speed=1.029 (rank STAFF × state FAREWELL)"
+   },
+   "timings": {
+    "llm_total_s": 0.497,
+    "llm_first_attempt": {
+     "t_first_token": 0.1594,
+     "t_type_known": 0.2381,
+     "t_first_sentence": 0.4083,
+     "t_speech_done": 0.4083,
+     "t_total": 0.4966
+    },
+    "tts_full_s": 0.62,
+    "tts_synth_s": 0.6195,
+    "tts_first_sentence_s": 0.6268,
+    "first_sentence": "Nos vemos luego, Luis; que te rinda mucho el turno.",
+    "e2e_llm_req_to_first_audio_s": 1.035
+   },
+   "plan": {
+    "emote": "FAREWELL_WAVE",
+    "trigger_start_s": 0.72,
+    "trigger_end_s": 1.1400000000000001,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.1399319727891157
+   }
+  }
+ ],
+ "validation": {
+  "greeting_rank_emote": true,
+  "greeting_emote": "GREETING_STAFF",
+  "staff_high_five": true,
+  "point_direction": true,
+  "point_emote": "POINT_RIGHT",
+  "vip_farewell_heart": true,
+  "farewell_emote": "FAREWELL_WAVE",
+  "name_in_greeting": true,
+  "greeting_speech": "¡Luis, compañero! ¡Dame esos cinco! Ya hacía falta tu energía por aquí.",
+  "dialogue_emotes_ok": true,
+  "address_no_mixing": true,
+  "address_form_ok": true,
+  "vip_title_greeting": true,
+  "vip_no_exclamations": true,
+  "persona_turns": 6,
+  "persona_relaxed_turns": 0,
+  "failed_turns": 0,
+  "ALL_OK": true
+ },
+ "manifest": "opt/realnames/visits/luis/tts_manifest.jsonl",
+ "mixing_turns": [],
+ "anchor_plan": {
+  "returncode": 0,
+  "wall_s": 1.206,
+  "stdout_tail": "{\n \"schema\": \"hriego_gesture_anchor_plan.v1\",\n \"rows\": 6,\n \"policy\": {\n  \"align\": \"auto\",\n  \"stat\": \"median\",\n  \"max_initial_delay_s\": 1.5,\n  \"latency_file\": \"config/preset_latency_c08.json\",\n  \"latency_sha256\": \"d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3\",\n  \"latency_error\": null\n },\n \"model\": {\n  \"revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d\",\n  \"onnx_sha256\": \"e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\",\n  \"provider\": \"CPUExecutionProvider\",\n  \"cpu_threads\": 2,\n  \"onnx_sha256_matches_pinned\": true,\n  \"model_revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\"\n },\n \"align_policy_used_counts\": {\n  \"stroke\": 4,\n  \"null\": 2\n },\n \"align_policy_used_preroll0_counts\": {\n  \"stroke\": 4,\n  \"null\": 2\n },\n \"status_counts\": {\n  \"planned\": 4,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"status_preroll0_counts\": {\n  \"planned\": 4,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"align_status_counts\": {\n  \"aligned_ctc_not_human_validated\": 5,\n  \"null\": 1\n },\n \"max_delay_s_planned\": 1.1399319727891157,\n \"max_delay_s_preroll0_planned\": 0.0799092970521542\n}\n",
+  "stderr_tail": ""
+ },
+ "timings": {
+  "face_total_s": 2.563,
+  "face_wall_s": 3.223,
+  "anchor_plan_wall_s": 1.206,
+  "visit_wall_s": 16.625
+ },
+ "anchor_plan_summary": "opt/realnames/visits/luis/anchor_plan/summary.json"
+}

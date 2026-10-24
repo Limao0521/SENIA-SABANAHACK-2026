@@ -1,0 +1,65 @@
+{
+  "etiqueta": "pc-qwen3-4b+prefijo",
+  "url": "http://127.0.0.1:8092",
+  "ts": "20261024_053354",
+  "n": 42,
+  "prefijo_estatico": true,
+  "fallos": 0,
+  "validez_pct": 28.6,
+  "validez_tras_reparar_pct": 100.0,
+  "intent_ok_pct": 66.7,
+  "latencias": {
+    "t_first_token": {
+      "p50": 0.304,
+      "p90": 0.349,
+      "max": 0.428
+    },
+    "t_speech_done": {
+      "p50": 0.81,
+      "p90": 0.926,
+      "max": 0.985
+    },
+    "t_total": {
+      "p50": 1.132,
+      "p90": 1.4,
+      "max": 1.657
+    }
+  },
+  "tokens_s_medio": 69.346,
+  "prompt_tokens_medio": 2379.286,
+  "cached_tokens_medio": 1692.952,
+  "muestras": [
+    {
+      "id": "saludo_vip",
+      "speech": "Buenas tardes, señora Laura. Bienvenida a casa: Club N, nuestro lugar de encuentro; quedo a su disposición."
+    },
+    {
+      "id": "conv_horario_biblioteca",
+      "speech": "Buenas tardes, ¿a qué hora abre la biblioteca del club?"
+    },
+    {
+      "id": "guia_biblioteca_vip",
+      "speech": "Señorita Laura, el espacio de la biblioteca y la galería queda al frente, segundo piso."
+    },
+    {
+      "id": "saludo_staff",
+      "speech": "¡Luis, compañero! ¡Dame esos cinco! Bienvenido a nuestro lugar de encuentro."
+    },
+    {
+      "id": "conv_pide_gimnasio",
+      "speech": "Bienvenido al Club N, nuestro lugar de encuentro. Hoy también es parte de nuestra comunidad."
+    },
+    {
+      "id": "denial_bar_invitado",
+      "speech": "Mario, en nuestro club puede disfrutar de nuestros restaurantes y cafeterías; ese espacio está reservado para otros eventos."
+    },
+    {
+      "id": "destino_rol_worker",
+      "speech": "Josaed, le corresponde almacenes de logística, a mi izquierda. Siga la señalización."
+    },
+    {
+      "id": "conv_despedida_vip",
+      "speech": "Es un placer ayudarle. Esta es su casa: Club N, nuestro lugar de encuentro."
+    }
+  ]
+}

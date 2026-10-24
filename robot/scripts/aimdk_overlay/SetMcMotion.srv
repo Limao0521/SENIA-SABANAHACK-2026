@@ -1,0 +1,23 @@
+# Copiado del X2 real (/agibot/software/common/share/aimdk_msgs/srv/SetMcMotion.srv, lx2501 v1.1.4, 20/10/2026):
+# no está en el AimDK público v1.1.0.
+# 此接口是播放全身动作接口
+
+# 请求头
+RequestHeader header
+
+# 输入源
+McInputSource input_source
+
+# 全身动作名称
+McMotion motion
+
+# 是否打断(给后面animation接口合并预留)
+bool interrupt
+
+# 动作运行时间，0代表立刻运行，单位: ms (UNIX时间)
+uint64 play_timestamp
+
+---
+
+# 响应头
+CommonResponse response

@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Bienvenida",
+  "char_start": 0,
+  "char_end": 10,
+  "occurrence": 1,
+  "start_s": 0.68,
+  "end_s": 1.24,
+  "start_sample": 29988,
+  "end_sample": 54684,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "81dc03ba4fbb8cb48d640f97fd6f39d5d26b4ca1c053780696748d9c063fd7f2",
+  "sample_count": 233472,
+  "case_id": "ps_mario_t00_greeting",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

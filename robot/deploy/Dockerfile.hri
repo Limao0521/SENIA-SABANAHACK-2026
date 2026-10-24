@@ -1,0 +1,39 @@
+# =============================================================================
+# Dockerfile.hri — HRIEGO v2 (Face → FSM → LLM → Supertonic) a bordo del X2 Ultra.
+#
+# Base: x2-onboard (ROS 2 Humble + aimdk_msgs overlay, Python 3.10, arm64), así
+# HRIEGO lee la cámara del HAL por ROS y habla por el servicio de audio AimDK
+# (hriego_v2/robot_io.py). El LLM va aparte, en el contenedor x2-llm (llm/).
+#
+#   docker build -f deploy/Dockerfile.hri -t x2-hri:latest .
+# =============================================================================
+ARG BASE_IMAGE=x2-onboard:latest
+FROM ${BASE_IMAGE}
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# libgl1/libglib2.0: OpenCV (ventana del dashboard si hay DISPLAY);
+# libsndfile1: soundfile (Supertonic).
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        python3-pip \
+        libgl1 \
+        libglib2.0-0 \
+        libsndfile1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY deploy/requirements-hri-jetson.txt /tmp/requirements-hri.txt
+RUN pip3 install --no-cache-dir -r /tmp/requirements-hri.txt && rm /tmp/requirements-hri.txt
+
+# El repo se monta en /workspace/x2_ultra (compose.hri.yml); estos ENV reproducen
+# scripts/run_hriego_v2.sh con un único Python para Face y Supertonic.
+ENV PYTHONPATH=/workspace/x2_ultra/Face/thirdparty/uniface:/workspace/x2_ultra/Face:/workspace/x2_ultra \
+    UNIFACE_CACHE_DIR=/workspace/x2_ultra/Face/thirdparty/uniface-models \
+    HRIEGO_FACE_PYTHON=/usr/bin/python3 \
+    HRIEGO_SUPERTONIC_PYTHON=/usr/bin/python3 \
+    HF_HUB_OFFLINE=1 \
+    TRANSFORMERS_OFFLINE=1 \
+    TOKENIZERS_PARALLELISM=false
+
+WORKDIR /workspace/x2_ultra
+# Sin repo montado no hay nada que hacer; el healthcheck solo comprueba imports.
+CMD ["python3", "-c", "import cv2, onnxruntime, supertonic, soundfile, rclpy; from aimdk_msgs.msg import AudioPlayback; print('x2-hri: imports OK')"]

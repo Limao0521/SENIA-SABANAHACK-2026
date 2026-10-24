@@ -1,0 +1,1018 @@
+{
+ "visit_id": "ps_desconocido",
+ "rank": "GUEST",
+ "person_dir": "desconocido",
+ "profile_from_db": {
+  "person_id": null,
+  "display_name": null,
+  "rank_code": "GUEST",
+  "rank_name": "Invitada (sin confirmar)",
+  "identity_status": "UNCONFIRMED"
+ },
+ "face_recognition": {
+  "photo": "/home/luis/Downloads/Falso1",
+  "status": "UNKNOWN",
+  "faces": 1,
+  "uniface_seconds": {
+   "image_seconds": 0.5118301229995268,
+   "detection_seconds": 0.4698421149987553,
+   "embedding_seconds": 0.04196135899837827
+  },
+  "bbox": [
+   332.4797058105469,
+   87.43811798095703,
+   516.3994140625,
+   341.1686706542969
+  ],
+  "confidence": 0.9994266033172607,
+  "top1_id": "P004",
+  "top1_score": 0.07906998693943024,
+  "top2_id": "P002",
+  "top2_score": 0.04412919655442238,
+  "margin": 0.03494079038500786,
+  "latency_s": 2.468,
+  "wall_from_orchestrator_s": 3.144
+ },
+ "scenario": "reception_meeting_left",
+ "route_direction": "left",
+ "contract": "rcp01c.intervention.v2 (BF fix-B catalog, schema B flat, streaming) + persona card W3",
+ "pipeline": "phase1 personas: face_id(reto2 probe) + stream_chat 8080 + AsmPersona + persona_validate + Supertonic per-rank prosody (voice_config.json) + CTC anchor_plan --align auto",
+ "turns": [
+  {
+   "turn_id": "ps_desconocido_t00_greeting",
+   "state": "GREETING",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"GREETING_GUEST\",\"speech\":\"Bienvenida al laboratorio, Usted; si necesita ayuda, con gusto se la ofrezco.\",\"trigger_text\":\"bienvenida\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_desconocido_t00_greeting",
+     "speech": "Bienvenida al laboratorio, Usted; si necesita ayuda, con gusto se la ofrezco.",
+     "communicative_acts": [
+      "GREETING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_desconocido_t00_greeting",
+       "type": "GREETING_GUEST",
+       "trigger_text": "Bienvenida"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.2297,
+     "t_type_known": 0.3114,
+     "t_first_sentence": 0.5696,
+     "t_speech_done": 0.5696,
+     "t_total": 0.669,
+     "prompt_tokens": 1426,
+     "completion_tokens": 42,
+     "cached_tokens": 724,
+     "prompt_ms": 148.265,
+     "predicted_ms": 439.488,
+     "key_order": null,
+     "total_s": 0.669
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5072,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"GREETING_GUEST\",\"speech\":\"Bienvenida al laboratorio, Usted; si necesita ayuda, con gusto se la ofrezco.\",\"trigger_text\":\"bienvenida\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_desconocido_t00_greeting",
+       "speech": "Bienvenida al laboratorio, Usted; si necesita ayuda, con gusto se la ofrezco.",
+       "communicative_acts": [
+        "GREETING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_desconocido_t00_greeting",
+         "type": "GREETING_GUEST",
+         "trigger_text": "Bienvenida"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.2297,
+       "t_type_known": 0.3114,
+       "t_first_sentence": 0.5696,
+       "t_speech_done": 0.5696,
+       "t_total": 0.669,
+       "prompt_tokens": 1426,
+       "completion_tokens": 42,
+       "cached_tokens": 724,
+       "prompt_ms": 148.265,
+       "predicted_ms": 439.488,
+       "key_order": null,
+       "total_s": 0.669
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.2297,
+     "t_type_known": 0.3114,
+     "t_first_sentence": 0.5696,
+     "t_speech_done": 0.5696,
+     "t_total": 0.669,
+     "prompt_tokens": 1426,
+     "completion_tokens": 42,
+     "cached_tokens": 724,
+     "prompt_ms": 148.265,
+     "predicted_ms": 439.488,
+     "key_order": null,
+     "total_s": 0.669
+    },
+    "total_llm_s": 0.669
+   },
+   "decision": {
+    "requested": "GREETING_GUEST",
+    "effective": "GREETING_GUEST",
+    "suppressed": null,
+    "trigger_text": "Bienvenida",
+    "trigger_char_start": 0,
+    "trigger_char_end": 10,
+    "fsm_mandated": true
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 12,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/desconocido/wav/ps_desconocido/ps_desconocido_t00_greeting.wav",
+    "wav_sha256": "7c53afd973d333724d4ebb896e99252696384698b114432fc02583693e61c551",
+    "sample_rate": 44100,
+    "duration_s": 6.0628,
+    "synth_s": 0.9544,
+    "voice": "M1",
+    "prosody": "M1 speed=1.018 (rank GUEST × state GREETING)"
+   },
+   "timings": {
+    "llm_total_s": 0.669,
+    "llm_first_attempt": {
+     "t_first_token": 0.2297,
+     "t_type_known": 0.3114,
+     "t_first_sentence": 0.5696,
+     "t_speech_done": 0.5696,
+     "t_total": 0.669
+    },
+    "tts_full_s": 1.667,
+    "tts_synth_s": 0.9544,
+    "tts_first_sentence_s": 0.9343,
+    "first_sentence": "Bienvenida al laboratorio, Usted; si necesita ayuda, con gusto se la ofrezco.",
+    "e2e_llm_req_to_first_audio_s": 1.504
+   },
+   "plan": {
+    "emote": "GREETING_GUEST",
+    "trigger_start_s": 0.74,
+    "trigger_end_s": 1.24,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.24
+   }
+  },
+  {
+   "turn_id": "ps_desconocido_t01_guidance",
+   "state": "GUIDANCE",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"POINT_LEFT\",\"speech\":\"A continuación, la sala de juntas queda a mi izquierda; si necesita ayuda, aquí estoy.\",\"trigger_text\":\"a mi izquierda\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_desconocido_t01_guidance",
+     "speech": "A continuación, la sala de juntas queda a mi izquierda; si necesita ayuda, aquí estoy.",
+     "communicative_acts": [
+      "GUIDE"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_desconocido_t01_guidance",
+       "type": "POINT_LEFT",
+       "trigger_text": "a mi izquierda",
+       "reference_frame": "X2_base_local",
+       "target_vector": [
+        0.0,
+        1.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.1967,
+     "t_type_known": 0.248,
+     "t_first_sentence": 0.5073,
+     "t_speech_done": 0.5073,
+     "t_total": 0.6101,
+     "prompt_tokens": 1507,
+     "completion_tokens": 39,
+     "cached_tokens": 939,
+     "prompt_ms": 120.69,
+     "predicted_ms": 413.321,
+     "key_order": null,
+     "total_s": 0.6101
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5439,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"POINT_LEFT\",\"speech\":\"A continuación, la sala de juntas queda a mi izquierda; si necesita ayuda, aquí estoy.\",\"trigger_text\":\"a mi izquierda\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_desconocido_t01_guidance",
+       "speech": "A continuación, la sala de juntas queda a mi izquierda; si necesita ayuda, aquí estoy.",
+       "communicative_acts": [
+        "GUIDE"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_desconocido_t01_guidance",
+         "type": "POINT_LEFT",
+         "trigger_text": "a mi izquierda",
+         "reference_frame": "X2_base_local",
+         "target_vector": [
+          0.0,
+          1.0,
+          0.0
+         ]
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.1967,
+       "t_type_known": 0.248,
+       "t_first_sentence": 0.5073,
+       "t_speech_done": 0.5073,
+       "t_total": 0.6101,
+       "prompt_tokens": 1507,
+       "completion_tokens": 39,
+       "cached_tokens": 939,
+       "prompt_ms": 120.69,
+       "predicted_ms": 413.321,
+       "key_order": null,
+       "total_s": 0.6101
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.1967,
+     "t_type_known": 0.248,
+     "t_first_sentence": 0.5073,
+     "t_speech_done": 0.5073,
+     "t_total": 0.6101,
+     "prompt_tokens": 1507,
+     "completion_tokens": 39,
+     "cached_tokens": 939,
+     "prompt_ms": 120.69,
+     "predicted_ms": 413.321,
+     "key_order": null,
+     "total_s": 0.6101
+    },
+    "total_llm_s": 0.6101
+   },
+   "decision": {
+    "requested": "POINT_LEFT",
+    "effective": "POINT_LEFT",
+    "suppressed": null,
+    "trigger_text": "a mi izquierda",
+    "trigger_char_start": 40,
+    "trigger_char_end": 54,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 15,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/desconocido/wav/ps_desconocido/ps_desconocido_t01_guidance.wav",
+    "wav_sha256": "7c35ac9b490b74b7d9450aabf6af92983302b16a1fad3af794db300329dd9aee",
+    "sample_rate": 44100,
+    "duration_s": 6.798,
+    "synth_s": 1.0556,
+    "voice": "M1",
+    "prosody": "M1 speed=0.97 (rank GUEST × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.61,
+    "llm_first_attempt": {
+     "t_first_token": 0.1967,
+     "t_type_known": 0.248,
+     "t_first_sentence": 0.5073,
+     "t_speech_done": 0.5073,
+     "t_total": 0.6101
+    },
+    "tts_full_s": 1.057,
+    "tts_synth_s": 1.0556,
+    "tts_first_sentence_s": 1.0589,
+    "first_sentence": "A continuación, la sala de juntas queda a mi izquierda; si necesita ayuda, aquí estoy.",
+    "e2e_llm_req_to_first_audio_s": 1.566
+   },
+   "plan": {
+    "emote": "POINT_LEFT",
+    "trigger_start_s": 3.16,
+    "trigger_end_s": 3.74,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "anchor_only_no_preset",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "ps_desconocido_t02_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Muchas gracias, de verdad me encantó el recorrido contigo.",
+   "intended_emote": "SOCIAL_HEART",
+   "llm": {
+    "raw": "{\"type\":\"SOCIAL_HEART\",\"speech\":\"Me encanta que lo disfrutara, gracias por sus palabras.\",\"trigger_text\":\"Me encanta\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_desconocido_t02_dialogue",
+     "speech": "Me encanta que lo disfrutara, gracias por sus palabras.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_desconocido_t02_dialogue",
+       "type": "SOCIAL_HEART",
+       "trigger_text": "Me encanta"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0464,
+     "t_type_known": 0.1307,
+     "t_first_sentence": 0.5702,
+     "t_speech_done": 0.5702,
+     "t_total": 0.6704,
+     "prompt_tokens": 3578,
+     "completion_tokens": 32,
+     "cached_tokens": 3469,
+     "prompt_ms": 40.209,
+     "predicted_ms": 623.804,
+     "key_order": null,
+     "total_s": 0.6704
+    },
+    "temperature": 0.7,
+    "seed": 1083522569,
+    "prompt_chars": 12087,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"SOCIAL_HEART\",\"speech\":\"Me encanta que lo disfrutaras, gracias por tus palabras.\",\"trigger_text\":\"Me encanta\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_desconocido_t02_dialogue",
+       "speech": "Me encanta que lo disfrutaras, gracias por tus palabras.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_desconocido_t02_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "Me encanta"
+        }
+       ]
+      },
+      "errors": [
+       "persona_address: GUEST must use usted ONLY (found tú marker 'tus')"
+      ],
+      "metrics": {
+       "t_first_token": 0.2497,
+       "t_type_known": 0.3276,
+       "t_first_sentence": 0.5189,
+       "t_speech_done": 0.5189,
+       "t_total": 0.6171,
+       "prompt_tokens": 3473,
+       "completion_tokens": 32,
+       "cached_tokens": 2879,
+       "prompt_ms": 145.696,
+       "predicted_ms": 367.285,
+       "key_order": null,
+       "total_s": 0.6171
+      },
+      "temperature": 0.2,
+      "seed": null
+     },
+     {
+      "raw": "{\"type\":\"SOCIAL_HEART\",\"speech\":\"Me encanta que lo disfrutara, gracias por sus palabras.\",\"trigger_text\":\"Me encanta\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_desconocido_t02_dialogue",
+       "speech": "Me encanta que lo disfrutara, gracias por sus palabras.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_desconocido_t02_dialogue",
+         "type": "SOCIAL_HEART",
+         "trigger_text": "Me encanta"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0464,
+       "t_type_known": 0.1307,
+       "t_first_sentence": 0.5702,
+       "t_speech_done": 0.5702,
+       "t_total": 0.6704,
+       "prompt_tokens": 3578,
+       "completion_tokens": 32,
+       "cached_tokens": 3469,
+       "prompt_ms": 40.209,
+       "predicted_ms": 623.804,
+       "key_order": null,
+       "total_s": 0.6704
+      },
+      "temperature": 0.7,
+      "seed": 1083522569
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": true,
+    "first_attempt_ok": false,
+    "first_attempt_metrics": {
+     "t_first_token": 0.2497,
+     "t_type_known": 0.3276,
+     "t_first_sentence": 0.5189,
+     "t_speech_done": 0.5189,
+     "t_total": 0.6171,
+     "prompt_tokens": 3473,
+     "completion_tokens": 32,
+     "cached_tokens": 2879,
+     "prompt_ms": 145.696,
+     "predicted_ms": 367.285,
+     "key_order": null,
+     "total_s": 0.6171
+    },
+    "total_llm_s": 1.2875
+   },
+   "decision": {
+    "requested": "SOCIAL_HEART",
+    "effective": "SOCIAL_HEART",
+    "suppressed": null,
+    "trigger_text": "Me encanta",
+    "trigger_char_start": 0,
+    "trigger_char_end": 10,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 9,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 1
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/desconocido/wav/ps_desconocido/ps_desconocido_t02_dialogue.wav",
+    "wav_sha256": "7a1b7b6184514251791fe46dd33be6902853af248b705cd31622fd2e07ed4ccb",
+    "sample_rate": 44100,
+    "duration_s": 4.4553,
+    "synth_s": 0.647,
+    "voice": "M1",
+    "prosody": "M1 speed=0.97 (rank GUEST × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 1.288,
+    "llm_first_attempt": {
+     "t_first_token": 0.2497,
+     "t_type_known": 0.3276,
+     "t_first_sentence": 0.5189,
+     "t_speech_done": 0.5189,
+     "t_total": 0.6171
+    },
+    "tts_full_s": 0.648,
+    "tts_synth_s": 0.647,
+    "tts_first_sentence_s": 0.6599,
+    "first_sentence": "Me encanta que lo disfrutara, gracias por sus palabras.",
+    "e2e_llm_req_to_first_audio_s": 1.179
+   },
+   "plan": {
+    "emote": "SOCIAL_HEART",
+    "trigger_start_s": 0.72,
+    "trigger_end_s": 1.16,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.36
+   }
+  },
+  {
+   "turn_id": "ps_desconocido_t03_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Me acaban de aprobar el proyecto de investigación.",
+   "intended_emote": "APPLAUSE",
+   "llm": {
+    "raw": "{\"type\":\"APPLAUSE\",\"speech\":\"¡Felicidades por esa aprobación, qué buena noticia me das!\",\"trigger_text\":\"Felicidades\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_desconocido_t03_dialogue",
+     "speech": "¡Felicidades por esa aprobación, qué buena noticia me das!",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_desconocido_t03_dialogue",
+       "type": "APPLAUSE",
+       "trigger_text": "Felicidades"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0516,
+     "t_type_known": 0.1188,
+     "t_first_sentence": 0.3459,
+     "t_speech_done": 0.3581,
+     "t_total": 0.4563,
+     "prompt_tokens": 3461,
+     "completion_tokens": 35,
+     "cached_tokens": 3296,
+     "prompt_ms": 45.101,
+     "predicted_ms": 404.595,
+     "key_order": null,
+     "total_s": 0.4563
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 12071,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"APPLAUSE\",\"speech\":\"¡Felicidades por esa aprobación, qué buena noticia me das!\",\"trigger_text\":\"Felicidades\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_desconocido_t03_dialogue",
+       "speech": "¡Felicidades por esa aprobación, qué buena noticia me das!",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_desconocido_t03_dialogue",
+         "type": "APPLAUSE",
+         "trigger_text": "Felicidades"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0516,
+       "t_type_known": 0.1188,
+       "t_first_sentence": 0.3459,
+       "t_speech_done": 0.3581,
+       "t_total": 0.4563,
+       "prompt_tokens": 3461,
+       "completion_tokens": 35,
+       "cached_tokens": 3296,
+       "prompt_ms": 45.101,
+       "predicted_ms": 404.595,
+       "key_order": null,
+       "total_s": 0.4563
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.0516,
+     "t_type_known": 0.1188,
+     "t_first_sentence": 0.3459,
+     "t_speech_done": 0.3581,
+     "t_total": 0.4563,
+     "prompt_tokens": 3461,
+     "completion_tokens": 35,
+     "cached_tokens": 3296,
+     "prompt_ms": 45.101,
+     "predicted_ms": 404.595,
+     "key_order": null,
+     "total_s": 0.4563
+    },
+    "total_llm_s": 0.4563
+   },
+   "decision": {
+    "requested": "APPLAUSE",
+    "effective": "APPLAUSE",
+    "suppressed": null,
+    "trigger_text": "Felicidades",
+    "trigger_char_start": 1,
+    "trigger_char_end": 12,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": false
+    },
+    "words": 9,
+    "exclamations": 2,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/desconocido/wav/ps_desconocido/ps_desconocido_t03_dialogue.wav",
+    "wav_sha256": "dd2c2023aae6e2557f027dcc6053cd07df9198a1368bc0cfce00aad5b8d37ee1",
+    "sample_rate": 44100,
+    "duration_s": 4.7984,
+    "synth_s": 0.8185,
+    "voice": "M1",
+    "prosody": "M1 speed=0.97 (rank GUEST × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.457,
+    "llm_first_attempt": {
+     "t_first_token": 0.0516,
+     "t_type_known": 0.1188,
+     "t_first_sentence": 0.3459,
+     "t_speech_done": 0.3581,
+     "t_total": 0.4563
+    },
+    "tts_full_s": 0.819,
+    "tts_synth_s": 0.8185,
+    "tts_first_sentence_s": 0.8187,
+    "first_sentence": "¡Felicidades por esa aprobación, qué buena noticia me das!",
+    "e2e_llm_req_to_first_audio_s": 1.165
+   },
+   "plan": {
+    "emote": "APPLAUSE",
+    "trigger_start_s": 0.76,
+    "trigger_end_s": 1.42,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.12
+   }
+  },
+  {
+   "turn_id": "ps_desconocido_t04_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿A qué hora cierra el laboratorio hoy?",
+   "intended_emote": "NONE",
+   "llm": {
+    "raw": "{\"type\":\"NONE\",\"speech\":\"¿Cuál es la hora de cierre del laboratorio hoy?\",\"trigger_text\":\"\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_desconocido_t04_dialogue",
+     "speech": "¿Cuál es la hora de cierre del laboratorio hoy?",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": []
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.046,
+     "t_type_known": 0.0933,
+     "t_first_sentence": 0.2785,
+     "t_speech_done": 0.29,
+     "t_total": 0.348,
+     "prompt_tokens": 3461,
+     "completion_tokens": 27,
+     "cached_tokens": 3296,
+     "prompt_ms": 39.85,
+     "predicted_ms": 301.94,
+     "key_order": null,
+     "total_s": 0.348
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 12047,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"NONE\",\"speech\":\"¿Cuál es la hora de cierre del laboratorio hoy?\",\"trigger_text\":\"\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_desconocido_t04_dialogue",
+       "speech": "¿Cuál es la hora de cierre del laboratorio hoy?",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": []
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.046,
+       "t_type_known": 0.0933,
+       "t_first_sentence": 0.2785,
+       "t_speech_done": 0.29,
+       "t_total": 0.348,
+       "prompt_tokens": 3461,
+       "completion_tokens": 27,
+       "cached_tokens": 3296,
+       "prompt_ms": 39.85,
+       "predicted_ms": 301.94,
+       "key_order": null,
+       "total_s": 0.348
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.046,
+     "t_type_known": 0.0933,
+     "t_first_sentence": 0.2785,
+     "t_speech_done": 0.29,
+     "t_total": 0.348,
+     "prompt_tokens": 3461,
+     "completion_tokens": 27,
+     "cached_tokens": 3296,
+     "prompt_ms": 39.85,
+     "predicted_ms": 301.94,
+     "key_order": null,
+     "total_s": 0.348
+    },
+    "total_llm_s": 0.348
+   },
+   "decision": {
+    "requested": "NONE",
+    "effective": "NONE",
+    "suppressed": null,
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": false
+    },
+    "words": 9,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/desconocido/wav/ps_desconocido/ps_desconocido_t04_dialogue.wav",
+    "wav_sha256": "4463d3925ccc32e786cf07255d11d71cecb4d8e41e04c6723120b0997e785429",
+    "sample_rate": 44100,
+    "duration_s": 3.4641,
+    "synth_s": 0.6551,
+    "voice": "M1",
+    "prosody": "M1 speed=0.97 (rank GUEST × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.348,
+    "llm_first_attempt": {
+     "t_first_token": 0.046,
+     "t_type_known": 0.0933,
+     "t_first_sentence": 0.2785,
+     "t_speech_done": 0.29,
+     "t_total": 0.348
+    },
+    "tts_full_s": 0.656,
+    "tts_synth_s": 0.6551,
+    "tts_first_sentence_s": 0.6298,
+    "first_sentence": "¿Cuál es la hora de cierre del laboratorio hoy?",
+    "e2e_llm_req_to_first_audio_s": 0.908
+   },
+   "plan": {
+    "emote": "NONE",
+    "trigger_start_s": null,
+    "trigger_end_s": null,
+    "align_status": null,
+    "status": "none_sonic",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "ps_desconocido_t05_farewell",
+   "state": "FAREWELL",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"FAREWELL_WAVE\",\"speech\":\"Gracias por visitarnos, Usted; si necesita algo más, con gusto le oriento.\",\"trigger_text\":\"Gracias por visitarnos\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_desconocido_t05_farewell",
+     "speech": "Gracias por visitarnos, Usted; si necesita algo más, con gusto le oriento.",
+     "communicative_acts": [
+      "CLOSING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_desconocido_t05_farewell",
+       "type": "FAREWELL_WAVE",
+       "trigger_text": "Gracias por visitarnos"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.2939,
+     "t_type_known": 0.3801,
+     "t_first_sentence": 0.6345,
+     "t_speech_done": 0.6345,
+     "t_total": 0.7561,
+     "prompt_tokens": 1467,
+     "completion_tokens": 43,
+     "cached_tokens": 733,
+     "prompt_ms": 151.182,
+     "predicted_ms": 462.246,
+     "key_order": null,
+     "total_s": 0.7561
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5239,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"FAREWELL_WAVE\",\"speech\":\"Gracias por visitarnos, Usted; si necesita algo más, con gusto le oriento.\",\"trigger_text\":\"Gracias por visitarnos\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_desconocido_t05_farewell",
+       "speech": "Gracias por visitarnos, Usted; si necesita algo más, con gusto le oriento.",
+       "communicative_acts": [
+        "CLOSING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_desconocido_t05_farewell",
+         "type": "FAREWELL_WAVE",
+         "trigger_text": "Gracias por visitarnos"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.2939,
+       "t_type_known": 0.3801,
+       "t_first_sentence": 0.6345,
+       "t_speech_done": 0.6345,
+       "t_total": 0.7561,
+       "prompt_tokens": 1467,
+       "completion_tokens": 43,
+       "cached_tokens": 733,
+       "prompt_ms": 151.182,
+       "predicted_ms": 462.246,
+       "key_order": null,
+       "total_s": 0.7561
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.2939,
+     "t_type_known": 0.3801,
+     "t_first_sentence": 0.6345,
+     "t_speech_done": 0.6345,
+     "t_total": 0.7561,
+     "prompt_tokens": 1467,
+     "completion_tokens": 43,
+     "cached_tokens": 733,
+     "prompt_ms": 151.182,
+     "predicted_ms": 462.246,
+     "key_order": null,
+     "total_s": 0.7561
+    },
+    "total_llm_s": 0.7561
+   },
+   "decision": {
+    "requested": "FAREWELL_WAVE",
+    "effective": "FAREWELL_WAVE",
+    "suppressed": null,
+    "trigger_text": "Gracias por visitarnos",
+    "trigger_char_start": 0,
+    "trigger_char_end": 22,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 12,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/desconocido/wav/ps_desconocido/ps_desconocido_t05_farewell.wav",
+    "wav_sha256": "15f9762e218df6d66bd3d6ecab242b98110a258e8ef0cbb0930f367f8dbf28cc",
+    "sample_rate": 44100,
+    "duration_s": 6.2466,
+    "synth_s": 0.9738,
+    "voice": "M1",
+    "prosody": "M1 speed=0.951 (rank GUEST × state FAREWELL)"
+   },
+   "timings": {
+    "llm_total_s": 0.756,
+    "llm_first_attempt": {
+     "t_first_token": 0.2939,
+     "t_type_known": 0.3801,
+     "t_first_sentence": 0.6345,
+     "t_speech_done": 0.6345,
+     "t_total": 0.7561
+    },
+    "tts_full_s": 0.975,
+    "tts_synth_s": 0.9738,
+    "tts_first_sentence_s": 0.9371,
+    "first_sentence": "Gracias por visitarnos, Usted; si necesita algo más, con gusto le oriento.",
+    "e2e_llm_req_to_first_audio_s": 1.572
+   },
+   "plan": {
+    "emote": "FAREWELL_WAVE",
+    "trigger_start_s": 0.72,
+    "trigger_end_s": 1.92,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.1399319727891157
+   }
+  }
+ ],
+ "validation": {
+  "greeting_rank_emote": true,
+  "greeting_emote": "GREETING_GUEST",
+  "staff_high_five": true,
+  "point_direction": true,
+  "point_emote": "POINT_LEFT",
+  "vip_farewell_heart": true,
+  "farewell_emote": "FAREWELL_WAVE",
+  "name_in_greeting": true,
+  "greeting_speech": "Bienvenida al laboratorio, Usted; si necesita ayuda, con gusto se la ofrezco.",
+  "dialogue_emotes_ok": true,
+  "address_no_mixing": true,
+  "address_form_ok": true,
+  "vip_title_greeting": true,
+  "vip_no_exclamations": true,
+  "persona_turns": 6,
+  "ALL_OK": true
+ },
+ "manifest": "opt/realnames/visits/desconocido/tts_manifest.jsonl",
+ "mixing_turns": [],
+ "anchor_plan": {
+  "returncode": 0,
+  "wall_s": 1.338,
+  "stdout_tail": "{\n \"schema\": \"hriego_gesture_anchor_plan.v1\",\n \"rows\": 6,\n \"policy\": {\n  \"align\": \"auto\",\n  \"stat\": \"median\",\n  \"max_initial_delay_s\": 1.5,\n  \"latency_file\": \"config/preset_latency_c08.json\",\n  \"latency_sha256\": \"d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3\",\n  \"latency_error\": null\n },\n \"model\": {\n  \"revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d\",\n  \"onnx_sha256\": \"e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\",\n  \"provider\": \"CPUExecutionProvider\",\n  \"cpu_threads\": 2,\n  \"onnx_sha256_matches_pinned\": true,\n  \"model_revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\"\n },\n \"align_policy_used_counts\": {\n  \"stroke\": 4,\n  \"null\": 2\n },\n \"align_policy_used_preroll0_counts\": {\n  \"stroke\": 4,\n  \"null\": 2\n },\n \"status_counts\": {\n  \"planned\": 4,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"status_preroll0_counts\": {\n  \"planned\": 4,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"align_status_counts\": {\n  \"aligned_ctc_not_human_validated\": 5,\n  \"null\": 1\n },\n \"max_delay_s_planned\": 1.36,\n \"max_delay_s_preroll0_planned\": 0.2802267573696145\n}\n",
+  "stderr_tail": ""
+ },
+ "timings": {
+  "face_total_s": 2.468,
+  "face_wall_s": 3.144,
+  "anchor_plan_wall_s": 1.338,
+  "visit_wall_s": 19.508
+ },
+ "anchor_plan_summary": "opt/realnames/visits/desconocido/anchor_plan/summary.json"
+}

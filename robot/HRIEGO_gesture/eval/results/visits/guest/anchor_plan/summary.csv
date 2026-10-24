@@ -1,0 +1,6 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+visit_guest_1792649564,visit_guest_1792649564,visit_guest_1792649564_t01,POINT_RIGHT,,,a mi derecha,1.5504,44100,0.5,1.08,22050,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+visit_guest_1792649564,visit_guest_1792649564,visit_guest_1792649564_t02,APPLAUSE,3017,11,te haya aprobaron,3.3394,44100,1.36,2.12,59976,aligned_ctc_not_human_validated,0.0,0.0,7938,54686,planned,planned,,0.02
+visit_guest_1792649564,visit_guest_1792649564,visit_guest_1792649564_t03,CONFIRMATION,3028,11,Puedes,2.8719,44100,0.66,0.92,29106,aligned_ctc_not_human_validated,0.64,0.0,-28224,19406,planned,planned,,0.02
+visit_guest_1792649564,visit_guest_1792649564,visit_guest_1792649564_t04,NONE,,,,3.8865,44100,,,,,,,,,none_sonic,none_sonic,,
+visit_guest_1792649564,visit_guest_1792649564,visit_guest_1792649564_t05,FAREWELL_WAVE,3031,11,¡Hasta luego!,4.6126,44100,0.9,1.54,39690,aligned_ctc_not_human_validated,0.32002267573696147,0.0,-14113,32634,planned,planned,,0.02

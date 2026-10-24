@@ -1,0 +1,36 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# Assets externos (los crea scripts/setup.sh; no se versionan)
+third_party/agibot_x2_urdf
+third_party/agibot_d1
+third_party/agibot_mc_rl
+third_party/syslibs
+assets/motions/
+
+# Salidas
+runs/
+outputs/
+*.mp4
+!docs/media/*.mp4
+logs/
+
+# volcados de memoria
+core
+core.*
+
+# Clon experimental local del backend Qwen3-TTS (repositorio anidado y binarios).
+experiments/hriego_v2_sprint_20261021/
+
+# Reto 2 HRI: MP4s, registros y resúmenes de validación (no se versionan; el informe sí).
+out_reto2/*
+!out_reto2/REPORT.md
+
+# Reto 2 HRI: assets del MC de AgiBot copiados por scripts/fetch_hri_assets.sh (licencia; no se versionan)
+assets/hri/mc_classic/
+third_party/pylibs_aarch64/

@@ -1,0 +1,342 @@
+[
+ {
+  "clip": "v2visit_vip_t00_greeting",
+  "group": "vip",
+  "emote": "GREETING_VIP",
+  "audio_s": 5.122,
+  "dir": "visits_v2/vip/sonic/v2visit_vip_t00_greeting",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.8,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_vip_t02_dialogue",
+  "group": "vip",
+  "emote": "APPLAUSE",
+  "audio_s": 3.5631,
+  "dir": "visits_v2/vip/sonic/v2visit_vip_t02_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 4.5,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_vip_t03_dialogue",
+  "group": "vip",
+  "emote": "SOCIAL_HEART",
+  "audio_s": 3.4633,
+  "dir": "visits_v2/vip/sonic/v2visit_vip_t03_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 4.5,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_vip_t05_farewell",
+  "group": "vip",
+  "emote": "SOCIAL_HEART",
+  "audio_s": 5.2433,
+  "dir": "visits_v2/vip/sonic/v2visit_vip_t05_farewell",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.2,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_regular_t00_greeting",
+  "group": "regular",
+  "emote": "GREETING_REGULAR",
+  "audio_s": 4.3747,
+  "dir": "visits_v2/regular/sonic/v2visit_regular_t00_greeting",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.0,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_regular_t02_dialogue",
+  "group": "regular",
+  "emote": "NEGATION_STRONG",
+  "audio_s": 5.2047,
+  "dir": "visits_v2/regular/sonic/v2visit_regular_t02_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.2,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_regular_t03_dialogue",
+  "group": "regular",
+  "emote": "THUMBS_UP",
+  "audio_s": 4.4461,
+  "dir": "visits_v2/regular/sonic/v2visit_regular_t03_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.0,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_regular_t05_farewell",
+  "group": "regular",
+  "emote": "FAREWELL_WAVE",
+  "audio_s": 5.2433,
+  "dir": "visits_v2/regular/sonic/v2visit_regular_t05_farewell",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.3,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_guest_t00_greeting",
+  "group": "guest",
+  "emote": "GREETING_GUEST",
+  "audio_s": 3.3405,
+  "dir": "visits_v2/guest/sonic/v2visit_guest_t00_greeting",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 4.4,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_guest_t02_dialogue",
+  "group": "guest",
+  "emote": "SOCIAL_HEART",
+  "audio_s": 4.0542,
+  "dir": "visits_v2/guest/sonic/v2visit_guest_t02_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.0,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_guest_t03_dialogue",
+  "group": "guest",
+  "emote": "APPLAUSE",
+  "audio_s": 4.9623,
+  "dir": "visits_v2/guest/sonic/v2visit_guest_t03_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.3,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_guest_t05_farewell",
+  "group": "guest",
+  "emote": "FAREWELL_WAVE",
+  "audio_s": 5.2433,
+  "dir": "visits_v2/guest/sonic/v2visit_guest_t05_farewell",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.3,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_staff_t00_greeting",
+  "group": "staff",
+  "emote": "GREETING_STAFF",
+  "audio_s": 5.0467,
+  "dir": "visits_v2/staff/sonic/v2visit_staff_t00_greeting",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.3,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_staff_t02_dialogue",
+  "group": "staff",
+  "emote": "NEGATION_NORMAL",
+  "audio_s": 4.2377,
+  "dir": "visits_v2/staff/sonic/v2visit_staff_t02_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.1,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_staff_t03_dialogue",
+  "group": "staff",
+  "emote": "CONFIRMATION",
+  "audio_s": 4.3766,
+  "dir": "visits_v2/staff/sonic/v2visit_staff_t03_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.1,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_staff_t05_farewell",
+  "group": "staff",
+  "emote": "FAREWELL_WAVE",
+  "audio_s": 5.2433,
+  "dir": "visits_v2/staff/sonic/v2visit_staff_t05_farewell",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.3,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_external_t00_greeting",
+  "group": "external",
+  "emote": "GREETING_EXTERNAL",
+  "audio_s": 3.3053,
+  "dir": "visits_v2/external/sonic/v2visit_external_t00_greeting",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 4.6,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_external_t02_dialogue",
+  "group": "external",
+  "emote": "SOCIAL_HEART",
+  "audio_s": 3.3122,
+  "dir": "visits_v2/external/sonic/v2visit_external_t02_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 4.5,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_external_t03_dialogue",
+  "group": "external",
+  "emote": "NEGATION_STRONG",
+  "audio_s": 5.3233,
+  "dir": "visits_v2/external/sonic/v2visit_external_t03_dialogue",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.3,
+  "workers": "persistent (c12 phase A)"
+ },
+ {
+  "clip": "v2visit_external_t05_farewell",
+  "group": "external",
+  "emote": "FAREWELL_WAVE",
+  "audio_s": 5.2433,
+  "dir": "visits_v2/external/sonic/v2visit_external_t05_farewell",
+  "ok": true,
+  "attempts": [
+   {
+    "seed": 1,
+    "gmr_status": "PASS",
+    "qc_fail": null
+   }
+  ],
+  "wall_s": 5.4,
+  "workers": "persistent (c12 phase A)"
+ }
+]

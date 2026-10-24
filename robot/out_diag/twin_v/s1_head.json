@@ -1,0 +1,72 @@
+{
+ "executed_by_twin": false,
+ "note": "twin model is fixed-head; emulated URS ignores head. Command track only.",
+ "sonic": {
+  "sebastian_t02": {
+   "yaw_min": -0.36836162209510803,
+   "yaw_max": -0.006172105669975281,
+   "pitch_min": -0.1777256429195404,
+   "pitch_max": -0.00018341263057664037,
+   "speed_max": 0.5302591249346733,
+   "yaw_ok": true,
+   "pitch_ok": true,
+   "speed_ok": true
+  },
+  "laura_t02": {
+   "yaw_min": -0.3714428246021271,
+   "yaw_max": -0.006132338661700487,
+   "pitch_min": -0.17788514494895935,
+   "pitch_max": -0.0001831883128033951,
+   "speed_max": 0.5369346588850021,
+   "yaw_ok": true,
+   "pitch_ok": true,
+   "speed_ok": true
+  },
+  "josaed_t03": {
+   "yaw_min": -0.3714834749698639,
+   "yaw_max": -0.006128617096692324,
+   "pitch_min": -0.17775338888168335,
+   "pitch_max": -0.00018327453290112317,
+   "speed_max": 0.6572261452674866,
+   "yaw_ok": true,
+   "pitch_ok": true,
+   "speed_ok": true
+  }
+ },
+ "point": {
+  "LEFT": {
+   "turn_head_u_max": 0.3,
+   "turn_head_u_min": -0.3,
+   "expected_sign": 1.0,
+   "ticks_u_pos": 157,
+   "ticks_u_neg": 3,
+   "sign_ok": true,
+   "point_track_set": true,
+   "within_yaw_lim": true,
+   "profile_amp": 0.3
+  },
+  "RIGHT": {
+   "turn_head_u_max": 0.0,
+   "turn_head_u_min": -0.3,
+   "expected_sign": -1.0,
+   "ticks_u_pos": 0,
+   "ticks_u_neg": 151,
+   "sign_ok": true,
+   "point_track_set": true,
+   "within_yaw_lim": true,
+   "profile_amp": 0.3
+  },
+  "FRONT": {
+   "turn_head_u_max": 0.0,
+   "turn_head_u_min": 0.0,
+   "expected_sign": 0.0,
+   "ticks_u_pos": 0,
+   "ticks_u_neg": 0,
+   "sign_ok": true,
+   "point_track_set": true,
+   "within_yaw_lim": true,
+   "profile_amp": 0.3
+  }
+ },
+ "PASS": true
+}

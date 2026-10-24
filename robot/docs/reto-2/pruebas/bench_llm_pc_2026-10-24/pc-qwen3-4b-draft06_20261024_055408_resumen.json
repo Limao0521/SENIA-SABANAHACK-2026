@@ -1,0 +1,65 @@
+{
+  "etiqueta": "pc-qwen3-4b-draft06",
+  "url": "http://127.0.0.1:8092",
+  "ts": "20261024_055408",
+  "n": 42,
+  "prefijo_estatico": false,
+  "fallos": 0,
+  "validez_pct": 47.6,
+  "validez_tras_reparar_pct": 85.7,
+  "intent_ok_pct": 100.0,
+  "latencias": {
+    "t_first_token": {
+      "p50": 0.471,
+      "p90": 0.706,
+      "max": 1.564
+    },
+    "t_speech_done": {
+      "p50": 0.968,
+      "p90": 1.219,
+      "max": 1.857
+    },
+    "t_total": {
+      "p50": 1.16,
+      "p90": 1.65,
+      "max": 2.181
+    }
+  },
+  "tokens_s_medio": 87.79,
+  "prompt_tokens_medio": 2040.786,
+  "cached_tokens_medio": 1220.286,
+  "muestras": [
+    {
+      "id": "saludo_vip",
+      "speech": "Señorita Laura, bienvenida a casa: Club N, nuestro lugar de encuentro. Quedo a su disposición."
+    },
+    {
+      "id": "conv_horario_biblioteca",
+      "speech": "Esta es su casa. La biblioteca N abre de lunes a domingo, de 08:00 a 20:00."
+    },
+    {
+      "id": "guia_biblioteca_vip",
+      "speech": "Señorita Laura, si me permite, la biblioteca y galería queda al frente, piso 2."
+    },
+    {
+      "id": "saludo_staff",
+      "speech": "¡Luis, compañero! ¡Dame esos cinco! Ya hacía falta tu energía por aquí."
+    },
+    {
+      "id": "conv_pide_gimnasio",
+      "speech": "Hoy también es parte de nuestra comunidad. ¿Desea ir al gimnasio? Está a mi izquierda, piso 5, horario Lun a Dom, 05:00 a 22:00. Gimnasio N Fit, canchas de squash y salón de clases grupales."
+    },
+    {
+      "id": "denial_bar_invitado",
+      "speech": "Club N, nuestro lugar de encuentro. Los restaurantes y cafeterías quedan a mi derecha, piso 2."
+    },
+    {
+      "id": "destino_rol_worker",
+      "speech": "Club N, nuestro lugar de encuentro. Almacenes de logística, a su izquierda."
+    },
+    {
+      "id": "conv_despedida_vip",
+      "speech": "Es un honor su visita al Club N. ¡Hasta luego!"
+    }
+  ]
+}

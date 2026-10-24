@@ -1,0 +1,1037 @@
+{
+ "load": {
+  "st": {
+   "ready": true,
+   "worker": "streamtalk",
+   "pid": 171720,
+   "load_s": 20.43,
+   "rss_mb": 2523,
+   "hwm_mb": 4259,
+   "load_seed": 1,
+   "spawn_to_ready_s": 20.45,
+   "vram_after_load_mb": 2288
+  },
+  "gmr": {
+   "ready": true,
+   "worker": "gmr",
+   "pid": 171995,
+   "load_s": 2.49,
+   "rss_mb": 2539,
+   "hwm_mb": 2539,
+   "cpu_limit": 2,
+   "spawn_to_ready_s": 2.51,
+   "vram_after_load_mb": null
+  },
+  "sonic": {
+   "ready": true,
+   "worker": "sonic",
+   "pid": 172069,
+   "load_s": 0.53,
+   "rss_mb": 332,
+   "hwm_mb": 344,
+   "onnx": "$LAPLACE_ROOT/mimo/X2/vendor/x2_external_evidence/sonic_x2_c9959443/models/x2_sonic_14000_g1.onnx",
+   "spawn_to_ready_s": 0.55,
+   "vram_after_load_mb": null
+  }
+ },
+ "rows": [
+  {
+   "clip": "001_ULTRA_bienvenida",
+   "audio_s": 10.136,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 2.002,
+   "gmr_s": 2.999,
+   "convert_s": 0.911,
+   "rollout_s": 2.298,
+   "sonic_s": 3.278,
+   "e2e_s": 8.28,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "002_X2_original_bienvenida",
+   "audio_s": 8.139,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.55,
+   "gmr_s": 2.183,
+   "convert_s": 0.649,
+   "rollout_s": 1.852,
+   "sonic_s": 2.589,
+   "e2e_s": 6.32,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "003_ULTRA_bienvenida",
+   "audio_s": 7.338,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.566,
+   "gmr_s": 2.038,
+   "convert_s": 0.635,
+   "rollout_s": 1.706,
+   "sonic_s": 2.423,
+   "e2e_s": 6.03,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "004_X2_original_serie_x",
+   "audio_s": 8.742,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.56,
+   "gmr_s": 2.273,
+   "convert_s": 0.649,
+   "rollout_s": 1.913,
+   "sonic_s": 2.649,
+   "e2e_s": 6.48,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "005_ULTRA_serie_x",
+   "audio_s": 8.777,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.548,
+   "gmr_s": 2.288,
+   "convert_s": 0.646,
+   "rollout_s": 1.927,
+   "sonic_s": 2.661,
+   "e2e_s": 6.5,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "006_X2_original_serie_x",
+   "audio_s": 5.224,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.011,
+   "gmr_s": 1.723,
+   "convert_s": 0.633,
+   "rollout_s": 1.403,
+   "sonic_s": 2.117,
+   "e2e_s": 4.85,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "007_ULTRA_serie_d",
+   "audio_s": 7.779,
+   "seed": 2,
+   "attempts": 2,
+   "st_s": 3.08,
+   "gmr_s": 4.406,
+   "convert_s": 0.638,
+   "rollout_s": 1.782,
+   "sonic_s": 2.511,
+   "e2e_s": 10.0,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "008_X2_original_serie_d",
+   "audio_s": 7.906,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.509,
+   "gmr_s": 2.146,
+   "convert_s": 0.646,
+   "rollout_s": 1.893,
+   "sonic_s": 2.626,
+   "e2e_s": 6.28,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "009_ULTRA_serie_d",
+   "audio_s": 8.023,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.504,
+   "gmr_s": 2.138,
+   "convert_s": 0.633,
+   "rollout_s": 1.941,
+   "sonic_s": 2.664,
+   "e2e_s": 6.31,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "010_X2_original_serie_c",
+   "audio_s": 5.503,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.235,
+   "gmr_s": 1.766,
+   "convert_s": 0.63,
+   "rollout_s": 1.383,
+   "sonic_s": 2.098,
+   "e2e_s": 5.1,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "011_ULTRA_serie_c",
+   "audio_s": 6.467,
+   "seed": 2,
+   "attempts": 2,
+   "st_s": 2.436,
+   "gmr_s": 3.809,
+   "convert_s": 0.622,
+   "rollout_s": 1.561,
+   "sonic_s": 2.268,
+   "e2e_s": 8.51,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "012_X2_original_serie_c",
+   "audio_s": 7.419,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.569,
+   "gmr_s": 2.183,
+   "convert_s": 0.661,
+   "rollout_s": 1.742,
+   "sonic_s": 2.492,
+   "e2e_s": 6.25,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "013_ULTRA_serie_g",
+   "audio_s": 8.696,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.634,
+   "gmr_s": 2.265,
+   "convert_s": 0.652,
+   "rollout_s": 1.935,
+   "sonic_s": 2.691,
+   "e2e_s": 6.59,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "014_X2_original_serie_g",
+   "audio_s": 8.58,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.548,
+   "gmr_s": 2.419,
+   "convert_s": 0.634,
+   "rollout_s": 1.997,
+   "sonic_s": 2.714,
+   "e2e_s": 6.68,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "015_ULTRA_serie_g",
+   "audio_s": 8.139,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.53,
+   "gmr_s": 2.167,
+   "convert_s": 0.608,
+   "rollout_s": 1.945,
+   "sonic_s": 2.638,
+   "e2e_s": 6.34,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "016_ULTRA_despedida",
+   "audio_s": 6.699,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.258,
+   "gmr_s": 1.932,
+   "convert_s": 0.617,
+   "rollout_s": 1.738,
+   "sonic_s": 2.451,
+   "e2e_s": 5.64,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "017_X2_original_despedida",
+   "audio_s": 5.027,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 0.965,
+   "gmr_s": 1.636,
+   "convert_s": 0.643,
+   "rollout_s": 1.425,
+   "sonic_s": 2.163,
+   "e2e_s": 4.76,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "018_ULTRA_despedida",
+   "audio_s": 3.785,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 1.004,
+   "gmr_s": 1.457,
+   "convert_s": 0.621,
+   "rollout_s": 1.312,
+   "sonic_s": 2.027,
+   "e2e_s": 4.49,
+   "gmr_status": "PASS",
+   "ok": true
+  },
+  {
+   "clip": "019_X2_original_despedida",
+   "audio_s": 4.342,
+   "seed": 1,
+   "attempts": 1,
+   "st_s": 0.997,
+   "gmr_s": 1.601,
+   "convert_s": 0.625,
+   "rollout_s": 1.33,
+   "sonic_s": 2.053,
+   "e2e_s": 4.65,
+   "gmr_status": "PASS",
+   "ok": true
+  }
+ ],
+ "status": [
+  {
+   "clip": "001_ULTRA_bienvenida",
+   "audio_s": 10.136,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 12.0,
+    "max_root_vel": 0.21984814820223866,
+    "max_root_ang_vel": 0.49293751695306576,
+    "at_limit": {
+     "right_knee_joint": 0.059,
+     "right_ankle_roll_joint": 0.4,
+     "left_shoulder_roll_joint": 0.885,
+     "right_shoulder_roll_joint": 0.803,
+     "right_wrist_pitch_joint": 0.164
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.002279262280433468,
+    "sole_stance_med": -0.0005201632701749099,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6804677487586342,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 8.28,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "002_X2_original_bienvenida",
+   "audio_s": 8.139,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 11.608100114705582,
+    "max_root_vel": 0.26898556682369745,
+    "max_root_ang_vel": 0.97164432692759,
+    "at_limit": {
+     "left_knee_joint": 0.094,
+     "right_knee_joint": 0.188,
+     "left_shoulder_roll_joint": 0.902,
+     "right_shoulder_roll_joint": 0.747,
+     "right_wrist_pitch_joint": 0.29
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0010402819831463002,
+    "sole_stance_med": -0.0004274265384868036,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6779803910844542,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.32,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "003_ULTRA_bienvenida",
+   "audio_s": 7.338,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 8.51334771117752,
+    "max_root_vel": 0.238943922763428,
+    "max_root_ang_vel": 0.6407065728577797,
+    "at_limit": {
+     "left_knee_joint": 0.163,
+     "right_knee_joint": 0.145,
+     "left_shoulder_roll_joint": 0.792,
+     "right_shoulder_roll_joint": 0.751,
+     "right_wrist_pitch_joint": 0.253
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.001934686152620292,
+    "sole_stance_med": -0.0004945855329127625,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6781983509764743,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.03,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "004_X2_original_serie_x",
+   "audio_s": 8.742,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 10.195799969741437,
+    "max_root_vel": 0.3849394100478219,
+    "max_root_ang_vel": 0.5820317149103533,
+    "at_limit": {
+     "left_knee_joint": 0.624,
+     "left_shoulder_roll_joint": 0.726,
+     "right_shoulder_roll_joint": 0.707,
+     "right_wrist_pitch_joint": 0.232
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.001415549389125438,
+    "sole_stance_med": -0.0003855871140780382,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6780367250945477,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.48,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "005_ULTRA_serie_x",
+   "audio_s": 8.777,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 8.34653039458916,
+    "max_root_vel": 0.29177957254105197,
+    "max_root_ang_vel": 0.8403797005418315,
+    "at_limit": {
+     "left_ankle_roll_joint": 0.398,
+     "right_ankle_roll_joint": 0.367,
+     "left_shoulder_roll_joint": 0.792,
+     "right_shoulder_roll_joint": 0.561,
+     "right_wrist_pitch_joint": 0.402
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.001250677685942679,
+    "sole_stance_med": -0.00045896216360005027,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6766377820879204,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.5,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "006_X2_original_serie_x",
+   "audio_s": 5.224,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 5.299513115289387,
+    "max_root_vel": 0.1860683566816983,
+    "max_root_ang_vel": 0.5996829614344876,
+    "at_limit": {
+     "left_knee_joint": 0.057,
+     "left_ankle_roll_joint": 0.191,
+     "right_ankle_roll_joint": 0.051,
+     "left_shoulder_roll_joint": 1.0,
+     "right_shoulder_roll_joint": 0.822,
+     "right_wrist_pitch_joint": 0.548
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0013502870344685404,
+    "sole_stance_med": -0.00039458909740280445,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6791369251261979,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 4.85,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "007_ULTRA_serie_d",
+   "audio_s": 7.779,
+   "seed_final": 2,
+   "attempts": 2,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 7.698415957978986,
+    "max_root_vel": 0.31622556988145006,
+    "max_root_ang_vel": 0.7542398171174699,
+    "at_limit": {
+     "left_knee_joint": 0.278,
+     "left_shoulder_roll_joint": 0.923,
+     "right_shoulder_roll_joint": 0.774,
+     "right_wrist_pitch_joint": 0.479,
+     "right_wrist_roll_joint": 0.06
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0019107213145267655,
+    "sole_stance_med": -0.000315567848999358,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6819147341429186,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 10.0,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "FAIL",
+     "qc_fail": "self_collision"
+    },
+    {
+     "seed": 2,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "008_X2_original_serie_d",
+   "audio_s": 7.906,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 10.894511511166582,
+    "max_root_vel": 0.23843761796760957,
+    "max_root_ang_vel": 0.46758978466878887,
+    "at_limit": {
+     "left_knee_joint": 0.34,
+     "right_knee_joint": 0.155,
+     "left_shoulder_roll_joint": 0.933,
+     "right_shoulder_roll_joint": 0.945,
+     "right_wrist_pitch_joint": 0.45
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0016651424997076265,
+    "sole_stance_med": -0.0002987781547481567,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6770939161443532,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.28,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "009_ULTRA_serie_d",
+   "audio_s": 8.023,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 6.388788266778407,
+    "max_root_vel": 0.32080863712136504,
+    "max_root_ang_vel": 0.6021790849009292,
+    "at_limit": {
+     "left_knee_joint": 0.145,
+     "right_knee_joint": 0.12,
+     "left_shoulder_roll_joint": 0.826,
+     "right_shoulder_roll_joint": 0.577,
+     "right_wrist_pitch_joint": 0.299
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0024102276482840202,
+    "sole_stance_med": -0.0008674643509363156,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6788133888082016,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.31,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "010_X2_original_serie_c",
+   "audio_s": 5.503,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 8.424199799034396,
+    "max_root_vel": 0.20016746256076712,
+    "max_root_ang_vel": 0.6646092109997432,
+    "at_limit": {
+     "left_knee_joint": 0.133,
+     "left_ankle_roll_joint": 0.151,
+     "right_knee_joint": 0.078,
+     "left_shoulder_roll_joint": 0.633,
+     "right_shoulder_roll_joint": 0.548,
+     "right_wrist_pitch_joint": 0.307
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0019365291944255748,
+    "sole_stance_med": -0.0002548422366550963,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6794532580970711,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 5.1,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "011_ULTRA_serie_c",
+   "audio_s": 6.467,
+   "seed_final": 2,
+   "attempts": 2,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 7.221105498523601,
+    "max_root_vel": 0.34741770754369095,
+    "max_root_ang_vel": 0.49858985401374434,
+    "at_limit": {
+     "right_ankle_roll_joint": 0.323,
+     "left_shoulder_roll_joint": 0.687,
+     "right_shoulder_roll_joint": 0.713,
+     "right_wrist_pitch_joint": 0.277
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0014050683442934043,
+    "sole_stance_med": -0.0004799164360589092,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6844872314457392,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 8.51,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "FAIL",
+     "qc_fail": "self_collision"
+    },
+    {
+     "seed": 2,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "012_X2_original_serie_c",
+   "audio_s": 7.419,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 8.73886296308946,
+    "max_root_vel": 0.3999288279608605,
+    "max_root_ang_vel": 0.4512656008494621,
+    "at_limit": {
+     "left_hip_roll_joint": 0.099,
+     "left_knee_joint": 0.327,
+     "left_ankle_roll_joint": 0.596,
+     "right_knee_joint": 0.139,
+     "right_ankle_roll_joint": 0.511,
+     "left_shoulder_roll_joint": 0.776,
+     "left_wrist_pitch_joint": 0.135,
+     "right_shoulder_roll_joint": 0.704,
+     "right_wrist_pitch_joint": 0.354
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.020623819889159744,
+    "sole_stance_med": -0.00889404411328879,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6942358555256025,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.25,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "013_ULTRA_serie_g",
+   "audio_s": 8.696,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 6.435916718750747,
+    "max_root_vel": 0.8235615069198252,
+    "max_root_ang_vel": 1.1443461567756406,
+    "at_limit": {
+     "left_hip_roll_joint": 0.061,
+     "left_knee_joint": 0.314,
+     "left_ankle_roll_joint": 0.441,
+     "right_knee_joint": 0.153,
+     "right_ankle_roll_joint": 0.299,
+     "left_shoulder_roll_joint": 0.812,
+     "right_shoulder_roll_joint": 0.54,
+     "right_wrist_pitch_joint": 0.349
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0022616203640863876,
+    "sole_stance_med": -0.0009250887849328299,
+    "selfcol_frac": 0.0,
+    "root_med": 0.679406361016969,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.59,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "014_X2_original_serie_g",
+   "audio_s": 8.58,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 9.598361751495657,
+    "max_root_vel": 0.3742682562832681,
+    "max_root_ang_vel": 0.41488879633007886,
+    "at_limit": {
+     "left_hip_roll_joint": 0.136,
+     "left_knee_joint": 0.151,
+     "left_ankle_pitch_joint": 0.14,
+     "left_ankle_roll_joint": 0.438,
+     "right_knee_joint": 0.089,
+     "right_ankle_roll_joint": 0.442,
+     "left_shoulder_roll_joint": 0.961,
+     "left_wrist_pitch_joint": 0.112,
+     "right_shoulder_roll_joint": 0.868,
+     "right_wrist_pitch_joint": 0.209
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.02012263192409831,
+    "sole_stance_med": -0.0028835721430722225,
+    "selfcol_frac": 0.038,
+    "root_med": 0.6952944439646551,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.68,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "015_ULTRA_serie_g",
+   "audio_s": 8.139,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 12.0,
+    "max_root_vel": 0.2441855375842981,
+    "max_root_ang_vel": 0.5014968302506015,
+    "at_limit": {
+     "left_knee_joint": 0.18,
+     "right_knee_joint": 0.082,
+     "right_ankle_roll_joint": 0.098,
+     "left_shoulder_roll_joint": 0.82,
+     "right_shoulder_roll_joint": 0.641,
+     "right_wrist_pitch_joint": 0.347
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0012841118295457516,
+    "sole_stance_med": -0.00033400704609338317,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6796134477321203,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 6.34,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "016_ULTRA_despedida",
+   "audio_s": 6.699,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 9.167895256864766,
+    "max_root_vel": 0.24573419508450936,
+    "max_root_ang_vel": 0.8734692732953798,
+    "at_limit": {
+     "left_knee_joint": 0.378,
+     "right_knee_joint": 0.154,
+     "right_ankle_roll_joint": 0.104,
+     "left_shoulder_roll_joint": 0.751,
+     "right_shoulder_roll_joint": 0.622,
+     "right_wrist_pitch_joint": 0.184
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0021406805435327204,
+    "sole_stance_med": -0.0005557375150229095,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6768038583566028,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 5.64,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "017_X2_original_despedida",
+   "audio_s": 5.027,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 5.431954683608492,
+    "max_root_vel": 0.17221878003195473,
+    "max_root_ang_vel": 0.5525658119782331,
+    "at_limit": {
+     "left_knee_joint": 0.146,
+     "left_ankle_roll_joint": 0.291,
+     "right_knee_joint": 0.093,
+     "right_ankle_roll_joint": 0.358,
+     "left_shoulder_roll_joint": 0.709,
+     "right_shoulder_roll_joint": 0.576,
+     "right_wrist_pitch_joint": 0.318
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0007926718068477735,
+    "sole_stance_med": -0.0003220187797393732,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6778088693274664,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 4.76,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "018_ULTRA_despedida",
+   "audio_s": 3.785,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 12.0,
+    "max_root_vel": 0.23065355789880804,
+    "max_root_ang_vel": 0.353704447615233,
+    "at_limit": {
+     "left_shoulder_roll_joint": 0.64,
+     "right_shoulder_roll_joint": 0.421,
+     "right_wrist_pitch_joint": 0.263
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.0007233546032542571,
+    "sole_stance_med": -0.0002540105221249767,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6765457648465092,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 4.49,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  },
+  {
+   "clip": "019_X2_original_despedida",
+   "audio_s": 4.342,
+   "seed_final": 1,
+   "attempts": 1,
+   "gmr_status": "PASS",
+   "gmr_qc_fail": null,
+   "qc": {
+    "finite": true,
+    "max_joint_vel": 9.665678042398635,
+    "max_root_vel": 0.438487590508373,
+    "max_root_ang_vel": 0.8022725292952412,
+    "at_limit": {
+     "left_hip_roll_joint": 0.214,
+     "left_ankle_roll_joint": 0.374,
+     "right_ankle_pitch_joint": 0.275,
+     "right_ankle_roll_joint": 0.382,
+     "left_shoulder_roll_joint": 0.458,
+     "left_wrist_pitch_joint": 0.168,
+     "right_shoulder_roll_joint": 0.42,
+     "right_wrist_pitch_joint": 0.458
+    },
+    "unexpected_at_limit": {},
+    "sole_min": -0.019628665666528707,
+    "sole_stance_med": -0.011152154348760773,
+    "selfcol_frac": 0.0,
+    "root_med": 0.6739839665883827,
+    "fail": null
+   },
+   "sonic_status": "PASS",
+   "ok": true,
+   "e2e_s": 4.65,
+   "all_attempts": [
+    {
+     "seed": 1,
+     "gmr_status": "PASS",
+     "qc_fail": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,374 @@
+[
+ {
+  "case_id": "greet_vip_1",
+  "state": "GREETING",
+  "rank": "VIP",
+  "expected": "GREETING_VIP"
+ },
+ {
+  "case_id": "greet_vip_2",
+  "state": "GREETING",
+  "rank": "VIP",
+  "expected": "GREETING_VIP"
+ },
+ {
+  "case_id": "greet_regular_1",
+  "state": "GREETING",
+  "rank": "REGULAR",
+  "expected": "GREETING_REGULAR"
+ },
+ {
+  "case_id": "greet_regular_2",
+  "state": "GREETING",
+  "rank": "REGULAR",
+  "expected": "GREETING_REGULAR"
+ },
+ {
+  "case_id": "greet_guest_1",
+  "state": "GREETING",
+  "rank": "GUEST",
+  "expected": "GREETING_GUEST"
+ },
+ {
+  "case_id": "greet_guest_2",
+  "state": "GREETING",
+  "rank": "GUEST",
+  "expected": "GREETING_GUEST"
+ },
+ {
+  "case_id": "greet_staff_1",
+  "state": "GREETING",
+  "rank": "STAFF",
+  "expected": "GREETING_STAFF"
+ },
+ {
+  "case_id": "greet_staff_2",
+  "state": "GREETING",
+  "rank": "STAFF",
+  "expected": "GREETING_STAFF"
+ },
+ {
+  "case_id": "greet_external_1",
+  "state": "GREETING",
+  "rank": "EXTERNAL",
+  "expected": "GREETING_EXTERNAL"
+ },
+ {
+  "case_id": "greet_external_2",
+  "state": "GREETING",
+  "rank": "EXTERNAL",
+  "expected": "GREETING_EXTERNAL"
+ },
+ {
+  "case_id": "guide_point_right_1",
+  "state": "GUIDANCE",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "expected": "POINT_RIGHT"
+ },
+ {
+  "case_id": "guide_point_right_2",
+  "state": "GUIDANCE",
+  "rank": "REGULAR",
+  "scenario": "reception_lab_right",
+  "expected": "POINT_RIGHT"
+ },
+ {
+  "case_id": "guide_point_front_1",
+  "state": "GUIDANCE",
+  "rank": "GUEST",
+  "scenario": "reception_desk_front",
+  "expected": "POINT_FRONT"
+ },
+ {
+  "case_id": "guide_point_front_2",
+  "state": "GUIDANCE",
+  "rank": "REGULAR",
+  "scenario": "reception_desk_front",
+  "expected": "POINT_FRONT"
+ },
+ {
+  "case_id": "dlg_social_heart_1",
+  "state": "DIALOGUE",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Muchas gracias, de verdad me encantó el recorrido contigo.",
+  "expected": "SOCIAL_HEART"
+ },
+ {
+  "case_id": "dlg_social_heart_2",
+  "state": "DIALOGUE",
+  "rank": "REGULAR",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Eres un robot muy amable, me caes genial.",
+  "expected": "SOCIAL_HEART"
+ },
+ {
+  "case_id": "dlg_social_heart_3",
+  "state": "DIALOGUE",
+  "rank": "STAFF",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Qué gusto volver a verte, te extrañaba.",
+  "expected": "SOCIAL_HEART"
+ },
+ {
+  "case_id": "dlg_social_heart_4",
+  "state": "DIALOGUE",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Te agradezco sinceramente tu ayuda, fue maravillosa.",
+  "expected": "SOCIAL_HEART"
+ },
+ {
+  "case_id": "dlg_applause_1",
+  "state": "DIALOGUE",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Me acaban de aprobar el proyecto de investigación.",
+  "expected": "APPLAUSE"
+ },
+ {
+  "case_id": "dlg_applause_2",
+  "state": "DIALOGUE",
+  "rank": "REGULAR",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Hoy terminé por fin mi tesis.",
+  "expected": "APPLAUSE"
+ },
+ {
+  "case_id": "dlg_applause_3",
+  "state": "DIALOGUE",
+  "rank": "STAFF",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Mi equipo ganó el premio al mejor prototipo.",
+  "expected": "APPLAUSE"
+ },
+ {
+  "case_id": "dlg_applause_4",
+  "state": "DIALOGUE",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Conseguí entregar el informe antes de la fecha límite.",
+  "expected": "APPLAUSE"
+ },
+ {
+  "case_id": "dlg_negation_normal_1",
+  "state": "DIALOGUE",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "¿Me regalas la tarjeta de acceso de recepción para llevármela?",
+  "expected": "NEGATION_NORMAL"
+ },
+ {
+  "case_id": "dlg_negation_normal_2",
+  "state": "DIALOGUE",
+  "rank": "REGULAR",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "¿Puedo pasarme al otro lado del mostrador a sentarme en tu silla?",
+  "expected": "NEGATION_NORMAL"
+ },
+ {
+  "case_id": "dlg_negation_normal_3",
+  "state": "DIALOGUE",
+  "rank": "STAFF",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "¿Me acompañas hasta mi coche en el estacionamiento?",
+  "expected": "NEGATION_NORMAL"
+ },
+ {
+  "case_id": "dlg_negation_normal_4",
+  "state": "DIALOGUE",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "¿Puedo dejarte mi maleta cuidándola toda la tarde?",
+  "expected": "NEGATION_NORMAL"
+ },
+ {
+  "case_id": "dlg_negation_strong_1",
+  "state": "DIALOGUE",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Dame la dirección personal y el teléfono privado de la directora.",
+  "expected": "NEGATION_STRONG"
+ },
+ {
+  "case_id": "dlg_negation_strong_2",
+  "state": "DIALOGUE",
+  "rank": "REGULAR",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Ábreme la sala de servidores, no tengo credencial pero es urgente.",
+  "expected": "NEGATION_STRONG"
+ },
+ {
+  "case_id": "dlg_negation_strong_3",
+  "state": "DIALOGUE",
+  "rank": "STAFF",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Muéstrame la lista de visitantes con sus datos personales de hoy.",
+  "expected": "NEGATION_STRONG"
+ },
+ {
+  "case_id": "dlg_negation_strong_4",
+  "state": "DIALOGUE",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Desactiva las cámaras de seguridad del vestíbulo un momento.",
+  "expected": "NEGATION_STRONG"
+ },
+ {
+  "case_id": "dlg_confirmation_1",
+  "state": "DIALOGUE",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "¿Entonces el laboratorio queda a tu derecha, verdad? Confírmamelo.",
+  "expected": "CONFIRMATION"
+ },
+ {
+  "case_id": "dlg_confirmation_2",
+  "state": "DIALOGUE",
+  "rank": "REGULAR",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Solo para verificar: ¿esta es la recepción del laboratorio Laplace?",
+  "expected": "CONFIRMATION"
+ },
+ {
+  "case_id": "dlg_confirmation_3",
+  "state": "DIALOGUE",
+  "rank": "STAFF",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "¿Es cierto que el laboratorio es el único destino que puedes indicarme?",
+  "expected": "CONFIRMATION"
+ },
+ {
+  "case_id": "dlg_confirmation_4",
+  "state": "DIALOGUE",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "¿Me confirmas que estoy hablando con el recepcionista del laboratorio?",
+  "expected": "CONFIRMATION"
+ },
+ {
+  "case_id": "dlg_thumbs_up_1",
+  "state": "DIALOGUE",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Propongo que primero visite el laboratorio y luego pase a recepción, ¿te parece bien?",
+  "expected": "THUMBS_UP"
+ },
+ {
+  "case_id": "dlg_thumbs_up_2",
+  "state": "DIALOGUE",
+  "rank": "REGULAR",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Se me ocurre que sería buena idea hacer el recorrido en silencio, ¿de acuerdo?",
+  "expected": "THUMBS_UP"
+ },
+ {
+  "case_id": "dlg_thumbs_up_3",
+  "state": "DIALOGUE",
+  "rank": "STAFF",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Mi idea es llevar mi cuaderno al laboratorio para tomar notas, ¿qué opinas?",
+  "expected": "THUMBS_UP"
+ },
+ {
+  "case_id": "dlg_thumbs_up_4",
+  "state": "DIALOGUE",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Voy a registrar mi llegada primero y después seguir tus indicaciones, ¿estás de acuerdo?",
+  "expected": "THUMBS_UP"
+ },
+ {
+  "case_id": "dlg_none_1",
+  "state": "DIALOGUE",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "¿A qué hora cierra el laboratorio hoy?",
+  "expected": "NONE"
+ },
+ {
+  "case_id": "dlg_none_2",
+  "state": "DIALOGUE",
+  "rank": "REGULAR",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Ok, gracias.",
+  "expected": "NONE"
+ },
+ {
+  "case_id": "dlg_none_3",
+  "state": "DIALOGUE",
+  "rank": "STAFF",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Estoy preocupado por llegar tarde a mi reunión.",
+  "expected": "NONE"
+ },
+ {
+  "case_id": "dlg_none_4",
+  "state": "DIALOGUE",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Uf, qué alivio, mi maleta no se perdió.",
+  "expected": "NONE"
+ },
+ {
+  "case_id": "dlg_none_5",
+  "state": "DIALOGUE",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Dicen que la palabra «gracias» es la más usada en recepción.",
+  "expected": "NONE"
+ },
+ {
+  "case_id": "dlg_none_6",
+  "state": "DIALOGUE",
+  "rank": "REGULAR",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "No tengo ningún logro que contar hoy, solo vengo de paso.",
+  "expected": "NONE"
+ },
+ {
+  "case_id": "dlg_none_7",
+  "state": "DIALOGUE",
+  "rank": "STAFF",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "¿Cómo está el clima afuera?",
+  "expected": "NONE"
+ },
+ {
+  "case_id": "dlg_none_8",
+  "state": "DIALOGUE",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "visitor_utterance": "Hmm, déjame pensarlo un momento.",
+  "expected": "NONE"
+ },
+ {
+  "case_id": "farewell_vip_1",
+  "state": "FAREWELL",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "expected": "SOCIAL_HEART"
+ },
+ {
+  "case_id": "farewell_vip_2",
+  "state": "FAREWELL",
+  "rank": "VIP",
+  "scenario": "reception_lab_right",
+  "expected": "SOCIAL_HEART"
+ },
+ {
+  "case_id": "farewell_guest_1",
+  "state": "FAREWELL",
+  "rank": "GUEST",
+  "scenario": "reception_lab_right",
+  "expected": "FAREWELL_WAVE|NONE"
+ },
+ {
+  "case_id": "farewell_staff_1",
+  "state": "FAREWELL",
+  "rank": "STAFF",
+  "scenario": "reception_lab_right",
+  "expected": "FAREWELL_WAVE|NONE"
+ }
+]

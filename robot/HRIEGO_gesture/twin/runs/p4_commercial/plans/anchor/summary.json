@@ -1,0 +1,103 @@
+{
+  "schema": "hriego_gesture_anchor_plan.v1",
+  "rows": 3,
+  "policy": {
+    "align": "stroke",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_error": null
+  },
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  },
+  "status_counts": {
+    "rejected_horizon": 2,
+    "planned": 1
+  },
+  "status_preroll0_counts": {
+    "planned": 3
+  },
+  "align_status_counts": {
+    "aligned_ctc_not_human_validated": 3
+  },
+  "max_delay_s_planned": 0.2399375,
+  "max_delay_s_preroll0_planned": 0.74025,
+  "rows_detail": [
+    {
+      "case_id": "p4_001",
+      "visit_id": null,
+      "turn_id": "p4_001",
+      "emote": "P4_Hola",
+      "motion_id": 3001,
+      "area": 11,
+      "trigger_text": "Hola",
+      "duration_s": 10.1355625,
+      "sample_rate": 16000,
+      "trigger_start_s": 0.2,
+      "trigger_end_s": 0.38,
+      "trigger_start_sample": 3200,
+      "align_status": "aligned_ctc_not_human_validated",
+      "delay_s": 1.52,
+      "delay_s_preroll0": 0.44,
+      "dispatch_sample": null,
+      "dispatch_sample_preroll0": -7040,
+      "status": "rejected_horizon",
+      "status_preroll0": "planned",
+      "reason": "dispatch -24320 needs 1.520s start delay > 1.5s",
+      "ctc_frame_step_s": 0.02
+    },
+    {
+      "case_id": "p4_005",
+      "visit_id": null,
+      "turn_id": "p4_005",
+      "emote": "P4_nosotros somos un ejemplo",
+      "motion_id": 3004,
+      "area": 11,
+      "trigger_text": "nosotros somos un ejemplo",
+      "duration_s": 8.7771875,
+      "sample_rate": 16000,
+      "trigger_start_s": 0.26,
+      "trigger_end_s": 1.4000000000000001,
+      "trigger_start_sample": 4160,
+      "align_status": "aligned_ctc_not_human_validated",
+      "delay_s": 1.82,
+      "delay_s_preroll0": 0.74025,
+      "dispatch_sample": null,
+      "dispatch_sample_preroll0": -11844,
+      "status": "rejected_horizon",
+      "status_preroll0": "planned",
+      "reason": "dispatch -29120 needs 1.820s start delay > 1.5s",
+      "ctc_frame_step_s": 0.02
+    },
+    {
+      "case_id": "p4_019",
+      "visit_id": null,
+      "turn_id": "p4_019",
+      "emote": "P4_despedirnos",
+      "motion_id": 3031,
+      "area": 11,
+      "trigger_text": "despedirnos",
+      "duration_s": 4.3421875,
+      "sample_rate": 16000,
+      "trigger_start_s": 1.62,
+      "trigger_end_s": 2.24,
+      "trigger_start_sample": 25920,
+      "align_status": "aligned_ctc_not_human_validated",
+      "delay_s": 0.2399375,
+      "delay_s_preroll0": 0.0,
+      "dispatch_sample": -3839,
+      "dispatch_sample_preroll0": 13122,
+      "status": "planned",
+      "status_preroll0": "planned",
+      "reason": null,
+      "ctc_frame_step_s": 0.02
+    }
+  ]
+}

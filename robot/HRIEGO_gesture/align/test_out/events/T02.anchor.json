@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Bienvenido",
+  "char_start": 0,
+  "char_end": 10,
+  "occurrence": 1,
+  "start_s": 0.8,
+  "end_s": 1.32,
+  "start_sample": 35280,
+  "end_sample": 58212,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "f014e7ee9316fc798577636257588481920064f5ec071a72353a3aa9f9560e22",
+  "sample_count": 193536,
+  "case_id": "T02",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "x2_ultra"
+version = "0.1.0"
+description = "Simulación MuJoCo del AgiBot X2 Ultra-N con OmniHand: marcha por teclado, brazos y manos."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mujoco>=3.3",
+    "numpy>=1.26",
+    "onnxruntime>=1.17",
+    "pyyaml>=6",
+    "PySide6>=6.6",
+    "imageio>=2.30",
+    "imageio-ffmpeg>=0.4",
+    "pillow>=10",        # HUD/subtítulos del render headless del reto 2 (x2_ultra.show.hri.render)
+]
+# Opcionales del sistema para el reto 2 (no pip): ffmpeg (mezcla de audio del MP4),
+# espeak-ng (frases del motor; si falta, quedan solo subtítulos), GPU con EGL (render headless).
+
+[project.optional-dependencies]
+train = ["torch>=2.4", "tensorboard>=2.15", "onnx>=1.16"]
+dev = ["pytest>=8"]
+voice = ["faster-whisper>=1.1,<2", "av>=11,<16"]
+bench = ["psutil>=5.9"]
+
+[project.scripts]
+x2-sim = "x2_ultra.app.main:main"
+x2-show = "x2_ultra.show.app:main"
+x2-build-model = "x2_ultra.model.builder:main"
+x2-eval = "x2_ultra.tools.evaluate:main"
+x2-record = "x2_ultra.tools.record:main"
+x2-train = "x2_ultra.rl.train:main"
+x2-bench = "x2_ultra.bench.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+x2_ultra = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: simulaciones largas (marcha de varios segundos)"]

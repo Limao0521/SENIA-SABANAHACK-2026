@@ -1,0 +1,11 @@
+# These assets are mounted at runtime by docker-compose.yml, not copied into the image.
+models/
+data/
+persona/
+.env
+
+# Local repository and Python-generated files are not part of the build.
+.git/
+__pycache__/
+*.py[cod]
+.pytest_cache/

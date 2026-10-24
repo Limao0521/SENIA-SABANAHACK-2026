@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_staff_t03_dialogue",
+ "rank": "staff",
+ "emote": "CONFIRMATION",
+ "motion_id": 3028,
+ "area": 11,
+ "binding": "3028/11",
+ "anchor_s": 0.86,
+ "dur_s": 4.388571428571429,
+ "lead_onset_s": 1.299993770000583,
+ "lead_stroke_s": 1.6399937700007285,
+ "policy_dispatch_s": {
+  "stroke": -0.7799937700007286,
+  "mid": -0.6099937700006558,
+  "onset": -0.43999377000058304
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 3.1999979869979143
+}

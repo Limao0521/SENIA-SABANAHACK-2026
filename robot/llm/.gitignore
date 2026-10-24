@@ -1,0 +1,16 @@
+# Modelos GGUF (se descargan con scripts/download-model.*)
+models/*
+!models/.gitkeep
+
+# Estado persistente (SQLite, caché de embeddings)
+data/*
+!data/.gitkeep
+
+# Configuración local
+.env
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

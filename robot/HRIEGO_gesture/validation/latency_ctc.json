@@ -1,0 +1,406 @@
+{
+ "model_load_s": 0.5986378180004976,
+ "maxrss_mib": 283.78125,
+ "rows": [
+  {
+   "case": "v2visit_vip_t00_greeting",
+   "pass": 0,
+   "audio_s": 5.122,
+   "ctc_s": 0.1250636230006421,
+   "plan_s": 0.00037612100004480453,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_vip_t00_greeting",
+   "pass": 1,
+   "audio_s": 5.122,
+   "ctc_s": 0.00028826800007664133,
+   "plan_s": 0.00025623700003052363,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_vip_t01_guidance",
+   "pass": 0,
+   "audio_s": 2.9033,
+   "ctc_s": 0.06219762799992168,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_vip_t01_guidance",
+   "pass": 1,
+   "audio_s": 2.9033,
+   "ctc_s": 0.00026714800060290145,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_vip_t02_dialogue",
+   "pass": 0,
+   "audio_s": 3.5631,
+   "ctc_s": 0.07166633700035163,
+   "plan_s": 0.00032790199929877417,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_vip_t02_dialogue",
+   "pass": 1,
+   "audio_s": 3.5631,
+   "ctc_s": 0.00020784799926332198,
+   "plan_s": 0.0001815189998524147,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_vip_t03_dialogue",
+   "pass": 0,
+   "audio_s": 3.4633,
+   "ctc_s": 0.06607942699974956,
+   "plan_s": 0.00028745600047841435,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_vip_t03_dialogue",
+   "pass": 1,
+   "audio_s": 3.4633,
+   "ctc_s": 0.00021326700061763404,
+   "plan_s": 0.00020289799977035727,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_vip_t05_farewell",
+   "pass": 0,
+   "audio_s": 5.2433,
+   "ctc_s": 0.11364675999993779,
+   "plan_s": 0.00037905699991824804,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_vip_t05_farewell",
+   "pass": 1,
+   "audio_s": 5.2433,
+   "ctc_s": 0.00026571600028546527,
+   "plan_s": 0.00024000799930945504,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t00_greeting",
+   "pass": 0,
+   "audio_s": 4.3747,
+   "ctc_s": 0.0824216749997504,
+   "plan_s": 0.00032211100005952176,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t00_greeting",
+   "pass": 1,
+   "audio_s": 4.3747,
+   "ctc_s": 0.00022568100030184723,
+   "plan_s": 0.00020344000040495303,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t01_guidance",
+   "pass": 0,
+   "audio_s": 3.1506,
+   "ctc_s": 0.06185063999964768,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t01_guidance",
+   "pass": 1,
+   "audio_s": 3.1506,
+   "ctc_s": 0.000289299000542087,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t02_dialogue",
+   "pass": 0,
+   "audio_s": 5.2047,
+   "ctc_s": 0.10790683499999432,
+   "plan_s": 0.0003848980004477198,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t02_dialogue",
+   "pass": 1,
+   "audio_s": 5.2047,
+   "ctc_s": 0.0002719980002439115,
+   "plan_s": 0.00024221199964813422,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t03_dialogue",
+   "pass": 0,
+   "audio_s": 4.4461,
+   "ctc_s": 0.08704472699992039,
+   "plan_s": 0.0004540070003713481,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t03_dialogue",
+   "pass": 1,
+   "audio_s": 4.4461,
+   "ctc_s": 0.000289110000267101,
+   "plan_s": 0.0002308410003024619,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t05_farewell",
+   "pass": 0,
+   "audio_s": 5.2433,
+   "ctc_s": 0.11413194499982637,
+   "plan_s": 0.0004786420004165848,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_regular_t05_farewell",
+   "pass": 1,
+   "audio_s": 5.2433,
+   "ctc_s": 0.0002937480003311066,
+   "plan_s": 0.0002614880004330189,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t00_greeting",
+   "pass": 0,
+   "audio_s": 3.3405,
+   "ctc_s": 0.0669608820007852,
+   "plan_s": 0.0002678699993339251,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t00_greeting",
+   "pass": 1,
+   "audio_s": 3.3405,
+   "ctc_s": 0.00018352299957768992,
+   "plan_s": 0.00017826200019044336,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t01_guidance",
+   "pass": 0,
+   "audio_s": 3.9342,
+   "ctc_s": 0.0791252369999711,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t01_guidance",
+   "pass": 1,
+   "audio_s": 3.9342,
+   "ctc_s": 0.0003235829999539419,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t02_dialogue",
+   "pass": 0,
+   "audio_s": 4.0542,
+   "ctc_s": 0.0790121870004441,
+   "plan_s": 0.00031133999982557725,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t02_dialogue",
+   "pass": 1,
+   "audio_s": 4.0542,
+   "ctc_s": 0.0002154019994122791,
+   "plan_s": 0.00020444100027816603,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t03_dialogue",
+   "pass": 0,
+   "audio_s": 4.9623,
+   "ctc_s": 0.09870569399936358,
+   "plan_s": 0.000465498999801639,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t03_dialogue",
+   "pass": 1,
+   "audio_s": 4.9623,
+   "ctc_s": 0.0002618589996927767,
+   "plan_s": 0.00023728300038783345,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t05_farewell",
+   "pass": 0,
+   "audio_s": 5.2433,
+   "ctc_s": 0.11394697899959283,
+   "plan_s": 0.0005119750003359513,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_guest_t05_farewell",
+   "pass": 1,
+   "audio_s": 5.2433,
+   "ctc_s": 0.00028118499994889135,
+   "plan_s": 0.0002519800000300165,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t00_greeting",
+   "pass": 0,
+   "audio_s": 5.0467,
+   "ctc_s": 0.10135551599978498,
+   "plan_s": 0.0005873460004295339,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t00_greeting",
+   "pass": 1,
+   "audio_s": 5.0467,
+   "ctc_s": 0.0002986879999298253,
+   "plan_s": 0.0002510679996703402,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t01_guidance",
+   "pass": 0,
+   "audio_s": 3.1506,
+   "ctc_s": 0.06663019400002668,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t01_guidance",
+   "pass": 1,
+   "audio_s": 3.1506,
+   "ctc_s": 0.00030139199952827767,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t02_dialogue",
+   "pass": 0,
+   "audio_s": 4.2377,
+   "ctc_s": 0.08598600200002693,
+   "plan_s": 0.00036199500027578324,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t02_dialogue",
+   "pass": 1,
+   "audio_s": 4.2377,
+   "ctc_s": 0.00025328299943794264,
+   "plan_s": 0.0002512780001779902,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t03_dialogue",
+   "pass": 0,
+   "audio_s": 4.3766,
+   "ctc_s": 0.08747932699952798,
+   "plan_s": 0.0003331809994051582,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t03_dialogue",
+   "pass": 1,
+   "audio_s": 4.3766,
+   "ctc_s": 0.00024381500043091364,
+   "plan_s": 0.0002258810000057565,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t05_farewell",
+   "pass": 0,
+   "audio_s": 5.2433,
+   "ctc_s": 0.11053561600056128,
+   "plan_s": 0.00035956000010628486,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_staff_t05_farewell",
+   "pass": 1,
+   "audio_s": 5.2433,
+   "ctc_s": 0.00027499299994815374,
+   "plan_s": 0.0002511889997549588,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t00_greeting",
+   "pass": 0,
+   "audio_s": 3.3053,
+   "ctc_s": 0.06318598000052589,
+   "plan_s": 0.0002601950000098441,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t00_greeting",
+   "pass": 1,
+   "audio_s": 3.3053,
+   "ctc_s": 0.00018724900019151391,
+   "plan_s": 0.00017413400018995162,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t01_guidance",
+   "pass": 0,
+   "audio_s": 3.9342,
+   "ctc_s": 0.07731240699922637,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t01_guidance",
+   "pass": 1,
+   "audio_s": 3.9342,
+   "ctc_s": 0.0003483199998299824,
+   "plan_s": null,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t02_dialogue",
+   "pass": 0,
+   "audio_s": 3.3122,
+   "ctc_s": 0.07179471600011311,
+   "plan_s": 0.0003605620004236698,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t02_dialogue",
+   "pass": 1,
+   "audio_s": 3.3122,
+   "ctc_s": 0.0001902939993669861,
+   "plan_s": 0.00016853400029503973,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t03_dialogue",
+   "pass": 0,
+   "audio_s": 5.3233,
+   "ctc_s": 0.11571511599959194,
+   "plan_s": 0.00047476500003540423,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t03_dialogue",
+   "pass": 1,
+   "audio_s": 5.3233,
+   "ctc_s": 0.0002967330001411028,
+   "plan_s": 0.00024943599964899477,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t05_farewell",
+   "pass": 0,
+   "audio_s": 5.2433,
+   "ctc_s": 0.11636176100000739,
+   "plan_s": 0.00044473000070865965,
+   "status": "aligned_ctc_not_human_validated"
+  },
+  {
+   "case": "v2visit_external_t05_farewell",
+   "pass": 1,
+   "audio_s": 5.2433,
+   "ctc_s": 0.0003070029997616075,
+   "plan_s": 0.0002773380001599435,
+   "status": "aligned_ctc_not_human_validated"
+  }
+ ]
+}

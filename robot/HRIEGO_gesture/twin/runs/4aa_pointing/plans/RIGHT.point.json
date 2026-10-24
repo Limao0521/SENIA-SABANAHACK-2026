@@ -1,0 +1,12 @@
+{
+ "schema": "x2_point_4aa.v1",
+ "direction": "RIGHT",
+ "case_id": "P_RIGHT",
+ "sample_rate_hz": 44100,
+ "anchor_text": "derecha",
+ "anchor_start_sample": 84672,
+ "anchor_end_sample": 99666,
+ "sample_count": 129024,
+ "wav_sha256": "3428ec8e18199f5dfe83854440ab6d2a98e4e4bf87f9b2651abdc583c67fecf1",
+ "align": "onset (CTC start of the word)"
+}

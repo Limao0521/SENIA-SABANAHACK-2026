@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Felicidades",
+  "char_start": 1,
+  "char_end": 12,
+  "occurrence": 1,
+  "start_s": 0.8,
+  "end_s": 1.42,
+  "start_sample": 35280,
+  "end_sample": 62622,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "214573ae26b34598930698c282cbf9889c4c551903d83e33d9c62749da6a9932",
+  "sample_count": 211968,
+  "case_id": "ps_mario_t03_dialogue",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

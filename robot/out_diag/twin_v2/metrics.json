@@ -1,0 +1,168 @@
+{
+ "S2_sebastian_t02": {
+  "ticks": 299,
+  "fall_ticks": 0,
+  "tilt_max": 1.72,
+  "pelvis_min": 0.6837,
+  "vmax_cmd": 4.73,
+  "clipped_ticks": 24,
+  "clipped_pct": 8.03,
+  "pct_err_gt_012": 8.36
+ },
+ "S2_laura_t02": {
+  "ticks": 376,
+  "fall_ticks": 0,
+  "tilt_max": 1.56,
+  "pelvis_min": 0.6839,
+  "vmax_cmd": 4.94,
+  "clipped_ticks": 22,
+  "clipped_pct": 5.85,
+  "pct_err_gt_012": 5.05
+ },
+ "S2_josaed_t03": {
+  "ticks": 325,
+  "fall_ticks": 0,
+  "tilt_max": 1.69,
+  "pelvis_min": 0.6838,
+  "vmax_cmd": 3.51,
+  "clipped_ticks": 20,
+  "clipped_pct": 6.15,
+  "pct_err_gt_012": 7.38
+ },
+ "S3_point_RIGHT": {
+  "ticks": 233,
+  "fall_ticks": 0,
+  "tilt_max": 1.69,
+  "pelvis_min": 0.6838,
+  "vmax_cmd": 3.51,
+  "clipped_ticks": 25,
+  "clipped_pct": 10.73,
+  "pct_err_gt_012": 21.03
+ },
+ "S3_point_LEFT": {
+  "ticks": 232,
+  "fall_ticks": 0,
+  "tilt_max": 1.59,
+  "pelvis_min": 0.6839,
+  "vmax_cmd": 4.9,
+  "clipped_ticks": 31,
+  "clipped_pct": 13.36,
+  "pct_err_gt_012": 31.03
+ },
+ "S3_point_FRONT": {
+  "ticks": 232,
+  "fall_ticks": 0,
+  "tilt_max": 1.39,
+  "pelvis_min": 0.6838,
+  "vmax_cmd": 5.79,
+  "clipped_ticks": 39,
+  "clipped_pct": 16.81,
+  "pct_err_gt_012": 43.97
+ },
+ "S4_emote_3001_VIP_BOW": {
+  "ticks": 251,
+  "fall_ticks": 0,
+  "tilt_max": 1.52,
+  "pelvis_min": 0.6838,
+  "vmax_cmd": 2.54,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 15.14
+ },
+ "S4_sonic_after_3001": {
+  "ticks": 125,
+  "fall_ticks": 0,
+  "tilt_max": 1.49,
+  "pelvis_min": 0.6839,
+  "vmax_cmd": 4.8,
+  "clipped_ticks": 47,
+  "clipped_pct": 37.6,
+  "pct_err_gt_012": 17.6
+ },
+ "S4_emote_3004_SOCIAL_HEART": {
+  "ticks": 289,
+  "fall_ticks": 0,
+  "tilt_max": 1.71,
+  "pelvis_min": 0.6833,
+  "vmax_cmd": 2.65,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 33.91
+ },
+ "S4_sonic_after_3004": {
+  "ticks": 125,
+  "fall_ticks": 0,
+  "tilt_max": 1.7,
+  "pelvis_min": 0.6837,
+  "vmax_cmd": 4.94,
+  "clipped_ticks": 51,
+  "clipped_pct": 40.8,
+  "pct_err_gt_012": 25.6
+ },
+ "S4_emote_3017_APPLAUSE": {
+  "ticks": 350,
+  "fall_ticks": 0,
+  "tilt_max": 1.5,
+  "pelvis_min": 0.684,
+  "vmax_cmd": 2.15,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 1.43
+ },
+ "S4_sonic_after_3017": {
+  "ticks": 125,
+  "fall_ticks": 0,
+  "tilt_max": 1.33,
+  "pelvis_min": 0.684,
+  "vmax_cmd": 3.2,
+  "clipped_ticks": 39,
+  "clipped_pct": 31.2,
+  "pct_err_gt_012": 5.6
+ },
+ "S5_settle": {
+  "ticks": 67,
+  "fall_ticks": 0,
+  "tilt_max": 2.0,
+  "pelvis_min": 0.6836,
+  "vmax_cmd": 0.0,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 10.45
+ },
+ "S5_point_after_walk": {
+  "ticks": 222,
+  "fall_ticks": 0,
+  "tilt_max": 1.6,
+  "pelvis_min": 0.6839,
+  "vmax_cmd": 3.67,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 27.48
+ },
+ "_final": {
+  "t": "5337.318776377",
+  "pelvis_z": "0.6839826671437549",
+  "tilt_deg": "0.19633487434125996",
+  "mode": "STAND_DEFAULT",
+  "stable": "True",
+  "walking": "False",
+  "fall": "False"
+ },
+ "_unsafe": false,
+ "_estopped": false,
+ "_limiter_nlim": 388,
+ "_refusals": [
+  {
+   "event": "refused",
+   "t": 5327.309461653,
+   "what": "point",
+   "reason": "walking"
+  },
+  {
+   "event": "refused",
+   "t": 5327.309477143,
+   "what": "stream_upper_body",
+   "reason": "walking"
+  }
+ ]
+}

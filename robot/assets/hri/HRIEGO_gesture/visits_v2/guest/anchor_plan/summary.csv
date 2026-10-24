@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+v2visit_guest_t00_greeting,v2visit_guest,v2visit_guest_t00_greeting,GREETING_GUEST,1011,2,Bienvenida,3.3405,44100,0.68,1.18,29988,aligned_ctc_not_human_validated,0.5598185941043083,0.0,-24688,22939,planned,planned,,0.02
+v2visit_guest_t01_guidance,v2visit_guest,v2visit_guest_t01_guidance,POINT_FRONT,,,frente a mí,3.9342,44100,2.86,3.36,126126,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+v2visit_guest_t02_dialogue,v2visit_guest,v2visit_guest_t02_dialogue,SOCIAL_HEART,3004,11,me alegra,4.0542,44100,1.3800000000000001,1.8,60858,aligned_ctc_not_human_validated,0.0,0.0,7938,55556,planned,planned,,0.02
+v2visit_guest_t03_dialogue,v2visit_guest,v2visit_guest_t03_dialogue,APPLAUSE,3017,11,Felicidades,4.9623,44100,0.78,1.48,34398,aligned_ctc_not_human_validated,0.4,0.0,-17640,29108,planned,planned,,0.02
+v2visit_guest_t04_dialogue,v2visit_guest,v2visit_guest_t04_dialogue,NONE,,,,3.3601,44100,,,,,,,,,none_sonic,none_sonic,,
+v2visit_guest_t05_farewell,v2visit_guest,v2visit_guest_t05_farewell,FAREWELL_WAVE,3031,11,hasta luego,5.2433,44100,2.4,3.0,105840,aligned_ctc_not_human_validated,0.0,0.0,52037,98784,planned,planned,,0.02

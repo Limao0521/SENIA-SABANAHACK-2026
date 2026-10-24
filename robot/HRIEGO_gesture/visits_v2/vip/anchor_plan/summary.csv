@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+v2visit_vip_t00_greeting,v2visit_vip,v2visit_vip_t00_greeting,GREETING_VIP,3001,11,Buenos días,5.122,44100,0.8,1.4000000000000001,35280,aligned_ctc_not_human_validated,0.38,0.0,-16758,30870,planned,planned,,0.02
+v2visit_vip_t01_guidance,v2visit_vip,v2visit_vip_t01_guidance,POINT_RIGHT,,,a mi derecha,2.9033,44100,1.74,2.2600000000000002,76734,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+v2visit_vip_t02_dialogue,v2visit_vip,v2visit_vip_t02_dialogue,APPLAUSE,3017,11,Felicidades,3.5631,44100,0.68,1.28,29988,aligned_ctc_not_human_validated,0.5,0.0,-22050,24698,planned,planned,,0.02
+v2visit_vip_t03_dialogue,v2visit_vip,v2visit_vip_t03_dialogue,SOCIAL_HEART,3004,11,Gracias,3.4633,44100,0.88,1.24,38808,aligned_ctc_not_human_validated,0.32,0.0,-14112,33506,planned,planned,,0.02
+v2visit_vip_t04_dialogue,v2visit_vip,v2visit_vip_t04_dialogue,NONE,,,,4.3081,44100,,,,,,,,,none_sonic,none_sonic,,
+v2visit_vip_t05_farewell,v2visit_vip,v2visit_vip_t05_farewell,SOCIAL_HEART,3004,11,hasta luego,5.2433,44100,2.42,3.0,106722,aligned_ctc_not_human_validated,0.0,0.0,53802,101420,planned,planned,,0.02

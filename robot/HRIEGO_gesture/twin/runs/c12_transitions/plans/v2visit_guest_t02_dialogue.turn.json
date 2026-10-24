@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_guest_t02_dialogue",
+ "rank": "guest",
+ "emote": "SOCIAL_HEART",
+ "motion_id": 3004,
+ "area": 11,
+ "binding": "3004/11",
+ "anchor_s": 1.38,
+ "dur_s": 4.1099319727891155,
+ "lead_onset_s": 1.2000107929998194,
+ "lead_stroke_s": 2.080010793000838,
+ "policy_dispatch_s": {
+  "stroke": -0.7000107930008381,
+  "mid": -0.2600107930003288,
+  "onset": 0.1799892070001805
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 5.240132310002082
+}

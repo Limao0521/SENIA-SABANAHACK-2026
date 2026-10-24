@@ -1,0 +1,329 @@
+{
+ "visit_id": "visit_guest_1792649564",
+ "profile_injected": {
+  "person_id": "sim-guest",
+  "display_name": "Marta Solís",
+  "rank_code": "GUEST",
+  "rank_name": "Invitada"
+ },
+ "face_recognition": "bypassed",
+ "scenario": "reception_lab_right",
+ "turns": [
+  {
+   "turn_id": "visit_guest_1792649564_t00",
+   "state": "GREETING",
+   "visitor_utterance": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_guest_1792649564_t00\",\"speech\":\"Bienvenida, Marta Solís. ¿En qué puedo ayudarle hoy?\",\"communicative_acts\":[ \"GREETING\" ],\"motor_intents\":[{\"event_id\":\"visit_guest_1792649564_t00\",\"type\":\"GREETING_GUEST\",\"trigger_text\":\"Bienvenida, Marta Solís. ¿En qué puedo帮助\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_guest_1792649564_t00",
+     "speech": "Bienvenida, Marta Solís. ¿En qué puedo ayudarle hoy?",
+     "communicative_acts": [
+      "GREETING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_guest_1792649564_t00",
+       "type": "GREETING_GUEST",
+       "trigger_text": "Bienvenida, Marta Solís. ¿En qué puedo帮助"
+      }
+     ]
+    },
+    "errors": [
+     "trigger_text must be a literal substring of speech"
+    ],
+    "metrics": {
+     "total_s": 1.6657,
+     "prompt_tokens": 918,
+     "completion_tokens": 124,
+     "cached_tokens": 554,
+     "prompt_ms": 66.568,
+     "predicted_ms": 1593.681,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.8101,
+    "prompt_chars": 3284
+   },
+   "decision": {
+    "requested": "GREETING_GUEST",
+    "effective": "NONE",
+    "suppressed": "validation_failed",
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   }
+  },
+  {
+   "turn_id": "visit_guest_1792649564_t01",
+   "state": "GUIDANCE",
+   "visitor_utterance": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_guest_1792649564_t01\",\"speech\":\"a mi derecha\",\"communicative_acts\":[\"GUIDE\"],\"motor_intents\":[{\"event_id\":\"visit_guest_1792649564_t01\",\"type\":\"POINT_RIGHT\",\"trigger_text\":\"a mi derecha\",\"reference_frame\":\"X2_base_local\",\"target_vector\":[0.0,-1.0,0.0]}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_guest_1792649564_t01",
+     "speech": "a mi derecha",
+     "communicative_acts": [
+      "GUIDE"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_guest_1792649564_t01",
+       "type": "POINT_RIGHT",
+       "trigger_text": "a mi derecha",
+       "reference_frame": "X2_base_local",
+       "target_vector": [
+        0.0,
+        -1.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.7374,
+     "prompt_tokens": 998,
+     "completion_tokens": 118,
+     "cached_tokens": 554,
+     "prompt_ms": 92.4,
+     "predicted_ms": 1638.641,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.8828,
+    "prompt_chars": 3625
+   },
+   "decision": {
+    "requested": "POINT_RIGHT",
+    "effective": "POINT_RIGHT",
+    "suppressed": null,
+    "trigger_text": "a mi derecha",
+    "trigger_char_start": 0,
+    "trigger_char_end": 12
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/guest/wav/visit_guest_1792649564/visit_guest_1792649564_t01.wav",
+    "wav_sha256": "c97696d1b94cd440f7c7cb1a0cd4bd123f1b71163843326308349d7afbaa56df",
+    "sample_rate": 44100,
+    "duration_s": 1.5504,
+    "synth_s": 0.4711
+   }
+  },
+  {
+   "turn_id": "visit_guest_1792649564_t02",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Me aprobaron el proyecto esta mañana.",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_guest_1792649564_t02\",\"speech\":\"Me alegra que te haya aprobaron el proyecto\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"visit_guest_1792649564_t02\",\"type\":\"APPLAUSE\",\"trigger_text\":\"te haya aprobaron\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_guest_1792649564_t02",
+     "speech": "Me alegra que te haya aprobaron el proyecto",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_guest_1792649564_t02",
+       "type": "APPLAUSE",
+       "trigger_text": "te haya aprobaron"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.5874,
+     "prompt_tokens": 1763,
+     "completion_tokens": 107,
+     "cached_tokens": 1531,
+     "prompt_ms": 46.975,
+     "predicted_ms": 1459.093,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.75,
+    "prompt_chars": 6221
+   },
+   "decision": {
+    "requested": "APPLAUSE",
+    "effective": "APPLAUSE",
+    "suppressed": null,
+    "trigger_text": "te haya aprobaron",
+    "trigger_char_start": 14,
+    "trigger_char_end": 31
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/guest/wav/visit_guest_1792649564/visit_guest_1792649564_t02.wav",
+    "wav_sha256": "116dfceba585f180b976b7444e9e7970390cd8c4ef2337106e7c7c59c87b1a9f",
+    "sample_rate": 44100,
+    "duration_s": 3.3394,
+    "synth_s": 0.7564
+   }
+  },
+  {
+   "turn_id": "visit_guest_1792649564_t03",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿Puedo tomar fotos en el vestíbulo?",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_guest_1792649564_t03\",\"speech\":\"Puedes tomar fotos en el vestíbulo.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"visit_guest_1792649564_t03\",\"type\":\"CONFIRMATION\",\"trigger_text\":\"Puedes\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_guest_1792649564_t03",
+     "speech": "Puedes tomar fotos en el vestíbulo.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_guest_1792649564_t03",
+       "type": "CONFIRMATION",
+       "trigger_text": "Puedes"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.4626,
+     "prompt_tokens": 1767,
+     "completion_tokens": 105,
+     "cached_tokens": 1655,
+     "prompt_ms": 26.689,
+     "predicted_ms": 1428.899,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6241,
+    "prompt_chars": 6219
+   },
+   "decision": {
+    "requested": "CONFIRMATION",
+    "effective": "CONFIRMATION",
+    "suppressed": null,
+    "trigger_text": "Puedes",
+    "trigger_char_start": 0,
+    "trigger_char_end": 6
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/guest/wav/visit_guest_1792649564/visit_guest_1792649564_t03.wav",
+    "wav_sha256": "b93499fe6151bc97551ff4d234a5efe6e703774572153d12fce9f75f9e15b5aa",
+    "sample_rate": 44100,
+    "duration_s": 2.8719,
+    "synth_s": 0.6495
+   }
+  },
+  {
+   "turn_id": "visit_guest_1792649564_t04",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Qué te parece si primero veo el laboratorio y luego el café.",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_guest_1792649564_t04\",\"speech\":\"Puedes ver el laboratorio primero, luego el café.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"visit_guest_1792649564_t04\",\"type\":\"CONFIRMATION\",\"trigger_text\":\"luego el café\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_guest_1792649564_t04",
+     "speech": "Puedes ver el laboratorio primero, luego el café.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_guest_1792649564_t04",
+       "type": "CONFIRMATION",
+       "trigger_text": "luego el café"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.4865,
+     "prompt_tokens": 1769,
+     "completion_tokens": 107,
+     "cached_tokens": 1655,
+     "prompt_ms": 28.197,
+     "predicted_ms": 1451.856,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6395,
+    "prompt_chars": 6244
+   },
+   "decision": {
+    "requested": "CONFIRMATION",
+    "effective": "NONE",
+    "suppressed": "cooldown_same_emote_consecutive",
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/guest/wav/visit_guest_1792649564/visit_guest_1792649564_t04.wav",
+    "wav_sha256": "da2cec2a5eee85ccdfd1957f02989de1da8165819b2fdbe76f0536ca6cd12661",
+    "sample_rate": 44100,
+    "duration_s": 3.8865,
+    "synth_s": 0.9697
+   }
+  },
+  {
+   "turn_id": "visit_guest_1792649564_t05",
+   "state": "FAREWELL",
+   "visitor_utterance": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_guest_1792649564_t05\",\"speech\":\"¡Hasta luego! El laboratorio está a su derecha.\",\"communicative_acts\":[\"CLOSING\"],\"motor_intents\":[{\"event_id\":\"visit_guest_1792649564_t05\",\"type\":\"FAREWELL_WAVE\",\"trigger_text\":\"¡Hasta luego!\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_guest_1792649564_t05",
+     "speech": "¡Hasta luego! El laboratorio está a su derecha.",
+     "communicative_acts": [
+      "CLOSING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_guest_1792649564_t05",
+       "type": "FAREWELL_WAVE",
+       "trigger_text": "¡Hasta luego!"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.576,
+     "prompt_tokens": 922,
+     "completion_tokens": 109,
+     "cached_tokens": 554,
+     "prompt_ms": 64.262,
+     "predicted_ms": 1425.038,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.729,
+    "prompt_chars": 3321
+   },
+   "decision": {
+    "requested": "FAREWELL_WAVE",
+    "effective": "FAREWELL_WAVE",
+    "suppressed": null,
+    "trigger_text": "¡Hasta luego!",
+    "trigger_char_start": 0,
+    "trigger_char_end": 13
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/guest/wav/visit_guest_1792649564/visit_guest_1792649564_t05.wav",
+    "wav_sha256": "203a33aacf2372adadc6088d9276ef5704fca2e10f737d1f1ab8190292db3cc6",
+    "sample_rate": 44100,
+    "duration_s": 4.6126,
+    "synth_s": 0.9895
+   }
+  }
+ ],
+ "manifest": "HRIEGO_gesture/eval/results/visits/guest/tts_manifest.jsonl",
+ "anchor_plan": {
+  "returncode": 0,
+  "stdout": "{\n \"schema\": \"hriego_gesture_anchor_plan.v1\",\n \"rows\": 5,\n \"policy\": {\n  \"align\": \"onset\",\n  \"stat\": \"median\",\n  \"max_initial_delay_s\": 1.5,\n  \"latency_file\": \"config/preset_latency_c08.json\",\n  \"latency_sha256\": \"d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3\",\n  \"latency_error\": null\n },\n \"model\": {\n  \"revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d\",\n  \"onnx_sha256\": \"e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\",\n  \"provider\": \"CPUExecutionProvider\",\n  \"cpu_threads\": 2,\n  \"onnx_sha256_matches_pinned\": true,\n  \"model_revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\"\n },\n \"status_counts\": {\n  \"anchor_only_no_preset\": 1,\n  \"planned\": 3,\n  \"none_sonic\": 1\n },\n \"status_preroll0_counts\": {\n  \"anchor_only_no_preset\": 1,\n  \"planned\": 3,\n  \"none_sonic\": 1\n },\n \"align_status_counts\": {\n  \"aligned_ctc_not_human_validated\": 4,\n  \"null\": 1\n },\n \"max_delay_s_planned\": 0.64,\n \"max_delay_s_preroll0_planned\": 0.0\n}\n",
+  "stderr": "",
+  "files": [
+   "HRIEGO_gesture/eval/results/visits/guest/anchor_plan/summary.json"
+  ]
+ }
+}

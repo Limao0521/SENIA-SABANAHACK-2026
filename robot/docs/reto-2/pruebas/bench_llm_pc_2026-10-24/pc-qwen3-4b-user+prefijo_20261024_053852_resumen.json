@@ -1,0 +1,65 @@
+{
+  "etiqueta": "pc-qwen3-4b-user+prefijo",
+  "url": "http://127.0.0.1:8092",
+  "ts": "20261024_053852",
+  "n": 42,
+  "prefijo_estatico": true,
+  "fallos": 0,
+  "validez_pct": 35.7,
+  "validez_tras_reparar_pct": 100.0,
+  "intent_ok_pct": 100.0,
+  "latencias": {
+    "t_first_token": {
+      "p50": 0.322,
+      "p90": 0.377,
+      "max": 0.418
+    },
+    "t_speech_done": {
+      "p50": 0.838,
+      "p90": 0.996,
+      "max": 1.142
+    },
+    "t_total": {
+      "p50": 1.166,
+      "p90": 1.475,
+      "max": 1.792
+    }
+  },
+  "tokens_s_medio": 67.553,
+  "prompt_tokens_medio": 2384.286,
+  "cached_tokens_medio": 1693.071,
+  "muestras": [
+    {
+      "id": "saludo_vip",
+      "speech": "Buenas tardes, señora Laura. Bienvenida a casa: Club N, nuestro lugar de encuentro; quedo a su disposición."
+    },
+    {
+      "id": "conv_horario_biblioteca",
+      "speech": "Buenas tardes, la biblioteca del club abre a las 08:00 y cierra a las 20:00."
+    },
+    {
+      "id": "guia_biblioteca_vip",
+      "speech": "Señorita Laura, el espacio queda al frente, segundo piso. La biblioteca y la galería están al frente, segundo piso."
+    },
+    {
+      "id": "saludo_staff",
+      "speech": "¡Luis, compañero! ¡Dame esos cinco! Bienvenido a nuestro lugar de encuentro."
+    },
+    {
+      "id": "conv_pide_gimnasio",
+      "speech": "Quiero ir al gimnasio, por favor."
+    },
+    {
+      "id": "denial_bar_invitado",
+      "speech": "Mario, para su visita le recomiendo nuestro centro de convenciones; ese otro espacio está reservado."
+    },
+    {
+      "id": "destino_rol_worker",
+      "speech": "Su destino asignado es los almacenes de logística, que quedan a mi izquierda."
+    },
+    {
+      "id": "conv_despedida_vip",
+      "speech": "Esta es su casa: Club N, nuestro lugar de encuentro."
+    }
+  ]
+}

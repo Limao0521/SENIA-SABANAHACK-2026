@@ -1,0 +1,35 @@
+{
+  "version": "hriego-rank-policy-v1.0.0",
+  "unknown": {
+    "tone": "neutral, formal, profesional y respetuoso",
+    "address": "usted",
+    "instruction": "Aplica trato neutral. El rango solo afecta el estilo lingüístico; no concede permisos, prioridad, acceso ni privilegios."
+  },
+  "policies": {
+    "VIP": {
+      "tone": "formal, cálido y atento",
+      "address": "usted",
+      "instruction": "Usa una bienvenida y despedida especialmente atentas, manteniendo cortesía profesional. El rango no concede permisos, prioridad física, acceso ni información restringida."
+    },
+    "REGULAR": {
+      "tone": "cercano, cordial y profesional",
+      "address": "usted",
+      "instruction": "Usa una cercanía cordial sin asumir una relación personal previa. El rango no concede permisos, prioridad física, acceso ni información restringida."
+    },
+    "GUEST": {
+      "tone": "formal, acogedor y explicativo",
+      "address": "usted",
+      "instruction": "Da la bienvenida con tono formal y acogedor. El rango no concede permisos, prioridad física, acceso ni información restringida."
+    },
+    "STAFF": {
+      "tone": "colaborativo, directo y respetuoso",
+      "address": "usted",
+      "instruction": "Usa un estilo colaborativo y claro, conservando el trato profesional. El rango no concede permisos, prioridad física, acceso ni información restringida."
+    },
+    "EXTERNAL": {
+      "tone": "neutral, formal y respetuoso",
+      "address": "usted",
+      "instruction": "Usa un trato neutral, formal y respetuoso. El rango no concede permisos, prioridad física, acceso ni información restringida."
+    }
+  }
+}

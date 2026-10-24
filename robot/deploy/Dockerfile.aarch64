@@ -1,0 +1,157 @@
+# syntax=docker/dockerfile:1.6
+# =============================================================================
+# x2-onboard · contenedor aarch64 para el PC2 del X2 Ultra (Jetson Orin NX 16GB,
+# L4T r36.4.x / JetPack 6 / Ubuntu 22.04 + ROS 2 Humble). Corre EN el robot
+# (FastDDS local por develop0 10.0.1.41). Plan docs/14 §F1.
+#
+# Construcción:
+#   docker/buildx build \
+#     --build-context aimdk=$HOME/robots/x2_simulation/aimdk \
+#     -f deploy/Dockerfile.aarch64 -t x2-onboard:latest .
+#
+# El SDK AimDK aarch64 se obtiene fuera del build (official_sim/fetch_assets.sh
+# baja aimdk-sdk-v1_1_0-aimdk-aarch64-faf4c945-artifacts.zip con
+# official_sim/parallel_download.py). Se pasa al build como contexto adicional
+# "aimdk" apuntando al directorio ya extraído ($X2_SIM_ROOT/aimdk).
+# =============================================================================
+
+ARG BASE_IMAGE=ros:humble-ros-base
+
+# ---------------------------------------------------------------------------
+# stage: overlay-builder
+# Compila aimdk_msgs desde fuente con los extras del robot (McBodyPose,
+# SetMcMotion, GetMcMotions, McMotion) — reproduce scripts/build_aimdk_overlay.sh
+# pero dentro de la imagen y para arm64. Los .msg/.srv son texto (portables);
+# se copian del prebuilt_<arch> del SDK y de scripts/aimdk_overlay/.
+# ---------------------------------------------------------------------------
+FROM ${BASE_IMAGE} AS overlay-builder
+
+# El zip aarch64 del SDK trae src/aimdk_msgs/prebuilt_aarch64 (no prebuilt_x86_64).
+ARG SDK_PREBUILT=prebuilt_aarch64
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        ros-humble-rosidl-default-generators \
+        ros-humble-nav-msgs \
+        python3-colcon-common-extensions \
+        build-essential \
+        cmake \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /ws
+
+# package.xml del SDK + CMakeLists.txt del overlay (genera msg/*.msg y srv/*.srv).
+COPY --from=aimdk src/aimdk_msgs/package.xml  /ws/src/aimdk_msgs/package.xml
+COPY scripts/aimdk_overlay/CMakeLists.txt     /ws/src/aimdk_msgs/CMakeLists.txt
+
+# Los .msg/.srv están repartidos por subcarpetas en share/aimdk_msgs/ (msg/, common/,
+# action/...); find los trae todos a msg/ y srv/ como hace build_aimdk_overlay.sh.
+COPY --from=aimdk src/aimdk_msgs/${SDK_PREBUILT}/share/aimdk_msgs/ \
+     /ws/_sdk_share/
+RUN set -e; \
+    mkdir -p /ws/src/aimdk_msgs/msg /ws/src/aimdk_msgs/srv; \
+    find /ws/_sdk_share -name '*.msg' -exec cp {} /ws/src/aimdk_msgs/msg/ \; ; \
+    find /ws/_sdk_share -name '*.srv' -exec cp {} /ws/src/aimdk_msgs/srv/ \; ; \
+    rm -rf /ws/_sdk_share
+
+# Extras del robot (McBodyPose, SetMcMotion, GetMcMotions, McMotion). Misma
+# semántica que scripts/build_aimdk_overlay.sh: si el SDK ya trae la definición,
+# SE USA LA DEL SDK; solo se añaden las que faltan.
+COPY scripts/aimdk_overlay/*.msg scripts/aimdk_overlay/*.srv /ws/_extras/
+RUN set -e; \
+    for extra in /ws/_extras/*.msg /ws/_extras/*.srv; do \
+        [ -e "$extra" ] || continue; \
+        kind=${extra##*.}; \
+        if [ ! -e "/ws/src/aimdk_msgs/$kind/$(basename "$extra")" ]; then \
+            cp "$extra" "/ws/src/aimdk_msgs/$kind/"; \
+        fi; \
+    done; \
+    rm -rf /ws/_extras
+
+RUN . /opt/ros/humble/setup.sh && \
+    colcon build --packages-select aimdk_msgs --event-handlers console_direct-
+
+# ---------------------------------------------------------------------------
+# stage: runtime
+# Imagen mínima para correr python -m x2_ultra.real.{check,walk,arms,motions}
+# en el PC2. SIN MuJoCo ni torch: el gemelo no va a bordo.
+# ---------------------------------------------------------------------------
+FROM ${BASE_IMAGE} AS runtime
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    RMW_IMPLEMENTATION=rmw_fastrtps_cpp \
+    ROS_LOCALHOST_ONLY=0 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    X2_REAL=robot
+
+# - rmw_fastrtps_cpp: el que usa el MC (compatibilidad de discovery).
+# - nav-msgs: Odometry (link.py).
+# - python3-tk: ventanas de arms/walk/motions (check no lo necesita).
+# - python3-{yaml,numpy,pil}: deps de x2_ultra que no son mujoco/torch.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        ros-humble-rmw-fastrtps-cpp \
+        ros-humble-nav-msgs \
+        python3-tk \
+        python3-yaml \
+        python3-numpy \
+        python3-pil \
+        ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# El zip aarch64 del SDK no trae install-space (solo fuentes + prebuilt), así que
+# no se copia: real/*.py solo necesita aimdk_msgs, que lo aporta el overlay.
+# aimdk_msgs compilado con los extras del robot (overlay).
+COPY --from=overlay-builder /ws/install /opt/aimdk_overlay
+
+# Copia del source de x2_ultra lo mínimo para que el contenedor arranque sin repo
+# montado (pero el compose típico lo sobremonta en /workspace/x2_ultra:ro para que
+# los cambios se vean sin rebuild). Los assets de HRI son los que usa el brain en
+# config A (docs/14 §1); no se llevan los modelos MuJoCo.
+COPY src           /opt/x2_ultra_src/src
+COPY pyproject.toml /opt/x2_ultra_src/pyproject.toml
+COPY assets/hri    /opt/x2_ultra_src/assets/hri
+
+# El PYTHONPATH solo necesita x2_ultra (src/); los paquetes colcon (aimdk_msgs,
+# py_examples) se añaden solos al sourcear local_setup.bash.
+ENV PYTHONPATH=/opt/x2_ultra_src/src
+
+# Entrypoint: encadena los setup.bash y ejecuta el CMD. Así cada docker run /
+# docker compose exec ya tiene el entorno ROS + AimDK listo.
+RUN printf '%s\n' \
+        '#!/usr/bin/env bash' \
+        'set -e' \
+        'source /opt/ros/humble/setup.bash' \
+        'if [ -f /opt/aimdk/install/local_setup.bash ]; then'         '  source /opt/aimdk/install/local_setup.bash'         'fi' \
+        'if [ -f /opt/aimdk_overlay/local_setup.bash ]; then' \
+        '  source /opt/aimdk_overlay/local_setup.bash' \
+        'fi' \
+        'exec "$@"' \
+    > /usr/local/bin/x2-entrypoint && \
+    chmod +x /usr/local/bin/x2-entrypoint
+
+WORKDIR /opt/x2_ultra_src
+ENTRYPOINT ["/usr/local/bin/x2-entrypoint"]
+# Por defecto, healthcheck de solo lectura: verifica que los imports cargan.
+# No toca el robot (check sí lo intenta, pero solo lee).
+CMD ["python3", "-c", "import rclpy; from aimdk_msgs.msg import McCommonState, McLocomotionVelocity; print('x2-onboard: imports OK')"]
+
+# ---------------------------------------------------------------------------
+# stage: bench (opcional)
+# Añade MuJoCo + onnxruntime + psutil para correr x2-bench en el Orin (validar
+# el factor real vs la banda ×1,8-2,2 estimada). Se activa con --target bench.
+# ---------------------------------------------------------------------------
+FROM runtime AS bench
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        python3-pip \
+        libegl1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Ubuntu 22.04 (jammy) trae pip 22.0.2: NO usar --break-system-packages (el flag
+# es de pip ≥23.0.1 y aquí fallaría; jammy tampoco impone PEP 668).
+RUN pip3 install --no-cache-dir \
+        'mujoco>=3.3' 'onnxruntime>=1.17' 'psutil>=5.9'
+
+ENV MUJOCO_GL=egl

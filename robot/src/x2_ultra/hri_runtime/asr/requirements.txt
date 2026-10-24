@@ -1,0 +1,15 @@
+# T3 ASR — venv aislada: /home/luis/GitHub/x2_ultra-reto2/.venv-asr (uv venv, Python 3.11)
+# Crear: uv venv .venv-asr && uv pip install --python .venv-asr/bin/python -r src/x2_ultra/hri_runtime/asr/requirements.txt
+faster-whisper==1.2.1
+ctranslate2==4.8.3
+silero-vad==6.2.3
+torch==2.14.1          # dependencia de silero-vad (onnxruntime es el backend real)
+onnxruntime==1.31.0
+soundfile==0.14.0
+numpy==2.4.6
+av==18.1.0
+huggingface-hub==2.3.0
+# Modelo: mobiuslabsgmbh/faster-whisper-large-v3-turbo (MIT), alias "large-v3-turbo" en faster-whisper.
+# OJO: "Systran/faster-whisper-large-v3-turbo" NO existe (401).
+# Parakeet-TDT-0.6B-v3 no evaluado a fondo: NeMo es pesado (deps torch+CUDA >2 GB);
+# intentar solo vía onnx-asr/sherpa-onnx si hay tiempo.

@@ -1,0 +1,17 @@
+# Plantilla del SERVIDOR WireGuard en el VPS (x2-nube).
+# La renderiza deploy/nube/wireguard/generar_wg.sh → .secretos/wg/wg-nube.conf.
+# Instalar en el VPS como /etc/wireguard/wg0.conf (chmod 600) y activar con:
+#   systemctl enable --now wg-quick@wg0
+# Requiere el puerto UDP 51820 abierto en el VPS.
+
+[Interface]
+PrivateKey = __CLAVE_PRIVADA_SERVIDOR__
+Address = 10.66.0.1/24
+ListenPort = 51820
+# Sin PostUp/PostDown: no hay NAT ni reenvío. El cliente solo consulta el
+# gateway en la propia dirección del túnel (AllowedIPs = 10.66.0.1/32).
+
+[Peer]
+# Cliente único (PC de desarrollo en el modo A, o robot en el modo C).
+PublicKey = __CLAVE_PUBLICA_CLIENTE__
+AllowedIPs = 10.66.0.2/32

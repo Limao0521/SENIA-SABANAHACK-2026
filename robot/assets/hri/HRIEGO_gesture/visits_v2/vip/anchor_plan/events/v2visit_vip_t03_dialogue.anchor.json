@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Gracias",
+  "char_start": 0,
+  "char_end": 7,
+  "occurrence": 1,
+  "start_s": 0.88,
+  "end_s": 1.24,
+  "start_sample": 38808,
+  "end_sample": 54684,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "3a67d5e4992899c3d8b6711988302eb79c56d7872f1b8067178b098e47b86c16",
+  "sample_count": 153600,
+  "case_id": "v2visit_vip_t03_dialogue",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

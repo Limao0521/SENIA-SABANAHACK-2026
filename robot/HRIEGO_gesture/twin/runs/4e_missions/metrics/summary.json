@@ -1,0 +1,70 @@
+{
+ "rep": "1",
+ "turns": 18,
+ "completed": 18,
+ "gates_ok": 18,
+ "falls": 0,
+ "visits": {
+  "vip": {
+   "turns": 6,
+   "completed": 6,
+   "gates_ok": 6,
+   "falls": 0,
+   "wall_s": 65.47991401200034,
+   "all_completed": true,
+   "failed_turns": []
+  },
+  "staff": {
+   "turns": 6,
+   "completed": 6,
+   "gates_ok": 6,
+   "falls": 0,
+   "wall_s": 58.81312122899999,
+   "all_completed": true,
+   "failed_turns": []
+  },
+  "guest": {
+   "turns": 6,
+   "completed": 6,
+   "gates_ok": 6,
+   "falls": 0,
+   "wall_s": 64.79673231699871,
+   "all_completed": true,
+   "failed_turns": []
+  }
+ },
+ "preset": {
+  "n": 12,
+  "executed_eq_contract": 12,
+  "max_abs_jitter_ms": 0.0001454964149161242,
+  "onset_err_ms_abs_max": 30.84219980395575,
+  "onset_err_ms_abs_median": 14.381944783599387,
+  "gate_onset100": 12,
+  "gate_onset150": 12,
+  "stroke_err_ms_abs_median": 696.3064182464404,
+  "pelvis_z_min": 0.6895286018112659
+ },
+ "point": {
+  "n": 3,
+  "executed_eq_contract": 3,
+  "err_deg_mean_hold_max": 6.885835952701457,
+  "err_deg_at_anchor_max": 15.160138152624786,
+  "hold_prog99_range": [
+   1.56,
+   1.82
+  ],
+  "track_err_outside_lag4_max": 0.01157442503778356,
+  "jitter_ms_max": 0.0,
+  "return_err_max": 0.020421870209542226,
+  "pelvis_z_min": 0.6854237211124262
+ },
+ "none": {
+  "n": 3,
+  "arm_track_err_max": 0.009740405989370907,
+  "pelvis_z_min": 0.6896471404919561
+ },
+ "turn_wall_s": {
+  "mean": 10.504987086555502,
+  "max": 16.082491745999505
+ }
+}

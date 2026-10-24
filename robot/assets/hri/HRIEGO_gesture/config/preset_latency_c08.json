@@ -1,0 +1,642 @@
+{
+ "schema": "x2_preset_latency.v1",
+ "source": "twin_mc_v1.0.0",
+ "bindings": {
+  "3001/11": {
+   "motion_id": 3001,
+   "area": 11,
+   "csv": "NM_bow.csv",
+   "csv_sha256": "9922f6d39023b3479c506e080f8f0572a887ff8857b9b78b70b8802a5d03b5c3",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0009200640015478712,
+    "max": 0.0015648309999960475
+   },
+   "lead_onset_s": {
+    "median": 1.1799959819982178,
+    "min": 1.1799913960021513,
+    "max": 1.1999690589982492,
+    "std": 0.009416479907683167,
+    "p95": 1.1979717512982462
+   },
+   "lead_stroke_s": {
+    "median": 1.7199913960030244,
+    "min": 1.7199690589986858,
+    "max": 1.7199959819990909,
+    "std": 1.1760673986530033e-05,
+    "p95": 1.7199955233994841
+   },
+   "duration_s": {
+    "median": 4.480131692002033
+   },
+   "motion_duration_s": {
+    "median": 3.1200000000026193
+   },
+   "pelvis_z_min_m": 0.6929778585274494,
+   "tilt_max_deg": 14.471385512608187,
+   "lead_onset_002_s": {
+    "median": 1.1399959819973446,
+    "min": 1.1399913960012782,
+    "max": 1.159969059001014,
+    "std": 0.009416479909398128,
+    "p95": 1.1579717513006471
+   },
+   "lead_play_start_s": {
+    "median": 1.079995981999673,
+    "min": 1.0799913959999685,
+    "max": 1.119969059000141,
+    "std": 0.018844570231448924,
+    "p95": 1.1159717513000942
+   },
+   "dominant_joint_csv": "left_shoulder_yaw_joint",
+   "dominant_joint_twin_by_baseline": "left_shoulder_yaw_joint",
+   "max_disp_twin_rad": 1.2312856702239208
+  },
+  "1003/2": {
+   "motion_id": 1003,
+   "area": 2,
+   "csv": "SM_shake_right_hand.csv",
+   "csv_sha256": "655a40f86724859b8cb9ac031ab9d2317a2bea4828f8a6500050cbed10e0df50",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0008009609991859179,
+    "max": 0.0008723139981157146
+   },
+   "lead_onset_s": {
+    "median": 1.2000735549991077,
+    "min": 1.199918850998074,
+    "max": 1.2001435289967048,
+    "std": 9.387337295189467e-05,
+    "p95": 1.2001365315969452
+   },
+   "lead_stroke_s": {
+    "median": 1.780073554997216,
+    "min": 1.7800435289973393,
+    "max": 1.7801188509984058,
+    "std": 3.095999611873827e-05,
+    "p95": 1.7801143213982868
+   },
+   "duration_s": {
+    "median": 6.520287700997869
+   },
+   "motion_duration_s": {
+    "median": 5.120100000000093
+   },
+   "pelvis_z_min_m": 0.6931476529501164,
+   "tilt_max_deg": 0.7227249837463621,
+   "lead_onset_002_s": {
+    "median": 1.1601435289994697,
+    "min": 1.1600735549982346,
+    "max": 1.16031885099801,
+    "std": 0.00010317422779337616,
+    "p95": 1.160301318798156
+   },
+   "lead_play_start_s": {
+    "median": 1.02004352899894,
+    "min": 1.0198188510003092,
+    "max": 1.0400735549992532,
+    "std": 0.009495644942470157,
+    "p95": 1.038070552399222
+   },
+   "dominant_joint_csv": "right_shoulder_pitch_joint",
+   "dominant_joint_twin_by_baseline": "right_shoulder_pitch_joint",
+   "max_disp_twin_rad": 1.3456815391699597
+  },
+  "1011/2": {
+   "motion_id": 1011,
+   "area": 2,
+   "csv": "SM_right_chest_wave.csv",
+   "csv_sha256": "24046db6c1fcc6ce02d23061a52b99723357d2373b598b13791b8eb6cbe417b5",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0007318720017792657,
+    "max": 0.0007669580008951016
+   },
+   "lead_onset_s": {
+    "median": 1.2398256680025952,
+    "min": 1.2200071820006997,
+    "max": 1.2399898799994844,
+    "std": 0.009381468567209656,
+    "p95": 1.2399734587997955
+   },
+   "lead_stroke_s": {
+    "median": 1.9799898800010851,
+    "min": 1.979825668000558,
+    "max": 1.980007181999099,
+    "std": 8.179396331893431e-05,
+    "p95": 1.9800054517992975
+   },
+   "duration_s": {
+    "median": 5.380000508001103
+   },
+   "motion_duration_s": {
+    "median": 3.9200000000018917
+   },
+   "pelvis_z_min_m": 0.6928259841811666,
+   "tilt_max_deg": 0.7922598316922884,
+   "lead_onset_002_s": {
+    "median": 1.199825668001722,
+    "min": 1.16000718199939,
+    "max": 1.1999898800022493,
+    "std": 0.018809438920945092,
+    "p95": 1.1999734588021966
+   },
+   "lead_play_start_s": {
+    "median": 1.07998987999963,
+    "min": 1.0398256680018676,
+    "max": 1.1000071819980803,
+    "std": 0.025023701945632602,
+    "p95": 1.0980054517982354
+   },
+   "dominant_joint_csv": "right_wrist_yaw_joint",
+   "dominant_joint_twin_by_baseline": "right_wrist_yaw_joint",
+   "max_disp_twin_rad": 1.363493995068572
+  },
+  "1008/2": {
+   "motion_id": 1008,
+   "area": 2,
+   "csv": "SM_right_hit_clap.csv",
+   "csv_sha256": "bb8091e689c8976daf08689da7aa436050be13eb48b3402359c327ec226d608f",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0008358969971595798,
+    "max": 0.0013155470005585812
+   },
+   "lead_onset_s": {
+    "median": 1.2399667860008776,
+    "min": 1.239727304000553,
+    "max": 1.2400403469982848,
+    "std": 0.00013364911241670632,
+    "p95": 1.2400329908985441
+   },
+   "lead_stroke_s": {
+    "median": 1.9799667860024783,
+    "min": 1.9798273040032655,
+    "max": 1.9800403469998855,
+    "std": 8.835142384114315e-05,
+    "p95": 1.9800329909001448
+   },
+   "duration_s": {
+    "median": 5.13974985400273
+   },
+   "motion_duration_s": {
+    "median": 3.680000000000291
+   },
+   "pelvis_z_min_m": 0.6928545574238574,
+   "tilt_max_deg": 0.6850128348583331,
+   "lead_onset_002_s": {
+    "median": 1.1999667860000045,
+    "min": 1.1997273040033178,
+    "max": 1.2000403469974117,
+    "std": 0.00013364911074560218,
+    "p95": 1.200032990897671
+   },
+   "lead_play_start_s": {
+    "median": 1.0799667860010231,
+    "min": 1.0397273040034634,
+    "max": 1.0800403469984303,
+    "std": 0.018986435971697538,
+    "p95": 1.0800329908986896
+   },
+   "dominant_joint_csv": "right_wrist_yaw_joint",
+   "dominant_joint_twin_by_baseline": "right_wrist_yaw_joint",
+   "max_disp_twin_rad": 1.363870422269388
+  },
+  "1002/2": {
+   "motion_id": 1002,
+   "area": 2,
+   "csv": "SM_wave_right_hand.csv",
+   "csv_sha256": "23554287aba6b32dd488a1b52ce1c9bdfd6134cf1469494a1f8a4aaa94399760",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0009095059976971243,
+    "max": 0.0033498020020488184
+   },
+   "lead_onset_s": {
+    "median": 1.199984652997955,
+    "min": 1.1999625309981639,
+    "max": 1.1999881449992245,
+    "std": 1.1341438268369604e-05,
+    "p95": 1.1999877957990974
+   },
+   "lead_stroke_s": {
+    "median": 2.219988144999661,
+    "min": 2.2199846529983915,
+    "max": 2.220062530999712,
+    "std": 3.591727248704153e-05,
+    "p95": 2.220055092399707
+   },
+   "duration_s": {
+    "median": 5.33999892599968
+   },
+   "motion_duration_s": {
+    "median": 3.960000000002765
+   },
+   "pelvis_z_min_m": 0.6929011592021886,
+   "tilt_max_deg": 1.1977973416369383,
+   "lead_onset_002_s": {
+    "median": 1.1599846530007198,
+    "min": 1.1599625309972907,
+    "max": 1.1599881450019893,
+    "std": 1.1341439969727008e-05,
+    "p95": 1.1599877958018623
+   },
+   "lead_play_start_s": {
+    "median": 1.0399846529981005,
+    "min": 1.0399625309983094,
+    "max": 1.0999881450006797,
+    "std": 0.02829113304012801,
+    "p95": 1.0939877958004218
+   },
+   "dominant_joint_csv": "right_shoulder_pitch_joint",
+   "dominant_joint_twin_by_baseline": "right_shoulder_pitch_joint",
+   "max_disp_twin_rad": 2.945618907370827
+  },
+  "3031/11": {
+   "motion_id": 3031,
+   "area": 11,
+   "csv": "NM_byebye.csv",
+   "csv_sha256": "57e37cc659d03c6ea175614756cb69674c108df21729ff00908aee291be38f0e",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0007635920010216068,
+    "max": 0.0008425310006714426
+   },
+   "lead_onset_s": {
+    "median": 1.2200286600018444,
+    "min": 1.2195042929997726,
+    "max": 1.2202239260004717,
+    "std": 0.0003038569142022994,
+    "p95": 1.2202043994006089
+   },
+   "lead_stroke_s": {
+    "median": 1.8599239260001923,
+    "min": 1.8598042929988878,
+    "max": 1.8600286600012623,
+    "std": 9.166473800138694e-05,
+    "p95": 1.8600181866011554
+   },
+   "duration_s": {
+    "median": 5.060018083000614
+   },
+   "motion_duration_s": {
+    "median": 3.639999999999418
+   },
+   "pelvis_z_min_m": 0.6925179042522538,
+   "tilt_max_deg": 1.0189525694957964,
+   "lead_onset_002_s": {
+    "median": 1.1795042929988995,
+    "min": 1.159823926001991,
+    "max": 1.1800286600009713,
+    "std": 0.009403445478803223,
+    "p95": 1.179976223300764
+   },
+   "lead_play_start_s": {
+    "median": 1.0600239260020317,
+    "min": 1.0395042929994815,
+    "max": 1.0602286600005755,
+    "std": 0.009721663335993109,
+    "p95": 1.0602081866007211
+   },
+   "dominant_joint_csv": "left_shoulder_yaw_joint",
+   "dominant_joint_twin_by_baseline": "left_shoulder_yaw_joint",
+   "max_disp_twin_rad": 1.5815129902504748
+  },
+  "3029/11": {
+   "motion_id": 3029,
+   "area": 11,
+   "csv": "NM_shakeHead.csv",
+   "csv_sha256": "2470ce715f917394ff265e8ffb999c2b724da2264a06aec911aa356fce86c937",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0007830889990145806,
+    "max": 0.000790352001786232
+   },
+   "lead_onset_s": {
+    "median": 1.399993421997351,
+    "min": 1.3993788120023964,
+    "max": 1.4000099270015198,
+    "std": 0.0002936975018202852,
+    "p95": 1.400008276501103
+   },
+   "lead_stroke_s": {
+    "median": 1.6599934219993884,
+    "min": 1.6593788120007957,
+    "max": 1.6600099269999191,
+    "std": 0.00029369750264346525,
+    "p95": 1.660008276499866
+   },
+   "duration_s": {
+    "median": 3.5997354760002054
+   },
+   "motion_duration_s": {
+    "median": 2.0200000000004366
+   },
+   "pelvis_z_min_m": 0.6930100371635606,
+   "tilt_max_deg": 0.012872156580729488,
+   "lead_onset_002_s": {
+    "median": 1.3593788120015233,
+    "min": 1.3400099270002102,
+    "max": 1.359993422000116,
+    "std": 0.009278838074144397,
+    "p95": 1.3599319610002567
+   },
+   "lead_play_start_s": {
+    "median": 1.099378812003124,
+    "min": 1.0800099270018109,
+    "max": 1.0999934219980787,
+    "std": 0.00927883807324707,
+    "p95": 1.0999319609985831
+   },
+   "dominant_joint_csv": "head_yaw_joint",
+   "dominant_joint_twin_by_baseline": "head_yaw",
+   "max_disp_twin_rad": 0.4257281174251897
+  },
+  "3009/11": {
+   "motion_id": 3009,
+   "area": 11,
+   "csv": "NM_handX.csv",
+   "csv_sha256": "a1cda73a2e20cbb4afa57fd5dd723ac0c5dd4bb7c6610368336e5a68e622264e",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0008098600010271184,
+    "max": 0.0008776169997872785
+   },
+   "lead_onset_s": {
+    "median": 1.1799550969990378,
+    "min": 1.160002024997084,
+    "max": 1.1803583680011798,
+    "std": 0.009502446528930935,
+    "p95": 1.1803180409009655
+   },
+   "lead_stroke_s": {
+    "median": 2.24000202499883,
+    "min": 2.2399550970003475,
+    "max": 2.2403583680024894,
+    "std": 0.00018006482612508532,
+    "p95": 2.2403227337021234
+   },
+   "duration_s": {
+    "median": 5.539998050000577
+   },
+   "motion_duration_s": {
+    "median": 4.220000000001164
+   },
+   "pelvis_z_min_m": 0.693015076639235,
+   "tilt_max_deg": 1.6687221655945397,
+   "lead_onset_002_s": {
+    "median": 1.1399583679994976,
+    "min": 1.1399550969981647,
+    "max": 1.1400020250002854,
+    "std": 2.1392809151531766e-05,
+    "p95": 1.1399976593002066
+   },
+   "lead_play_start_s": {
+    "median": 1.0399583680009528,
+    "min": 1.0199550969991833,
+    "max": 1.0400020249981026,
+    "std": 0.009439939258852868,
+    "p95": 1.0399976592983875
+   },
+   "dominant_joint_csv": "right_shoulder_pitch_joint",
+   "dominant_joint_twin_by_baseline": "left_wrist_yaw_joint",
+   "max_disp_twin_rad": 1.2091020173295155
+  },
+  "3028/11": {
+   "motion_id": 3028,
+   "area": 11,
+   "csv": "NM_nod.csv",
+   "csv_sha256": "4bd9cea288fe02d75e3d44706dbc3e5ac3a5d86555a23407144ff2d30d60468c",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0007546960005129222,
+    "max": 0.0009903989994199947
+   },
+   "lead_onset_s": {
+    "median": 1.299993770000583,
+    "min": 1.299432973999501,
+    "max": 1.3400471740023931,
+    "std": 0.019014914924173416,
+    "p95": 1.3360418336022122
+   },
+   "lead_stroke_s": {
+    "median": 1.6399937700007285,
+    "min": 1.63963297400187,
+    "max": 1.6400471740016656,
+    "std": 0.00018396478525915195,
+    "p95": 1.6400418336015719
+   },
+   "duration_s": {
+    "median": 3.1999979869979143
+   },
+   "motion_duration_s": {
+    "median": 1.639999999999418
+   },
+   "pelvis_z_min_m": 0.6932903562707797,
+   "tilt_max_deg": 0.019255888033022472,
+   "lead_onset_002_s": {
+    "median": 1.2399937699992734,
+    "min": 1.2398329740026384,
+    "max": 1.30004717400152,
+    "std": 0.028347422122880384,
+    "p95": 1.2940418336012953
+   },
+   "lead_play_start_s": {
+    "median": 1.0800471740003559,
+    "min": 1.0196329739992507,
+    "max": 1.0999937699998554,
+    "std": 0.03416560939435964,
+    "p95": 1.0979991103999054
+   },
+   "dominant_joint_csv": "head_pitch_joint",
+   "dominant_joint_twin_by_baseline": "head_pitch",
+   "max_disp_twin_rad": 0.33263490653157535
+  },
+  "1005/2": {
+   "motion_id": 1005,
+   "area": 2,
+   "csv": "SM_right_like.csv",
+   "csv_sha256": "08a33b37627e7773160bad67e07617880c427faddd515f5a8c05376960919eca",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0008512379972671624,
+    "max": 0.0008625079972262029
+   },
+   "lead_onset_s": {
+    "median": 1.1999633289997291,
+    "min": 1.199569252999936,
+    "max": 1.1999900379996689,
+    "std": 0.00019237384908064314,
+    "p95": 1.1999873670996748
+   },
+   "lead_stroke_s": {
+    "median": 1.799963328998274,
+    "min": 1.7998692529981781,
+    "max": 1.7999900379982137,
+    "std": 5.180377582269529e-05,
+    "p95": 1.7999873670982196
+   },
+   "duration_s": {
+    "median": 4.26000008399933
+   },
+   "motion_duration_s": {
+    "median": 2.8800000000010186
+   },
+   "pelvis_z_min_m": 0.6930047024486657,
+   "tilt_max_deg": 0.43714679831725656,
+   "lead_onset_002_s": {
+    "median": 1.159963328998856,
+    "min": 1.1594692529979511,
+    "max": 1.1599900379987957,
+    "std": 0.00023945342447904915,
+    "p95": 1.1599873670988017
+   },
+   "lead_play_start_s": {
+    "median": 1.0599633290003112,
+    "min": 1.0594692529994063,
+    "max": 1.1199900380015606,
+    "std": 0.028414032765308708,
+    "p95": 1.1139873671014358
+   },
+   "dominant_joint_csv": "right_shoulder_pitch_joint",
+   "dominant_joint_twin_by_baseline": "right_shoulder_pitch_joint",
+   "max_disp_twin_rad": 0.7567370332070216
+  },
+  "3004/11": {
+   "motion_id": 3004,
+   "area": 11,
+   "csv": "SM_sweat_heart.csv",
+   "csv_sha256": "0cbaeda6acbf0c00b92479ae6ad3ae6ffdd8a068b90de2c7e4b26305ab5d730a",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0008231350002461113,
+    "max": 0.0008386740009882487
+   },
+   "lead_onset_s": {
+    "median": 1.2000107929998194,
+    "min": 1.1997838620009134,
+    "max": 1.2002391589994659,
+    "std": 0.00018587452905117122,
+    "p95": 1.2002163223995013
+   },
+   "lead_stroke_s": {
+    "median": 2.080010793000838,
+    "min": 2.079783862001932,
+    "max": 2.080039159001899,
+    "std": 0.00011425063407205787,
+    "p95": 2.080036322401793
+   },
+   "duration_s": {
+    "median": 5.240132310002082
+   },
+   "motion_duration_s": {
+    "median": 3.8400000000001455
+   },
+   "pelvis_z_min_m": 0.6928950476316054,
+   "tilt_max_deg": 1.677527691591357,
+   "lead_onset_002_s": {
+    "median": 1.1600107929989463,
+    "min": 1.1597838620000402,
+    "max": 1.1600391590000072,
+    "std": 0.00011425063407205788,
+    "p95": 1.160036322399901
+   },
+   "lead_play_start_s": {
+    "median": 1.079783862001932,
+    "min": 1.0401391590021376,
+    "max": 1.1000107930012746,
+    "std": 0.024867300642768892,
+    "p95": 1.0979880999013403
+   },
+   "dominant_joint_csv": "left_shoulder_roll_joint",
+   "dominant_joint_twin_by_baseline": "right_shoulder_roll_joint",
+   "max_disp_twin_rad": 2.1913825480205538
+  },
+  "3017/11": {
+   "motion_id": 3017,
+   "area": 11,
+   "csv": "NM_clapHands.csv",
+   "csv_sha256": "8a1f9ff36d5700ef776fab8c6a6e00188ff61260f6beaf19ba3d8c997b0d7b45",
+   "yaml_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da",
+   "n": 3,
+   "accepted": 3,
+   "completed": 3,
+   "service_rtt_s": {
+    "median": 0.0008254200001829304,
+    "max": 0.0008766559985815547
+   },
+   "lead_onset_s": {
+    "median": 1.1800003909993393,
+    "min": 1.1799738709996745,
+    "max": 1.1802479300022242,
+    "std": 0.0001234176311958485,
+    "p95": 1.1802231761019357
+   },
+   "lead_stroke_s": {
+    "median": 1.8800003910000669,
+    "min": 1.8799738709967642,
+    "max": 1.8800479300007282,
+    "std": 3.063767330012249e-05,
+    "p95": 1.8800431761006622
+   },
+   "duration_s": {
+    "median": 6.459998267000628
+   },
+   "motion_duration_s": {
+    "median": 5.139999999999418
+   },
+   "pelvis_z_min_m": 0.6932540046924294,
+   "tilt_max_deg": 1.0275763093120207,
+   "lead_onset_002_s": {
+    "median": 1.1400003909984662,
+    "min": 1.1399738709988014,
+    "max": 1.1401479300002393,
+    "std": 7.657066700329616e-05,
+    "p95": 1.140133176100062
+   },
+   "lead_play_start_s": {
+    "median": 1.0600479300010193,
+    "min": 1.0200738709972939,
+    "max": 1.0800003909971565,
+    "std": 0.024915889379915415,
+    "p95": 1.0780051448975427
+   },
+   "dominant_joint_csv": "left_wrist_yaw_joint",
+   "dominant_joint_twin_by_baseline": "left_wrist_yaw_joint",
+   "max_disp_twin_rad": 1.5577586585825303
+  }
+ }
+}

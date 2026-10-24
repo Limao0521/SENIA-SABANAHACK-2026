@@ -1,0 +1,146 @@
+{
+ "SONIC_RIGHT_r1.csv": {
+  "prep_start": {
+   "cmd_speed": 1.088532381467855,
+   "base_speed": 1.1333580235007634,
+   "cmd_jerk": 756.2406087411875,
+   "base_jerk": 1114.27279272569,
+   "cmd_speed_step_max": 1.088532381467855
+  },
+  "rec_end": {
+   "cmd_speed": 0.061353201885526454,
+   "base_speed": 0.0,
+   "cmd_jerk": 14.421769831999065,
+   "base_jerk": 0.0,
+   "cmd_speed_step_max": 0.061353201885526454
+  }
+ },
+ "SONIC_RIGHT_r2.csv": {
+  "prep_start": {
+   "cmd_speed": 1.118541036802423,
+   "base_speed": 1.1333580235007634,
+   "cmd_jerk": 901.2420754235527,
+   "base_jerk": 1114.27279272569,
+   "cmd_speed_step_max": 1.118541036802423
+  },
+  "rec_end": {
+   "cmd_speed": 0.06836302301504796,
+   "base_speed": 0.0,
+   "cmd_jerk": 14.554080929598046,
+   "base_jerk": 0.0,
+   "cmd_speed_step_max": 0.06836302301504796
+  }
+ },
+ "SONIC_RIGHT_r3.csv": {
+  "prep_start": {
+   "cmd_speed": 1.0557632079646884,
+   "base_speed": 1.040812040590644,
+   "cmd_jerk": 884.9597574663858,
+   "base_jerk": 1114.27279272569,
+   "cmd_speed_step_max": 1.0557632079646884
+  },
+  "rec_end": {
+   "cmd_speed": 0.08000482535446343,
+   "base_speed": 0.0,
+   "cmd_jerk": 14.738394022712276,
+   "base_jerk": 0.0,
+   "cmd_speed_step_max": 0.08000482535446343
+  }
+ },
+ "SONIC_LEFT_r1.csv": {
+  "prep_start": {
+   "cmd_speed": 1.2359855865075098,
+   "base_speed": 1.0466362909755056,
+   "cmd_jerk": 1131.8649995580852,
+   "base_jerk": 1833.4426086054343,
+   "cmd_speed_step_max": 1.2359855865075098
+  },
+  "rec_end": {
+   "cmd_speed": 0.08469697946377475,
+   "base_speed": 0.0,
+   "cmd_jerk": 14.374441399189056,
+   "base_jerk": 0.0,
+   "cmd_speed_step_max": 0.08469697946377475
+  }
+ },
+ "SONIC_LEFT_r2.csv": {
+  "prep_start": {
+   "cmd_speed": 1.2900968781221822,
+   "base_speed": 1.0466362909755056,
+   "cmd_jerk": 1361.2735887816998,
+   "base_jerk": 1833.4426086054343,
+   "cmd_speed_step_max": 1.2900968781221822
+  },
+  "rec_end": {
+   "cmd_speed": 0.0787490836678853,
+   "base_speed": 0.0,
+   "cmd_jerk": 14.584825147830047,
+   "base_jerk": 0.0,
+   "cmd_speed_step_max": 0.0787490836678853
+  }
+ },
+ "SONIC_LEFT_r3.csv": {
+  "prep_start": {
+   "cmd_speed": 1.1964552737183054,
+   "base_speed": 0.9266162090534824,
+   "cmd_jerk": 1229.587416798794,
+   "base_jerk": 1833.4426086054343,
+   "cmd_speed_step_max": 1.1964552737183054
+  },
+  "rec_end": {
+   "cmd_speed": 0.06204592646899543,
+   "base_speed": 0.0,
+   "cmd_jerk": 14.199547205863414,
+   "base_jerk": 0.0,
+   "cmd_speed_step_max": 0.06204592646899543
+  }
+ },
+ "SONIC_FRONT_r1.csv": {
+  "prep_start": {
+   "cmd_speed": 2.0091528979390203,
+   "base_speed": 2.2251015719927936,
+   "cmd_jerk": 1026.243169901575,
+   "base_jerk": 1718.7216875124143,
+   "cmd_speed_step_max": 2.0091528979390203
+  },
+  "rec_end": {
+   "cmd_speed": 0.10536151285018697,
+   "base_speed": 0.0,
+   "cmd_jerk": 19.165176708697825,
+   "base_jerk": 0.0,
+   "cmd_speed_step_max": 0.10536151285018697
+  }
+ },
+ "SONIC_FRONT_r2.csv": {
+  "prep_start": {
+   "cmd_speed": 2.0941783936891776,
+   "base_speed": 2.2251015719927936,
+   "cmd_jerk": 1600.4461194965984,
+   "base_jerk": 1718.7216875124143,
+   "cmd_speed_step_max": 2.0941783936891776
+  },
+  "rec_end": {
+   "cmd_speed": 0.0956677804953579,
+   "base_speed": 0.0,
+   "cmd_jerk": 19.274378968158615,
+   "base_jerk": 0.0,
+   "cmd_speed_step_max": 0.0956677804953579
+  }
+ },
+ "SONIC_FRONT_r3.csv": {
+  "prep_start": {
+   "cmd_speed": 2.033043162581466,
+   "base_speed": 2.2251015719927936,
+   "cmd_jerk": 809.782016852542,
+   "base_jerk": 1718.7216875124143,
+   "cmd_speed_step_max": 2.033043162581466
+  },
+  "rec_end": {
+   "cmd_speed": 0.07851533955269968,
+   "base_speed": 0.0,
+   "cmd_jerk": 18.851258067893724,
+   "base_jerk": 0.0,
+   "cmd_speed_step_max": 0.07851533955269968
+  }
+ }
+}

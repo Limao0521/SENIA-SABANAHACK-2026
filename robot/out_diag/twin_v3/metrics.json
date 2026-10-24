@@ -1,0 +1,137 @@
+{
+ "S2_sebastian_t02": {
+  "ticks": 299,
+  "fall_ticks": 0,
+  "tilt_max": 1.47,
+  "pelvis_min": 0.6839,
+  "clipped_ticks": 12,
+  "clipped_pct": 4.01,
+  "pct_err_gt_012": 5.69
+ },
+ "S2_laura_t02": {
+  "ticks": 375,
+  "fall_ticks": 0,
+  "tilt_max": 1.54,
+  "pelvis_min": 0.6839,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 2.13
+ },
+ "S2_josaed_t03": {
+  "ticks": 325,
+  "fall_ticks": 0,
+  "tilt_max": 1.54,
+  "pelvis_min": 0.6838,
+  "clipped_ticks": 1,
+  "clipped_pct": 0.31,
+  "pct_err_gt_012": 4.62
+ },
+ "S3_point_RIGHT": {
+  "ticks": 233,
+  "fall_ticks": 0,
+  "tilt_max": 1.57,
+  "pelvis_min": 0.6839,
+  "clipped_ticks": 10,
+  "clipped_pct": 4.29,
+  "pct_err_gt_012": 20.17
+ },
+ "S3_point_LEFT": {
+  "ticks": 232,
+  "fall_ticks": 0,
+  "tilt_max": 1.69,
+  "pelvis_min": 0.6838,
+  "clipped_ticks": 15,
+  "clipped_pct": 6.47,
+  "pct_err_gt_012": 26.72
+ },
+ "S3_point_FRONT": {
+  "ticks": 232,
+  "fall_ticks": 0,
+  "tilt_max": 1.37,
+  "pelvis_min": 0.6839,
+  "clipped_ticks": 16,
+  "clipped_pct": 6.9,
+  "pct_err_gt_012": 37.07
+ },
+ "S4_emote_3001_VIP_BOW": {
+  "ticks": 251,
+  "fall_ticks": 0,
+  "tilt_max": 1.5,
+  "pelvis_min": 0.6839,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 19.92
+ },
+ "S4_sonic_after_3001": {
+  "ticks": 125,
+  "fall_ticks": 0,
+  "tilt_max": 1.38,
+  "pelvis_min": 0.684,
+  "clipped_ticks": 2,
+  "clipped_pct": 1.6,
+  "pct_err_gt_012": 4.8
+ },
+ "S4_emote_3004_SOCIAL_HEART": {
+  "ticks": 289,
+  "fall_ticks": 0,
+  "tilt_max": 1.75,
+  "pelvis_min": 0.6834,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 35.64
+ },
+ "S4_sonic_after_3004": {
+  "ticks": 125,
+  "fall_ticks": 0,
+  "tilt_max": 1.52,
+  "pelvis_min": 0.6839,
+  "clipped_ticks": 19,
+  "clipped_pct": 15.2,
+  "pct_err_gt_012": 10.4
+ },
+ "S4_emote_3017_APPLAUSE": {
+  "ticks": 350,
+  "fall_ticks": 0,
+  "tilt_max": 1.23,
+  "pelvis_min": 0.6841,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 0.0
+ },
+ "S4_sonic_after_3017": {
+  "ticks": 125,
+  "fall_ticks": 0,
+  "tilt_max": 1.41,
+  "pelvis_min": 0.684,
+  "clipped_ticks": 3,
+  "clipped_pct": 2.4,
+  "pct_err_gt_012": 0.0
+ },
+ "S5_walk": {
+  "ticks": 1,
+  "fall_ticks": 0,
+  "tilt_max": 6.18,
+  "pelvis_min": 0.6756,
+  "clipped_ticks": 1,
+  "clipped_pct": 100.0,
+  "pct_err_gt_012": 0.0
+ },
+ "S5_settle": {
+  "ticks": 67,
+  "fall_ticks": 0,
+  "tilt_max": 5.33,
+  "pelvis_min": 0.6826,
+  "clipped_ticks": 14,
+  "clipped_pct": 20.9,
+  "pct_err_gt_012": 41.79
+ },
+ "S5_point_after_walk": {
+  "ticks": 222,
+  "fall_ticks": 0,
+  "tilt_max": 0.99,
+  "pelvis_min": 0.6836,
+  "clipped_ticks": 0,
+  "clipped_pct": 0.0,
+  "pct_err_gt_012": 32.88
+ }
+}

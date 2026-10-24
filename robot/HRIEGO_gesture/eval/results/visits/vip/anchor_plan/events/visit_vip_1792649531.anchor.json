@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Hasta luego",
+  "char_start": 29,
+  "char_end": 40,
+  "occurrence": 1,
+  "start_s": 2.88,
+  "end_s": 3.42,
+  "start_sample": 127008,
+  "end_sample": 150822,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "93f601a5bc42736a6e716ab8e7b6194226b820db8765107932fa42fa88853cf6",
+  "sample_count": 178176,
+  "case_id": "visit_vip_1792649531",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

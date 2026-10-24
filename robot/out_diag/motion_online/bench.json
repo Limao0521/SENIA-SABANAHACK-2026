@@ -1,0 +1,211 @@
+[
+ {
+  "turn": "laura_t02_dialogue",
+  "audio_rtf": 0.0,
+  "client_wall_s": 3.7193878120015142,
+  "n_frames": 358,
+  "audio_s": 6.6176875,
+  "first_cmd_s": 0.41962497400163556,
+  "first_motion_cmd_s": 0.6584521100012353,
+  "lead_D_s": 0.5002321520018449,
+  "audio_start_s": 1.040232152001845,
+  "lag_last_s": -3.684915149999725,
+  "rtf": 0.5221103545611873,
+  "fell": false,
+  "tilt_max": 8.225101814352064,
+  "pss_mb": 2577.8828125,
+  "vram_mb": 1348,
+  "motion_minus_audio_start_s": -0.38178004200060967,
+  "windows": [
+   {
+    "win": 0,
+    "t_ready": 0.26894081800128333,
+    "gmr_s": 0.42083476901461836,
+    "sonic_s": 0.11569390198565088,
+    "frames": 52
+   },
+   {
+    "win": 1,
+    "t_ready": 1.0608869240022614,
+    "gmr_s": 0.5026957419904647,
+    "sonic_s": 0.17471634299727157,
+    "frames": 52
+   },
+   {
+    "win": 2,
+    "t_ready": 1.9867518760001985,
+    "gmr_s": 0.47867559299993445,
+    "sonic_s": 0.16731209897261579,
+    "frames": 52
+   },
+   {
+    "win": 3,
+    "t_ready": 2.890150122002524,
+    "gmr_s": 0.3514989409959526,
+    "sonic_s": 0.2101348380165291,
+    "frames": 43
+   }
+  ],
+  "ref": "/home/luis/GitHub/x2_ultra-reto2/assets/hri/HRIEGO_gesture/opt/realnames/visits/laura/sonic/ps_laura_t02_dialogue/ps_laura_t02_dialogue_arms.npz",
+  "arm_rmse_rad": 0.23853421211242676,
+  "arm_best_shift": -36,
+  "wh_rmse_rad": 0.03834185749292374,
+  "gate": "< 0.20 (seed)",
+  "pass_gate": false
+ },
+ {
+  "turn": "josaed_t03_dialogue",
+  "audio_rtf": 0.0,
+  "client_wall_s": 3.6462129229985294,
+  "n_frames": 308,
+  "audio_s": 5.6425,
+  "first_cmd_s": 0.4034679469987168,
+  "first_motion_cmd_s": 0.6466848609998124,
+  "lead_D_s": 0.48412744399814983,
+  "audio_start_s": 1.0241274439981498,
+  "lag_last_s": -2.8959261340029485,
+  "rtf": 0.5749500877266256,
+  "fell": false,
+  "tilt_max": 9.915716414791092,
+  "pss_mb": 2525.275390625,
+  "vram_mb": 1348,
+  "motion_minus_audio_start_s": -0.37744258299833744,
+  "windows": [
+   {
+    "win": 0,
+    "t_ready": 0.2508917619998101,
+    "gmr_s": 0.47622696200414794,
+    "sonic_s": 0.12800141799016274,
+    "frames": 52
+   },
+   {
+    "win": 1,
+    "t_ready": 1.1096790219999093,
+    "gmr_s": 0.5783384579954145,
+    "sonic_s": 0.16684369500217144,
+    "frames": 52
+   },
+   {
+    "win": 2,
+    "t_ready": 2.0996478269989893,
+    "gmr_s": 0.5104421899959561,
+    "sonic_s": 0.1615738510117808,
+    "frames": 52
+   },
+   {
+    "win": 3,
+    "t_ready": 3.0223594540002523,
+    "gmr_s": 0.09562811900104862,
+    "sonic_s": 0.12481256298997323,
+    "frames": 14
+   }
+  ],
+  "ref": "/home/luis/GitHub/x2_ultra-reto2/assets/hri/HRIEGO_gesture/opt/realnames/visits/josaed/sonic/ps_josaed_t03_dialogue/ps_josaed_t03_dialogue_arms.npz",
+  "arm_rmse_rad": 0.11024903506040573,
+  "arm_best_shift": -75,
+  "wh_rmse_rad": 0.02701830305159092,
+  "gate": "< 0.20 (seed)",
+  "pass_gate": true
+ },
+ {
+  "turn": "sebastian_t02_dialogue",
+  "audio_rtf": 0.0,
+  "client_wall_s": 3.1703958219986816,
+  "n_frames": 281,
+  "audio_s": 5.0851875,
+  "first_cmd_s": 0.38337325300017255,
+  "first_motion_cmd_s": 0.6385717060002207,
+  "lead_D_s": 0.458297700000403,
+  "audio_start_s": 0.998297700000403,
+  "lag_last_s": -2.8191032250011636,
+  "rtf": 0.5468795891990114,
+  "fell": false,
+  "tilt_max": 9.129097817922414,
+  "pss_mb": 2526.0986328125,
+  "vram_mb": 1348,
+  "motion_minus_audio_start_s": -0.35972599400018224,
+  "windows": [
+   {
+    "win": 0,
+    "t_ready": 0.2387964270019438,
+    "gmr_s": 0.4604870940129331,
+    "sonic_s": 0.1118956629979948,
+    "frames": 52
+   },
+   {
+    "win": 1,
+    "t_ready": 1.0636172949998581,
+    "gmr_s": 0.5941952800021681,
+    "sonic_s": 0.198134910006047,
+    "frames": 52
+   },
+   {
+    "win": 2,
+    "t_ready": 2.1137270489998627,
+    "gmr_s": 0.4186804439887055,
+    "sonic_s": 0.2447745859863062,
+    "frames": 49
+   }
+  ],
+  "ref": "/home/luis/GitHub/x2_ultra-reto2/assets/hri/HRIEGO_gesture/opt/realnames/visits/sebastian/sonic/ps_sebastian_t02_dialogue/ps_sebastian_t02_dialogue_arms.npz",
+  "arm_rmse_rad": 0.06096155196428299,
+  "arm_best_shift": -74,
+  "wh_rmse_rad": 0.021523866802453995,
+  "gate": "< 0.20 (seed)",
+  "pass_gate": true
+ },
+ {
+  "turn": "laura_t02_dialogue",
+  "audio_rtf": 1.0,
+  "client_wall_s": 7.908269044000917,
+  "n_frames": 358,
+  "audio_s": 6.6176875,
+  "first_cmd_s": 2.408179033001943,
+  "first_motion_cmd_s": 2.6518535160030297,
+  "lead_D_s": 2.8436743720009687,
+  "audio_start_s": 3.3836743720009688,
+  "lag_last_s": 0.2867683500002016,
+  "rtf": 1.1222729612120412,
+  "fell": false,
+  "tilt_max": 8.225101814352064,
+  "pss_mb": 2595.8486328125,
+  "vram_mb": 1348,
+  "motion_minus_audio_start_s": -0.7318208559979391,
+  "windows": [
+   {
+    "win": 0,
+    "t_ready": 2.25049149300321,
+    "gmr_s": 0.42598238199570915,
+    "sonic_s": 0.12424240798645769,
+    "frames": 52
+   },
+   {
+    "win": 1,
+    "t_ready": 3.984265418002906,
+    "gmr_s": 0.49493949999668985,
+    "sonic_s": 0.1727276739984518,
+    "frames": 52
+   },
+   {
+    "win": 2,
+    "t_ready": 5.720353586002602,
+    "gmr_s": 0.47280698001850396,
+    "sonic_s": 0.16951918101403862,
+    "frames": 52
+   },
+   {
+    "win": 3,
+    "t_ready": 6.863419360000989,
+    "gmr_s": 0.3465487470057269,
+    "sonic_s": 0.21349338599247858,
+    "frames": 43
+   }
+  ],
+  "ref": "/home/luis/GitHub/x2_ultra-reto2/assets/hri/HRIEGO_gesture/opt/realnames/visits/laura/sonic/ps_laura_t02_dialogue/ps_laura_t02_dialogue_arms.npz",
+  "arm_rmse_rad": 0.23853421211242676,
+  "arm_best_shift": -36,
+  "wh_rmse_rad": 0.03834185749292374,
+  "gate": "< 0.20 (seed)",
+  "pass_gate": false
+ }
+]

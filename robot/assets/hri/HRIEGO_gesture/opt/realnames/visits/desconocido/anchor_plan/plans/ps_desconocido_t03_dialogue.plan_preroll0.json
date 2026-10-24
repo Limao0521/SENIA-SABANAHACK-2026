@@ -1,0 +1,45 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "ps_desconocido_t03_dialogue",
+  "binding_key": "3017/11",
+  "policy": {
+    "align": "auto",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false,
+    "align_policy_used": "stroke",
+    "align_policy_tried": [
+      "stroke"
+    ]
+  },
+  "audio": {
+    "sha256": "dd2c2023aae6e2557f027dcc6053cd07df9198a1368bc0cfce00aad5b8d37ee1",
+    "sample_rate_hz": 44100,
+    "sample_count": 211968,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 2644,
+  "dispatch_sample": -2644,
+  "phases": {
+    "dispatch_sample": -2644,
+    "expected_onset_sample": 2646,
+    "expected_stroke_sample": 33516,
+    "expected_end_sample": 235494,
+    "end_after_audio_end": true
+  },
+  "dispatches": [
+    {
+      "motion_id": 3017,
+      "area": 11,
+      "dispatch_sample": -2644,
+      "dispatch_sample_with_start_delay": 0,
+      "repeat_count": 1
+    }
+  ]
+}

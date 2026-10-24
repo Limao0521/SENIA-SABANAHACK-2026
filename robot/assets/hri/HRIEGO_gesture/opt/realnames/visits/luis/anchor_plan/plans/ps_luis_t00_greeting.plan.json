@@ -1,0 +1,45 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "ps_luis_t00_greeting",
+  "binding_key": "1008/2",
+  "policy": {
+    "align": "auto",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false,
+    "align_policy_used": "stroke",
+    "align_policy_tried": [
+      "stroke"
+    ]
+  },
+  "audio": {
+    "sha256": "c51a9534d458dc310d6da8307ce5c87511d2ff8f60a32fbf534f83392346d54b",
+    "sample_rate_hz": 44100,
+    "sample_count": 261120,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 0,
+  "dispatch_sample": 12349,
+  "phases": {
+    "dispatch_sample": 12349,
+    "expected_onset_sample": 67032,
+    "expected_stroke_sample": 99666,
+    "expected_end_sample": 239012,
+    "end_after_audio_end": false
+  },
+  "dispatches": [
+    {
+      "motion_id": 1008,
+      "area": 2,
+      "dispatch_sample": 12349,
+      "dispatch_sample_with_start_delay": 12349,
+      "repeat_count": 1
+    }
+  ]
+}

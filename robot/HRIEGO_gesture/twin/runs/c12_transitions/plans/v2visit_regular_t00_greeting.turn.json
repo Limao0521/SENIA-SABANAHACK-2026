@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_regular_t00_greeting",
+ "rank": "regular",
+ "emote": "GREETING_REGULAR",
+ "motion_id": 1003,
+ "area": 2,
+ "binding": "1003/2",
+ "anchor_s": 0.8,
+ "dur_s": 4.388571428571429,
+ "lead_onset_s": 1.2000735549991077,
+ "lead_stroke_s": 1.780073554997216,
+ "policy_dispatch_s": {
+  "stroke": -0.9800735549972159,
+  "mid": -0.6900735549981618,
+  "onset": -0.4000735549991077
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 6.520287700997869
+}

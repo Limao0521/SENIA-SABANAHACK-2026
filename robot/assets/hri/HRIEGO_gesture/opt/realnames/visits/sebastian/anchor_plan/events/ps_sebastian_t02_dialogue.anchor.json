@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "no está permitido",
+  "char_start": 11,
+  "char_end": 28,
+  "occurrence": 1,
+  "start_s": 1.6600000000000001,
+  "end_s": 2.48,
+  "start_sample": 73206,
+  "end_sample": 109368,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "0ea74eec7613d21bb2d483e1405f4e54729ab301eefdbebac3acca92be43a868",
+  "sample_count": 224256,
+  "case_id": "ps_sebastian_t02_dialogue",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

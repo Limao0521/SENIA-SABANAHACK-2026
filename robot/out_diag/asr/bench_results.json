@@ -1,0 +1,83 @@
+{
+  "model": "large-v3-turbo (mobiuslabsgmbh/faster-whisper-large-v3-turbo), int8, cuda",
+  "load_s": 3.5,
+  "reps": 3,
+  "lat_all_p50_s": 0.157,
+  "lat_all_p95_s": 0.354,
+  "rtf": 0.138,
+  "total_audio_s": 28.2,
+  "peak_rss_mb": 1944.0,
+  "vram_self_mb_after_load": 1146,
+  "vram_self_mb_end": 1222,
+  "gpu_total_used_mb_end": 5155,
+  "stream_endpoint_transcribe_lat_s": [
+    0.144,
+    0.145,
+    0.139,
+    0.143,
+    0.146,
+    0.152
+  ],
+  "per_wav": {
+    "wav1.wav": {
+      "text": "Me gustaría hacer algo de ejercicio en el club. ¿Qué opciones hay?",
+      "audio_dur_s": 4.97,
+      "lat_s": [
+        1.121,
+        0.144,
+        0.151
+      ],
+      "lat_p50_s": 0.151
+    },
+    "wav2.wav": {
+      "text": "¿A dónde podría ir dentro del club?",
+      "audio_dur_s": 5.05,
+      "lat_s": [
+        0.14,
+        0.163,
+        0.219
+      ],
+      "lat_p50_s": 0.163
+    },
+    "wav3.wav": {
+      "text": "Dame información acerca del gimnasio.",
+      "audio_dur_s": 4.75,
+      "lat_s": [
+        0.173,
+        0.146,
+        0.147
+      ],
+      "lat_p50_s": 0.147
+    },
+    "wav4.wav": {
+      "text": "¿Qué opciones de comida o restaurantes hay en el club?",
+      "audio_dur_s": 4.97,
+      "lat_s": [
+        0.152,
+        0.175,
+        0.201
+      ],
+      "lat_p50_s": 0.175
+    },
+    "wav5.wav": {
+      "text": "¿Puedo ir a los restaurantes?",
+      "audio_dur_s": 4.03,
+      "lat_s": [
+        0.171,
+        0.152,
+        0.15
+      ],
+      "lat_p50_s": 0.152
+    },
+    "wav6.wav": {
+      "text": "Me gustaría ir al cuarto del staff.",
+      "audio_dur_s": 4.41,
+      "lat_s": [
+        0.149,
+        0.163,
+        0.184
+      ],
+      "lat_p50_s": 0.163
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# Override para PC/servidor con GPU NVIDIA (x86_64 + CUDA 12) — desarrollo
+# rápido o inferencia delegada en la LAN.
+#
+# Uso:
+#   docker compose -f docker-compose.yml -f compose.x86-cuda.yml up -d --build
+
+services:
+  llm:
+    build:
+      args:
+        BASE_IMAGE: ${LLM_BASE_IMAGE:-ghcr.io/ggml-org/llama.cpp:server-cuda12}
+    environment:
+      NGL: 99
+      CPU_THREADS: ${CPU_THREADS:-8}
+      # En una GPU de escritorio la ventana amplia es barata
+      CTX_SIZE: ${CTX_SIZE:-32768}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

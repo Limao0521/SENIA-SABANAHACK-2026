@@ -1,0 +1,40 @@
+{
+  "schema_version": "x2_gesture_event.v1",
+  "utterance_id": "ps_mario_t03_dialogue",
+  "audio": {
+    "sha256": "214573ae26b34598930698c282cbf9889c4c551903d83e33d9c62749da6a9932",
+    "sample_rate_hz": 44100,
+    "sample_count": 211968,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "decision": {
+    "communicative_act": "APPLAUSE",
+    "motor_intent": "APPLAUSE",
+    "decision_source": "hriego_manifest"
+  },
+  "binding": {
+    "motion_id": 3017,
+    "area": 11,
+    "asset_sha256": "8a1f9ff36d5700ef776fab8c6a6e00188ff61260f6beaf19ba3d8c997b0d7b45",
+    "animation_player_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da"
+  },
+  "anchor": {
+    "text": "Felicidades",
+    "source_char_start": 1,
+    "source_char_end": 12,
+    "occurrence": 1,
+    "start_sample": 35280,
+    "end_sample": 62622
+  },
+  "alignment": {
+    "method": "quartznet15x5_ctc_viterbi",
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "status": "aligned_ctc_not_human_validated"
+  },
+  "schedule": {
+    "desired_visible_onset_sample": 35280,
+    "dispatch_sample": null,
+    "repeat_count": 1,
+    "status": "unscheduled"
+  }
+}

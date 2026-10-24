@@ -1,0 +1,55 @@
+# =============================================================================
+# compose.hri_club.yml — runner conversacional EN VIVO y SIN ACTUACIÓN (Club N)
+# a bordo del X2 Ultra (PC2). Lo usa deploy/hri_club_sin_actuacion.sh.
+#
+#   micrófono (/aima/hal/audio/capture) → VAD → ASR (contenedor x2-asr, socket UNIX)
+#   → FSM + x2-llm (llama-server :8080, red del host) → Supertonic → altavoces (AimDK)
+#
+# El robot NO se mueve: HRI_NO_ACTUATION=1 + HRIEGO_NO_ACTUATION=1 (lista blanca ROS:
+# solo /aima/hal/audio/playback y foco de audio), import guard de los módulos que
+# actúan, NullBackend y sin servidor de movimiento. Sin docker.sock (no hace falta).
+#
+# Requiere: imagen x2-hri:latest (la de HRIEGO, deploy/compose.hri.yml), x2-llm
+# (deploy/compose.llm.onboard.yml) y x2-asr publicando el socket en /tmp/x2_hri_sock.
+# =============================================================================
+services:
+  hri_club:
+    image: x2-hri:latest
+    container_name: x2-hri-club
+    network_mode: host          # DDS del robot + llama-server en 127.0.0.1:8080
+    ipc: host                   # transporte SHM de FastDDS con los procesos del robot
+    restart: "no"
+    init: true
+    working_dir: /workspace/x2_ultra
+    environment:
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+      FASTRTPS_DEFAULT_PROFILES_FILE: /agibot/software/entry/cfg/ros_dds_configuration.xml
+      ROS_LOCALHOST_ONLY: "0"
+      ROS_LOG_DIR: /tmp/ros_logs
+      PYTHONPATH: /workspace/x2_ultra/src:/workspace/x2_ultra
+      PYTHONUNBUFFERED: "1"
+      # --- seguridad (live_robot aborta si no valen 1; X2_REAL NO debe existir) ---
+      HRI_NO_ACTUATION: "1"
+      HRIEGO_NO_ACTUATION: "1"
+      # --- servicios ---
+      HRI_LLM_URL: http://127.0.0.1:8080
+      HRI_NO_NSENTER: "1"
+      HRI_ASR_SOCK: /tmp/x2_hri_sock/hri_asr.sock
+      SUPERTONIC_MODEL_DIR: /workspace/x2_ultra/experiments/hriego_v2_tts_eval_20261021/model
+      # --- sesión (las fija hri_club_sin_actuacion.sh arrancar [--visit X] [--sin-voz]) ---
+      HRI_IDENTITY_REAL: "0"                       # fase 1: persona simulada
+      HRI_CLUB_VISIT: ${HRI_CLUB_VISIT:-REGULAR}
+      HRI_CLUB_AUDIO: ${HRI_CLUB_AUDIO:-aimdk}     # none = sin voz por altavoces
+      HRI_CLUB_REPETIR: ${HRI_CLUB_REPETIR:-0}
+      HRI_PLAYBACK_SR: ${HRI_PLAYBACK_SR:-16000}   # 0 = la del TTS (44,1 kHz)
+      HRI_MIC_CANAL: ${HRI_MIC_CANAL:-0}           # índice o "mean"
+      HRI_MIC_QOS: ${HRI_MIC_QOS:-best_effort}
+      HRI_VAD_MARGIN_DB: ${HRI_VAD_MARGIN_DB:-12}
+      HRI_VAD_MIN_DBFS: ${HRI_VAD_MIN_DBFS:--45}
+      HRI_VAD_SILENCIO_MS: ${HRI_VAD_SILENCIO_MS:-700}
+      HRI_CLUB_LOG_DIR: /workspace/x2_ultra/out_reto2/live
+    volumes:
+      - ..:/workspace/x2_ultra                      # código + modelo Supertonic + logs
+      - /tmp/x2_hri_sock:/tmp/x2_hri_sock           # socket UNIX del ASR (x2-asr)
+      - /agibot/software/entry/cfg/ros_dds_configuration.xml:/agibot/software/entry/cfg/ros_dds_configuration.xml:ro
+    command: ["python3", "-u", "-m", "x2_ultra.hri_runtime.live_robot"]

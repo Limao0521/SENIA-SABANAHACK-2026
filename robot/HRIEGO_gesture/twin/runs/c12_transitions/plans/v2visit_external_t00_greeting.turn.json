@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_external_t00_greeting",
+ "rank": "external",
+ "emote": "GREETING_EXTERNAL",
+ "motion_id": 1002,
+ "area": 2,
+ "binding": "1002/2",
+ "anchor_s": 0.66,
+ "dur_s": 3.3436734693877552,
+ "lead_onset_s": 1.199984652997955,
+ "lead_stroke_s": 2.219988144999661,
+ "policy_dispatch_s": {
+  "stroke": -1.5599881449996609,
+  "mid": -1.0499863989988079,
+  "onset": -0.539984652997955
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 5.33999892599968
+}

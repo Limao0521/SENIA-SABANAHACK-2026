@@ -1,0 +1,40 @@
+{
+  "schema_version": "x2_gesture_event.v1",
+  "utterance_id": "T07",
+  "audio": {
+    "sha256": "e2b670216a37bc225b389f091001a986c7d473307606a577413f8075e1d81d7e",
+    "sample_rate_hz": 44100,
+    "sample_count": 141312,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "decision": {
+    "communicative_act": "HEART",
+    "motor_intent": "HEART",
+    "decision_source": "hriego_manifest"
+  },
+  "binding": {
+    "motion_id": 3004,
+    "area": 11,
+    "asset_sha256": "0cbaeda6acbf0c00b92479ae6ad3ae6ffdd8a068b90de2c7e4b26305ab5d730a",
+    "animation_player_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da"
+  },
+  "anchor": {
+    "text": "me encanta",
+    "source_char_start": 16,
+    "source_char_end": 26,
+    "occurrence": 1,
+    "start_sample": 72324,
+    "end_sample": 89082
+  },
+  "alignment": {
+    "method": "quartznet15x5_ctc_viterbi",
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "status": "aligned_ctc_not_human_validated"
+  },
+  "schedule": {
+    "desired_visible_onset_sample": 72324,
+    "dispatch_sample": null,
+    "repeat_count": 1,
+    "status": "unscheduled"
+  }
+}

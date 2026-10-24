@@ -1,0 +1,41 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "v2visit_staff_t03_dialogue",
+  "binding_key": "3028/11",
+  "policy": {
+    "align": "onset",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false
+  },
+  "audio": {
+    "sha256": "38f9d2f2f6071fe9f8650ea018b5492017ef2e044c9cff270451ba5df61b2048",
+    "sample_rate_hz": 44100,
+    "sample_count": 193536,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 0,
+  "dispatch_sample": 28226,
+  "phases": {
+    "dispatch_sample": 28226,
+    "expected_onset_sample": 37926,
+    "expected_stroke_sample": 52920,
+    "expected_end_sample": 121716,
+    "end_after_audio_end": false
+  },
+  "dispatches": [
+    {
+      "motion_id": 3028,
+      "area": 11,
+      "dispatch_sample": 28226,
+      "dispatch_sample_with_start_delay": 28226,
+      "repeat_count": 1
+    }
+  ]
+}

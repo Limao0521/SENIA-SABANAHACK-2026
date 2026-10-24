@@ -1,0 +1,3 @@
+csv=/home/luis/GitHub/x2_ultra-reto2/assets/hri/mc_classic/animation/NM_bow.csv audio_start=2.00 csv_start=1.86 csv_end=5.26 end=5.96
+foot geoms: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+{"fix": "baseline", "x0": 4.391218717799286, "x_end": 3.8215333089426595, "drift_total_m": -0.5696854088566266, "drift_during_bow_m": -0.5387757448370123, "min_vx_during_bow": -0.2655945412256727, "com_margin_back_min_m": 0.008228438781914704, "max_tilt_deg": 5.221030976917365, "max_waistp_q": 0.21379969583007577, "fell": false, "gesture_window": [2.862000000000001, 6.262000000000001]}

@@ -1,0 +1,79 @@
+# compose.onboard.yml — servicio `onboard` para el PC2 del X2 Ultra (Jetson Orin NX).
+#
+# Uso (desde la raíz del repo, una vez copiada al Orin):
+#   docker compose -f deploy/compose.onboard.yml up -d
+#   docker compose -f deploy/compose.onboard.yml exec onboard \
+#       python3 -m x2_ultra.real.check
+#
+# Equivalente directo:
+#   ./deploy/onboard.sh check
+#
+# Notas:
+#   - network_mode: host → el contenedor hereda la red del PC2 y ve al robot por
+#     develop0 (10.0.1.41) con descubrimiento local FastDDS. No exponemos puertos.
+#   - El repo se monta en solo lectura; logs/real se sobremonta con rw.
+#   - El source de x2_ultra se lee del repo montado (cambios sin rebuild).
+#   - Sin MuJoCo ni render: el gemelo corre en el PC de desarrollo, no aquí.
+#   - El contenedor se queda a la espera (sleep infinity). El healthcheck verifica
+#     que los imports cargan; la prueba real contra el robot se lanza a mano con
+#     `onboard.sh check` (solo lectura, no mueve el robot).
+services:
+  onboard:
+    image: x2-onboard:latest
+    # NOTA: `docker compose build` NO puede pasar --build-context, que es como
+    # el Dockerfile recibe el SDK AimDK aarch64. Por eso la imagen se construye
+    # con `deploy/build_aarch64.sh` (que usa `docker buildx build`); este bloque
+    # `build:` queda como referencia del context/dockerfile pero no se usa.
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.aarch64
+      target: runtime
+    container_name: x2-onboard
+    network_mode: host
+    restart: "no"
+    stdin_open: true
+    tty: true
+    init: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:rw,nosuid,size=64m
+    environment:
+      X2_REAL: robot
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+      ROS_LOCALHOST_ONLY: "0"
+      ROS_LOG_DIR: /tmp/ros_logs
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      HOME: /tmp
+      # El repo montado tiene prioridad sobre la copia del build: cambios sin rebuild.
+      PYTHONPATH: /workspace/x2_ultra/src
+      # Si tienes DISPLAY en el Orin (por ejemplo sesión gráfica abierta), las
+      # ventanas Tk de arms/walk/motions pueden usarlo; si no, se ignoran.
+      DISPLAY: "${DISPLAY:-:0}"
+    volumes:
+      # Repo completo en solo lectura (el source, los scripts, tests opcionales…).
+      - ..:/workspace/x2_ultra:ro
+      # Socket X11 para las ventanas Tk (andar/brazos/movimientos). `docker exec`
+      # no puede añadir mounts: el socket debe ir montado desde aquí. En un Orin
+      # headless la ruta puede no existir (docker crea un directorio vacío: inofensivo).
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      # logs/real se sobremonta con escritura (el resto del repo sigue ro).
+      - ../logs/real:/workspace/x2_ultra/logs/real:rw
+      # Assets HRI precomputados (identidades + paquetes HRIEGO): el brain los usa
+      # en config A. Se montan también como ro desde el repo; si los mueves a otro
+      # sitio, cambia esta ruta.
+      - ../assets/hri:/workspace/x2_ultra/assets/hri:ro
+    # Healthcheck ligero: no toca el robot, solo confirma que los imports cargan.
+    # Para una comprobación real contra el robot: `onboard.sh check`.
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import rclpy; from aimdk_msgs.msg import McCommonState; print('ok')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    # Por defecto el contenedor se queda a la espera. El usuario corre dentro con
+    # `onboard.sh <subcomando>` o con `docker compose exec onboard …`.
+    command: ["sleep", "infinity"]

@@ -1,0 +1,51 @@
+# Imagen del servidor de voz en la nube (ASR faster-whisper + TTS Supertonic).
+#
+# Contexto de construcción: la RAÍZ del repositorio (lo fija compose.nube.yml con
+# `context: ../..`), de modo que las rutas COPY son relativas al repositorio.
+# Construcción manual (desde la raíz):
+#   docker build -f deploy/nube/Dockerfile.voz -t x2-nube/voz .
+#
+# Solo se copia el paquete mínimo: x2_ultra/__init__.py (ligero, sin dependencias)
+# y x2_ultra/hri_runtime/ (su __init__.py es de carga perezosa; nube_voz importa
+# .asr y .tts, y tts importa .personas — nada más). Los módulos de robótica
+# (app.py, live_robot*.py, motion_online/) se copian pero nunca se importan aquí;
+# las dependencias pesadas del robot (ROS, mujoco) NO se instalan en esta imagen.
+
+# CUDA 12.4 runtime + cuDNN: lo que necesita ctranslate2 (faster-whisper) en GPU.
+FROM nvidia/cuda:12.4.1-cudnn-runtime-ubuntu22.04
+
+# Sin interacción y con repos al día.
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        python3 \
+        python3-pip \
+        libsndfile1 \
+        ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Motores de voz y utilidades (versiones fijadas = mismas que a bordo del robot
+# para que la voz y la transcripción sean idénticas en nube y local).
+# numpy<2: ctranslate2 4.x (usado por faster-whisper 1.1.1) no es compatible con
+# la ABI de numpy 2.x; se fija para evitar fallos de importación en la imagen.
+RUN pip3 install --no-cache-dir \
+        faster-whisper==1.1.1 \
+        supertonic==1.3.1 \
+        onnxruntime \
+        soundfile \
+        scipy \
+        "numpy<2"
+
+# Código del runtime HRI: únicamente el paquete x2_ultra y su subpaquete hri_runtime.
+WORKDIR /app
+COPY src/x2_ultra/__init__.py /app/src/x2_ultra/__init__.py
+COPY src/x2_ultra/hri_runtime/ /app/src/x2_ultra/hri_runtime/
+
+# Los __pycache__ del PC de desarrollo no deben viajar en la imagen.
+RUN find /app/src -name '__pycache__' -type d -prune -exec rm -rf {} +
+
+ENV PYTHONPATH=/app/src \
+    PYTHONUNBUFFERED=1
+
+# Servidor de voz: lo arranca compose.nube.yml con --calentar.
+EXPOSE 9000
+CMD ["python3", "-m", "x2_ultra.hri_runtime.nube_voz", "--host", "0.0.0.0", "--port", "9000"]

@@ -1,0 +1,45 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "ps_josaed_t00_greeting",
+  "binding_key": "1002/2",
+  "policy": {
+    "align": "auto",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false,
+    "align_policy_used": "stroke",
+    "align_policy_tried": [
+      "stroke"
+    ]
+  },
+  "audio": {
+    "sha256": "153f8b629835eac3d9e856e554b7d8817f59491c6a08540e6764aeec486123fc",
+    "sample_rate_hz": 44100,
+    "sample_count": 242688,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 17640,
+  "dispatch_sample": -17640,
+  "phases": {
+    "dispatch_sample": -17640,
+    "expected_onset_sample": -10584,
+    "expected_stroke_sample": 34398,
+    "expected_end_sample": 171991,
+    "end_after_audio_end": false
+  },
+  "dispatches": [
+    {
+      "motion_id": 1002,
+      "area": 2,
+      "dispatch_sample": -17640,
+      "dispatch_sample_with_start_delay": 0,
+      "repeat_count": 1
+    }
+  ]
+}

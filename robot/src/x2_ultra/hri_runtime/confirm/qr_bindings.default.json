@@ -1,0 +1,23 @@
+{
+  "_comment": "Bindings sintéticos credencial->persona (person_id de assets/hri/identities.json). Sin datos personales ni claves: los cid/textos son las credenciales demo de IDV-01B (config/demo_credentials.json) y los QR compactos IDV2 de ~/Downloads. Sobrescribible con HRI_QR_BINDINGS.",
+  "bindings": [
+    {"credential": "IDV2.t6nuic0_EcxSbm81a42yyg", "person_id": "P005", "category": "VIP"},
+    {"credential": "IDV2.4sWOLajqsmEkJJFhEPkT4A", "person_id": "P003", "category": "REGULAR"},
+    {"credential": "IDV2.qhHB31v-RrYMqxoXbn1qAA", "person_id": "P004", "category": "INVITED_GUEST"},
+    {"credential": "IDV2.WCwWUPOA0ZUamgraoO4l8A", "person_id": "P001", "category": "STAFF"},
+    {"credential": "QC1-VIP-000001", "person_id": "P005", "category": "VIP"},
+    {"credential": "QC1-REG-000001", "person_id": "P003", "category": "REGULAR"},
+    {"credential": "QC1-GST-000001", "person_id": "P004", "category": "INVITED_GUEST"},
+    {"credential": "QC1-STF-000001", "person_id": "P001", "category": "STAFF"},
+    {"credential": "QR01-VIP-0001", "person_id": "P005", "category": "VIP"},
+    {"credential": "QR01-REG-0001", "person_id": "P003", "category": "REGULAR"},
+    {"credential": "QR01-GST-0001", "person_id": "P004", "category": "INVITED_GUEST"},
+    {"credential": "DEMO-VIP-001", "person_id": "P005", "category": "VIP"},
+    {"credential": "DEMO-REG-001", "person_id": "P003", "category": "REGULAR"},
+    {"credential": "DEMO-GST-001", "person_id": "P004", "category": "INVITED_GUEST"},
+    {"credential": "IDV2.t6nuic0_EcxSbm81a42yyg", "person_id": "P006", "category": "VIP"},
+    {"credential": "QC1-VIP-000001", "person_id": "P006", "category": "VIP"},
+    {"credential": "QR01-VIP-0001", "person_id": "P006", "category": "VIP"},
+    {"credential": "DEMO-VIP-001", "person_id": "P006", "category": "VIP"}
+  ]
+}

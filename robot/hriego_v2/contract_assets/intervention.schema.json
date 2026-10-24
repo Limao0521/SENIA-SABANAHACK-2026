@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/rcp01c/intervention-v1.schema.json",
+  "title": "RCP-01c Qwen intervention",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "scene_id", "utterance_id", "speech", "communicative_acts", "motor_intents"],
+  "properties": {
+    "schema_version": {"const": "rcp01c.intervention.v1"},
+    "scene_id": {"enum": ["E1", "E2", "E3"]},
+    "utterance_id": {"type": "string", "minLength": 1},
+    "speech": {"type": "string", "minLength": 1},
+    "communicative_acts": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["GREETING", "INFORMATION_REQUEST", "INFORM", "GUIDE", "ACKNOWLEDGE", "CLARIFICATION_REQUEST", "CLOSING"]}},
+    "motor_intents": {"type": "array", "items": {"$ref": "#/$defs/motorIntent"}}
+  },
+  "$defs": {
+    "motorIntent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event_id", "type", "trigger_text", "reference_frame", "target_vector"],
+      "properties": {
+        "event_id": {"type": "string", "minLength": 1},
+        "type": {"enum": ["POINT_RIGHT", "POINT_LEFT", "POINT_FRONT"]},
+        "trigger_text": {"type": "string", "minLength": 1},
+        "reference_frame": {"const": "X2_base_local"},
+        "target_vector": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}}
+      }
+    }
+  }
+}

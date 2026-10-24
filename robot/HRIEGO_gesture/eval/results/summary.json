@@ -1,0 +1,190 @@
+{
+ "n_runs": 100,
+ "n_cases": 50,
+ "json_valid_rate": 1.0,
+ "contract_valid_rate": 0.94,
+ "dialogue_confusion": {
+  "SOCIAL_HEART": {
+   "SOCIAL_HEART": 8
+  },
+  "APPLAUSE": {
+   "APPLAUSE": 8
+  },
+  "NEGATION_NORMAL": {
+   "NEGATION_NORMAL": 8
+  },
+  "NEGATION_STRONG": {
+   "NEGATION_STRONG": 8
+  },
+  "CONFIRMATION": {
+   "INVALID": 4,
+   "CONFIRMATION": 4
+  },
+  "THUMBS_UP": {
+   "THUMBS_UP": 7,
+   "INVALID": 1
+  },
+  "NONE": {
+   "NONE": 16
+  }
+ },
+ "dialogue_per_emote": {
+  "NEGATION_NORMAL": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "NEGATION_STRONG": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "CONFIRMATION": {
+   "precision": 1.0,
+   "recall": 0.5,
+   "tp": 4,
+   "fp": 0,
+   "fn": 4
+  },
+  "THUMBS_UP": {
+   "precision": 1.0,
+   "recall": 0.875,
+   "tp": 7,
+   "fp": 0,
+   "fn": 1
+  },
+  "SOCIAL_HEART": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "APPLAUSE": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "NONE": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 16,
+   "fp": 0,
+   "fn": 0
+  }
+ },
+ "none_false_positive_rate": 0.0,
+ "dialogue_exact_accuracy": 0.922,
+ "trigger_literal_rate": 0.9286,
+ "n_with_intent": 84,
+ "greeting_emote_use_rate": 1.0,
+ "staff_phrase_compliance": 1.0,
+ "farewell": {
+  "farewell_vip_1_r1": "SOCIAL_HEART",
+  "farewell_vip_1_r2": "SOCIAL_HEART",
+  "farewell_vip_2_r1": "SOCIAL_HEART",
+  "farewell_vip_2_r2": "SOCIAL_HEART",
+  "farewell_guest_1_r1": "FAREWELL_WAVE",
+  "farewell_guest_1_r2": "FAREWELL_WAVE",
+  "farewell_staff_1_r1": "FAREWELL_WAVE",
+  "farewell_staff_1_r2": "INVALID"
+ },
+ "farewell_vip_heart_rate": 1.0,
+ "point_direction_accuracy": 1.0,
+ "point_by_expected": {
+  "POINT_RIGHT": [
+   "POINT_RIGHT",
+   "POINT_RIGHT",
+   "POINT_RIGHT",
+   "POINT_RIGHT"
+  ],
+  "POINT_FRONT": [
+   "POINT_FRONT",
+   "POINT_FRONT",
+   "POINT_FRONT",
+   "POINT_FRONT"
+  ]
+ },
+ "llm_latency_s": {
+  "p50": 1.338,
+  "p95": 1.485,
+  "mean": 1.342
+ },
+ "tts": {
+  "n": 48,
+  "synth_s_p50": 0.868,
+  "synth_s_p95": 1.142,
+  "rtf_mean": 0.238
+ },
+ "error_breakdown": {
+  "trigger_text must be a literal substring of speech": 6
+ },
+ "failures": [
+  {
+   "turn": "dlg_confirmation_1_r1",
+   "expected": "CONFIRMATION",
+   "got": "INVALID",
+   "speech": "Entonces el laboratorio está a tu derecha, sí.",
+   "utt": "¿Entonces el laboratorio queda a tu derecha, verdad? Confírmamelo.",
+   "errors": [
+    "trigger_text must be a literal substring of speech"
+   ]
+  },
+  {
+   "turn": "dlg_confirmation_1_r2",
+   "expected": "CONFIRMATION",
+   "got": "INVALID",
+   "speech": "Entonces el laboratorio está a tu derecha, sí.",
+   "utt": "¿Entonces el laboratorio queda a tu derecha, verdad? Confírmamelo.",
+   "errors": [
+    "trigger_text must be a literal substring of speech"
+   ]
+  },
+  {
+   "turn": "dlg_confirmation_4_r1",
+   "expected": "CONFIRMATION",
+   "got": "INVALID",
+   "speech": "Confirmando tu identidad como recepcionista del laboratorio",
+   "utt": "¿Me confirmas que estoy hablando con el recepcionista del laboratorio?",
+   "errors": [
+    "trigger_text must be a literal substring of speech"
+   ]
+  },
+  {
+   "turn": "dlg_confirmation_4_r2",
+   "expected": "CONFIRMATION",
+   "got": "INVALID",
+   "speech": "Confirmando tu identidad como recepcionista del laboratorio",
+   "utt": "¿Me confirmas que estoy hablando con el recepcionista del laboratorio?",
+   "errors": [
+    "trigger_text must be a literal substring of speech"
+   ]
+  },
+  {
+   "turn": "dlg_thumbs_up_2_r2",
+   "expected": "THUMBS_UP",
+   "got": "INVALID",
+   "speech": "Está bien, el recorrido será en silencio",
+   "utt": "Se me ocurre que sería buena idea hacer el recorrido en silencio, ¿de acuerdo?",
+   "errors": [
+    "trigger_text must be a literal substring of speech"
+   ]
+  },
+  {
+   "turn": "farewell_staff_1_r2",
+   "expected": "FAREWELL_WAVE|NONE",
+   "got": "INVALID",
+   "speech": "¡Hasta luego! El laboratorio está a su derecha.",
+   "utt": null,
+   "errors": [
+    "trigger_text must be a literal substring of speech"
+   ]
+  }
+ ]
+}

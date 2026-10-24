@@ -1,0 +1,305 @@
+{
+ "n_runs": 104,
+ "n_cases": 52,
+ "json_valid_rate": 1.0,
+ "contract_valid_rate": 0.8654,
+ "dialogue_confusion": {
+  "SOCIAL_HEART": {
+   "SOCIAL_HEART": 4,
+   "INVALID": 4
+  },
+  "APPLAUSE": {
+   "APPLAUSE": 6,
+   "INVALID": 2
+  },
+  "NEGATION_NORMAL": {
+   "NEGATION_NORMAL": 8
+  },
+  "NEGATION_STRONG": {
+   "NEGATION_STRONG": 8
+  },
+  "CONFIRMATION": {
+   "CONFIRMATION": 8
+  },
+  "THUMBS_UP": {
+   "INVALID": 1,
+   "THUMBS_UP": 7
+  },
+  "NONE": {
+   "NONE": 13,
+   "INVALID": 3
+  }
+ },
+ "dialogue_per_emote": {
+  "NEGATION_NORMAL": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "NEGATION_STRONG": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "CONFIRMATION": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "THUMBS_UP": {
+   "precision": 1.0,
+   "recall": 0.875,
+   "tp": 7,
+   "fp": 0,
+   "fn": 1
+  },
+  "SOCIAL_HEART": {
+   "precision": 1.0,
+   "recall": 0.5,
+   "tp": 4,
+   "fp": 0,
+   "fn": 4
+  },
+  "APPLAUSE": {
+   "precision": 1.0,
+   "recall": 0.75,
+   "tp": 6,
+   "fp": 0,
+   "fn": 2
+  },
+  "NONE": {
+   "precision": 1.0,
+   "recall": 0.812,
+   "tp": 13,
+   "fp": 0,
+   "fn": 3
+  }
+ },
+ "none_false_positive_rate": 0.188,
+ "dialogue_exact_accuracy": 0.844,
+ "trigger_literal_rate": 0.967,
+ "n_with_intent": 91,
+ "greeting_emote_use_rate": 1.0,
+ "staff_phrase_compliance": 1.0,
+ "farewell": {
+  "farewell_vip_1_r1": "INVALID",
+  "farewell_vip_1_r2": "SOCIAL_HEART",
+  "farewell_vip_2_r1": "SOCIAL_HEART",
+  "farewell_vip_2_r2": "INVALID",
+  "farewell_guest_1_r1": "FAREWELL_WAVE",
+  "farewell_guest_1_r2": "INVALID",
+  "farewell_staff_1_r1": "FAREWELL_WAVE",
+  "farewell_staff_1_r2": "FAREWELL_WAVE"
+ },
+ "farewell_vip_heart_rate": 0.5,
+ "point_direction_accuracy": 0.917,
+ "point_by_expected": {
+  "POINT_RIGHT": [
+   "POINT_RIGHT",
+   "POINT_RIGHT",
+   "POINT_RIGHT",
+   "POINT_RIGHT"
+  ],
+  "POINT_LEFT": [
+   "POINT_LEFT",
+   "POINT_LEFT",
+   "POINT_LEFT",
+   "POINT_LEFT"
+  ],
+  "POINT_FRONT": [
+   "POINT_FRONT",
+   "INVALID",
+   "POINT_FRONT",
+   "POINT_FRONT"
+  ]
+ },
+ "extra": {
+  "contract_valid_first_attempt": 0.7308,
+  "contract_valid_after_retry": 0.8654,
+  "retry_rate": 0.2692,
+  "retry_recovered": 14,
+  "n_with_intent_first_attempt": 90,
+  "trigger_literal_rate": 0.9556,
+  "trigger_whole_word_rate": 0.9556,
+  "lexicon_pass_rate": 0.8778,
+  "rank_leak_count_first_attempt": 0,
+  "rank_leak_count_final_valid": 0,
+  "speech_words_p50": 7.0,
+  "speech_words_min": 2,
+  "speech_lt6_words": 15,
+  "llm_latency_first_attempt_s": {
+   "p50": 1.317,
+   "p95": 1.546
+  },
+  "llm_latency_with_retry_s": {
+   "p50": 1.359,
+   "p95": 2.933
+  },
+  "first_attempt_passes_v2_validator": 0.7308
+ },
+ "llm_latency_s": {
+  "p50": 1.33,
+  "p95": 1.565,
+  "mean": 1.341
+ },
+ "tts": {
+  "n": 45,
+  "synth_s_p50": 0.67,
+  "synth_s_p95": 0.955,
+  "rtf_mean": 0.17
+ },
+ "error_breakdown": {
+  "speech must have at least 6 words": 8,
+  "trigger_text must be a literal substring of speech": 3,
+  "trigger_text must contain an anchor cue of SOCIAL_HEART": 2,
+  "trigger_text must contain an anchor cue of THUMBS_UP": 1
+ },
+ "failures": [
+  {
+   "turn": "guide_point_front_1_r2",
+   "expected": "POINT_FRONT",
+   "got": "INVALID",
+   "speech": "frente a mí",
+   "utt": null,
+   "errors": [
+    "speech must have at least 6 words"
+   ]
+  },
+  {
+   "turn": "dlg_social_heart_2_r1",
+   "expected": "SOCIAL_HEART",
+   "got": "INVALID",
+   "speech": "Gracias por el elogio, me encanta ayudarte",
+   "utt": "Eres un robot muy amable, me caes genial.",
+   "errors": [
+    "trigger_text must be a literal substring of speech"
+   ]
+  },
+  {
+   "turn": "dlg_social_heart_2_r2",
+   "expected": "SOCIAL_HEART",
+   "got": "INVALID",
+   "speech": "Gracias, me encanto el recorrido",
+   "utt": "Eres un robot muy amable, me caes genial.",
+   "errors": [
+    "speech must have at least 6 words"
+   ]
+  },
+  {
+   "turn": "dlg_social_heart_3_r1",
+   "expected": "SOCIAL_HEART",
+   "got": "INVALID",
+   "speech": "Qué gusto verte de nuevo, Carlos.",
+   "utt": "Qué gusto volver a verte, te extrañaba.",
+   "errors": [
+    "trigger_text must contain an anchor cue of SOCIAL_HEART: ['gracias', 'me encanta', 'me encantó', 'me alegra', 'qué amable', 'aprecio', 'cariño', 'encantado', 'encantada', 'agradezco', 'qué gusto']"
+   ]
+  },
+  {
+   "turn": "dlg_social_heart_3_r2",
+   "expected": "SOCIAL_HEART",
+   "got": "INVALID",
+   "speech": "Qué gusto verte de nuevo, Carlos.",
+   "utt": "Qué gusto volver a verte, te extrañaba.",
+   "errors": [
+    "trigger_text must contain an anchor cue of SOCIAL_HEART: ['gracias', 'me encanta', 'me encantó', 'me alegra', 'qué amable', 'aprecio', 'cariño', 'encantado', 'encantada', 'agradezco', 'qué gusto']"
+   ]
+  },
+  {
+   "turn": "dlg_applause_2_r1",
+   "expected": "APPLAUSE",
+   "got": "INVALID",
+   "speech": "Hoy terminé por fin mi tesis.",
+   "utt": "Hoy terminé por fin mi tesis.",
+   "errors": [
+    "trigger_text must be a literal substring of speech"
+   ]
+  },
+  {
+   "turn": "dlg_applause_2_r2",
+   "expected": "APPLAUSE",
+   "got": "INVALID",
+   "speech": "Hoy terminé por fin mi tesis.",
+   "utt": "Hoy terminé por fin mi tesis.",
+   "errors": [
+    "trigger_text must be a literal substring of speech"
+   ]
+  },
+  {
+   "turn": "dlg_thumbs_up_1_r1",
+   "expected": "THUMBS_UP",
+   "got": "INVALID",
+   "speech": "Me parece bien que primero visite el laboratorio y luego te cuente que opino",
+   "utt": "Propongo que primero visite el laboratorio y luego pase a recepción, ¿te parece bien?",
+   "errors": [
+    "trigger_text must contain an anchor cue of THUMBS_UP: ['excelente idea', 'buena idea', 'de acuerdo', 'me parece bien', 'perfecto']"
+   ]
+  },
+  {
+   "turn": "dlg_none_2_r1",
+   "expected": "NONE",
+   "got": "INVALID",
+   "speech": "Gracias por su visita, Pablo.",
+   "utt": "Ok, gracias.",
+   "errors": [
+    "speech must have at least 6 words"
+   ]
+  },
+  {
+   "turn": "dlg_none_5_r1",
+   "expected": "NONE",
+   "got": "INVALID",
+   "speech": "Gracias, me encanto el recorrido",
+   "utt": "Dicen que la palabra «gracias» es la más usada en recepción.",
+   "errors": [
+    "speech must have at least 6 words"
+   ]
+  },
+  {
+   "turn": "dlg_none_5_r2",
+   "expected": "NONE",
+   "got": "INVALID",
+   "speech": "Gracias, me encanto el recorrido",
+   "utt": "Dicen que la palabra «gracias» es la más usada en recepción.",
+   "errors": [
+    "speech must have at least 6 words"
+   ]
+  },
+  {
+   "turn": "farewell_vip_1_r1",
+   "expected": "SOCIAL_HEART",
+   "got": "INVALID",
+   "speech": "Hasta la próxima, Doctora Ramírez.",
+   "utt": null,
+   "errors": [
+    "speech must have at least 6 words"
+   ]
+  },
+  {
+   "turn": "farewell_vip_2_r2",
+   "expected": "SOCIAL_HEART",
+   "got": "INVALID",
+   "speech": "Hasta la próxima, Doctora Ramírez.",
+   "utt": null,
+   "errors": [
+    "speech must have at least 6 words"
+   ]
+  },
+  {
+   "turn": "farewell_guest_1_r2",
+   "expected": "FAREWELL_WAVE|NONE",
+   "got": "INVALID",
+   "speech": "Gracias por visitarnos, hasta luego",
+   "utt": null,
+   "errors": [
+    "speech must have at least 6 words"
+   ]
+  }
+ ]
+}

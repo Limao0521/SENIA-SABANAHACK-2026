@@ -1,0 +1,11 @@
+.venv-face/
+__pycache__/
+*.py[cod]
+
+# SQLite sidecars and session artifacts. The base registry is versioned for HRIEGO v2.
+/data/institutional_identity.sqlite3-wal
+/data/institutional_identity.sqlite3-shm
+/outputs/UF_IDREG_01/
+
+# Downloaded model weights (the UniFace code and license are vendored).
+/thirdparty/uniface-models/*.onnx

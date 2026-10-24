@@ -1,0 +1,988 @@
+{
+ "visit_id": "ps_josaed",
+ "rank": "EXTERNAL",
+ "person_dir": "josaed",
+ "profile_from_db": {
+  "person_id": "P002",
+  "display_name": "Josaed",
+  "rank_code": "EXTERNAL",
+  "rank_name": "Visitante externo"
+ },
+ "face_recognition": {
+  "photo": "/home/luis/Downloads/Josaed",
+  "status": "KNOWN",
+  "faces": 1,
+  "uniface_seconds": {
+   "image_seconds": 0.499753502997919,
+   "detection_seconds": 0.46034132900240365,
+   "embedding_seconds": 0.03938616500090575
+  },
+  "bbox": [
+   296.7986145019531,
+   675.4414672851562,
+   592.3419189453125,
+   1050.8037109375
+  ],
+  "confidence": 0.9999823570251465,
+  "top1_id": "P002",
+  "top1_score": 1.0000001192092896,
+  "top2_id": "P003",
+  "top2_score": 0.26668140292167664,
+  "margin": 0.7333187162876129,
+  "profile": {
+   "person_id": "P002",
+   "display_name": "Josaed",
+   "person_status": "active",
+   "rank_code": "EXTERNAL",
+   "rank_name": "external workers",
+   "rank_updated_at": "2026-10-20T22:35:22.063Z",
+   "identity_status": "CONFIRMED"
+  },
+  "latency_s": 2.488,
+  "wall_from_orchestrator_s": 3.174
+ },
+ "scenario": "reception_desk_front",
+ "route_direction": "front",
+ "contract": "rcp01c.intervention.v2 (BF fix-B catalog, schema B flat, streaming) + persona card W3",
+ "pipeline": "phase1 personas: face_id(reto2 probe) + stream_chat 8080 + AsmPersona + persona_validate + Supertonic per-rank prosody (voice_config.json) + CTC anchor_plan --align auto",
+ "turns": [
+  {
+   "turn_id": "ps_josaed_t00_greeting",
+   "state": "GREETING",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"GREETING_EXTERNAL\",\"speech\":\"Bienvenido, Josaed. Su visita queda registrada; proceda al mostrador.\",\"trigger_text\":\"bienvenido\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_josaed_t00_greeting",
+     "speech": "Bienvenido, Josaed. Su visita queda registrada; proceda al mostrador.",
+     "communicative_acts": [
+      "GREETING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_josaed_t00_greeting",
+       "type": "GREETING_EXTERNAL",
+       "trigger_text": "Bienvenido"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.2209,
+     "t_type_known": 0.2938,
+     "t_first_sentence": 0.4043,
+     "t_speech_done": 0.5392,
+     "t_total": 0.6404,
+     "prompt_tokens": 1422,
+     "completion_tokens": 39,
+     "cached_tokens": 724,
+     "prompt_ms": 144.643,
+     "predicted_ms": 419.478,
+     "key_order": null,
+     "total_s": 0.6404
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5052,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"GREETING_EXTERNAL\",\"speech\":\"Bienvenido, Josaed. Su visita queda registrada; proceda al mostrador.\",\"trigger_text\":\"bienvenido\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_josaed_t00_greeting",
+       "speech": "Bienvenido, Josaed. Su visita queda registrada; proceda al mostrador.",
+       "communicative_acts": [
+        "GREETING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_josaed_t00_greeting",
+         "type": "GREETING_EXTERNAL",
+         "trigger_text": "Bienvenido"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.2209,
+       "t_type_known": 0.2938,
+       "t_first_sentence": 0.4043,
+       "t_speech_done": 0.5392,
+       "t_total": 0.6404,
+       "prompt_tokens": 1422,
+       "completion_tokens": 39,
+       "cached_tokens": 724,
+       "prompt_ms": 144.643,
+       "predicted_ms": 419.478,
+       "key_order": null,
+       "total_s": 0.6404
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.2209,
+     "t_type_known": 0.2938,
+     "t_first_sentence": 0.4043,
+     "t_speech_done": 0.5392,
+     "t_total": 0.6404,
+     "prompt_tokens": 1422,
+     "completion_tokens": 39,
+     "cached_tokens": 724,
+     "prompt_ms": 144.643,
+     "predicted_ms": 419.478,
+     "key_order": null,
+     "total_s": 0.6404
+    },
+    "total_llm_s": 0.6404
+   },
+   "decision": {
+    "requested": "GREETING_EXTERNAL",
+    "effective": "GREETING_EXTERNAL",
+    "suppressed": null,
+    "trigger_text": "Bienvenido",
+    "trigger_char_start": 0,
+    "trigger_char_end": 10,
+    "fsm_mandated": true
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 9,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/josaed/wav/ps_josaed/ps_josaed_t00_greeting.wav",
+    "wav_sha256": "153f8b629835eac3d9e856e554b7d8817f59491c6a08540e6764aeec486123fc",
+    "sample_rate": 44100,
+    "duration_s": 5.4602,
+    "synth_s": 0.8403,
+    "voice": "M1",
+    "prosody": "M1 speed=1.05 (rank EXTERNAL × state GREETING)"
+   },
+   "timings": {
+    "llm_total_s": 0.641,
+    "llm_first_attempt": {
+     "t_first_token": 0.2209,
+     "t_type_known": 0.2938,
+     "t_first_sentence": 0.4043,
+     "t_speech_done": 0.5392,
+     "t_total": 0.6404
+    },
+    "tts_full_s": 1.522,
+    "tts_synth_s": 0.8403,
+    "tts_first_sentence_s": 0.3609,
+    "first_sentence": "Bienvenido, Josaed.",
+    "e2e_llm_req_to_first_audio_s": 0.765
+   },
+   "plan": {
+    "emote": "GREETING_EXTERNAL",
+    "trigger_start_s": 0.78,
+    "trigger_end_s": 1.28,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.4399773242630385
+   }
+  },
+  {
+   "turn_id": "ps_josaed_t01_guidance",
+   "state": "GUIDANCE",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"POINT_FRONT\",\"speech\":\"Frente a mí, el mostrador de recepción está justo frente al robot que habla.\",\"trigger_text\":\"frente a mí\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_josaed_t01_guidance",
+     "speech": "Frente a mí, el mostrador de recepción está justo frente al robot que habla.",
+     "communicative_acts": [
+      "GUIDE"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_josaed_t01_guidance",
+       "type": "POINT_FRONT",
+       "trigger_text": "Frente a mí",
+       "reference_frame": "X2_base_local",
+       "target_vector": [
+        1.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.1945,
+     "t_type_known": 0.2458,
+     "t_first_sentence": 0.4766,
+     "t_speech_done": 0.4766,
+     "t_total": 0.5783,
+     "prompt_tokens": 1509,
+     "completion_tokens": 37,
+     "cached_tokens": 939,
+     "prompt_ms": 123.439,
+     "predicted_ms": 383.635,
+     "key_order": null,
+     "total_s": 0.5783
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5417,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"POINT_FRONT\",\"speech\":\"Frente a mí, el mostrador de recepción está justo frente al robot que habla.\",\"trigger_text\":\"frente a mí\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_josaed_t01_guidance",
+       "speech": "Frente a mí, el mostrador de recepción está justo frente al robot que habla.",
+       "communicative_acts": [
+        "GUIDE"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_josaed_t01_guidance",
+         "type": "POINT_FRONT",
+         "trigger_text": "Frente a mí",
+         "reference_frame": "X2_base_local",
+         "target_vector": [
+          1.0,
+          0.0,
+          0.0
+         ]
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.1945,
+       "t_type_known": 0.2458,
+       "t_first_sentence": 0.4766,
+       "t_speech_done": 0.4766,
+       "t_total": 0.5783,
+       "prompt_tokens": 1509,
+       "completion_tokens": 37,
+       "cached_tokens": 939,
+       "prompt_ms": 123.439,
+       "predicted_ms": 383.635,
+       "key_order": null,
+       "total_s": 0.5783
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.1945,
+     "t_type_known": 0.2458,
+     "t_first_sentence": 0.4766,
+     "t_speech_done": 0.4766,
+     "t_total": 0.5783,
+     "prompt_tokens": 1509,
+     "completion_tokens": 37,
+     "cached_tokens": 939,
+     "prompt_ms": 123.439,
+     "predicted_ms": 383.635,
+     "key_order": null,
+     "total_s": 0.5783
+    },
+    "total_llm_s": 0.5783
+   },
+   "decision": {
+    "requested": "POINT_FRONT",
+    "effective": "POINT_FRONT",
+    "suppressed": null,
+    "trigger_text": "Frente a mí",
+    "trigger_char_start": 0,
+    "trigger_char_end": 11,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": false
+    },
+    "words": 14,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/josaed/wav/ps_josaed/ps_josaed_t01_guidance.wav",
+    "wav_sha256": "5d5240360df00926b70d5298303298d92da8d055c6b96b9d804e31f784f6f62b",
+    "sample_rate": 44100,
+    "duration_s": 5.6258,
+    "synth_s": 0.9192,
+    "voice": "M1",
+    "prosody": "M1 speed=1.0 (rank EXTERNAL × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.579,
+    "llm_first_attempt": {
+     "t_first_token": 0.1945,
+     "t_type_known": 0.2458,
+     "t_first_sentence": 0.4766,
+     "t_speech_done": 0.4766,
+     "t_total": 0.5783
+    },
+    "tts_full_s": 0.92,
+    "tts_synth_s": 0.9192,
+    "tts_first_sentence_s": 0.9383,
+    "first_sentence": "Frente a mí, el mostrador de recepción está justo frente al robot que habla.",
+    "e2e_llm_req_to_first_audio_s": 1.415
+   },
+   "plan": {
+    "emote": "POINT_FRONT",
+    "trigger_start_s": 0.8,
+    "trigger_end_s": 1.3,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "anchor_only_no_preset",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "ps_josaed_t02_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Mi equipo ganó el premio al mejor prototipo.",
+   "intended_emote": "APPLAUSE",
+   "llm": {
+    "raw": "{\"type\":\"APPLAUSE\",\"speech\":\"¡Bravo, lo lograron, bien hecho por todo el equipo!\",\"trigger_text\":\"lo lograron\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_josaed_t02_dialogue",
+     "speech": "¡Bravo, lo lograron, bien hecho por todo el equipo!",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_josaed_t02_dialogue",
+       "type": "APPLAUSE",
+       "trigger_text": "lo lograron"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.2468,
+     "t_type_known": 0.3146,
+     "t_first_sentence": 0.5327,
+     "t_speech_done": 0.5449,
+     "t_total": 0.6542,
+     "prompt_tokens": 3470,
+     "completion_tokens": 35,
+     "cached_tokens": 2879,
+     "prompt_ms": 143.02,
+     "predicted_ms": 407.456,
+     "key_order": null,
+     "total_s": 0.6542
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 12080,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"APPLAUSE\",\"speech\":\"¡Bravo, lo lograron, bien hecho por todo el equipo!\",\"trigger_text\":\"lo lograron\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_josaed_t02_dialogue",
+       "speech": "¡Bravo, lo lograron, bien hecho por todo el equipo!",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_josaed_t02_dialogue",
+         "type": "APPLAUSE",
+         "trigger_text": "lo lograron"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.2468,
+       "t_type_known": 0.3146,
+       "t_first_sentence": 0.5327,
+       "t_speech_done": 0.5449,
+       "t_total": 0.6542,
+       "prompt_tokens": 3470,
+       "completion_tokens": 35,
+       "cached_tokens": 2879,
+       "prompt_ms": 143.02,
+       "predicted_ms": 407.456,
+       "key_order": null,
+       "total_s": 0.6542
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.2468,
+     "t_type_known": 0.3146,
+     "t_first_sentence": 0.5327,
+     "t_speech_done": 0.5449,
+     "t_total": 0.6542,
+     "prompt_tokens": 3470,
+     "completion_tokens": 35,
+     "cached_tokens": 2879,
+     "prompt_ms": 143.02,
+     "predicted_ms": 407.456,
+     "key_order": null,
+     "total_s": 0.6542
+    },
+    "total_llm_s": 0.6542
+   },
+   "decision": {
+    "requested": "APPLAUSE",
+    "effective": "APPLAUSE",
+    "suppressed": null,
+    "trigger_text": "lo lograron",
+    "trigger_char_start": 8,
+    "trigger_char_end": 19,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": false
+    },
+    "words": 9,
+    "exclamations": 2,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/josaed/wav/ps_josaed/ps_josaed_t02_dialogue.wav",
+    "wav_sha256": "b326e3b7bd6af9539196a8866f44398e3de3eca7c6980a50760704c5347a5458",
+    "sample_rate": 44100,
+    "duration_s": 3.8808,
+    "synth_s": 0.6376,
+    "voice": "M1",
+    "prosody": "M1 speed=1.0 (rank EXTERNAL × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.655,
+    "llm_first_attempt": {
+     "t_first_token": 0.2468,
+     "t_type_known": 0.3146,
+     "t_first_sentence": 0.5327,
+     "t_speech_done": 0.5449,
+     "t_total": 0.6542
+    },
+    "tts_full_s": 0.638,
+    "tts_synth_s": 0.6376,
+    "tts_first_sentence_s": 0.6399,
+    "first_sentence": "¡Bravo, lo lograron, bien hecho por todo el equipo!",
+    "e2e_llm_req_to_first_audio_s": 1.173
+   },
+   "plan": {
+    "emote": "APPLAUSE",
+    "trigger_start_s": 1.24,
+    "trigger_end_s": 1.84,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.64
+   }
+  },
+  {
+   "turn_id": "ps_josaed_t03_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Desactiva las cámaras de seguridad del vestíbulo un momento.",
+   "intended_emote": "NEGATION_STRONG",
+   "llm": {
+    "raw": "{\"type\":\"NEGATION_STRONG\",\"speech\":\"No está permitido desactivar las cámaras de seguridad del vestíbulo.\",\"trigger_text\":\"no está permitido\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_josaed_t03_dialogue",
+     "speech": "No está permitido desactivar las cámaras de seguridad del vestíbulo.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_josaed_t03_dialogue",
+       "type": "NEGATION_STRONG",
+       "trigger_text": "No está permitido"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0487,
+     "t_type_known": 0.1292,
+     "t_first_sentence": 0.3693,
+     "t_speech_done": 0.3693,
+     "t_total": 0.4787,
+     "prompt_tokens": 3478,
+     "completion_tokens": 38,
+     "cached_tokens": 3304,
+     "prompt_ms": 41.057,
+     "predicted_ms": 429.98,
+     "key_order": null,
+     "total_s": 0.4787
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 12112,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"NEGATION_STRONG\",\"speech\":\"No está permitido desactivar las cámaras de seguridad del vestíbulo.\",\"trigger_text\":\"no está permitido\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_josaed_t03_dialogue",
+       "speech": "No está permitido desactivar las cámaras de seguridad del vestíbulo.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_josaed_t03_dialogue",
+         "type": "NEGATION_STRONG",
+         "trigger_text": "No está permitido"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0487,
+       "t_type_known": 0.1292,
+       "t_first_sentence": 0.3693,
+       "t_speech_done": 0.3693,
+       "t_total": 0.4787,
+       "prompt_tokens": 3478,
+       "completion_tokens": 38,
+       "cached_tokens": 3304,
+       "prompt_ms": 41.057,
+       "predicted_ms": 429.98,
+       "key_order": null,
+       "total_s": 0.4787
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.0487,
+     "t_type_known": 0.1292,
+     "t_first_sentence": 0.3693,
+     "t_speech_done": 0.3693,
+     "t_total": 0.4787,
+     "prompt_tokens": 3478,
+     "completion_tokens": 38,
+     "cached_tokens": 3304,
+     "prompt_ms": 41.057,
+     "predicted_ms": 429.98,
+     "key_order": null,
+     "total_s": 0.4787
+    },
+    "total_llm_s": 0.4787
+   },
+   "decision": {
+    "requested": "NEGATION_STRONG",
+    "effective": "NEGATION_STRONG",
+    "suppressed": null,
+    "trigger_text": "No está permitido",
+    "trigger_char_start": 0,
+    "trigger_char_end": 17,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": false
+    },
+    "words": 10,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/josaed/wav/ps_josaed/ps_josaed_t03_dialogue.wav",
+    "wav_sha256": "95f3236a223ac96b819a36f55196c0c5de651146c35b98c27fd7bdfa9c5415c1",
+    "sample_rate": 44100,
+    "duration_s": 5.602,
+    "synth_s": 0.954,
+    "voice": "M1",
+    "prosody": "M1 speed=1.0 (rank EXTERNAL × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.479,
+    "llm_first_attempt": {
+     "t_first_token": 0.0487,
+     "t_type_known": 0.1292,
+     "t_first_sentence": 0.3693,
+     "t_speech_done": 0.3693,
+     "t_total": 0.4787
+    },
+    "tts_full_s": 0.955,
+    "tts_synth_s": 0.954,
+    "tts_first_sentence_s": 0.9346,
+    "first_sentence": "No está permitido desactivar las cámaras de seguridad del vestíbulo.",
+    "e2e_llm_req_to_first_audio_s": 1.304
+   },
+   "plan": {
+    "emote": "NEGATION_STRONG",
+    "trigger_start_s": 0.88,
+    "trigger_end_s": 1.78,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 1.36
+   }
+  },
+  {
+   "turn_id": "ps_josaed_t04_dialogue",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿A qué hora cierra el laboratorio hoy?",
+   "intended_emote": "NONE",
+   "llm": {
+    "raw": "{\"type\":\"NONE\",\"speech\":\"La hora de cierre del laboratorio es a las 18:00 horas.\",\"trigger_text\":\"18:00\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_josaed_t04_dialogue",
+     "speech": "La hora de cierre del laboratorio es a las 18:00 horas.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": []
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.0455,
+     "t_type_known": 0.0912,
+     "t_first_sentence": 0.3351,
+     "t_speech_done": 0.3351,
+     "t_total": 0.4566,
+     "prompt_tokens": 3466,
+     "completion_tokens": 36,
+     "cached_tokens": 3304,
+     "prompt_ms": 39.501,
+     "predicted_ms": 410.902,
+     "key_order": null,
+     "total_s": 0.4566
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 12068,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"NONE\",\"speech\":\"La hora de cierre del laboratorio es a las 18:00 horas.\",\"trigger_text\":\"18:00\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_josaed_t04_dialogue",
+       "speech": "La hora de cierre del laboratorio es a las 18:00 horas.",
+       "communicative_acts": [
+        "RESPOND"
+       ],
+       "motor_intents": []
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.0455,
+       "t_type_known": 0.0912,
+       "t_first_sentence": 0.3351,
+       "t_speech_done": 0.3351,
+       "t_total": 0.4566,
+       "prompt_tokens": 3466,
+       "completion_tokens": 36,
+       "cached_tokens": 3304,
+       "prompt_ms": 39.501,
+       "predicted_ms": 410.902,
+       "key_order": null,
+       "total_s": 0.4566
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.0455,
+     "t_type_known": 0.0912,
+     "t_first_sentence": 0.3351,
+     "t_speech_done": 0.3351,
+     "t_total": 0.4566,
+     "prompt_tokens": 3466,
+     "completion_tokens": 36,
+     "cached_tokens": 3304,
+     "prompt_ms": 39.501,
+     "predicted_ms": 410.902,
+     "key_order": null,
+     "total_s": 0.4566
+    },
+    "total_llm_s": 0.4566
+   },
+   "decision": {
+    "requested": "NONE",
+    "effective": "NONE",
+    "suppressed": null,
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   },
+   "persona": {
+    "address": {
+     "usted": false,
+     "tu": false
+    },
+    "words": 12,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/josaed/wav/ps_josaed/ps_josaed_t04_dialogue.wav",
+    "wav_sha256": "aeb942973719686248d1eda23b93bfa752e7de89257c28e6fab9eb72e5edb51d",
+    "sample_rate": 44100,
+    "duration_s": 5.257,
+    "synth_s": 0.8121,
+    "voice": "M1",
+    "prosody": "M1 speed=1.0 (rank EXTERNAL × state GUIDANCE)"
+   },
+   "timings": {
+    "llm_total_s": 0.457,
+    "llm_first_attempt": {
+     "t_first_token": 0.0455,
+     "t_type_known": 0.0912,
+     "t_first_sentence": 0.3351,
+     "t_speech_done": 0.3351,
+     "t_total": 0.4566
+    },
+    "tts_full_s": 0.813,
+    "tts_synth_s": 0.8121,
+    "tts_first_sentence_s": 0.8266,
+    "first_sentence": "La hora de cierre del laboratorio es a las 18:00 horas.",
+    "e2e_llm_req_to_first_audio_s": 1.162
+   },
+   "plan": {
+    "emote": "NONE",
+    "trigger_start_s": null,
+    "trigger_end_s": null,
+    "align_status": null,
+    "status": "none_sonic",
+    "reason": null,
+    "delay_s": null
+   }
+  },
+  {
+   "turn_id": "ps_josaed_t05_farewell",
+   "state": "FAREWELL",
+   "visitor_utterance": null,
+   "intended_emote": null,
+   "llm": {
+    "raw": "{\"type\":\"FAREWELL_WAVE\",\"speech\":\"Trámite terminado. Que tenga buen día; hasta luego.\",\"trigger_text\":\"hasta luego\"}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "ps_josaed_t05_farewell",
+     "speech": "Trámite terminado. Que tenga buen día; hasta luego.",
+     "communicative_acts": [
+      "CLOSING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "ps_josaed_t05_farewell",
+       "type": "FAREWELL_WAVE",
+       "trigger_text": "hasta luego"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "t_first_token": 0.253,
+     "t_type_known": 0.3389,
+     "t_first_sentence": 0.4228,
+     "t_speech_done": 0.5033,
+     "t_total": 0.5906,
+     "prompt_tokens": 1471,
+     "completion_tokens": 33,
+     "cached_tokens": 939,
+     "prompt_ms": 112.51,
+     "predicted_ms": 337.627,
+     "key_order": null,
+     "total_s": 0.5906
+    },
+    "temperature": 0.2,
+    "seed": null,
+    "prompt_chars": 5231,
+    "attempts": [
+     {
+      "raw": "{\"type\":\"FAREWELL_WAVE\",\"speech\":\"Trámite terminado. Que tenga buen día; hasta luego.\",\"trigger_text\":\"hasta luego\"}",
+      "parsed": {
+       "schema_version": "rcp01c.intervention.v2",
+       "scene_id": "E3",
+       "utterance_id": "ps_josaed_t05_farewell",
+       "speech": "Trámite terminado. Que tenga buen día; hasta luego.",
+       "communicative_acts": [
+        "CLOSING"
+       ],
+       "motor_intents": [
+        {
+         "event_id": "ps_josaed_t05_farewell",
+         "type": "FAREWELL_WAVE",
+         "trigger_text": "hasta luego"
+        }
+       ]
+      },
+      "errors": [],
+      "metrics": {
+       "t_first_token": 0.253,
+       "t_type_known": 0.3389,
+       "t_first_sentence": 0.4228,
+       "t_speech_done": 0.5033,
+       "t_total": 0.5906,
+       "prompt_tokens": 1471,
+       "completion_tokens": 33,
+       "cached_tokens": 939,
+       "prompt_ms": 112.51,
+       "predicted_ms": 337.627,
+       "key_order": null,
+       "total_s": 0.5906
+      },
+      "temperature": 0.2,
+      "seed": null
+     }
+    ],
+    "extra_turn_retries": 0,
+    "retry_used": false,
+    "first_attempt_ok": true,
+    "first_attempt_metrics": {
+     "t_first_token": 0.253,
+     "t_type_known": 0.3389,
+     "t_first_sentence": 0.4228,
+     "t_speech_done": 0.5033,
+     "t_total": 0.5906,
+     "prompt_tokens": 1471,
+     "completion_tokens": 33,
+     "cached_tokens": 939,
+     "prompt_ms": 112.51,
+     "predicted_ms": 337.627,
+     "key_order": null,
+     "total_s": 0.5906
+    },
+    "total_llm_s": 0.5906
+   },
+   "decision": {
+    "requested": "FAREWELL_WAVE",
+    "effective": "FAREWELL_WAVE",
+    "suppressed": null,
+    "trigger_text": "hasta luego",
+    "trigger_char_start": 39,
+    "trigger_char_end": 50,
+    "fsm_mandated": false
+   },
+   "persona": {
+    "address": {
+     "usted": true,
+     "tu": false
+    },
+    "words": 8,
+    "exclamations": 0,
+    "title": false,
+    "persona_retries": 0
+   },
+   "tts": {
+    "wav_path": "opt/realnames/visits/josaed/wav/ps_josaed/ps_josaed_t05_farewell.wav",
+    "wav_sha256": "f8cebc491fbcd2ce8b3441fae199390131db3e1b58011e5accd313ea8acc1e5c",
+    "sample_rate": 44100,
+    "duration_s": 4.3593,
+    "synth_s": 0.663,
+    "voice": "M1",
+    "prosody": "M1 speed=0.98 (rank EXTERNAL × state FAREWELL)"
+   },
+   "timings": {
+    "llm_total_s": 0.591,
+    "llm_first_attempt": {
+     "t_first_token": 0.253,
+     "t_type_known": 0.3389,
+     "t_first_sentence": 0.4228,
+     "t_speech_done": 0.5033,
+     "t_total": 0.5906
+    },
+    "tts_full_s": 0.664,
+    "tts_synth_s": 0.663,
+    "tts_first_sentence_s": 0.3585,
+    "first_sentence": "Trámite terminado.",
+    "e2e_llm_req_to_first_audio_s": 0.781
+   },
+   "plan": {
+    "emote": "FAREWELL_WAVE",
+    "trigger_start_s": 3.22,
+    "trigger_end_s": 3.7800000000000002,
+    "align_status": "aligned_ctc_not_human_validated",
+    "status": "planned",
+    "reason": null,
+    "delay_s": 0.0
+   }
+  }
+ ],
+ "validation": {
+  "greeting_rank_emote": true,
+  "greeting_emote": "GREETING_EXTERNAL",
+  "staff_high_five": true,
+  "point_direction": true,
+  "point_emote": "POINT_FRONT",
+  "vip_farewell_heart": true,
+  "farewell_emote": "FAREWELL_WAVE",
+  "name_in_greeting": true,
+  "greeting_speech": "Bienvenido, Josaed. Su visita queda registrada; proceda al mostrador.",
+  "dialogue_emotes_ok": true,
+  "address_no_mixing": true,
+  "address_form_ok": true,
+  "vip_title_greeting": true,
+  "vip_no_exclamations": true,
+  "persona_turns": 6,
+  "ALL_OK": true
+ },
+ "manifest": "opt/realnames/visits/josaed/tts_manifest.jsonl",
+ "mixing_turns": [],
+ "anchor_plan": {
+  "returncode": 0,
+  "wall_s": 1.229,
+  "stdout_tail": "{\n \"schema\": \"hriego_gesture_anchor_plan.v1\",\n \"rows\": 6,\n \"policy\": {\n  \"align\": \"auto\",\n  \"stat\": \"median\",\n  \"max_initial_delay_s\": 1.5,\n  \"latency_file\": \"config/preset_latency_c08.json\",\n  \"latency_sha256\": \"d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3\",\n  \"latency_error\": null\n },\n \"model\": {\n  \"revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d\",\n  \"onnx_sha256\": \"e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\",\n  \"provider\": \"CPUExecutionProvider\",\n  \"cpu_threads\": 2,\n  \"onnx_sha256_matches_pinned\": true,\n  \"model_revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\"\n },\n \"align_policy_used_counts\": {\n  \"stroke\": 4,\n  \"null\": 2\n },\n \"align_policy_used_preroll0_counts\": {\n  \"stroke\": 4,\n  \"null\": 2\n },\n \"status_counts\": {\n  \"planned\": 4,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"status_preroll0_counts\": {\n  \"planned\": 4,\n  \"anchor_only_no_preset\": 1,\n  \"none_sonic\": 1\n },\n \"align_status_counts\": {\n  \"aligned_ctc_not_human_validated\": 5,\n  \"null\": 1\n },\n \"max_delay_s_planned\": 1.4399773242630385,\n \"max_delay_s_preroll0_planned\": 0.4\n}\n",
+  "stderr_tail": ""
+ },
+ "timings": {
+  "face_total_s": 2.488,
+  "face_wall_s": 3.174,
+  "anchor_plan_wall_s": 1.229,
+  "visit_wall_s": 17.411
+ },
+ "anchor_plan_summary": "opt/realnames/visits/josaed/anchor_plan/summary.json"
+}

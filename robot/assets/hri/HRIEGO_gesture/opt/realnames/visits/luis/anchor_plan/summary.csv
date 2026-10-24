@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,align_policy_used,align_policy_used_preroll0,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+ps_luis_t00_greeting,ps_luis,ps_luis_t00_greeting,GREETING_STAFF,1008,2,Dame esos cinco,5.8536,44100,2.2600000000000002,3.12,99666,aligned_ctc_not_human_validated,stroke,stroke,0.0,0.0,12349,59976,planned,planned,,0.02
+ps_luis_t01_guidance,ps_luis,ps_luis_t01_guidance,POINT_RIGHT,,,a mi derecha,2.7651,44100,1.6600000000000001,2.2,73206,aligned_ctc_not_human_validated,,,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+ps_luis_t02_dialogue,ps_luis,ps_luis_t02_dialogue,NEGATION_NORMAL,3029,11,No puedo,5.9197,44100,0.66,1.02,29106,aligned_ctc_not_human_validated,stroke,stroke,1.0,0.0,-44100,4383,planned,planned,,0.02
+ps_luis_t03_dialogue,ps_luis,ps_luis_t03_dialogue,CONFIRMATION,3028,11,así es,6.437,44100,1.32,1.7,58212,aligned_ctc_not_human_validated,stroke,stroke,0.32,0.0,-14112,33518,planned,planned,,0.02
+ps_luis_t04_dialogue,ps_luis,ps_luis_t04_dialogue,NONE,,,,3.7017,44100,,,,,,,,,,,none_sonic,none_sonic,,
+ps_luis_t05_farewell,ps_luis,ps_luis_t05_farewell,FAREWELL_WAVE,3031,11,Nos vemos,3.6502,44100,0.72,1.1400000000000001,31752,aligned_ctc_not_human_validated,stroke,stroke,1.1399319727891157,0.0799092970521542,-50271,-3524,planned,planned,,0.02

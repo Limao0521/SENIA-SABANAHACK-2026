@@ -1,0 +1,12 @@
+{
+ "schema": "x2_point_4c.v1",
+ "direction": "LEFT",
+ "case_id": "v2visit_staff_t01_guidance",
+ "sample_rate_hz": 44100,
+ "anchor_text": "a mi izquierda",
+ "anchor_start_sample": 86436,
+ "anchor_end_sample": 112896,
+ "sample_count": 141312,
+ "wav_sha256": "899afc7081e5ef0b54c6799f9a0920128def528b81130c04a619a7003c68ef11",
+ "align": "onset (CTC start of the word)"
+}

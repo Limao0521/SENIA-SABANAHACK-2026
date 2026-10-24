@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_vip_t00_greeting",
+ "rank": "vip",
+ "emote": "GREETING_VIP",
+ "motion_id": 3001,
+ "area": 11,
+ "binding": "3001/11",
+ "anchor_s": 0.8,
+ "dur_s": 5.154829931972789,
+ "lead_onset_s": 1.1799959819982178,
+ "lead_stroke_s": 1.7199913960030244,
+ "policy_dispatch_s": {
+  "stroke": -0.9199913960030244,
+  "mid": -0.649993689000621,
+  "onset": -0.3799959819982177
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 4.480131692002033
+}

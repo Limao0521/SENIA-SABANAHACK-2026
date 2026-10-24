@@ -1,0 +1,92 @@
+# HRIEGO_gesture/.gitignore
+# The repo-root .gitignore ignores "runs/", "logs/" and "*.mp4" globally. Nothing under runs/ is committed from
+# this tree (twin/ is excluded as a whole), so no "!runs/" negation is required; if twin/runs is ever added,
+# add:  !/twin/runs/  and  !/twin/runs/**/   (and re-ignore traces/video/motion below).
+
+# Excluded from this commit entirely
+/COMMIT_PREP.md
+/README.proposed.md
+/CHANGES_FOR_README.md
+/COMMIT_MESSAGE.draft.txt
+
+# Heavy / regenerable binaries (published separately with sha256 in the manifests)
+*.wav
+!/align/test_wavs/*.wav
+*.npz
+*.pkl
+*.mp4
+*.onnx
+*.gguf
+*.pt
+*.ckpt
+
+# Per-turn StreamTalk -> GMR -> SONIC motion outputs, profiler stamps
+/visits_v2/*/sonic/
+/**/prof/
+/**/traces/
+/**/video/
+/**/motion/
+/**/calib/
+
+# Benchmark raw outputs (summaries *.json and resource_latency.csv stay)
+/workers/bench/cold/
+/workers/bench/pipelined/
+/workers/bench/**/samples_*.csv
+
+# Audio output dirs
+/visits_v2/*/wav/
+/eval/results*/wav/
+/eval/results*/visits/*/wav/
+
+# Logs, locks, scratch
+logs/
+*.log
+*.lock
+*.keep
+*.bak
+__pycache__/
+*.pyc
+.env
+
+# ---- twin/ (digital-twin harness): code + docs + small metrics + replay pack are committed; raw run output is not ----
+# (root .gitignore has "runs/": re-include only the twin run files we want, then re-ignore the heavy parts)
+!/twin/runs/
+/twin/runs/**/*
+!/twin/runs/*/
+!/twin/runs/*/REPORT.md
+!/twin/runs/*/metrics/
+!/twin/runs/*/metrics/*.json
+!/twin/runs/*/metrics/*.csv
+!/twin/runs/*/plans/
+!/twin/runs/*/plans/**/
+!/twin/runs/*/plans/**/*.json
+!/twin/runs/p4_commercial/timeline_*.json
+/twin/**/traces/
+/twin/**/video/
+/twin/**/motion/
+/twin/**/calib/
+/twin/**/probes/
+/twin/runs/*/logs/
+/twin/runs/sonic_batch/*
+!/twin/runs/sonic_batch/REPORT.md
+/twin/runs/**/*.npz
+/twin/runs/**/*.csv
+!/twin/runs/*/metrics/*.csv
+/twin/runs/**/*.jsonl
+# replay pack (explicitly published): npz / wav / json / csv / md
+!/twin/replay/
+!/twin/replay/**/
+!/twin/replay/**/*.npz
+!/twin/replay/**/*.wav
+!/twin/replay/**/*.json
+!/twin/replay/**/*.csv
+!/twin/replay/**/*.md
+
+# Vendored motion/ scripts and the READY prompt must be tracked despite the generic motion/ and *.npz rules above
+!/motion/
+!/motion/config/
+!/motion/config/streamtalk_ready_prompt.npz
+
+# Agent notes (not committed)
+/NOTES_A.md
+/NOTES_B.md

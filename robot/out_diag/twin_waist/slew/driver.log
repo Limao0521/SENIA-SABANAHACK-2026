@@ -1,0 +1,37 @@
+[06:36:38] arm_session problems: []
+[06:36:38] state after arm: {'t': 6888.731400651, 'pelvis_z': 0.6841590313610689, 'tilt_deg': 1.0709933039361261, 'mode': 'UPPERBODY_REMOTE_SPLIT', 'stable': True, 'walking': False, 'fall': False}
+[06:36:38] PHASE BEGIN S2_sebastian_t02
+[06:36:44] PHASE END S2_sebastian_t02 5.97s
+[06:36:45] PHASE BEGIN S2_laura_t02
+[06:36:53] PHASE END S2_laura_t02 7.51s
+[06:36:53] PHASE BEGIN S2_josaed_t03
+[06:37:00] PHASE END S2_josaed_t03 6.51s
+[06:37:01] PHASE BEGIN S3_point_RIGHT
+[06:37:06] PHASE END S3_point_RIGHT 4.67s
+[06:37:07] PHASE BEGIN S3_point_LEFT
+[06:37:11] PHASE END S3_point_LEFT 4.66s
+[06:37:12] PHASE BEGIN S3_point_FRONT
+[06:37:16] PHASE END S3_point_FRONT 4.66s
+[06:37:18] S4 VIP_BOW csv: OK dur=3.4
+[06:37:18] PHASE BEGIN S4_emote_3001_VIP_BOW
+[06:37:23] PHASE END S4_emote_3001_VIP_BOW 5.02s
+[06:37:23] PHASE BEGIN S4_sonic_after_3001
+[06:37:25] PHASE END S4_sonic_after_3001 2.50s
+[06:37:25] S4 SOCIAL_HEART csv: OK dur=4.16
+[06:37:25] PHASE BEGIN S4_emote_3004_SOCIAL_HEART
+[06:37:31] PHASE END S4_emote_3004_SOCIAL_HEART 5.78s
+[06:37:31] PHASE BEGIN S4_sonic_after_3004
+[06:37:34] PHASE END S4_sonic_after_3004 2.50s
+[06:37:34] S4 APPLAUSE csv: OK dur=5.38
+[06:37:34] PHASE BEGIN S4_emote_3017_APPLAUSE
+[06:37:41] PHASE END S4_emote_3017_APPLAUSE 6.99s
+[06:37:41] PHASE BEGIN S4_sonic_after_3017
+[06:37:43] PHASE END S4_sonic_after_3017 2.50s
+[06:37:44] PHASE BEGIN S5_walk
+[06:37:46] PHASE END S5_walk 2.02s
+[06:37:46] PHASE BEGIN S5_settle
+[06:37:47] PHASE END S5_settle 1.32s
+[06:37:47] PHASE BEGIN S5_point_after_walk
+[06:37:52] PHASE END S5_point_after_walk 4.46s
+[06:37:54] dumped /tmp/x2r_out/trace.npz /tmp/x2r_out/run.json upper rows: 4882
+[06:37:54] final state: {'t': 6964.331728353, 'pelvis_z': 0.6839704148628661, 'tilt_deg': 0.5988490685586126, 'mode': 'STAND_DEFAULT', 'stable': True, 'walking': False, 'fall': False} unsafe: False

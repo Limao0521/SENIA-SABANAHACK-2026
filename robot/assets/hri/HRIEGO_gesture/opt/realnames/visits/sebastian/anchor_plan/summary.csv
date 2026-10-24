@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,align_policy_used,align_policy_used_preroll0,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+ps_sebastian_t00_greeting,ps_sebastian,ps_sebastian_t00_greeting,GREETING_REGULAR,1003,2,qué gusto,5.6542,44100,1.3800000000000001,1.78,60858,aligned_ctc_not_human_validated,stroke,stroke,0.40006802721088436,0.0,-17643,27341,planned,planned,,0.02
+ps_sebastian_t01_guidance,ps_sebastian,ps_sebastian_t01_guidance,POINT_LEFT,,,a mi izquierda,6.051,44100,2.92,3.5,128772,aligned_ctc_not_human_validated,,,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+ps_sebastian_t02_dialogue,ps_sebastian,ps_sebastian_t02_dialogue,NEGATION_STRONG,3009,11,no está permitido,5.0751,44100,1.6600000000000001,2.48,73206,aligned_ctc_not_human_validated,stroke,stroke,0.58,0.0,-25578,20284,planned,planned,,0.02
+ps_sebastian_t03_dialogue,ps_sebastian,ps_sebastian_t03_dialogue,THUMBS_UP,1005,2,buena idea,5.6436,44100,2.06,2.6,90846,aligned_ctc_not_human_validated,stroke,stroke,0.0,0.0,11468,58212,planned,planned,,0.02
+ps_sebastian_t04_dialogue,ps_sebastian,ps_sebastian_t04_dialogue,NONE,,,,4.625,44100,,,,,,,,,,,none_sonic,none_sonic,,
+ps_sebastian_t05_farewell,ps_sebastian,ps_sebastian_t05_farewell,FAREWELL_WAVE,3031,11,hasta luego,5.2433,44100,2.36,2.9,104076,aligned_ctc_not_human_validated,stroke,stroke,0.0,0.0,22053,68800,planned,planned,,0.02

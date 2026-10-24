@@ -1,0 +1,33 @@
+# Override para el robot AgiBot X2 Ultra — NVIDIA Jetson Orin NX 16GB a bordo
+# (Ubuntu 22.04 / L4T r36.x, Docker con nvidia-container-runtime; si tu unidad
+# usa Podman: podman-compose -f docker-compose.yml -f compose.jetson.yml up -d --build)
+#
+# Uso (desde el robot, con el repo copiado):
+#   ./scripts/download-model.sh
+#   docker compose -f docker-compose.yml -f compose.jetson.yml up -d --build
+#   curl http://localhost:8000/ready
+#
+# Recomendado antes de arrancar (fija clocks máximos, +15-25% de inferencia):
+#   sudo nvpmodel -m 0 && sudo jetson_clocks
+#
+# Si tu L4T es otra (cat /etc/nv_tegra_release), cambia el tag de BASE_IMAGE
+# al correspondiente de dustynv/llama_cpp (r35.4.1, r36.2.0, r36.4.0...)
+
+services:
+  llm:
+    build:
+      args:
+        BASE_IMAGE: ${LLM_BASE_IMAGE:-dustynv/llama_cpp:r36.4.0}
+    runtime: nvidia
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: all
+      # Todo el modelo en la GPU Ampere (crítico: 2-4x vs CPU)
+      NGL: 99
+      # Orin NX: 8x Cortex-A78AE; deja cores para ROS2/AimRT/MC del robot
+      CPU_THREADS: ${CPU_THREADS:-6}
+      # Ventana amplia: Qwen3-4B Q4_K_M (~2,5GB) + KV q8_0 de 16K (~1,2GB)
+      # cabe holgado en 16GB unificados dejando sitio a la pila del robot.
+      # ¿Aún más? CTX_SIZE=32768 (KV ~2,4GB) vigilando tegrastats.
+      CTX_SIZE: ${CTX_SIZE:-16384}
+    # Nota térmica: monitoriza con `tegrastats`; el throttle empieza a 99°C.

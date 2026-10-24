@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "lo lograron",
+  "char_start": 8,
+  "char_end": 19,
+  "occurrence": 1,
+  "start_s": 1.24,
+  "end_s": 1.84,
+  "start_sample": 54684,
+  "end_sample": 81144,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "b326e3b7bd6af9539196a8866f44398e3de3eca7c6980a50760704c5347a5458",
+  "sample_count": 172032,
+  "case_id": "ps_josaed_t02_dialogue",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

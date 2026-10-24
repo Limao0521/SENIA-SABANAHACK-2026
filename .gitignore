@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv*/
+.pytest_cache/
+# Modelos y pesos grandes (se copian aparte: docs/03-despliegue-en-el-robot.md)
+*.gguf
+robot/models/faster-whisper-*/
+robot/experiments/*/model/
+robot/third_party/pylibs_aarch64/
+# Salidas en ejecución (fotos de visitas, logs)
+robot/out_reto2/
+robot/logs/
+# Flutter
+app/.dart_tool/
+app/build/
+app/.flutter-plugins*
+# Secretos
+**/.secretos/
+*.env
+.vscode/

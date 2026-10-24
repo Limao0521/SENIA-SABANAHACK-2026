@@ -1,0 +1,81 @@
+{
+  "_comment": "Identidades precomputadas de validación (persona -> rango/categoría/piso). Sin datos biométricos: solo el resultado persona->rango de la galería institucional usada el 2026-10-23. 'visits' es el directorio del paquete de visita en assets/hri/HRIEGO_gesture/. 'photo' es opcional y SOLO se usa si el módulo Face está disponible en la máquina (ruta local, fuera del repo). Con --photo y Face instalado se usa reconocimiento en vivo; sin ellos, el CLI usa estos resultados.",
+  "people": {
+    "Luis": {
+      "person_id": "P001",
+      "display_name": "Luis",
+      "rank_code": "STAFF",
+      "category": "personal",
+      "floor": null,
+      "status": "KNOWN",
+      "visits": "opt/realnames/visits/luis",
+      "photo": null,
+      "titulo": "señor"
+    },
+    "Josaed": {
+      "person_id": "P002",
+      "display_name": "Josaed",
+      "rank_code": "EXTERNAL",
+      "category": "externo",
+      "floor": null,
+      "status": "KNOWN",
+      "visits": "opt/realnames/visits/josaed",
+      "photo": null,
+      "titulo": "señor"
+    },
+    "Sebastian": {
+      "person_id": "P003",
+      "display_name": "Sebastian",
+      "rank_code": "REGULAR",
+      "category": "socio",
+      "floor": 3,
+      "status": "KNOWN",
+      "visits": "opt/realnames/visits/sebastian",
+      "photo": null,
+      "titulo": "señor"
+    },
+    "Mario": {
+      "person_id": "P004",
+      "display_name": "Mario",
+      "rank_code": "GUEST",
+      "category": "invitado",
+      "floor": 5,
+      "status": "KNOWN",
+      "visits": "opt/realnames/visits/mario",
+      "photo": null,
+      "titulo": "señor"
+    },
+    "Laura": {
+      "person_id": "P005",
+      "display_name": "Laura",
+      "rank_code": "VIP",
+      "category": "vip",
+      "floor": 3,
+      "status": "KNOWN",
+      "visits": "opt/realnames/visits/laura",
+      "photo": null,
+      "titulo": "señorita"
+    },
+    "Jorge Castellanos": {
+      "person_id": "P006",
+      "display_name": "Jorge Castellanos",
+      "rank_code": "VIP",
+      "category": "vip",
+      "floor": 3,
+      "status": "KNOWN",
+      "visits": "visits_v2/vip",
+      "photo": null,
+      "titulo": "señor"
+    },
+    "Desconocido": {
+      "person_id": null,
+      "display_name": "visitante",
+      "rank_code": null,
+      "category": "invitado",
+      "floor": 2,
+      "status": "UNKNOWN",
+      "visits": "opt/realnames/visits/desconocido",
+      "photo": null
+    }
+  }
+}

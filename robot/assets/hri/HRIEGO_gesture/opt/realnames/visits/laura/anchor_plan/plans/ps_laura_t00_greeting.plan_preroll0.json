@@ -1,0 +1,45 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "ps_laura_t00_greeting",
+  "binding_key": "3001/11",
+  "policy": {
+    "align": "auto",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false,
+    "align_policy_used": "stroke",
+    "align_policy_tried": [
+      "stroke"
+    ]
+  },
+  "audio": {
+    "sha256": "252d021c7d5fc961ae0ca4d7b51423dea648fee3e95946d5e9e2c00916766133",
+    "sample_rate_hz": 44100,
+    "sample_count": 325632,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 0,
+  "dispatch_sample": 882,
+  "phases": {
+    "dispatch_sample": 882,
+    "expected_onset_sample": 5292,
+    "expected_stroke_sample": 29106,
+    "expected_end_sample": 150828,
+    "end_after_audio_end": false
+  },
+  "dispatches": [
+    {
+      "motion_id": 3001,
+      "area": 11,
+      "dispatch_sample": 882,
+      "dispatch_sample_with_start_delay": 882,
+      "repeat_count": 1
+    }
+  ]
+}

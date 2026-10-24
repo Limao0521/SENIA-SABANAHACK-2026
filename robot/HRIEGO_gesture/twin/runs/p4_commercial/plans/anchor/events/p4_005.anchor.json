@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "nosotros somos un ejemplo",
+  "char_start": 3,
+  "char_end": 28,
+  "occurrence": 1,
+  "start_s": 0.26,
+  "end_s": 1.4000000000000001,
+  "start_sample": 4160,
+  "end_sample": 22400,
+  "sample_rate_hz": 16000,
+  "frame_step_s": 0.02,
+  "sha256": "b1b1fe414400614540d2b191934d860e67a6283ef2a7940d7e9364262542fa42",
+  "sample_count": 140435,
+  "case_id": "p4_005",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

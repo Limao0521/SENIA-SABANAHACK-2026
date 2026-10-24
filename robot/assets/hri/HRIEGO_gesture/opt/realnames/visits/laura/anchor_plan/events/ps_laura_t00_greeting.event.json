@@ -1,0 +1,40 @@
+{
+  "schema_version": "x2_gesture_event.v1",
+  "utterance_id": "ps_laura_t00_greeting",
+  "audio": {
+    "sha256": "252d021c7d5fc961ae0ca4d7b51423dea648fee3e95946d5e9e2c00916766133",
+    "sample_rate_hz": 44100,
+    "sample_count": 325632,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "decision": {
+    "communicative_act": "GREETING_VIP",
+    "motor_intent": "GREETING_VIP",
+    "decision_source": "hriego_manifest"
+  },
+  "binding": {
+    "motion_id": 3001,
+    "area": 11,
+    "asset_sha256": "9922f6d39023b3479c506e080f8f0572a887ff8857b9b78b70b8802a5d03b5c3",
+    "animation_player_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da"
+  },
+  "anchor": {
+    "text": "Buenas tardes",
+    "source_char_start": 0,
+    "source_char_end": 13,
+    "occurrence": 1,
+    "start_sample": 29106,
+    "end_sample": 60858
+  },
+  "alignment": {
+    "method": "quartznet15x5_ctc_viterbi",
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "status": "aligned_ctc_not_human_validated"
+  },
+  "schedule": {
+    "desired_visible_onset_sample": 29106,
+    "dispatch_sample": null,
+    "repeat_count": 1,
+    "status": "unscheduled"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "ps_laura_t05_farewell",
+  "binding_key": "3004/11",
+  "policy": {
+    "align": "auto",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false,
+    "align_policy_used": "stroke",
+    "align_policy_tried": [
+      "stroke"
+    ]
+  },
+  "audio": {
+    "sha256": "fc499065cd3579a03eace651f25768f8b51d6f72c02395c0fdaca783c18f619d",
+    "sample_rate_hz": 44100,
+    "sample_count": 350208,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 0,
+  "dispatch_sample": 197558,
+  "phases": {
+    "dispatch_sample": 197558,
+    "expected_onset_sample": 202860,
+    "expected_stroke_sample": 241668,
+    "expected_end_sample": 381029,
+    "end_after_audio_end": true
+  },
+  "dispatches": [
+    {
+      "motion_id": 3004,
+      "area": 11,
+      "dispatch_sample": 197558,
+      "dispatch_sample_with_start_delay": 197558,
+      "repeat_count": 1
+    }
+  ]
+}

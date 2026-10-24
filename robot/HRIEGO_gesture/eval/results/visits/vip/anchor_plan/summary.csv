@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason
+visit_vip_1792649531,visit_vip_1792649531,visit_vip_1792649531_t00,GREETING_VIP,3001,11,"Bienvenida, Doctora Elena Ramírez. ¿En q",4.5103,44100,,,,anchor_word_mapping_mismatch,,,,,alignment_anchor_word_mapping_mismatch,alignment_anchor_word_mapping_mismatch,
+visit_vip_1792649531,visit_vip_1792649531,visit_vip_1792649531_t01,POINT_RIGHT,,,a mi derecha,1.5504,44100,0.54,1.1,23814,aligned_ctc_not_human_validated,,,,,anchor_only_no_preset,anchor_only_no_preset,
+visit_vip_1792649531,visit_vip_1792649531,visit_vip_1792649531_t02,SOCIAL_HEART,3004,11,me ha encantado,3.9667,44100,1.82,2.48,80262,aligned_ctc_not_human_validated,0.0,0.0,27342,74960,planned,planned,
+visit_vip_1792649531,visit_vip_1792649531,visit_vip_1792649531_t03,CONFIRMATION,3028,11,laboratorio,3.9428,44100,2.0,2.6,88200,aligned_ctc_not_human_validated,0.0,0.0,30870,78500,planned,planned,
+visit_vip_1792649531,visit_vip_1792649531,visit_vip_1792649531_t04,NONE,,,,3.5855,44100,,,,,,,,,none_sonic,none_sonic,
+visit_vip_1792649531,visit_vip_1792649531,visit_vip_1792649531_t05,SOCIAL_HEART,3004,11,Hasta luego,4.0031,44100,2.88,3.42,127008,aligned_ctc_not_human_validated,0.0,0.0,74088,121706,planned,planned,

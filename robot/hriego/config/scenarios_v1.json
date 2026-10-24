@@ -1,0 +1,15 @@
+{
+  "version": "hriego-scenarios-v1.0.0",
+  "scenarios": {
+    "reception_lab_right": {
+      "scene_id": "E3",
+      "destination_id": "laboratory",
+      "destination_label": "laboratorio",
+      "direction": "right",
+      "reference_frame": "X2_base_local",
+      "target_vector": [0.0, -1.0, 0.0],
+      "configured_in_user_request": true,
+      "instruction": "En este escenario experimental el laboratorio está situado a la derecha del agente. Esta es la única ubicación autorizada para la orientación."
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "buena idea",
+  "char_start": 23,
+  "char_end": 33,
+  "occurrence": 1,
+  "start_s": 2.06,
+  "end_s": 2.6,
+  "start_sample": 90846,
+  "end_sample": 114660,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "9985f7464fe257cb84b4f981453b79d31df91feb61a4225ab0178b22ba0e3498",
+  "sample_count": 251904,
+  "case_id": "ps_sebastian_t03_dialogue",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "etiqueta": "pc-qwen3-4b-instruct2507",
+  "url": "http://127.0.0.1:8092",
+  "ts": "20261024_060600",
+  "n": 42,
+  "prefijo_estatico": false,
+  "fallos": 0,
+  "validez_pct": 69.0,
+  "validez_tras_reparar_pct": 100.0,
+  "intent_ok_pct": 100.0,
+  "latencias": {
+    "t_first_token": {
+      "p50": 0.456,
+      "p90": 0.732,
+      "max": 0.906
+    },
+    "t_speech_done": {
+      "p50": 0.995,
+      "p90": 1.273,
+      "max": 1.435
+    },
+    "t_total": {
+      "p50": 1.226,
+      "p90": 1.496,
+      "max": 1.876
+    }
+  },
+  "tokens_s_medio": 85.391,
+  "prompt_tokens_medio": 2036.786,
+  "cached_tokens_medio": 1220.0,
+  "muestras": [
+    {
+      "id": "saludo_vip",
+      "speech": "Buenas tardes, señorita Laura. Es un honor recibirla en nuestro club; quedo a su disposición."
+    },
+    {
+      "id": "conv_horario_biblioteca",
+      "speech": "Buenas tardes, Sebastian, qué gusto verle de nuevo. La biblioteca abre de 08:00 a 20:00 todos los días."
+    },
+    {
+      "id": "guia_biblioteca_vip",
+      "speech": "Señorita Laura, la biblioteca y galería queda al frente, en el segundo piso."
+    },
+    {
+      "id": "saludo_staff",
+      "speech": "¡Luis, compañero! ¡Dame esos cinco! Qué bueno verte por nuestro lugar de encuentro."
+    },
+    {
+      "id": "conv_pide_gimnasio",
+      "speech": "Claro, Mario, vamos al gimnasio N Fit. Está al lado izquierdo, piso 5, disponible de 05:00 a 22:00."
+    },
+    {
+      "id": "denial_bar_invitado",
+      "speech": "Mario, nuestros restaurantes y cafeterías están a mi derecha, piso 2, abiertos todos los días de 06:00 a 22:00. El espacio está reservado para otros eventos."
+    },
+    {
+      "id": "destino_rol_worker",
+      "speech": "Josaed, almacenes de logística queda a mi izquierda, piso S1. Gracias por cuidar nuestra casa."
+    },
+    {
+      "id": "conv_despedida_vip",
+      "speech": "Es un honor atenderle. Esta es su casa: Club N, nuestro lugar de encuentro."
+    }
+  ]
+}

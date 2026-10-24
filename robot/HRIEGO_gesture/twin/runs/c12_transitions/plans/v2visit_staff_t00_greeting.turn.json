@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_staff_t00_greeting",
+ "rank": "staff",
+ "emote": "GREETING_STAFF",
+ "motion_id": 1008,
+ "area": 2,
+ "binding": "1008/2",
+ "anchor_s": 0.82,
+ "dur_s": 5.085170068027211,
+ "lead_onset_s": 1.2399667860008776,
+ "lead_stroke_s": 1.9799667860024783,
+ "policy_dispatch_s": {
+  "stroke": -1.1599667860024785,
+  "mid": -0.789966786001678,
+  "onset": -0.41996678600087767
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 5.13974985400273
+}

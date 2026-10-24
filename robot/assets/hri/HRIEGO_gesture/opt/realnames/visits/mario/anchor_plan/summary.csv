@@ -1,0 +1,7 @@
+case_id,visit_id,turn_id,emote,motion_id,area,trigger_text,duration_s,sample_rate,trigger_start_s,trigger_end_s,trigger_start_sample,align_status,align_policy_used,align_policy_used_preroll0,delay_s,delay_s_preroll0,dispatch_sample,dispatch_sample_preroll0,status,status_preroll0,reason,ctc_frame_step_s
+ps_mario_t00_greeting,ps_mario,ps_mario_t00_greeting,GREETING_GUEST,1011,2,Bienvenida,5.2599,44100,0.68,1.24,29988,aligned_ctc_not_human_validated,stroke,stroke,1.3,0.22,-57330,-9702,planned,planned,,0.02
+ps_mario_t01_guidance,ps_mario,ps_mario_t01_guidance,POINT_LEFT,,,a mi izquierda,4.5118,44100,3.38,4.04,149058,aligned_ctc_not_human_validated,,,,,,,anchor_only_no_preset,anchor_only_no_preset,,0.02
+ps_mario_t02_dialogue,ps_mario,ps_mario_t02_dialogue,SOCIAL_HEART,3004,11,me encanta,3.6133,44100,1.1,1.56,48510,aligned_ctc_not_human_validated,stroke,stroke,0.98,0.0,-43218,4400,planned,planned,,0.02
+ps_mario_t03_dialogue,ps_mario,ps_mario_t03_dialogue,APPLAUSE,3017,11,Felicidades,4.7984,44100,0.8,1.42,35280,aligned_ctc_not_human_validated,stroke,stroke,1.08,0.019954648526077097,-47628,-880,planned,planned,,0.02
+ps_mario_t04_dialogue,ps_mario,ps_mario_t04_dialogue,NONE,,,,3.4641,44100,,,,,,,,,,,none_sonic,none_sonic,,
+ps_mario_t05_farewell,ps_mario,ps_mario_t05_farewell,FAREWELL_WAVE,3031,11,Gracias por visitarnos,6.3028,44100,0.84,2.14,37044,aligned_ctc_not_human_validated,stroke,stroke,1.0199319727891156,0.0,-44979,1768,planned,planned,,0.02

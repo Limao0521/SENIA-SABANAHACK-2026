@@ -1,0 +1,30 @@
+[
+ {
+  "clip": "003_ULTRA_bienvenida",
+  "smplx_poses_maxabs": 0.0,
+  "smplx_trans_maxabs": 0.0,
+  "smplx_expressions_maxabs": 0.0,
+  "retarget_qpos_maxabs": 0.0,
+  "sonic_dof_maxabs": 0.0,
+  "trace_rows": [
+   468,
+   468
+  ],
+  "trace_actual_maxabs": 0.0,
+  "trace_bytes_equal": true
+ },
+ {
+  "clip": "008_X2_original_serie_d",
+  "smplx_poses_maxabs": 0.0,
+  "smplx_trans_maxabs": 0.0,
+  "smplx_expressions_maxabs": 0.0,
+  "retarget_qpos_maxabs": 0.0,
+  "sonic_dof_maxabs": 0.0,
+  "trace_rows": [
+   496,
+   496
+  ],
+  "trace_actual_maxabs": 0.0,
+  "trace_bytes_equal": true
+ }
+]

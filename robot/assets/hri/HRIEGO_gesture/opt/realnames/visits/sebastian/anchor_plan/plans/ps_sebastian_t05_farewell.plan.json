@@ -1,0 +1,45 @@
+{
+  "schema": "x2_gesture_plan.v1",
+  "utterance_id": "ps_sebastian_t05_farewell",
+  "binding_key": "3031/11",
+  "policy": {
+    "align": "auto",
+    "stat": "median",
+    "max_initial_delay_s": 1.5,
+    "latency_file": "config/preset_latency_c08.json",
+    "latency_sha256": "d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3",
+    "latency_placeholder": false,
+    "align_policy_used": "stroke",
+    "align_policy_tried": [
+      "stroke"
+    ]
+  },
+  "audio": {
+    "sha256": "b93b1677f12e5b9071e8a1012f10dbdcf19259e2fbda43d78a063438be4d60f2",
+    "sample_rate_hz": 44100,
+    "sample_count": 233472,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "audio_start_monotonic": null,
+  "modified_audio": false,
+  "status": "pending",
+  "reason": "ok",
+  "required_audio_start_delay_samples": 0,
+  "dispatch_sample": 22053,
+  "phases": {
+    "dispatch_sample": 22053,
+    "expected_onset_sample": 75856,
+    "expected_stroke_sample": 104076,
+    "expected_end_sample": 245200,
+    "end_after_audio_end": true
+  },
+  "dispatches": [
+    {
+      "motion_id": 3031,
+      "area": 11,
+      "dispatch_sample": 22053,
+      "dispatch_sample_with_start_delay": 22053,
+      "repeat_count": 1
+    }
+  ]
+}

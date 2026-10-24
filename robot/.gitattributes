@@ -1,0 +1,5 @@
+# Los archivos que se ejecutan en el robot (PC2 Orin, Linux/aarch64) deben
+# viajar SIEMPRE con LF: con core.autocrlf=true en Windows, un checkout/rsync
+# los convertiría a CRLF y bash fallaría con errores confusos (`\r`).
+*.sh text eol=lf
+deploy/** text eol=lf

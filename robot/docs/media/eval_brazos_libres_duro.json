@@ -1,0 +1,121 @@
+[
+  {
+    "scenario": "empujones_fuertes_200N",
+    "fell": false,
+    "time_s": 15.02,
+    "cmd": [
+      0.4,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      0.33,
+      -0.045
+    ],
+    "yaw_rate": -0.038,
+    "height_mean": 0.631,
+    "height_std": 0.0098
+  },
+  {
+    "scenario": "brazos_aleatorios_rapido",
+    "fell": false,
+    "time_s": 20.02,
+    "cmd": [
+      0.7,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      0.68,
+      -0.022
+    ],
+    "yaw_rate": -0.024,
+    "height_mean": 0.622,
+    "height_std": 0.0052
+  },
+  {
+    "scenario": "brazos_aleatorios_girando",
+    "fell": false,
+    "time_s": 20.02,
+    "cmd": [
+      0.0,
+      0.0,
+      0.6
+    ],
+    "v_meas": [
+      -0.012,
+      -0.018
+    ],
+    "yaw_rate": 0.31,
+    "height_mean": 0.632,
+    "height_std": 0.0052
+  },
+  {
+    "scenario": "brazos_aleatorios_girando_der",
+    "fell": false,
+    "time_s": 20.02,
+    "cmd": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "v_meas": [
+      -0.06,
+      0.002
+    ],
+    "yaw_rate": -0.911,
+    "height_mean": 0.626,
+    "height_std": 0.0045
+  },
+  {
+    "scenario": "brazos_aleatorios_lateral",
+    "fell": false,
+    "time_s": 20.02,
+    "cmd": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "v_meas": [
+      -0.078,
+      0.264
+    ],
+    "yaw_rate": -0.07,
+    "height_mean": 0.635,
+    "height_std": 0.0039
+  },
+  {
+    "scenario": "poses_girando",
+    "fell": false,
+    "time_s": 22.02,
+    "cmd": [
+      0.3,
+      0.0,
+      0.5
+    ],
+    "v_meas": [
+      0.247,
+      0.009
+    ],
+    "yaw_rate": 0.477,
+    "height_mean": 0.628,
+    "height_std": 0.0046
+  },
+  {
+    "scenario": "brazos_aleatorios_y_empujones",
+    "fell": false,
+    "time_s": 20.02,
+    "cmd": [
+      0.3,
+      0.0,
+      0.0
+    ],
+    "v_meas": [
+      0.261,
+      -0.024
+    ],
+    "yaw_rate": -0.024,
+    "height_mean": 0.632,
+    "height_std": 0.0053
+  }
+]

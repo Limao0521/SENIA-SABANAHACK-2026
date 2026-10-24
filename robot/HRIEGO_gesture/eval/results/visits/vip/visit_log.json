@@ -1,0 +1,334 @@
+{
+ "visit_id": "visit_vip_1792649531",
+ "profile_injected": {
+  "person_id": "sim-vip",
+  "display_name": "Doctora Elena Ramírez",
+  "rank_code": "VIP",
+  "rank_name": "Invitada VIP"
+ },
+ "face_recognition": "bypassed",
+ "scenario": "reception_lab_right",
+ "turns": [
+  {
+   "turn_id": "visit_vip_1792649531_t00",
+   "state": "GREETING",
+   "visitor_utterance": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_vip_1792649531_t00\",\"speech\":\"Bienvenida, Doctora Elena Ramírez. ¿En qué puedo ayudarle hoy?\",\"communicative_acts\":[ \"GREETING\" ],\"motor_intents\":[{\"event_id\":\"visit_vip_1792649531_t00\",\"type\":\"GREETING_VIP\",\"trigger_text\":\"Bienvenida, Doctora Elena Ramírez. ¿En q\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_vip_1792649531_t00",
+     "speech": "Bienvenida, Doctora Elena Ramírez. ¿En qué puedo ayudarle hoy?",
+     "communicative_acts": [
+      "GREETING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_vip_1792649531_t00",
+       "type": "GREETING_VIP",
+       "trigger_text": "Bienvenida, Doctora Elena Ramírez. ¿En q"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.7671,
+     "prompt_tokens": 927,
+     "completion_tokens": 128,
+     "cached_tokens": 554,
+     "prompt_ms": 70.066,
+     "predicted_ms": 1627.395,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.9019,
+    "prompt_chars": 3326
+   },
+   "decision": {
+    "requested": "GREETING_VIP",
+    "effective": "GREETING_VIP",
+    "suppressed": null,
+    "trigger_text": "Bienvenida, Doctora Elena Ramírez. ¿En q",
+    "trigger_char_start": 0,
+    "trigger_char_end": 40
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/vip/wav/visit_vip_1792649531/visit_vip_1792649531_t00.wav",
+    "wav_sha256": "45ec5c3e152d661630886f039a20013d03373f31aedf98421075e0d55718e481",
+    "sample_rate": 44100,
+    "duration_s": 4.5103,
+    "synth_s": 1.0308
+   }
+  },
+  {
+   "turn_id": "visit_vip_1792649531_t01",
+   "state": "GUIDANCE",
+   "visitor_utterance": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_vip_1792649531_t01\",\"speech\":\"a mi derecha\",\"communicative_acts\":[\"GUIDE\"],\"motor_intents\":[{\"event_id\":\"visit_vip_1792649531_t01\",\"type\":\"POINT_RIGHT\",\"trigger_text\":\"a mi derecha\",\"reference_frame\":\"X2_base_local\",\"target_vector\":[0.0,-1.0,0.0]}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_vip_1792649531_t01",
+     "speech": "a mi derecha",
+     "communicative_acts": [
+      "GUIDE"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_vip_1792649531_t01",
+       "type": "POINT_RIGHT",
+       "trigger_text": "a mi derecha",
+       "reference_frame": "X2_base_local",
+       "target_vector": [
+        0.0,
+        -1.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.5969,
+     "prompt_tokens": 1007,
+     "completion_tokens": 120,
+     "cached_tokens": 554,
+     "prompt_ms": 93.509,
+     "predicted_ms": 1497.119,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.7481,
+    "prompt_chars": 3669
+   },
+   "decision": {
+    "requested": "POINT_RIGHT",
+    "effective": "POINT_RIGHT",
+    "suppressed": null,
+    "trigger_text": "a mi derecha",
+    "trigger_char_start": 0,
+    "trigger_char_end": 12
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/vip/wav/visit_vip_1792649531/visit_vip_1792649531_t01.wav",
+    "wav_sha256": "5b490b382f64d05bc6bb8b925ba63b0ee2501a88f960da1380625bbb1d4b3706",
+    "sample_rate": 44100,
+    "duration_s": 1.5504,
+    "synth_s": 0.4555
+   }
+  },
+  {
+   "turn_id": "visit_vip_1792649531_t02",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Muchas gracias, me ha encantado todo el recorrido.",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_vip_1792649531_t02\",\"speech\":\"Muchas gracias, me ha encantado todo el recorrido\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"visit_vip_1792649531_t02\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"me ha encantado\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_vip_1792649531_t02",
+     "speech": "Muchas gracias, me ha encantado todo el recorrido",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_vip_1792649531_t02",
+       "type": "SOCIAL_HEART",
+       "trigger_text": "me ha encantado"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.6401,
+     "prompt_tokens": 1778,
+     "completion_tokens": 113,
+     "cached_tokens": 1531,
+     "prompt_ms": 53.058,
+     "predicted_ms": 1505.097,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.7945,
+    "prompt_chars": 6278
+   },
+   "decision": {
+    "requested": "SOCIAL_HEART",
+    "effective": "SOCIAL_HEART",
+    "suppressed": null,
+    "trigger_text": "me ha encantado",
+    "trigger_char_start": 16,
+    "trigger_char_end": 31
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/vip/wav/visit_vip_1792649531/visit_vip_1792649531_t02.wav",
+    "wav_sha256": "7e79c224d514b8d76680d870bdb2e37c92ccceecfd36e67b436f032d95489d15",
+    "sample_rate": 44100,
+    "duration_s": 3.9667,
+    "synth_s": 0.8126
+   }
+  },
+  {
+   "turn_id": "visit_vip_1792649531_t03",
+   "state": "DIALOGUE",
+   "visitor_utterance": "Dime la dirección personal del director.",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_vip_1792649531_t03\",\"speech\":\"El director está en el laboratorio a la derecha.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"visit_vip_1792649531_t03\",\"type\":\"CONFIRMATION\",\"trigger_text\":\"laboratorio\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_vip_1792649531_t03",
+     "speech": "El director está en el laboratorio a la derecha.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_vip_1792649531_t03",
+       "type": "CONFIRMATION",
+       "trigger_text": "laboratorio"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.4864,
+     "prompt_tokens": 1771,
+     "completion_tokens": 107,
+     "cached_tokens": 1662,
+     "prompt_ms": 26.523,
+     "predicted_ms": 1453.098,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6396,
+    "prompt_chars": 6268
+   },
+   "decision": {
+    "requested": "CONFIRMATION",
+    "effective": "CONFIRMATION",
+    "suppressed": null,
+    "trigger_text": "laboratorio",
+    "trigger_char_start": 23,
+    "trigger_char_end": 34
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/vip/wav/visit_vip_1792649531/visit_vip_1792649531_t03.wav",
+    "wav_sha256": "6f3f6fd21b1249a52b8d4940147cf48795c5e92390284af958605849ee7dd251",
+    "sample_rate": 44100,
+    "duration_s": 3.9428,
+    "synth_s": 0.8166
+   }
+  },
+  {
+   "turn_id": "visit_vip_1792649531_t04",
+   "state": "DIALOGUE",
+   "visitor_utterance": "¿Qué hace el laboratorio?",
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_vip_1792649531_t04\",\"speech\":\"El laboratorio está a la derecha del agente.\",\"communicative_acts\":[ \"RESPOND\" ],\"motor_intents\":[{\"event_id\":\"visit_vip_1792649531_t04\",\"type\":\"CONFIRMATION\",\"trigger_text\":\"derecha\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_vip_1792649531_t04",
+     "speech": "El laboratorio está a la derecha del agente.",
+     "communicative_acts": [
+      "RESPOND"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_vip_1792649531_t04",
+       "type": "CONFIRMATION",
+       "trigger_text": "derecha"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.4691,
+     "prompt_tokens": 1770,
+     "completion_tokens": 106,
+     "cached_tokens": 1662,
+     "prompt_ms": 26.475,
+     "predicted_ms": 1436.059,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.6174,
+    "prompt_chars": 6253
+   },
+   "decision": {
+    "requested": "CONFIRMATION",
+    "effective": "NONE",
+    "suppressed": "cooldown_same_emote_consecutive",
+    "trigger_text": null,
+    "trigger_char_start": null,
+    "trigger_char_end": null
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/vip/wav/visit_vip_1792649531/visit_vip_1792649531_t04.wav",
+    "wav_sha256": "659cf6052dad1cfa75f0c50bde9a4850f06279ec86f968e5b6666d3e967a133c",
+    "sample_rate": 44100,
+    "duration_s": 3.5855,
+    "synth_s": 0.7858
+   }
+  },
+  {
+   "turn_id": "visit_vip_1792649531_t05",
+   "state": "FAREWELL",
+   "visitor_utterance": null,
+   "llm": {
+    "raw": "{\"schema_version\":\"rcp01c.intervention.v2\",\"scene_id\":\"E3\",\"utterance_id\":\"visit_vip_1792649531_t05\",\"speech\":\"Atención a la invitada VIP. ¡Hasta luego!\", \"communicative_acts\":[\"CLOSING\"],\"motor_intents\":[{\"event_id\":\"visit_vip_1792649531_t05\",\"type\":\"SOCIAL_HEART\",\"trigger_text\":\"Hasta luego\"}]}",
+    "parsed": {
+     "schema_version": "rcp01c.intervention.v2",
+     "scene_id": "E3",
+     "utterance_id": "visit_vip_1792649531_t05",
+     "speech": "Atención a la invitada VIP. ¡Hasta luego!",
+     "communicative_acts": [
+      "CLOSING"
+     ],
+     "motor_intents": [
+      {
+       "event_id": "visit_vip_1792649531_t05",
+       "type": "SOCIAL_HEART",
+       "trigger_text": "Hasta luego"
+      }
+     ]
+    },
+    "errors": [],
+    "metrics": {
+     "total_s": 1.57,
+     "prompt_tokens": 937,
+     "completion_tokens": 108,
+     "cached_tokens": 635,
+     "prompt_ms": 57.196,
+     "predicted_ms": 1409.19,
+     "service": "x2-llm LocalLLM -> llama-server"
+    },
+    "wall_s": 1.7231,
+    "prompt_chars": 3399
+   },
+   "decision": {
+    "requested": "SOCIAL_HEART",
+    "effective": "SOCIAL_HEART",
+    "suppressed": null,
+    "trigger_text": "Hasta luego",
+    "trigger_char_start": 29,
+    "trigger_char_end": 40
+   },
+   "tts": {
+    "wav_path": "HRIEGO_gesture/eval/results/visits/vip/wav/visit_vip_1792649531/visit_vip_1792649531_t05.wav",
+    "wav_sha256": "93f601a5bc42736a6e716ab8e7b6194226b820db8765107932fa42fa88853cf6",
+    "sample_rate": 44100,
+    "duration_s": 4.0031,
+    "synth_s": 0.8375
+   }
+  }
+ ],
+ "manifest": "HRIEGO_gesture/eval/results/visits/vip/tts_manifest.jsonl",
+ "anchor_plan": {
+  "returncode": 0,
+  "stdout": "{\n \"schema\": \"hriego_gesture_anchor_plan.v1\",\n \"rows\": 6,\n \"policy\": {\n  \"align\": \"onset\",\n  \"stat\": \"median\",\n  \"max_initial_delay_s\": 1.5,\n  \"latency_file\": \"config/preset_latency_c08.json\",\n  \"latency_sha256\": \"d35c250a0e021d29e3eff90e927360b50e95185953933798ca883294d4f412f3\",\n  \"latency_error\": null\n },\n \"model\": {\n  \"revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d\",\n  \"onnx_sha256\": \"e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\",\n  \"provider\": \"CPUExecutionProvider\",\n  \"cpu_threads\": 2,\n  \"onnx_sha256_matches_pinned\": true,\n  \"model_revision\": \"openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931\"\n },\n \"status_counts\": {\n  \"alignment_anchor_word_mapping_mismatch\": 1,\n  \"anchor_only_no_preset\": 1,\n  \"planned\": 3,\n  \"none_sonic\": 1\n },\n \"status_preroll0_counts\": {\n  \"alignment_anchor_word_mapping_mismatch\": 1,\n  \"anchor_only_no_preset\": 1,\n  \"planned\": 3,\n  \"none_sonic\": 1\n },\n \"align_status_counts\": {\n  \"anchor_word_mapping_mismatch\": 1,\n  \"aligned_ctc_not_human_validated\": 4,\n  \"null\": 1\n },\n \"max_delay_s_planned\": 0.0,\n \"max_delay_s_preroll0_planned\": 0.0\n}\n",
+  "stderr": "",
+  "files": [
+   "HRIEGO_gesture/eval/results/visits/vip/anchor_plan/summary.json"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+{
+  "_comment": "Umbrales de HRIEGO v2 en el Orin NX 16 GB (memoria unificada: la 'VRAM libre' es MemAvailable). Los servicios del robot ya ocupan ~7 GiB y x2-llm ~3,5 GiB; Supertonic + Face en CPU caben en ~1,5 GiB. Se carga con HRIEGO_RUNTIME_OVERRIDES.",
+  "v2_tts_start_ram_available_bytes": 1610612736,
+  "v2_min_ram_available_bytes": 1073741824,
+  "v2_min_gpu_free_bytes": 1073741824,
+  "abort_ram_available_bytes": 805306368,
+  "abort_gpu_free_bytes": 805306368
+}

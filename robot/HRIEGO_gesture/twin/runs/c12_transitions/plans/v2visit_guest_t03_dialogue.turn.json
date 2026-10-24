@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_guest_t03_dialogue",
+ "rank": "guest",
+ "emote": "APPLAUSE",
+ "motion_id": 3017,
+ "area": 11,
+ "binding": "3017/11",
+ "anchor_s": 0.78,
+ "dur_s": 5.015510204081632,
+ "lead_onset_s": 1.1800003909993393,
+ "lead_stroke_s": 1.8800003910000669,
+ "policy_dispatch_s": {
+  "stroke": -1.1000003910000669,
+  "mid": -0.7500003909997031,
+  "onset": -0.40000039099933926
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 6.459998267000628
+}

@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Gracias por visitarnos",
+  "char_start": 0,
+  "char_end": 22,
+  "occurrence": 1,
+  "start_s": 0.84,
+  "end_s": 2.14,
+  "start_sample": 37044,
+  "end_sample": 94374,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "ae1f0ff9a3cf893ab9966255f9df72844ceefd074b957c0300e81d9ffe1bdb0c",
+  "sample_count": 279552,
+  "case_id": "ps_mario_t05_farewell",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

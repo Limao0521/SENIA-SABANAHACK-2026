@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_regular_t03_dialogue",
+ "rank": "regular",
+ "emote": "THUMBS_UP",
+ "motion_id": 1005,
+ "area": 2,
+ "binding": "1005/2",
+ "anchor_s": 3.28,
+ "dur_s": 4.458231292517007,
+ "lead_onset_s": 1.1999633289997291,
+ "lead_stroke_s": 1.799963328998274,
+ "policy_dispatch_s": {
+  "stroke": 1.4800366710017259,
+  "mid": 1.7800366710009983,
+  "onset": 2.0800366710002707
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 4.26000008399933
+}

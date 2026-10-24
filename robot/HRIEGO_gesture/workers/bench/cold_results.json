@@ -1,0 +1,58 @@
+[
+ {
+  "clip": "003_ULTRA_bienvenida",
+  "S1_streamtalk": {
+   "rc": 0,
+   "wall_s": 22.34,
+   "peak_rss_mb": 4257,
+   "peak_vram_mb": 2298
+  },
+  "S2_gmr": {
+   "rc": 0,
+   "wall_s": 5.12,
+   "peak_rss_mb": 3947,
+   "peak_vram_mb": 0
+  },
+  "S3_convert": {
+   "rc": 0,
+   "wall_s": 1.19,
+   "peak_rss_mb": 2041,
+   "peak_vram_mb": 0
+  },
+  "S4_rollout": {
+   "rc": 0,
+   "wall_s": 2.8,
+   "peak_rss_mb": 2237,
+   "peak_vram_mb": 0
+  },
+  "total_s": 31.45
+ },
+ {
+  "clip": "008_X2_original_serie_d",
+  "S1_streamtalk": {
+   "rc": 0,
+   "wall_s": 21.38,
+   "peak_rss_mb": 4257,
+   "peak_vram_mb": 2298
+  },
+  "S2_gmr": {
+   "rc": 0,
+   "wall_s": 5.12,
+   "peak_rss_mb": 3923,
+   "peak_vram_mb": 0
+  },
+  "S3_convert": {
+   "rc": 0,
+   "wall_s": 1.21,
+   "peak_rss_mb": 2055,
+   "peak_vram_mb": 0
+  },
+  "S4_rollout": {
+   "rc": 0,
+   "wall_s": 2.79,
+   "peak_rss_mb": 2234,
+   "peak_vram_mb": 0
+  },
+  "total_s": 30.5
+ }
+]

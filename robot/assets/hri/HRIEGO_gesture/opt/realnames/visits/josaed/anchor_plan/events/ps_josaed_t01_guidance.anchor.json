@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Frente a mí",
+  "char_start": 0,
+  "char_end": 11,
+  "occurrence": 1,
+  "start_s": 0.8,
+  "end_s": 1.3,
+  "start_sample": 35280,
+  "end_sample": 57330,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "5d5240360df00926b70d5298303298d92da8d055c6b96b9d804e31f784f6f62b",
+  "sample_count": 248832,
+  "case_id": "ps_josaed_t01_guidance",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

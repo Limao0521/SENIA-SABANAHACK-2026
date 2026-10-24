@@ -1,0 +1,11 @@
+# Override de llm/docker-compose.yml para el Orin (lo usa deploy/hri_sin_actuacion.sh):
+#   - imagen elegida por LLM_IMAGE (x2-ultra/llm:jetson con GPU, x2-ultra/llm:cpu sin ella);
+#   - red del host: no se crea ninguna red/bridge de Docker en el robot (dockerd corre
+#     con --bridge=none); la API queda en :8000 y llama-server en :8080;
+#   - restart "no": tras un reinicio del robot nada arranca solo.
+services:
+  llm:
+    image: ${LLM_IMAGE:-x2-ultra/llm:jetson}
+    network_mode: host
+    ports: !reset []
+    restart: "no"

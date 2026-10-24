@@ -1,0 +1,67 @@
+# HRIEGO_gesture: intento de entorno UNICO (borrador, NO resuelto, NO instalado).
+#
+# Estado: esto es el resultado de unir las versiones congeladas de los entornos
+# reales (ver requirements/*.txt y *.yml) y elegir una version por paquete cuando
+# difieren. Nada de esto se ha creado, resuelto ni probado. Ver CONFLICTS.md:
+# la conclusion es que un entorno unico NO es viable sin validacion; el set minimo
+# recomendado son 4 entornos (CONFLICTS.md, seccion 4).
+#
+# Uso previsto (cuando se decida probarlo, NO ahora):
+#   conda env create -f requirements/environment.total.yml
+# (Usar un nombre de entorno nuevo; no sobrescribir physicalai/gmr.)
+name: hriego-gesture-total
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12.14            # physicalai y Face; gmr usa 3.10.21 (incompatible en principio)
+  - pip=26.2.1
+  - pip:
+      # --- indice de PyTorch CUDA 13.0 (Face). physicalai usa cu128: CONFLICTO ---
+      - --extra-index-url https://download.pytorch.org/whl/cu130
+      - torch==2.14.1+cu130            # Face (physicalai: 2.11.0+cu128; gmr: 2.14.0)
+      - torchvision==0.29.1+cu130      # Face (physicalai: 0.26.0+cu128)
+      # --- ONNX Runtime: UNA sola variante. physicalai tiene onnxruntime 1.30.0 Y onnxruntime-gpu 1.26.0 a la vez ---
+      - onnxruntime-gpu==1.31.0        # Face (gmr: onnxruntime 1.23.2; E4 CTC validado con 1.23.2 CPU)
+      - onnx==1.23.0                   # physicalai
+      # --- numpy/scipy: la version mas nueva usada por Face/Supertonic ---
+      - numpy==2.5.4                   # Face, Supertonic (physicalai 2.3.1; gmr 2.2.6)
+      - scipy==1.18.1                  # Face (physicalai 1.17.0; gmr 1.15.3)
+      - pandas==2.3.3                  # gmr (physicalai tiene un wheel local file:// no portable)
+      - scikit-image==0.26.0           # Face
+      - opencv-python==5.0.0.93        # Face y gmr (physicalai usa opencv-python-headless-noffmpeg 4.14.0.94rc1: elegir uno)
+      - pillow==13.0.0                 # Face (physicalai y gmr: 12.3.0)
+      - pyyaml==6.0.3
+      - psutil==7.2.2
+      - requests==2.34.2
+      - tqdm==4.70.1
+      - packaging==26.3
+      - protobuf==7.36.2
+      # --- TTS Supertonic (venv experiments/hriego_v2_tts_eval_20261021/.venv) ---
+      - supertonic==1.3.1
+      - soundfile==0.14.0
+      # --- audio / StreamTalk (physicalai) ---
+      - librosa==1.0.0
+      - soxr==1.1.0
+      - audiofile==1.6.1
+      - numba==0.67.0
+      - einops==0.8.2
+      - omegaconf==2.3.1
+      - hydra-core==1.3.7
+      - transformers==5.17.0           # WavLM (StreamTalk); el environment.yml upstream de StreamTalk es py3.9 + torch 2.0 (ver CONFLICTS.md)
+      - tokenizers==0.23.2
+      - huggingface_hub==2.2.0         # Supertonic/Face usan 2.2.0; transformers 5.17 / physicalai 1.32.0: CONFLICTO
+      - safetensors==0.8.0
+      - sentencepiece==0.2.2
+      - h5py                           # StreamTalk (version no fijada en freeze: verificar)
+      - positional-encodings           # StreamTalk (version no fijada en freeze: verificar)
+      - matplotlib==3.10.8
+      # --- SONIC / MuJoCo / SMPL-X ---
+      - mujoco==3.11.0                 # physicalai (gmr 3.13.0): CONFLICTO
+      - smplx==0.1.28                  # physicalai (gmr: smplx desde git 1265df7)
+      # --- GMR (retargeting). Solo en gmr; instalar aparte, no en el total ---
+      # - -e git+https://github.com/YanjieZe/GMR.git@bb1bbe40774794fceb2a7c579a3464a28e68c844#egg=general_motion_retargeting
+      # - mink==1.3.0                  # solo gmr (requiere mujoco/qpsolvers de gmr)
+# Paquetes de los entornos exportados que NO necesita el codigo incluido y se omiten:
+#   rerun-sdk, plotly, gymnasium, mediapipe, mujoco-warp, mujoco-usd-converter, numpy-stl,
+#   pin, pin-pink, trimesh, torch-complex, onnxscript, sympy, matplotlib-inline, mink (fuera de este set).

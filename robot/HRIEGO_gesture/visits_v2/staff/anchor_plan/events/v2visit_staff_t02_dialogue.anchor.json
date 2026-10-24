@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "No puedo",
+  "char_start": 0,
+  "char_end": 8,
+  "occurrence": 1,
+  "start_s": 0.86,
+  "end_s": 1.24,
+  "start_sample": 37926,
+  "end_sample": 54684,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "2089f10bb0c787205581ce890624d993719059f8bdcc3bff756d6347efea4eaa",
+  "sample_count": 187392,
+  "case_id": "v2visit_staff_t02_dialogue",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_external_t03_dialogue",
+ "rank": "external",
+ "emote": "NEGATION_STRONG",
+ "motion_id": 3009,
+ "area": 11,
+ "binding": "3009/11",
+ "anchor_s": 1.84,
+ "dur_s": 5.363809523809524,
+ "lead_onset_s": 1.1799550969990378,
+ "lead_stroke_s": 2.24000202499883,
+ "policy_dispatch_s": {
+  "stroke": -0.4000020249988301,
+  "mid": 0.1300214390010661,
+  "onset": 0.6600449030009623
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 5.539998050000577
+}

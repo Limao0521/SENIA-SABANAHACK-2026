@@ -1,0 +1,40 @@
+{
+  "schema_version": "x2_gesture_event.v1",
+  "utterance_id": "visit_vip_1792649460",
+  "audio": {
+    "sha256": "777707993aace0c5e2e1650d1d93b83fa19425e6ddcdcadbc730aafb6af5367c",
+    "sample_rate_hz": 44100,
+    "sample_count": 98304,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "decision": {
+    "communicative_act": "SOCIAL_HEART",
+    "motor_intent": "SOCIAL_HEART",
+    "decision_source": "hriego_manifest"
+  },
+  "binding": {
+    "motion_id": 3004,
+    "area": 11,
+    "asset_sha256": "0cbaeda6acbf0c00b92479ae6ad3ae6ffdd8a068b90de2c7e4b26305ab5d730a",
+    "animation_player_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da"
+  },
+  "anchor": {
+    "text": "Atención a su llegada.",
+    "source_char_start": 0,
+    "source_char_end": 22,
+    "occurrence": 1,
+    "start_sample": 28224,
+    "end_sample": 72324
+  },
+  "alignment": {
+    "method": "quartznet15x5_ctc_viterbi",
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "status": "aligned_ctc_not_human_validated"
+  },
+  "schedule": {
+    "desired_visible_onset_sample": 28224,
+    "dispatch_sample": null,
+    "repeat_count": 1,
+    "status": "unscheduled"
+  }
+}

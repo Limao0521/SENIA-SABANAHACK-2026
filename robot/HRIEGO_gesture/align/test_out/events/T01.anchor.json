@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "Dame esos cinco",
+  "char_start": 8,
+  "char_end": 23,
+  "occurrence": 1,
+  "start_s": 1.56,
+  "end_s": 2.38,
+  "start_sample": 68796,
+  "end_sample": 104958,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "ed3b2e327f243d45c0a3c56bf9cc5389c80e23d0d84c012decc2e898f57753ae",
+  "sample_count": 208896,
+  "case_id": "T01",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

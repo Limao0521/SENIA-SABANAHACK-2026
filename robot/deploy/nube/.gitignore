@@ -1,0 +1,5 @@
+# Secretos y configuración local de la pila en la nube: NUNCA se versionan.
+.secretos/
+.env
+# Modelos descargados por descargar_modelos.sh (GB de binarios).
+modelos/

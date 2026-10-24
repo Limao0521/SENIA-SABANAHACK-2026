@@ -1,0 +1,40 @@
+{
+  "schema_version": "x2_gesture_event.v1",
+  "utterance_id": "v2visit_regular_t05_farewell",
+  "audio": {
+    "sha256": "ba1a249639a90155dfa467b0ecb33722c647fdcb8d68dd517266bf823a591913",
+    "sample_rate_hz": 44100,
+    "sample_count": 233472,
+    "playback_clock": "audio_monotonic_start"
+  },
+  "decision": {
+    "communicative_act": "FAREWELL_WAVE",
+    "motor_intent": "FAREWELL_WAVE",
+    "decision_source": "hriego_manifest"
+  },
+  "binding": {
+    "motion_id": 3031,
+    "area": 11,
+    "asset_sha256": "57e37cc659d03c6ea175614756cb69674c108df21729ff00908aee291be38f0e",
+    "animation_player_sha256": "d7b533981404e2ee51c7a2ddca95782f1385ecda423f65889a51bd018ffad2da"
+  },
+  "anchor": {
+    "text": "hasta luego",
+    "source_char_start": 29,
+    "source_char_end": 40,
+    "occurrence": 1,
+    "start_sample": 114660,
+    "end_sample": 137592
+  },
+  "alignment": {
+    "method": "quartznet15x5_ctc_viterbi",
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "status": "aligned_ctc_not_human_validated"
+  },
+  "schedule": {
+    "desired_visible_onset_sample": 114660,
+    "dispatch_sample": null,
+    "repeat_count": 1,
+    "status": "unscheduled"
+  }
+}

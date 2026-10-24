@@ -1,0 +1,12 @@
+{
+ "schema": "x2_point_4c.v1",
+ "direction": "FRONT",
+ "case_id": "v2visit_guest_t01_guidance",
+ "sample_rate_hz": 44100,
+ "anchor_text": "frente a m\u00ed",
+ "anchor_start_sample": 126126,
+ "anchor_end_sample": 148176,
+ "sample_count": 175104,
+ "wav_sha256": "1cacb6b2897c530ef2f413576b66bf091c585b29c657897155ab5b5c2ae7f3c0",
+ "align": "onset (CTC start of the word)"
+}

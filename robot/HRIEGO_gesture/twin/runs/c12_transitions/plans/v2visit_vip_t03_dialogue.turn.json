@@ -1,0 +1,19 @@
+{
+ "turn_id": "v2visit_vip_t03_dialogue",
+ "rank": "vip",
+ "emote": "SOCIAL_HEART",
+ "motion_id": 3004,
+ "area": 11,
+ "binding": "3004/11",
+ "anchor_s": 0.88,
+ "dur_s": 3.4829931972789114,
+ "lead_onset_s": 1.2000107929998194,
+ "lead_stroke_s": 2.080010793000838,
+ "policy_dispatch_s": {
+  "stroke": -1.2000107930008381,
+  "mid": -0.7600107930003287,
+  "onset": -0.3200107929998194
+ },
+ "max_initial_delay_s": 1.5,
+ "preset_dur_s": 5.240132310002082
+}

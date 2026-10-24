@@ -1,0 +1,46 @@
+# =============================================================================
+# compose.hri.yml — HRIEGO v2 a bordo del X2 Ultra (PC2).
+#
+#   docker compose -f deploy/compose.hri.yml up -d        # arranca HRIEGO
+#   docker compose -f deploy/compose.hri.yml logs -f
+#
+# Requiere x2-llm corriendo (llm/: docker-compose.yml + compose.jetson.yml).
+# Alcance actual: identificación por cámara → saludo/diálogo con voz. La visita
+# termina antes de GUIDANCE (HRIEGO_STOP_BEFORE); no se ejecuta ningún movimiento
+# (las intenciones motoras solo se validan y registran, como en el PC).
+# =============================================================================
+services:
+  hri:
+    image: x2-hri:latest
+    build:                      # variante sin internet; con red vale deploy/Dockerfile.hri
+      context: .wheels
+      dockerfile: ../Dockerfile.hri.offline
+    container_name: x2-hri
+    network_mode: host          # DDS del robot por develop0 + API en 127.0.0.1:8765
+    ipc: host                   # transporte SHM de FastDDS con los procesos del robot
+    restart: "no"
+    init: true
+    environment:
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+      # Mismo perfil DDS que los procesos de AgiBot (SHM + UDP solo por 10.0.1.41);
+      # con el perfil por defecto el contenedor ve los topics pero no recibe datos.
+      FASTRTPS_DEFAULT_PROFILES_FILE: /agibot/software/entry/cfg/ros_dds_configuration.xml
+      ROS_LOCALHOST_ONLY: "0"
+      ROS_LOG_DIR: /tmp/ros_logs
+      HRIEGO_CAMERA_SOURCE: ${HRIEGO_CAMERA_SOURCE:-ros:/aima/hal/sensor/rgbd_head_front/rgb_image}
+      HRIEGO_AUDIO_BACKEND: ${HRIEGO_AUDIO_BACKEND:-aimdk}   # none = sin voz por altavoces
+      HRIEGO_NO_ACTUATION: "1"    # robot_io solo permite publicar audio (lista blanca)
+      HRIEGO_JETSON: "1"          # memoria unificada: "VRAM libre" = MemAvailable
+      HRIEGO_STOP_BEFORE: ${HRIEGO_STOP_BEFORE:-GUIDANCE}
+      HRIEGO_RUNTIME_OVERRIDES: /workspace/x2_ultra/deploy/hriego_jetson_runtime.json
+      HRIEGO_LLAMA_SERVER_PATTERN: ${HRIEGO_LLAMA_SERVER_PATTERN:-llama-server}
+      # x2-llm es hoy la imagen CPU (x2-ultra/llm:cpu); poner 0 con la de Jetson/CUDA.
+      HRIEGO_LLM_ALLOW_CPU: ${HRIEGO_LLM_ALLOW_CPU:-1}
+      DISPLAY: "${DISPLAY:-:0}"
+    volumes:
+      - ..:/workspace/x2_ultra                      # código + SQLite + datos de HRIEGO
+      - /var/run/docker.sock:/var/run/docker.sock   # puente LLM: docker exec x2-llm
+      - /usr/bin/docker:/usr/bin/docker:ro          # CLI del host (Ubuntu 22.04 = misma base)
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - /agibot/software/entry/cfg/ros_dds_configuration.xml:/agibot/software/entry/cfg/ros_dds_configuration.xml:ro
+    command: ["python3", "-m", "hriego_v2.main", "--headless"]

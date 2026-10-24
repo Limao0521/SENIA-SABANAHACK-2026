@@ -1,0 +1,25 @@
+{
+  "status": "aligned_ctc_not_human_validated",
+  "text": "me encanta",
+  "char_start": 6,
+  "char_end": 16,
+  "occurrence": 1,
+  "start_s": 1.1,
+  "end_s": 1.56,
+  "start_sample": 48510,
+  "end_sample": 68796,
+  "sample_rate_hz": 44100,
+  "frame_step_s": 0.02,
+  "sha256": "fd212c69464546181475689c1bdcfc049fd3382a8d0122a15fd1e885aac7c0cc",
+  "sample_count": 159744,
+  "case_id": "ps_mario_t02_dialogue",
+  "method": "quartznet15x5_ctc_viterbi",
+  "model": {
+    "revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d",
+    "onnx_sha256": "e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931",
+    "provider": "CPUExecutionProvider",
+    "cpu_threads": 2,
+    "onnx_sha256_matches_pinned": true,
+    "model_revision": "openvoiceos@8f9307e93cdb05a06fcaa0b977312495e96f405d;onnx_sha256=e66ee9f0798f0faca8f426b9124c66c20df76d6dadb3a2371c808cff597c3931"
+  }
+}

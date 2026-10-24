@@ -1,0 +1,1532 @@
+{
+  "schema": "x2-urs-acceptance-v1",
+  "fecha_utc": "20261012T202302Z",
+  "commit_inicial": "765560736c9686497b536c1a81cdeb7ce4169511",
+  "parametros": {
+    "repeticiones": 3,
+    "segundos": 5.0,
+    "vx": 0.4
+  },
+  "perfil_elegido": null,
+  "restauracion_P0_exit_code": 0,
+  "profiles": [
+    {
+      "perfil": "P0",
+      "aprobado": false,
+      "configuracion_privada_verificada": true,
+      "configuracion": {
+        "profile": "P0",
+        "description": "vendor baseline",
+        "robot": "lx2501_3_t2d5",
+        "created_utc": "2026-10-12T20:23:04.480457+00:00",
+        "source": {
+          "stand_auto_transition": true,
+          "locomotion_runner": "rl_foundationwalk",
+          "locomotion_config": "./rl/foundationwalk_config.yaml"
+        },
+        "generated": {
+          "stand_auto_transition": true,
+          "locomotion_runner": "rl_foundationwalk",
+          "locomotion_config": "./rl/foundationwalk_config.yaml"
+        },
+        "mc_loaded_private_config": true,
+        "locomotion_runner_initialized": true,
+        "vendor_sha256": {
+          "mc_sim.yaml": "999d75f0caed5f20479c670fb95b624910c66722b47d37b60217717a3fe34b60",
+          "action_state.yaml": "60d7107ffdaaaca678d5ce15887c860cc4731ffdc5256c97088f750751a49503",
+          "action_setting.yaml": "60e4b37a2d185515efb63192a67f9cb425558da3f4caabd432aa62bb23f05479"
+        }
+      },
+      "error": null,
+      "corridas": [
+        {
+          "repeticion": 1,
+          "pose": "reposo",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 2.327917,
+            "desplazamiento_post_parada_m": 0.274292,
+            "altura_min_pelvis_m": 0.660789,
+            "inclinacion_max_grados": 5.075082,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.100954,
+            "error_manos_max_andando_rad": 0.016261,
+            "factor_tiempo_real": 0.99998,
+            "frecuencia_ordenes_hz": 49.998981,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "al_frente",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.605604,
+            "desplazamiento_post_parada_m": 0.505471,
+            "altura_min_pelvis_m": 0.658165,
+            "inclinacion_max_grados": 8.705778,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.18563,
+            "error_manos_max_andando_rad": 0.027592,
+            "factor_tiempo_real": 0.999986,
+            "frecuencia_ordenes_hz": 49.999287,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "saludar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 0.16992,
+            "desplazamiento_post_parada_m": 0.551249,
+            "altura_min_pelvis_m": 0.689561,
+            "inclinacion_max_grados": 6.306603,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.10079,
+            "error_manos_max_andando_rad": 0.015742,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999417,
+            "modos_mc_privados_andando": [
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "arriba",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.061123,
+            "desplazamiento_post_parada_m": 0.98944,
+            "altura_min_pelvis_m": 0.388353,
+            "inclinacion_max_grados": 21.113867,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.208883,
+            "error_manos_max_andando_rad": 0.041035,
+            "factor_tiempo_real": 0.999947,
+            "frecuencia_ordenes_hz": 49.997333,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "cargar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.62612,
+            "desplazamiento_post_parada_m": 0.821353,
+            "altura_min_pelvis_m": 0.39346,
+            "inclinacion_max_grados": 14.301213,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.129567,
+            "error_manos_max_andando_rad": 0.020286,
+            "factor_tiempo_real": 0.999967,
+            "frecuencia_ordenes_hz": 49.998336,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "reposo",
+          "pose_durante": "al_frente",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 1.943059,
+            "desplazamiento_post_parada_m": 0.478753,
+            "altura_min_pelvis_m": 0.661134,
+            "inclinacion_max_grados": 8.107051,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.168337,
+            "error_manos_max_andando_rad": 0.019115,
+            "factor_tiempo_real": 0.999986,
+            "frecuencia_ordenes_hz": 49.999291,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "al_frente",
+          "pose_durante": "arriba",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.893945,
+            "desplazamiento_post_parada_m": 0.773498,
+            "altura_min_pelvis_m": 0.391116,
+            "inclinacion_max_grados": 18.656278,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.181917,
+            "error_manos_max_andando_rad": 0.032146,
+            "factor_tiempo_real": 0.999918,
+            "frecuencia_ordenes_hz": 49.995888,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "arriba",
+          "pose_durante": "cargar",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.144393,
+            "desplazamiento_post_parada_m": 0.262113,
+            "altura_min_pelvis_m": 0.384835,
+            "inclinacion_max_grados": 19.521093,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.224708,
+            "error_manos_max_andando_rad": 0.031263,
+            "factor_tiempo_real": 0.999946,
+            "frecuencia_ordenes_hz": 49.997286,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "cambio_pose_ejecutado",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "reposo",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 2.43819,
+            "desplazamiento_post_parada_m": 0.368741,
+            "altura_min_pelvis_m": 0.677632,
+            "inclinacion_max_grados": 4.175388,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.103925,
+            "error_manos_max_andando_rad": 0.01624,
+            "factor_tiempo_real": 0.999979,
+            "frecuencia_ordenes_hz": 49.998974,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "al_frente",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 0.03327,
+            "desplazamiento_post_parada_m": 0.46041,
+            "altura_min_pelvis_m": 0.639788,
+            "inclinacion_max_grados": 11.786449,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.214991,
+            "error_manos_max_andando_rad": 0.042129,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999395,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "saludar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.435622,
+            "desplazamiento_post_parada_m": 0.10638,
+            "altura_min_pelvis_m": 0.638723,
+            "inclinacion_max_grados": 9.708355,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.411895,
+            "error_manos_max_andando_rad": 0.035698,
+            "factor_tiempo_real": 0.999987,
+            "frecuencia_ordenes_hz": 49.99935,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "arriba",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.574954,
+            "desplazamiento_post_parada_m": 0.481998,
+            "altura_min_pelvis_m": 0.365819,
+            "inclinacion_max_grados": 50.561182,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.460061,
+            "error_manos_max_andando_rad": 0.043709,
+            "factor_tiempo_real": 0.999948,
+            "frecuencia_ordenes_hz": 49.997386,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "inclinacion",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "cargar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.343505,
+            "desplazamiento_post_parada_m": 1.175143,
+            "altura_min_pelvis_m": 0.65347,
+            "inclinacion_max_grados": 11.931132,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.146737,
+            "error_manos_max_andando_rad": 0.020029,
+            "factor_tiempo_real": 0.999973,
+            "frecuencia_ordenes_hz": 49.998648,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "reposo",
+          "pose_durante": "al_frente",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 1.495957,
+            "desplazamiento_post_parada_m": 0.54135,
+            "altura_min_pelvis_m": 0.661209,
+            "inclinacion_max_grados": 7.712272,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.106515,
+            "error_manos_max_andando_rad": 0.021731,
+            "factor_tiempo_real": 0.999994,
+            "frecuencia_ordenes_hz": 49.999686,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "al_frente",
+          "pose_durante": "arriba",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.121961,
+            "desplazamiento_post_parada_m": 0.599099,
+            "altura_min_pelvis_m": 0.385148,
+            "inclinacion_max_grados": 19.796013,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.1769,
+            "error_manos_max_andando_rad": 0.041104,
+            "factor_tiempo_real": 0.99999,
+            "frecuencia_ordenes_hz": 49.999477,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "arriba",
+          "pose_durante": "cargar",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.438094,
+            "desplazamiento_post_parada_m": 0.156203,
+            "altura_min_pelvis_m": 0.399671,
+            "inclinacion_max_grados": 33.947184,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.265085,
+            "error_manos_max_andando_rad": 0.049096,
+            "factor_tiempo_real": 0.999943,
+            "frecuencia_ordenes_hz": 49.997166,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "inclinacion",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "cambio_pose_ejecutado",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "reposo",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 2.401652,
+            "desplazamiento_post_parada_m": 0.285795,
+            "altura_min_pelvis_m": 0.653609,
+            "inclinacion_max_grados": 6.069608,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.13641,
+            "error_manos_max_andando_rad": 0.017259,
+            "factor_tiempo_real": 0.999918,
+            "frecuencia_ordenes_hz": 49.99591,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "al_frente",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.209498,
+            "desplazamiento_post_parada_m": 0.67017,
+            "altura_min_pelvis_m": 0.683067,
+            "inclinacion_max_grados": 8.629495,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.185591,
+            "error_manos_max_andando_rad": 0.027416,
+            "factor_tiempo_real": 0.999985,
+            "frecuencia_ordenes_hz": 49.999226,
+            "modos_mc_privados_andando": [
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "saludar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.18567,
+            "desplazamiento_post_parada_m": 0.008979,
+            "altura_min_pelvis_m": 0.679382,
+            "inclinacion_max_grados": 9.23778,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.187634,
+            "error_manos_max_andando_rad": 0.02548,
+            "factor_tiempo_real": 0.999987,
+            "frecuencia_ordenes_hz": 49.999371,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "arriba",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.576979,
+            "desplazamiento_post_parada_m": 0.070517,
+            "altura_min_pelvis_m": 0.374261,
+            "inclinacion_max_grados": 41.914534,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.372773,
+            "error_manos_max_andando_rad": 0.045034,
+            "factor_tiempo_real": 0.99995,
+            "frecuencia_ordenes_hz": 49.997486,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "inclinacion",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "cargar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.271273,
+            "desplazamiento_post_parada_m": 1.355468,
+            "altura_min_pelvis_m": 0.671405,
+            "inclinacion_max_grados": 10.700989,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.153144,
+            "error_manos_max_andando_rad": 0.0208,
+            "factor_tiempo_real": 0.999987,
+            "frecuencia_ordenes_hz": 49.999364,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "reposo",
+          "pose_durante": "al_frente",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 1.52166,
+            "desplazamiento_post_parada_m": 0.546111,
+            "altura_min_pelvis_m": 0.657657,
+            "inclinacion_max_grados": 8.192922,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.108431,
+            "error_manos_max_andando_rad": 0.02155,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999412,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "al_frente",
+          "pose_durante": "arriba",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.730521,
+            "desplazamiento_post_parada_m": 0.24919,
+            "altura_min_pelvis_m": 0.396482,
+            "inclinacion_max_grados": 20.9304,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.199094,
+            "error_manos_max_andando_rad": 0.024307,
+            "factor_tiempo_real": 1.002673,
+            "frecuencia_ordenes_hz": 49.998516,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "arriba",
+          "pose_durante": "cargar",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.828133,
+            "desplazamiento_post_parada_m": 0.152104,
+            "altura_min_pelvis_m": 0.368678,
+            "inclinacion_max_grados": 38.254336,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.294013,
+            "error_manos_max_andando_rad": 0.057517,
+            "factor_tiempo_real": 0.999959,
+            "frecuencia_ordenes_hz": 49.997927,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "inclinacion",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "cambio_pose_ejecutado",
+            "seguimiento_pose_durante"
+          ]
+        }
+      ]
+    },
+    {
+      "perfil": "P1",
+      "aprobado": false,
+      "configuracion_privada_verificada": true,
+      "configuracion": {
+        "profile": "P1",
+        "description": "STAND_DEFAULT without automatic transition (rl_cpgtelecon)",
+        "robot": "lx2501_3_t2d5",
+        "created_utc": "2026-10-12T20:30:49.199977+00:00",
+        "source": {
+          "stand_auto_transition": false,
+          "locomotion_runner": "rl_foundationwalk",
+          "locomotion_config": "./rl/foundationwalk_config.yaml"
+        },
+        "generated": {
+          "stand_auto_transition": false,
+          "locomotion_runner": "rl_foundationwalk",
+          "locomotion_config": "./rl/foundationwalk_config.yaml"
+        },
+        "mc_loaded_private_config": true,
+        "locomotion_runner_initialized": true,
+        "vendor_sha256": {
+          "mc_sim.yaml": "999d75f0caed5f20479c670fb95b624910c66722b47d37b60217717a3fe34b60",
+          "action_state.yaml": "60d7107ffdaaaca678d5ce15887c860cc4731ffdc5256c97088f750751a49503",
+          "action_setting.yaml": "60e4b37a2d185515efb63192a67f9cb425558da3f4caabd432aa62bb23f05479"
+        }
+      },
+      "error": null,
+      "corridas": [
+        {
+          "repeticion": 1,
+          "pose": "reposo",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 2.360731,
+            "desplazamiento_post_parada_m": 0.261649,
+            "altura_min_pelvis_m": 0.659943,
+            "inclinacion_max_grados": 5.710721,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.100043,
+            "error_manos_max_andando_rad": 0.015901,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999415,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "al_frente",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.626057,
+            "desplazamiento_post_parada_m": 0.532122,
+            "altura_min_pelvis_m": 0.656245,
+            "inclinacion_max_grados": 8.609779,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.175339,
+            "error_manos_max_andando_rad": 0.027188,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999393,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "saludar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 0.445931,
+            "desplazamiento_post_parada_m": 1.970062,
+            "altura_min_pelvis_m": 0.613095,
+            "inclinacion_max_grados": 16.524179,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.118695,
+            "error_manos_max_andando_rad": 0.029542,
+            "factor_tiempo_real": 0.999982,
+            "frecuencia_ordenes_hz": 49.999082,
+            "modos_mc_privados_andando": [
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "arriba",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.246952,
+            "desplazamiento_post_parada_m": 0.238593,
+            "altura_min_pelvis_m": 0.380738,
+            "inclinacion_max_grados": 20.360754,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.227356,
+            "error_manos_max_andando_rad": 0.036977,
+            "factor_tiempo_real": 0.999952,
+            "frecuencia_ordenes_hz": 49.997604,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "cargar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -2.886867,
+            "desplazamiento_post_parada_m": 1.320274,
+            "altura_min_pelvis_m": 0.496569,
+            "inclinacion_max_grados": 13.201628,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.13406,
+            "error_manos_max_andando_rad": 0.021504,
+            "factor_tiempo_real": 0.999984,
+            "frecuencia_ordenes_hz": 49.999186,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "reposo",
+          "pose_durante": "al_frente",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 1.659928,
+            "desplazamiento_post_parada_m": 0.538041,
+            "altura_min_pelvis_m": 0.654403,
+            "inclinacion_max_grados": 7.203243,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.109953,
+            "error_manos_max_andando_rad": 0.024713,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999394,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "al_frente",
+          "pose_durante": "arriba",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.294923,
+            "desplazamiento_post_parada_m": 0.524948,
+            "altura_min_pelvis_m": 0.383936,
+            "inclinacion_max_grados": 19.7366,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.194119,
+            "error_manos_max_andando_rad": 0.033053,
+            "factor_tiempo_real": 0.999942,
+            "frecuencia_ordenes_hz": 49.99708,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "arriba",
+          "pose_durante": "cargar",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.216011,
+            "desplazamiento_post_parada_m": 0.809112,
+            "altura_min_pelvis_m": 0.376787,
+            "inclinacion_max_grados": 54.402859,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.544324,
+            "error_manos_max_andando_rad": 0.04872,
+            "factor_tiempo_real": 0.999954,
+            "frecuencia_ordenes_hz": 49.997713,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "inclinacion",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "cambio_pose_ejecutado",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "reposo",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 2.427674,
+            "desplazamiento_post_parada_m": 0.312443,
+            "altura_min_pelvis_m": 0.673933,
+            "inclinacion_max_grados": 5.213181,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.101743,
+            "error_manos_max_andando_rad": 0.017842,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.99941,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "al_frente",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.313391,
+            "desplazamiento_post_parada_m": 0.605032,
+            "altura_min_pelvis_m": 0.652139,
+            "inclinacion_max_grados": 8.742415,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.181276,
+            "error_manos_max_andando_rad": 0.026973,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999404,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "saludar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.055069,
+            "desplazamiento_post_parada_m": 1.011969,
+            "altura_min_pelvis_m": 0.562384,
+            "inclinacion_max_grados": 15.23723,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.18265,
+            "error_manos_max_andando_rad": 0.044653,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999396,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "arriba",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.565214,
+            "desplazamiento_post_parada_m": 0.400603,
+            "altura_min_pelvis_m": 0.39219,
+            "inclinacion_max_grados": 43.380009,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.335179,
+            "error_manos_max_andando_rad": 0.044224,
+            "factor_tiempo_real": 0.999951,
+            "frecuencia_ordenes_hz": 49.997554,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "inclinacion",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "cargar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.532357,
+            "desplazamiento_post_parada_m": 1.220476,
+            "altura_min_pelvis_m": 0.665936,
+            "inclinacion_max_grados": 7.843867,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.13391,
+            "error_manos_max_andando_rad": 0.021337,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999408,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "reposo",
+          "pose_durante": "al_frente",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 1.730096,
+            "desplazamiento_post_parada_m": 0.519596,
+            "altura_min_pelvis_m": 0.658127,
+            "inclinacion_max_grados": 9.274761,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.151533,
+            "error_manos_max_andando_rad": 0.023412,
+            "factor_tiempo_real": 0.999987,
+            "frecuencia_ordenes_hz": 49.999364,
+            "modos_mc_privados_andando": [
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "al_frente",
+          "pose_durante": "arriba",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.843066,
+            "desplazamiento_post_parada_m": 0.493407,
+            "altura_min_pelvis_m": 0.395747,
+            "inclinacion_max_grados": 19.897681,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.171502,
+            "error_manos_max_andando_rad": 0.050521,
+            "factor_tiempo_real": 0.999951,
+            "frecuencia_ordenes_hz": 49.997526,
+            "modos_mc_privados_andando": [
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 2,
+          "pose": "arriba",
+          "pose_durante": "cargar",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.104283,
+            "desplazamiento_post_parada_m": 0.343757,
+            "altura_min_pelvis_m": 0.395067,
+            "inclinacion_max_grados": 30.017103,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.401677,
+            "error_manos_max_andando_rad": 0.031936,
+            "factor_tiempo_real": 0.999949,
+            "frecuencia_ordenes_hz": 49.997445,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "inclinacion",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "cambio_pose_ejecutado",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "reposo",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 2.449996,
+            "desplazamiento_post_parada_m": 0.237229,
+            "altura_min_pelvis_m": 0.658396,
+            "inclinacion_max_grados": 5.515802,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.111072,
+            "error_manos_max_andando_rad": 0.015599,
+            "factor_tiempo_real": 0.99999,
+            "frecuencia_ordenes_hz": 49.999492,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "al_frente",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 0.274239,
+            "desplazamiento_post_parada_m": 0.569911,
+            "altura_min_pelvis_m": 0.653931,
+            "inclinacion_max_grados": 10.092164,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.228488,
+            "error_manos_max_andando_rad": 0.035478,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999412,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "saludar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.388038,
+            "desplazamiento_post_parada_m": 0.183382,
+            "altura_min_pelvis_m": 0.638726,
+            "inclinacion_max_grados": 10.731185,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.1485,
+            "error_manos_max_andando_rad": 0.03178,
+            "factor_tiempo_real": 0.999983,
+            "frecuencia_ordenes_hz": 49.999126,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "arriba",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.823786,
+            "desplazamiento_post_parada_m": 0.176963,
+            "altura_min_pelvis_m": 0.368937,
+            "inclinacion_max_grados": 28.717149,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.249849,
+            "error_manos_max_andando_rad": 0.051628,
+            "factor_tiempo_real": 0.99994,
+            "frecuencia_ordenes_hz": 49.997003,
+            "modos_mc_privados_andando": [
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "cargar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.322705,
+            "desplazamiento_post_parada_m": 1.27491,
+            "altura_min_pelvis_m": 0.665686,
+            "inclinacion_max_grados": 7.886618,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.14724,
+            "error_manos_max_andando_rad": 0.020383,
+            "factor_tiempo_real": 0.999986,
+            "frecuencia_ordenes_hz": 49.999306,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "reposo",
+          "pose_durante": "al_frente",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 1.48772,
+            "desplazamiento_post_parada_m": 0.568888,
+            "altura_min_pelvis_m": 0.655465,
+            "inclinacion_max_grados": 9.795017,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.111551,
+            "error_manos_max_andando_rad": 0.024288,
+            "factor_tiempo_real": 0.999973,
+            "frecuencia_ordenes_hz": 49.998663,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "al_frente",
+          "pose_durante": "arriba",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -0.947594,
+            "desplazamiento_post_parada_m": 1.084686,
+            "altura_min_pelvis_m": 0.39999,
+            "inclinacion_max_grados": 20.369835,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.18781,
+            "error_manos_max_andando_rad": 0.038183,
+            "factor_tiempo_real": 0.999983,
+            "frecuencia_ordenes_hz": 49.999143,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "seguimiento_pose_durante"
+          ]
+        },
+        {
+          "repeticion": 3,
+          "pose": "arriba",
+          "pose_durante": "cargar",
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.090978,
+            "desplazamiento_post_parada_m": 0.793379,
+            "altura_min_pelvis_m": 0.390295,
+            "inclinacion_max_grados": 19.057311,
+            "caidas": 1,
+            "error_brazos_max_andando_rad": 0.240499,
+            "error_manos_max_andando_rad": 0.043548,
+            "factor_tiempo_real": 0.999968,
+            "frecuencia_ordenes_hz": 49.998404,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "duracion_orden",
+            "sin_caidas",
+            "altura_pelvis",
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo",
+            "cambio_pose_ejecutado",
+            "seguimiento_pose_durante"
+          ]
+        }
+      ]
+    },
+    {
+      "perfil": "P2",
+      "aprobado": false,
+      "configuracion_privada_verificada": true,
+      "configuracion": {
+        "profile": "P2",
+        "description": "LOCOMOTION_DEFAULT with rl_cpgwalk",
+        "robot": "lx2501_3_t2d5",
+        "created_utc": "2026-10-12T20:39:37.665006+00:00",
+        "source": {
+          "stand_auto_transition": true,
+          "locomotion_runner": "rl_cpgwalk",
+          "locomotion_config": "./rl/cpgwalk_config.yaml"
+        },
+        "generated": {
+          "stand_auto_transition": true,
+          "locomotion_runner": "rl_cpgwalk",
+          "locomotion_config": "./rl/cpgwalk_config.yaml"
+        },
+        "mc_loaded_private_config": true,
+        "locomotion_runner_initialized": true,
+        "vendor_sha256": {
+          "mc_sim.yaml": "999d75f0caed5f20479c670fb95b624910c66722b47d37b60217717a3fe34b60",
+          "action_state.yaml": "60d7107ffdaaaca678d5ce15887c860cc4731ffdc5256c97088f750751a49503",
+          "action_setting.yaml": "60e4b37a2d185515efb63192a67f9cb425558da3f4caabd432aa62bb23f05479"
+        }
+      },
+      "error": "reset/stand/suelta falló",
+      "corridas": [
+        {
+          "repeticion": 1,
+          "pose": "reposo",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": 1.606132,
+            "desplazamiento_post_parada_m": 0.284567,
+            "altura_min_pelvis_m": 0.690549,
+            "inclinacion_max_grados": 3.893369,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.104103,
+            "error_manos_max_andando_rad": 0.012903,
+            "factor_tiempo_real": 0.999987,
+            "frecuencia_ordenes_hz": 49.999362,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "al_frente",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": null,
+          "metricas": {
+            "avance_durante_orden_m": -1.517608,
+            "desplazamiento_post_parada_m": 1.150552,
+            "altura_min_pelvis_m": 0.674243,
+            "inclinacion_max_grados": 6.251189,
+            "caidas": 0,
+            "error_brazos_max_andando_rad": 0.131631,
+            "error_manos_max_andando_rad": 0.014931,
+            "factor_tiempo_real": 0.999988,
+            "frecuencia_ordenes_hz": 49.999423,
+            "modos_mc_privados_andando": [
+              "STAND_DEFAULT",
+              "LOCOMOTION_DEFAULT"
+            ]
+          },
+          "criterios_fallidos": [
+            "seguimiento_brazos",
+            "avance_minimo",
+            "avance_relativo_reposo"
+          ]
+        },
+        {
+          "repeticion": 1,
+          "pose": "saludar",
+          "pose_durante": null,
+          "aprobado": false,
+          "error": "reset/stand/suelta falló",
+          "metricas": {
+            "avance_durante_orden_m": null,
+            "desplazamiento_post_parada_m": null,
+            "altura_min_pelvis_m": null,
+            "inclinacion_max_grados": null,
+            "caidas": null,
+            "error_brazos_max_andando_rad": null,
+            "error_manos_max_andando_rad": null,
+            "factor_tiempo_real": null,
+            "frecuencia_ordenes_hz": null,
+            "modos_mc_privados_andando": null
+          },
+          "criterios_fallidos": []
+        }
+      ]
+    }
+  ]
+}
