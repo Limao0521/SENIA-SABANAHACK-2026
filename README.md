@@ -1,18 +1,22 @@
-# Club N · Recepción robótica con el AgiBot X2 Ultra
+# SENIA · Recepción robótica personalizada
 
 **Entrega final — SabanaHack (Universidad de La Sabana), Reto 2: recepción del Club N.**
 
-Un humanoide **AgiBot X2 Ultra** recibe a cada visitante en la entrada del club: lo reconoce por la
-cara, le pide la credencial QR de su membresía, lo saluda por su nombre y con el trato de su categoría,
-conversa por voz con él sobre el club, señala hacia dónde ir y gesticula mientras habla. Todo corre
-**a bordo del robot**, sin internet. La **app móvil Club N** es la otra mitad: el socio lleva en ella su
-carnet con el QR que el robot lee en la recepción.
+**[Ficha técnica de SENIA](FICHA_TECNICA.md)** · descripción comercial, alcance del prototipo y presupuesto estimado.
+
+**SENIA** integra el humanoide **AgiBot X2 Ultra**, la plataforma de guía **D1** y la app móvil Club N
+para ofrecer una recepción personalizada. El X2 reconoce al visitante por la cara, le pide la credencial
+QR de su membresía, lo saluda según su categoría, conversa por voz, señala la ruta y gesticula mientras
+habla. El procesamiento principal corre **a bordo del X2**, sin depender de una API externa. La app
+muestra el carnet que el robot lee. La integración de control con D1 sigue pendiente: en esta entrega
+el robot lo ofrece o menciona, pero no lo despacha físicamente.
 
 | | |
 |---|---|
 | **Robot** | Conversación en vivo (micrófono → ASR → LLM → voz), identidad cara + QR, gesto co-verbal y señalamiento, expresiones en la pantalla de la cara — verificados en el X2 real. Emotes propios: verificados en simulación. |
 | **App** | Flutter: login por rol (VIP, Regular, Staff), carnet con QR, espacios accesibles, reservas e invitados. |
 | **Integración** | Los QR del carnet de la app son credenciales que el robot valida y que fijan la categoría del visitante (comprobado: 4 de 4). |
+| **Simulación** | Escenario del Club N en MuJoCo y recorrido de visitante con Meta Quest 3 para validar el flujo de recepción. |
 | **Latencia** | De ~27 s en la primera prueba real a **≈ 5–6 s** del fin del habla a la respuesta, con un acuse inmediato en ~2,5 s. |
 
 ## El problema
