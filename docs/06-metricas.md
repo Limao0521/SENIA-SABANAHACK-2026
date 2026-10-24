@@ -75,6 +75,6 @@ Pendiente: repetir en el Orin con `deploy/bench_llm_candidatos.sh base instruct2
 → **158 passed, 1 skipped**. `tests/test_backends.py` → 24 passed. (El único fallo conocido,
 `test_live_smoke_x2_llm`, depende del LLM local del PC con contexto de 1024 tokens.)
 
-## 7. Optimizaciones posteriores (no medidas aún en el robot)
+## 7. Optimizaciones posteriores (en el robot; mejora notada por el equipo, sin cifras aún)
 
-Commit `e787a94`: una sola llamada al LLM en despedidas inequívocas (≈ 5 s menos en ese turno), pre-síntesis de la primera cláusula mientras el LLM todavía escribe (1–3 s), foco de audio retenido por turno (sin pedir/soltar el foco en cada frase) y acuse inmediato por categoría (primera respuesta audible ≈ 2,5 s tras el fin del habla). **[estimado]** — pendiente de medir en el X2.
+Commit `e787a94`: una sola llamada al LLM en despedidas inequívocas (≈ 5 s menos en ese turno), pre-síntesis de la primera cláusula mientras el LLM todavía escribe (1–3 s), foco de audio retenido por turno (sin pedir/soltar el foco en cada frase) y acuse inmediato por categoría (primera respuesta audible ≈ 2,5 s tras el fin del habla). Desplegadas en el X2: el equipo notó una respuesta más rápida **[usuario]**; las cifras de la tabla son **[estimado]** hasta medirlas en los logs (`fin_habla_a_primer_audio_s`).

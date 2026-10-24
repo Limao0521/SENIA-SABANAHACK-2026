@@ -104,8 +104,9 @@ flowchart LR
 ## Estado y límites (resumen)
 
 Funciona en el robot real: identidad cara + QR, conversación, gesto co-verbal, señalamiento y
-expresiones de la cara. Los 12 emotes propios y las últimas optimizaciones de latencia (commit `d59a340`)
-están verificados en pruebas y simulación, pendientes de medir en el robot. **No incluido en esta entrega**: que el robot camine acompañando al VIP hasta el ascensor
+expresiones de la cara. Las optimizaciones de latencia (acuse inmediato, pre-síntesis, una sola llamada al LLM en despedidas,
+foco de audio por turno) ya corren en el robot y el equipo notó la mejora; faltan cifras medidas. Los 12
+emotes propios están verificados en pruebas y simulación. **No incluido en esta entrega**: que el robot camine acompañando al VIP hasta el ascensor
 (la oferta existe en la conversación; la navegación quedó deshabilitada por seguridad y pendiente de
 integrar con la tarea de navegación del robot) y el control del perro guía D1 (solo se menciona).
 Ver [docs/08-limitaciones-y-trabajo-futuro.md](docs/08-limitaciones-y-trabajo-futuro.md).
